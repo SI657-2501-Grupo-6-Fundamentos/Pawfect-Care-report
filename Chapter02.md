@@ -179,7 +179,7 @@ RideFind es una plataforma que facilita el alquiler de vehículos alternativos y
 **Preguntas para el Segmento Objetivo 2 - Dueños de Mascotas:**
 
 
-- ¿Con que frecuencia vas al veterinario?
+- ¿Con que frecuencia lleva a su mascota al veterinario?
 - ¿Qué método usas para llevar el control de tu mascota?
 - ¿Alguna vez perdiste los documentos?
 - ¿En medio de algún tratamiento cambiaste de veterinario?
@@ -251,18 +251,18 @@ Entrevista N°3:
 ---
 Entrevista N°1:
 
-**Entrevistado:** [Nonmbre] <br>
-**Sexo:** [masculino o femenino] <br>
-**Edad:** [n] años<br>
-**Domicilio:** [Distrito] <br>
+**Entrevistado:** Ana <br>
+**Sexo:** Femenino <br>
+**Edad:** 55 años<br>
+**Domicilio:** Puente Piedra <br>
 **Inicio de la Entrevista:** 0:00<br>
-**Duración de la Entrevista:** 6:58<br>
+**Duración de la Entrevista:** 2:20<br>
 
-<img src="./assets/Chapter02/entrevista3.png" alt="Entrevista con [Nombre]" style="width: 600px; height: auto;"><br>
+[![Captura.png](https://i.postimg.cc/4dCBHV5h/Captura.png)](https://postimg.cc/Y431J4Tp)
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com"> https://upcedupe-my.sharepoint.com </a>
+**Enlace:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS"> Clic aquí </a>
 
-**Resumen de la Entrevista:** -
+**Resumen de la Entrevista:** - Ana nos comenta que lleva a su mascota al veterinario cada vez que nota algún comportamiento raro en su mascota o cuando lo ve enfermo. Explica que siempre lleva los documentos que le da el veterinario, como su tarjeta de vacunas o chequeos, aunque ha habido el caso donde ha perdido dichos documentos. Ella considera que una aplicación que le permita ver la historia clínica sería excelente porque toda la información lo tendría en su pc o laptop y podría ingresar a revisar desde cualquier navegador. 
 
 ---
 
@@ -279,7 +279,7 @@ Entrevista N°2:
 
 **Enlace:** <a href="https://upcedupe-my.sharepoint.com"> https://upcedupe-my.sharepoint.com </a>
 
-**Resumen de la Entrevista:** -
+**Resumen de la Entrevista:** - 
 
 ---
 
