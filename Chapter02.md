@@ -12,17 +12,17 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan align="center">VetPraxis        <img src="https://i.postimg.cc/bNDNrLcY/vetpraxis.png" alt="VetPraxis Logo" style="width: 250px; height: auto;" </td>
+            <td rowspan align="center">VetPraxis<img src="https://i.postimg.cc/8cHpQXqN/vetpraxis.png" alt="VetPraxis Logo" style="width: 250px; height: auto;" </td>
             <td>Es una solución de gestión para clínicas veterinarias, diseñada para optimizar la administración de operaciones diarias. Ofrece funcionalidades que incluyen la gestión de citas, historias clínicas electrónicas, administración de inventario, y facturación. También proporciona herramientas para la comunicación con los clientes y el seguimiento de tratamientos.<br>
             Página web:<a href="https://vetpraxis.net/"> https://vetpraxis.net/</a>
         </tr>
         <tr>
-            <td align="center">VetApp<img src="https://i.postimg.cc/5yp7M8gZ/vetapp.jpg"alt="VetApp Logo" style="width: 700px; height: auto;"</td>
+            <td align="center">VetApp<img src="https://i.postimg.cc/RFx43zmv/vetapp.jpg"alt="VetApp Logo" style="width: 700px; height: auto;"</td>
             <td> Es una plataforma desarrollada para la gestión de clínicas veterinarias. Proporciona características como la programación de citas, el manejo de historias clínicas electrónicas, y la administración de inventario.<br>
             Página web:<a href="https://vetapp.app/en"> https://vetapp.app/en</a>
         </tr>
         <tr>
-           <td rowspan align="center">PetClinic<br><img src="https://i.postimg.cc/C1gmBc63/petclinic.jpg"alt="PetClinic Logo" style="width: 250px; height: auto;"</td> 
+           <td rowspan align="center">PetClinic<br><img src="https://i.postimg.cc/fRgbRFkb/petclinic.jpg"alt="PetClinic Logo" style="width: 250px; height: auto;"</td> 
            <td>Es una aplicación diseñada para gestionar clínicas veterinarias y consultas de mascotas. Incluye funciones para la gestión de citas, el manejo de historias clínicas electrónicas, y la administración de inventario y facturación. La plataforma está orientada a mejorar la organización y eficiencia dentro de las clínicas, ofreciendo herramientas para el seguimiento de tratamientos y la comunicación con los clientes. PetClinic está adaptada a las necesidades específicas del sector veterinario en Perú.<br>
            Página web:<a href="https://petclinic.es/"> https://petclinic.es/</a>
     </tbody>
@@ -39,10 +39,10 @@
   </tr>
   <tr>
     <td colspan="2"></td>
-    <td align="center">Pawfect Care<br><img src="https://i.postimg.cc/T1k9sfYx/pawfect.png" alt="Pawfect Logo"></td>
-    <td align="center">VetPraxis<br><img src="https://i.postimg.cc/bNDNrLcY/vetpraxis.png" alt="VetPraxis Logo"></td>
-    <td align="center">VetApp<br><img src="https://i.postimg.cc/5yp7M8gZ/vetapp.jpg"alt="VetApp Logo"></td>
-    <td align="center">PetClinic<br><img src="https://i.postimg.cc/C1gmBc63/petclinic.jpg"alt="PetClinic Logo"></td> 
+    <td align="center">Pawfect Care<br><img src="https://i.postimg.cc/2ymktN90/pawfect.png" alt="Pawfect Logo"></td>
+    <td align="center">VetPraxis<br><img src="https://i.postimg.cc/8cHpQXqN/vetpraxis.png" alt="VetPraxis Logo"></td>
+    <td align="center">VetApp<br><img src="https://i.postimg.cc/RFx43zmv/vetapp.jpg"alt="VetApp Logo"></td>
+    <td align="center">PetClinic<br><img src="https://i.postimg.cc/fRgbRFkb/petclinic.jpg"alt="PetClinic Logo"></td> 
   </tr>
   <tr>
     <td rowspan="2" align="center">Perfil</td>
@@ -325,11 +325,11 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 - **Segmento Objetivo 1 - Médicos Veterinarios**
 
-[![user-Persona1.png](https://i.postimg.cc/SK0G3Zqn/user-Persona1.png)](https://postimg.cc/18H6Nr8S)
+[![user-Persona1.png](https://i.postimg.cc/8zy7rcXN/user-Persona1.png)](https://postimg.cc/VJCfxfcV)
 
 - **Segmento Objetivo 2 - Dueños de Mascotas**
 
-[![user-Persona2.png](https://i.postimg.cc/0jNGDFGB/user-Persona2.png)](https://postimg.cc/qh9Cdm5s)
+[![user-Persona2.png](https://i.postimg.cc/x8S8Sz8y/user-Persona2.png)](https://postimg.cc/KkJxP4nR)
 
 
 ### 2.3.2. User Task Matrix.
@@ -368,24 +368,24 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 - **Primer segmento: Médicos Veterinarios**
 
-[![Journey-Map1.png](https://i.postimg.cc/QMrp0Hk5/Journey-Map1.png)](https://postimg.cc/ts2ZgRcC)
+[![Journey-Map1.png](https://i.postimg.cc/bN9Dp3QG/Journey-Map1.png)](https://postimg.cc/cr64c7kZ)
 
 - **Segundo segmento: Dueños de Mascotas**
 
-[![Journey-Map2.png](https://i.postimg.cc/SsgCSV07/Journey-Map2.png)](https://postimg.cc/5YF6pB26)
+[![Journey-Map2.png](https://i.postimg.cc/BnZ86Hgm/Journey-Map2.png)](https://postimg.cc/vcj821Cn)
 
 ### 2.3.4. Empathy Mapping.
 
 - **Primer segmento: Médicos Veterinarios**
-[![Empathy-Map1.png](https://i.postimg.cc/dQSrgWjJ/Empathy-Map1.png)](https://postimg.cc/CdkRqs22)
+[![Empathy-Map1.png](https://i.postimg.cc/mZM16bky/Empathy-Map1.png)](https://postimg.cc/jCxjDYzD)
 
 - **Segundo segmento: Dueños de Mascotas**
-[![Empathy-Map2.png](https://i.postimg.cc/CL3Dxz2t/Empathy-Map2.png)](https://postimg.cc/56mjPNbq)
+[![Empathy-Map2.png](https://i.postimg.cc/L6pYcrZK/Empathy-Map2.png)](https://postimg.cc/Z0w53scV)
 
 ### 2.3.5. As-is Scenario Mapping.
 
 - **Primer segmento: Médicos Veterinarios**
-[![Asis1.jpg](https://i.postimg.cc/3Ny4KTFY/Asis1.jpg)](https://postimg.cc/p5HXZ3S6)
+[![Asis1.jpg](https://i.postimg.cc/fR59jBy4/Asis1.jpg)](https://postimg.cc/Sn2RmLcV)
 
 - **Segundo segmento: Dueños de Mascotas**
 [![Asis2.jpg](https://i.postimg.cc/kgP6dL6P/Asis2.jpg)](https://postimg.cc/qzQMsbx1)
