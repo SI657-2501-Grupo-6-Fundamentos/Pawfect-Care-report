@@ -203,7 +203,7 @@ Para desarrollar la aplicación Pawfect Care, partimos de varias suposiciones cl
 - Reducción de errores y tiempos de espera en la gestión clínica, lo que aumentará la retención de clientes y atraerá nuevos usuarios.
 
 **Users:**
-- **Segmento 1 – Médicos Veterinarios:** Veterinarias de distintos tamaños, desde consultorios individuales hasta centros de atención con varios especialistas. Este segmento se enfoca en mejorar el manejo de la información médica, el control de inventarios y la programación de citas, con el objetivo de incrementar su eficiencia y brindar un servicio de mayor calidad a sus clientes.
+- **Segmento 1 – Clinicas Veterinarias:** Veterinarias de distintos tamaños, desde consultorios individuales hasta centros de atención con varios especialistas. Este segmento se enfoca en mejorar el manejo de la información médica, el control de inventarios y la programación de citas, con el objetivo de incrementar su eficiencia y brindar un servicio de mayor calidad a sus clientes.
 
 - **Segmento 2 – Dueños de Mascotas:** Propietarios que necesitan gestionar de manera eficiente la salud de sus mascotas, incluyendo jóvenes acostumbrados a usar aplicaciones móviles y también aquellos poco familiarizados con la tecnología. Este segmento busca acceder a una forma más accesible de organizar la información médica de sus animales.
 
@@ -509,7 +509,7 @@ RideFind es una plataforma que facilita el alquiler de vehículos alternativos y
 - ¿Donde resides?
 - ¿Cuál es tu ocupación?
 
-**Preguntas para el Segmento Objetivo 1 - Médicos Veterinarios:**
+**Preguntas para el Segmento Objetivo 1 - Clinicas Veterinarias:**
 
 - ¿Conoces alguna aplicación de gestión veterinaria? ¿Cuál es?
 - ¿Lo escogieron por alguna razón es especial?
@@ -532,7 +532,7 @@ RideFind es una plataforma que facilita el alquiler de vehículos alternativos y
 
 ### 2.2.2. Registro de entrevistas.
 
-**Entrevista para el Segmento Objetivo 1 - Médicos Veterinarios:**
+**Entrevista para el Segmento Objetivo 1 - Clinicas Veterinarias:**
 
 ---
 
@@ -650,7 +650,7 @@ Sergio es un estudiante de 20 años que acude al veterinario con su mascota para
 
 ### 2.2.3. Análisis de entrevistas.
 
-***Segmento 1: Médicos Veterinarios***
+***Segmento 1:  Clinicas Veterinarias***
 
 - El 100% de los entrevistados utilizan software de gestión en sus clínicas veterinarias. Dos de ellos (66.7%) emplean VetPraxis debido a su reconocimiento en el mercado, mientras que uno (33.3%) utiliza otro software específico para veterinarias.
 - El 100% de los veterinarios expresaron preocupaciones sobre el tiempo que toma completar las historias clínicas. El 66.7% de ellos reportaron que el proceso puede tomar entre 7 y 15 minutos, lo cual consideran excesivo. Esto destaca la necesidad de soluciones más eficientes.
@@ -670,7 +670,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### 2.3.1. User Personas.
 
-- **Segmento Objetivo 1 - Médicos Veterinarios**
+- **Segmento Objetivo 1 - Clinicas Veterinarias**
 
 [![user-Persona1.png](https://i.postimg.cc/8zy7rcXN/user-Persona1.png)](https://postimg.cc/VJCfxfcV)
 
@@ -681,7 +681,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### 2.3.2. User Task Matrix.
 
-***Segmento 1: Médicos Veterinarios***
+***Segmento 1: Clinicas Veterinarias***
 
 |**Vanesa Gómez Suarez**|||
 | :-: | :- | :- |
@@ -712,7 +712,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### 2.3.3. Empathy Mapping.
 
-- **Primer segmento: Médicos Veterinarios**
+- **Primer segmento: Clinicas Veterinarias**
 [![Empathy-Map1.png](https://i.postimg.cc/mZM16bky/Empathy-Map1.png)](https://postimg.cc/jCxjDYzD)
 
 - **Segundo segmento: Dueños de Mascotas**
@@ -720,7 +720,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### 2.3.4. As-is Scenario Mapping.
 
-- **Primer segmento: Médicos Veterinarios**
+- **Primer segmento: Clinicas Veterinarias**
 [![Asis1.jpg](https://i.postimg.cc/fR59jBy4/Asis1.jpg)](https://postimg.cc/Sn2RmLcV)
 
 - **Segundo segmento: Dueños de Mascotas**
@@ -732,7 +732,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ## 3.1. To-Be Scenario Mapping.
 
-- **Primer segmento: Médicos Veterinarios**
+- **Primer segmento: Clinicas Veterinarias**
 
 <br><img src="./assets/Chapter03/Tobe1.jpeg" alt="To Be Scenario Map 1" style="width: 1000px; height: auto;" ><br>
 
