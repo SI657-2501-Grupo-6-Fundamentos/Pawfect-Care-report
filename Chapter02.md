@@ -268,18 +268,18 @@ Entrevista N°1:
 
 Entrevista N°2:
 
-**Entrevistado:** [Nonmbre] <br>
-**Sexo:** [masculino o femenino] <br>
-**Edad:** [n] años<br>
-**Domicilio:** [Distrito] <br>
+**Entrevistado:** Diego <br>
+**Sexo:** Masculino <br>
+**Edad:** 20 años<br>
+**Domicilio:** San Miguel <br>
 **Inicio de la Entrevista:** 0:00<br>
-**Duración de la Entrevista:** 6:58<br>
+**Duración de la Entrevista:** 3:25<br>
 
-<img src="./assets/Chapter02/entrevista3.png" alt="Entrevista con [Nombre]" style="width: 600px; height: auto;"><br>
+[![image.png](https://i.postimg.cc/ZRsk2z5b/image.png)](https://postimg.cc/R6tbJ8ty)
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com"> https://upcedupe-my.sharepoint.com </a>
+**Enlace:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/Ee5rXgJAqnREmSoDnOD-WfUBGOscyXbOLMpNCqAw-zoysg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SSRBR3"> Click aquí </a>
 
-**Resumen de la Entrevista:** - 
+**Resumen de la Entrevista:** - Diego es un estudiantes de 20 años que solo lleva a su mascota al veterinario cada vez que necesita bañarlo, ya que menciona que su mascota no se suele enfermar. Además, menciona que usa una cartilla física para llevar el control de su mascota. Por otro lado, explica que jamás a perdido la cartilla de control de su mascota, y que nunca ha cambiado de veterinario. Él considera que tener una app para ver la historia clínica de su mascota sería excelente, ya que podría ver toda la información desde su celular.
 
 ---
 
