@@ -728,7 +728,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 
 ---
-# Capítulo III: Requirements Specification## 
+# Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping.
 
