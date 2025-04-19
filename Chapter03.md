@@ -4,11 +4,66 @@
 
 - **Primer segmento: Médicos Veterinarios**
 
-<br><img src="./assets/Chapter03/Tobe1.png" alt="To Be Scenario Map 1" style="width: 1000px; height: auto;" ><br>
+<br><img src="./assets/Chapter03/Tobe1.jpeg" alt="To Be Scenario Map 1" style="width: 1000px; height: auto;" ><br>
 
 - **Segundo segmento: Dueños de Mascotas**
 
-<br><img src="./assets/Chapter03/Tobe2.png" alt="To Be Scenario Map 2" style="width: 1000px; height: auto;" ><br>
+<br><img src="./assets/Chapter03/Tobe2.jpeg" alt="To Be Scenario Map 2" style="width: 1000px; height: auto;" ><br>
+
+
+## 3.1.1. Requisitos Funcionales
+
+### Gestión de Usuarios y Clientes
+- **RF01.** El sistema debe permitir a los usuarios registrarse en la plataforma.
+- **RF02.** El sistema debe permitir a los usuarios crear y editar su perfil.
+- **RF03.** El administrador debe poder gestionar y editar los perfiles de los clientes.
+- **RF04.** El administrador debe poder buscar clientes por su ID.
+
+### Gestión de Mascotas
+- **RF05.** El sistema debe permitir a los usuarios crear perfiles de sus mascotas.
+- **RF06.** El sistema debe permitir a los usuarios editar la información de sus mascotas.
+- **RF07.** El sistema debe permitir consultar los perfiles de mascotas.
+- **RF08.** El administrador debe poder gestionar los perfiles de todas las mascotas.
+- **RF09.** El administrador o el veterinario deben poder buscar mascotas por su ID.
+
+### Gestión de Citas
+- **RF10.** El sistema debe permitir a los usuarios agendar citas veterinarias.
+- **RF11.** El sistema debe permitir a los usuarios cancelar sus citas.
+- **RF12.** El sistema debe permitir al personal médico o administrativo gestionar y editar citas.
+- **RF13.** El sistema debe permitir al administrador buscar citas por su ID.
+
+### Historial Médico
+- **RF14.** El sistema debe permitir a los usuarios visualizar el historial médico de sus mascotas.
+- **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
+
+### Reseñas
+- **RF16.** El sistema debe permitir a los usuarios publicar reseñas sobre la atención veterinaria recibida.
+- **RF17.** El sistema debe permitir a los usuarios visualizar las reseñas publicadas por otros usuarios.
+
+### Chatbot Informativo
+- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos sobre:
+  - Alimentación de mascotas.
+  - Higiene animal.
+  - Salud y síntomas.
+  - Entrenamiento básico.
+  - Recomendaciones personalizadas según tipo de mascota.
+
+
+## 3.1.2. Requisitos No Funcionales
+
+- **RNF01:** El sistema debe tener alta disponibilidad al estar activo las 24 horas del día, los 7 días de la semana.
+- **RNF02:** La interfaz debe ser intuitiva y fácil de usar para cualquier tipo de usuario, cumpliendo con la heurística de User Control and Freedom como mínimo.
+- **RNF03:** El sistema debe estar desarrollado bajo una arquitectura web responsive.
+- **RNF04:** Las respuestas del sistema no deben superar los 3 segundos en operaciones comunes.
+- **RNF05:** El sistema debe enviar correos electrónicos de forma segura utilizando un proveedor confiable como Outlook o Gmail.
+- **RNF06:** Toda la información de los usuarios y sus mascotas debe almacenarse en un proveedor de base de datos relacional como PostgreSQL o MySQL.
+- **RNF07:** El frontend debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
+- **RNF08:** La landing page debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
+- **RNF09:** El frontend de la aplicación web debe ser implementado con Angular y TypeScript.
+- **RNF10:** El backend de la aplicación web debe ser implementado con Java y Spring Boot.
+
+
+
 
 
 ## 3.2. User Stories

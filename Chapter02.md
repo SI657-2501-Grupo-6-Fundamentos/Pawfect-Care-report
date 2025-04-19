@@ -285,20 +285,20 @@ Entrevista N°2:
 
 Entrevista N°3:
 
-**Entrevistado:** [Nonmbre] <br>
-**Sexo:** [masculino o femenino] <br>
-**Edad:** [n] años<br>
-**Domicilio:** [Distrito] <br>
+**Entrevistado:** Sergio <br>
+**Sexo:** Masculino <br>
+**Edad:** 20 años<br>
+**Domicilio:** Comas <br>
 **Inicio de la Entrevista:** 0:00<br>
-**Duración de la Entrevista:** 6:58<br>
+**Duración de la Entrevista:** 4:11<br>
 
-<img src="./assets/Chapter02/entrevista3.png" alt="Entrevista con [Nombre]" style="width: 600px; height: auto;"><br>
+[![Captura-de-pantalla-2025-04-18-232019.png](https://i.postimg.cc/k4DsmRv9/Captura-de-pantalla-2025-04-18-232019.png)](https://postimg.cc/DJkLQZNY)
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com"> https://upcedupe-my.sharepoint.com </a>
+**Enlace:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/ESaf-2VJ0zJGpLnNv2DsVwsBl6m8PtmuTuQSefq_dH90YQ?e=lp9DhQ"> https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/ESaf-2VJ0zJGpLnNv2DsVwsBl6m8PtmuTuQSefq_dH90YQ?e=lp9DhQ </a>
 
 **Resumen de la Entrevista:** -
 
----
+Sergio es un estudiante de 20 años que acude al veterinario con su mascota para hacerle revisiones generales y control de vacunas cada 4 meses. Además, se menciona que debe utilizar una aplicación de block de notas en su celular para anotar fechas de citas importantes y que en raras ocasiones suele perder documentos de vacunación importantes. Él considera que una aplicación sería vital para gestionar de manera eficiente todos los documentos relacionados a su mascota y no volver a perder algún registro que podría necesitar más adelante.
 
 
 ### 2.2.3. Análisis de entrevistas.
@@ -379,57 +379,4 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 - **Segundo segmento: Dueños de Mascotas**
 [![Asis2.jpg](https://i.postimg.cc/kgP6dL6P/Asis2.jpg)](https://postimg.cc/qzQMsbx1)
 
-
-<br>
-
-## 2.5. Requisitos Funcionales
-
-### Gestión de Usuarios y Clientes
-- **RF01.** El sistema debe permitir a los usuarios registrarse en la plataforma.  
-- **RF02.** El sistema debe permitir a los usuarios crear y editar su perfil.  
-- **RF03.** El administrador debe poder gestionar y editar los perfiles de los clientes.  
-- **RF04.** El administrador debe poder buscar clientes por su ID.
-
-### Gestión de Mascotas
-- **RF05.** El sistema debe permitir a los usuarios crear perfiles de sus mascotas.  
-- **RF06.** El sistema debe permitir a los usuarios editar la información de sus mascotas.  
-- **RF07.** El sistema debe permitir consultar los perfiles de mascotas.  
-- **RF08.** El administrador debe poder gestionar los perfiles de todas las mascotas.  
-- **RF09.** El administrador o el veterinario deben poder buscar mascotas por su ID.
-
-### Gestión de Citas
-- **RF10.** El sistema debe permitir a los usuarios agendar citas veterinarias.  
-- **RF11.** El sistema debe permitir a los usuarios cancelar sus citas.  
-- **RF12.** El sistema debe permitir al personal médico o administrativo gestionar y editar citas.  
-- **RF13.** El sistema debe permitir al administrador buscar citas por su ID.
-
-### Historial Médico
-- **RF14.** El sistema debe permitir a los usuarios visualizar el historial médico de sus mascotas.  
-- **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
-
-### Reseñas
-- **RF16.** El sistema debe permitir a los usuarios publicar reseñas sobre la atención veterinaria recibida.  
-- **RF17.** El sistema debe permitir a los usuarios visualizar las reseñas publicadas por otros usuarios.
-
-### Chatbot Informativo
-- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos sobre:
-  - Alimentación de mascotas.
-  - Higiene animal.
-  - Salud y síntomas.
-  - Entrenamiento básico.
-  - Recomendaciones personalizadas según tipo de mascota.
-
-
-## 2.6. Requisitos No Funcionales
-
-- **RNF01:** El sistema debe tener alta disponibilidad al estar activo las 24 horas del día, los 7 días de la semana.
-- **RNF02:** La interfaz debe ser intuitiva y fácil de usar para cualquier tipo de usuario, cumpliendo con la heurística de User Control and Freedom como mínimo.
-- **RNF03:** El sistema debe estar desarrollado bajo una arquitectura web responsive.
-- **RNF04:** Las respuestas del sistema no deben superar los 3 segundos en operaciones comunes.
-- **RNF05:** El sistema debe enviar correos electrónicos de forma segura utilizando un proveedor confiable como Outlook o Gmail.
-- **RNF06:** Toda la información de los usuarios y sus mascotas debe almacenarse en un proveedor de base de datos relacional como PostgreSQL o MySQL.
-- **RNF07:** El frontend debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
-- **RNF08:** La landing page debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
-- **RNF09:** El frontend de la aplicación web debe ser implementado con Angular y TypeScript.
-- **RNF10:** El backend de la aplicación web debe ser implementado con Java y Spring Boot.
 
