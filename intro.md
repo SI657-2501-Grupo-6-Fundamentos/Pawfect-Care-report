@@ -13,10 +13,11 @@
 - [**Student Outcome**](#student-outcome)
 - ## [ **Capítulo I: Introducción** ](#-capítulo-i-introducción-)
   - [**1.1. Startup Profile**](#11-startup-profile)
-    - [**1.1.1. Descripción de la Startup**](#111-descripción-de-la-startup)
-    - [**1.1.2. Perfiles de integrantes del equipo**](#112-perfiles-de-integrantes-del-equipo)
+    - [**1.1.1. Descripción de la Startup**](#112-descripción-de-la-startup)
+    - [**1.1.2. Perfiles de integrantes del equipo**](#113-perfiles-de-integrantes-del-equipo)
   - [**1.2. Solution Profile**](#12-solution-profile)
-    - [**1.2.1 Antecedentes y problemática**](#121-antecedentes-y-problemática)
+    - [**1.2.1. Nombre del Producto**](#121-nombre-del-producto)
+    - [**1.2.2 Antecedentes y problemática**](#122-antecedentes-y-problemática)
     - [What (¿Qué?)](#what-qué)
     - [Who (¿Quién?)](#who-quién)
     - [Where (¿Dónde?)](#where-dónde)
@@ -24,11 +25,11 @@
     - [Why (¿Por qué?)](#why-por-qué)
     - [How (¿Cómo?)](#how-cómo)
     - [How much (¿Cuánto?)](#how-much-cuánto)
-    - [**1.2.2 Lean UX Process**](#122-lean-ux-process)
-    - [**1.2.2.1. Lean UX Problem Statements**](#1221-lean-ux-problem-statements)
-    - [**1.2.2.2. Lean UX Assumptions**](#1222-lean-ux-assumptions)
-    - [**1.2.2.3. Lean UX Hypothesis Statements**](#1223-lean-ux-hypothesis-statements)
-    - [**1.2.2.4. Lean UX Canvas**](#1224-lean-ux-canvas)
+    - [**1.2.3 Lean UX Process**](#122-lean-ux-process)
+    - [**1.2.3.1. Lean UX Problem Statements**](#1221-lean-ux-problem-statements)
+    - [**1.2.3.2. Lean UX Assumptions**](#1222-lean-ux-assumptions)
+    - [**1.2.3.3. Lean UX Hypothesis Statements**](#1223-lean-ux-hypothesis-statements)
+    - [**1.2.3.4. Lean UX Canvas**](#1224-lean-ux-canvas)
   - [**1.3. Segmentos objetivo**](#13-segmentos-objetivo)
 - ## [ **Capítulo II: Requirements Elicitation \& Analysis**](#-capítulo-ii-requirements-elicitation--analysis)
   - [**2.1. Competidores**](#21-competidores)
@@ -47,7 +48,8 @@
   - [**2.4. Ubiquitous Language**](#24-ubiquitous-language)
 - ## [ **Capítulo III: Requirements Specification**](#-capítulo-iii-requirements-specification)
   - [**3.1. To-Be Scenario Mapping**](#31-to-be-scenario-mapping)
-  - [**3.1.1. Requisitos Funcionales y No Funcionales**](#311-requisitos-funcionales-y-no-funcionales)
+      - [**3.1.1. Requisitos Funcionales**](#311-requisitos-funcionales)
+      - [**3.1.2. Requisitos No Funcionales**](#311-requisitos-no-funcionales)
   - [**3.2. User Stories**](#32-user-stories)
   - [**3.3. Impact Mapping**](#33-impact-mapping)
   - [**3.4. Product Backlog**](#34-product-backlog)
@@ -61,11 +63,11 @@
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> TEXTO<br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> TEXTO <br> **Zuniga Calle, Sebastian Gabriel**<br>*TB1*<br> TEXTO| TB1: Como equipo, logramos comunicar de manera efectiva cada una de nuestras áreas de trabajo, adaptándonos a las diferentes audiencias y asegurando que tanto los aspectos técnicos como los estratégicos fueran claros. A lo largo del proyecto, trabajamos de forma coordinada y presentamos información comprensible para una amplia gama de oyentes, demostrando una excelente capacidad de trabajo en equipo y dominio de nuestras respectivas áreas.|
+|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> TEXTO<br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Durante la elaboración del Capítulo 1 (Introducción y análisis de la problemática) y del Capítulo 2 (Especificación de requisitos), profundicé en metodologías de Lean UX, mapeo de impacto y definición de segmentos de usuarios. Me capacité en el uso de herramientas colaborativas (Git, Markdown, GitFlow) y en buenas prácticas de documentación técnica, lo que me permitió estructurar el informe de manera coherente y profesional. Gracias a este proceso, fortalecí mi comprensión de cómo alinear las necesidades del negocio con soluciones de software efectivas. <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> TEXTO <br> **Zuniga Calle, Sebastian Gabriel**<br>*TB1*<br> TEXTO| TB1: <br> El equipo ha demostrado una actualización efectiva de conceptos y conocimientos clave para el desarrollo de PawFect Care. Al profundizar en metodologías ágiles (Lean UX, mapeo de impacto), herramientas de control de versiones (Git, GitFlow) y documentación técnica ( Markdown), cada miembro fortaleció su base profesional y aportó soluciones más alineadas con las necesidades del proyecto. Esto se traduce en una implementación más sólida, coherente y escalable de la plataforma veterinaria.|
 
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> TEXTO<br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> TEXTO <br> **Zuniga Calle, Sebastian Gabriel**<br>*TB1*<br> TEXTO| TB1: TB1: Como equipo, logramos redactar la documentación del proyecto de manera efectiva, adaptando nuestro lenguaje escrito a las necesidades de diferentes audiencias. A lo largo del proyecto, trabajamos de forma coordinada para que tanto los aspectos técnicos como los conceptuales fueran accesibles y fáciles de entender para todos los involucrados, asegurando que nuestra escritura fuera clara, precisa y efectiva en todo momento.|
+|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> TEXTO<br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Al enfrentar nuevos desafíos—como definir los bounded contexts, redactar user stories y diseñar el backlog—identifiqué áreas donde debía profundizar: gestión de proyectos ágiles, documentación   y diseño de experiencia de usuario. Para ello, consulté tutoriales, documentación oficial y prácticas recomendadas en foros especializados. Este proceso reafirmó mi compromiso con el aprendizaje continuo, indispensable para mantener la calidad y escalabilidad de cualquier solución de software. <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> TEXTO <br> **Zuniga Calle, Sebastian Gabriel**<br>*TB1*<br> TEXTO| TB1: <br> El proyecto reforzó en todos nosotros la importancia del aprendizaje permanente. Identificamos brechas en áreas como gestión de APIs, diseño UX y despliegue en la nube, y las abordamos mediante investigación, auto‑formación y consulta de fuentes especializadas. Este compromiso con la mejora continua asegura que, más allá de esta entrega, mantendremos la capacidad de adaptarnos a nuevas tecnologías y mejores prácticas en el desarrollo de soluciones de software.|
 
 ----
