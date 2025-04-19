@@ -135,7 +135,7 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
 <table border="1" cellpadding="10" cellspacing="0">
     <tr>
         <td><strong>Lean UX Canvas</strong></td>
-        <td><strong>Fecha:</strong> 31/08/2024</td>
+        <td><strong>Fecha:</strong> 18/04/2025</td>
         <td><strong>Primera Iteración</strong></td>
     </tr>
     <tr>
