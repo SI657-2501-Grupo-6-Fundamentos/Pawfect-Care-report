@@ -51,18 +51,45 @@
 
 ## 3.1.2. Requisitos No Funcionales
 
-- **RNF01:** El sistema debe tener alta disponibilidad al estar activo las 24 horas del día, los 7 días de la semana.
-- **RNF02:** La interfaz debe ser intuitiva y fácil de usar para cualquier tipo de usuario, cumpliendo con la heurística de User Control and Freedom como mínimo.
-- **RNF03:** El sistema debe estar desarrollado bajo una arquitectura web responsive.
-- **RNF04:** Las respuestas del sistema no deben superar los 3 segundos en operaciones comunes.
-- **RNF05:** El sistema debe enviar correos electrónicos de forma segura utilizando un proveedor confiable como Outlook o Gmail.
-- **RNF06:** Toda la información de los usuarios y sus mascotas debe almacenarse en un proveedor de base de datos relacional como PostgreSQL o MySQL.
-- **RNF07:** El frontend debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
-- **RNF08:** La landing page debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
-- **RNF09:** El frontend de la aplicación web debe ser implementado con Angular y TypeScript.
-- **RNF10:** El backend de la aplicación web debe ser implementado con Java y Spring Boot.
+Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad que el sistema debe cumplir, más allá de sus funciones básicas. A continuación se muestran los RNF alineados con los atributos de calidad definidos por Bass, Clements y Kazman (2012), los cuales se enfocan en las siguientes áreas.
+1. **Disponibilidad**  
+   Indica si el sistema está operable y accesible cuando los usuarios lo necesitan. Un sistema altamente disponible puede tolerar fallos y mantenerse en ejecución sin interrupciones.
 
+2. **Seguridad**  
+   Representa el grado de protección del sistema contra accesos no autorizados, uso indebido o ataques. Un sistema seguro protege tanto la información como sus servicios.
 
+3. **Desempeño**  
+   Evalúa la eficiencia con la que el sistema responde a solicitudes y realiza tareas, considerando el uso de recursos como CPU, memoria y tiempo de respuesta.
+
+4. **Facilidad de prueba**  
+   Mide cuán fácil es diseñar, ejecutar y evaluar pruebas efectivas del sistema. Esto incluye pruebas unitarias, de integración y de aceptación.
+
+5. **Modificabilidad**  
+   Describe el esfuerzo requerido para realizar cambios en el sistema, como agregar nuevas funcionalidades, corregir errores o adaptar el sistema a nuevos entornos.
+
+6. **Usabilidad**  
+   Indica qué tan fácil y eficiente es para los usuarios interactuar con el sistema. Incluye factores como intuición, accesibilidad y curva de aprendizaje.
+
+7. **Interoperabilidad**  
+   Se refiere a la capacidad del sistema para intercambiar información y trabajar conjuntamente con otros sistemas mediante interfaces bien definidas.
+
+| Código | Descripción                                                                                            | Métrica (con Método de Evaluación)                                                                                                           | Atributo de Calidad       |
+|--------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| RNF01  | El sistema debe estar disponible 24/7 para todos los usuarios.                                         | Debe tener más del 99.9% de disponibilidad mensual                                                                                           | Disponibilidad            |
+| RNF02  | El sistema debe requerir contraseñas robustas para el inicio de sesión.                                | El 100% de contraseñas cumplen con política de tener más de 8 caracteres entre mayúsculas, minúsculas, números y un símbolo.                 | Seguridad                 |
+| RNF03  | La información de los dni de los usuarios deben almacenarse cifrados.                                  | El 100% de los campos  sobre los dni de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos.       | Seguridad                 |
+| RNF04  | La información de los teléfonos de los usuarios deben almacenarse cifrados.                            | El 100% de los campos  sobre los teléfonos de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos. | Seguridad                 |
+| RNF05  | El 95% de las operaciones comunes deben completarse en menos de 3 segundos.                            | Tiempo de respuesta ≤ 3 s para ≥ 95% de 1000 operaciones simuladas con Apache JMeter.                                                        | Desempeño                 |
+| RNF06  | La pantalla de inicio debe cargar en menos de 2 segundos en conexión de 20 Mbps.                       | Tiempo de carga ≤ 2 s en al menos 3 navegadores modernos, medido con Google Lighthouse.                                                      | Desempeño                 |
+| RNF07  | El sistema debe soportar al menos 100 usuarios simultáneos sin degradación.                            | ≤ 10% de degradación del rendimiento durante prueba de carga con 100 usuarios concurrentes.                                                  | Desempeño                 |
+| RNF08  | El código debe estar documentado para facilitar su comprensión.                                        | ≥ 90% de funciones y clases documentadas, medido por herramientas como TypeDoc o JavaDoc.                                                    | Modificabilidad           |
+| RNF09  | El sistema debe permitir añadir nuevas funcionalidades sin modificar más del 30% del código existente. | ≤ 30% de líneas modificadas por nueva funcionalidad, medido con Git diff.                                                                    | Modificabilidad           |
+| RNF10  | Un nuevo usuario debe aprender a usar el sistema en menos de 15 minutos.                               | ≥ 85% de usuarios nuevos completan una tarea clave en ≤ 15 minutos sin ayuda, durante prueba de usabilidad.                                  | Usabilidad                |
+| RNF11  | La interfaz debe minimizar errores mediante retroalimentación adecuada.                                | ≤ 5% de errores de navegación durante prueba de 10 tareas clave con 10 usuarios.                                                             | Usabilidad                |
+| RNF12  | El sistema debe ser calificado como fácil de usar por los usuarios.                                    | ≥ 80% de usuarios califican la interfaz ≥ 4 en escala Likert de 1 a 5 en encuesta post-prueba (SUS).                                         | Usabilidad                |
+| RNF13  | El sistema debe ser compatible con navegadores modernos.                                               | Funcionalidad completa verificada en ≥ 3 navegadores (Chrome, Firefox, Edge).                                                                | Interoperabilidad         |
+| RNF14  | Las tareas comunes deben poder completarse sin capacitación previa.                                    | ≥ 85% de usuarios completan 5 tareas clave sin ayuda en prueba de usabilidad.                                                                | Usabilidad                |
+| RNF15  | El sistema debe escalar horizontalmente si la carga supera el 80%.                                     | Latencia media ≤ 3 s durante escalamiento automático con 200 usuarios simultáneos.                                                           | Escalabilidad             |
 
 
 
