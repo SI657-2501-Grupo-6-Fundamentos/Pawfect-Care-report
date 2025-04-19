@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-    <strong>Startup del Proyecto: VetCare</strong><br>
+    <strong>Startup del Proyecto: PawCare</strong><br>
     <strong>Producto: Pawfect Care</strong><br>
 </p>
 

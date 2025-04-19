@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-    <strong>Startup del Proyecto: VetCare</strong><br>
+    <strong>Startup del Proyecto: PawCare</strong><br>
     <strong>Producto: Pawfect Care</strong><br>
 </p>
 
@@ -56,7 +56,7 @@
 
 | Versión | Fecha | Autor | Descripción de la modificación |
 |----|----|----|----|
-| TB1 | 25/08/2024 | VetCare | Redacción de los Capítulos I: Introduction, II: Requirements Elicitation & Analysis, III: Requirements Specification. |
+| TB1 | 19/04/2025 | PawCare | Redacción de los Capítulos I: Introduction, II: Requirements Elicitation & Analysis, III: Requirements Specification. |
 
 
 # Contenido
