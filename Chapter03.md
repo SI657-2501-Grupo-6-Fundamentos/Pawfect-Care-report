@@ -126,7 +126,7 @@
 ---
 
 # Consultas Automatizadas
-**EP06: Como usuario, deseo realizar consultas simples para obtener información rápida sobre el cuidado y bienestar de mi mascota.
+**EP06: Como usuario, deseo realizar consultas simples para obtener información rápida sobre el cuidado y bienestar de mi mascota.**
 
 | User Story ID | Título                                | Descripción                                                                                                                                      |
 |---------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -153,8 +153,7 @@
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US27          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros 
-usuarios.                   |
+| US27          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios.                   |
 | US28          | Visualización de Reseñas | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. |
 
 ---
