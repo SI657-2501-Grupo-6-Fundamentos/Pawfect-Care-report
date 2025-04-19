@@ -67,10 +67,11 @@
 - [**Student Outcome**](#student-outcome)
 - ## [ **Capítulo I: Introducción** ](#-capítulo-i-introducción-)
   - [**1.1. Startup Profile**](#11-startup-profile)
-    - [**1.1.1. Descripción de la Startup**](#111-descripción-de-la-startup)
-    - [**1.1.2. Perfiles de integrantes del equipo**](#112-perfiles-de-integrantes-del-equipo)
+    - [**1.1.1. Descripción de la Startup**](#112-descripción-de-la-startup)
+    - [**1.1.2. Perfiles de integrantes del equipo**](#113-perfiles-de-integrantes-del-equipo)
   - [**1.2. Solution Profile**](#12-solution-profile)
-    - [**1.2.1 Antecedentes y problemática**](#121-antecedentes-y-problemática)
+    - [**1.2.1. Nombre del Producto**](#121-nombre-del-producto)
+    - [**1.2.2 Antecedentes y problemática**](#122-antecedentes-y-problemática)
     - [What (¿Qué?)](#what-qué)
     - [Who (¿Quién?)](#who-quién)
     - [Where (¿Dónde?)](#where-dónde)
@@ -78,11 +79,11 @@
     - [Why (¿Por qué?)](#why-por-qué)
     - [How (¿Cómo?)](#how-cómo)
     - [How much (¿Cuánto?)](#how-much-cuánto)
-    - [**1.2.2 Lean UX Process**](#122-lean-ux-process)
-    - [**1.2.2.1. Lean UX Problem Statements**](#1221-lean-ux-problem-statements)
-    - [**1.2.2.2. Lean UX Assumptions**](#1222-lean-ux-assumptions)
-    - [**1.2.2.3. Lean UX Hypothesis Statements**](#1223-lean-ux-hypothesis-statements)
-    - [**1.2.2.4. Lean UX Canvas**](#1224-lean-ux-canvas)
+    - [**1.2.3 Lean UX Process**](#122-lean-ux-process)
+    - [**1.2.3.1. Lean UX Problem Statements**](#1221-lean-ux-problem-statements)
+    - [**1.2.3.2. Lean UX Assumptions**](#1222-lean-ux-assumptions)
+    - [**1.2.3.3. Lean UX Hypothesis Statements**](#1223-lean-ux-hypothesis-statements)
+    - [**1.2.3.4. Lean UX Canvas**](#1224-lean-ux-canvas)
   - [**1.3. Segmentos objetivo**](#13-segmentos-objetivo)
 - ## [ **Capítulo II: Requirements Elicitation \& Analysis**](#-capítulo-ii-requirements-elicitation--analysis)
   - [**2.1. Competidores**](#21-competidores)
@@ -124,6 +125,7 @@
 |Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> TEXTO<br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> TEXTO <br> **Zuniga Calle, Sebastian Gabriel**<br>*TB1*<br> TEXTO| TB1: TB1: Como equipo, logramos redactar la documentación del proyecto de manera efectiva, adaptando nuestro lenguaje escrito a las necesidades de diferentes audiencias. A lo largo del proyecto, trabajamos de forma coordinada para que tanto los aspectos técnicos como los conceptuales fueran accesibles y fáciles de entender para todos los involucrados, asegurando que nuestra escritura fuera clara, precisa y efectiva en todo momento.|
 
 ----
+
 # **Capítulo I: Introducción**
 
 ## 1.1. Startup Profile
@@ -150,7 +152,12 @@
 
 Pawfect Care es una aplicación diseñada específicamente para el uso en clínicas veterinarias, enfocada en la gestión interna de todas sus operaciones y en facilitar el acceso a la información clínica para los dueños de las mascotas. Esta aplicación no solo permite a los veterinarios manejar de manera más eficiente y organizada los historiales clínicos de sus pacientes, sino que también ofrece herramientas para gestionar recordatorios, controlar el inventario de productos y realizar otras tareas esenciales para el funcionamiento de la veterinaria. La interfaz de Pawfect Care ha sido diseñada para ser intuitiva y amigable, lo que permite a los veterinarios llevar un control detallado y preciso de cada aspecto de su práctica sin complicaciones. Además, la aplicación proporciona una funcionalidad adicional: la posibilidad de publicar las historias clínicas para que los dueños de las mascotas puedan acceder a ellas cuando lo necesiten. Esto garantiza que los propietarios estén siempre informados sobre el estado de salud de sus mascotas y puedan consultar los detalles médicos en cualquier momento, mejorando así la comunicación y la transparencia entre la clínica y sus clientes.
 
-### 1.2.1. Antecedentes y problemática
+
+### 1.2.1. Nombre del Producto
+
+Pawfect Care es el nombre de nuestra plataforma digital, una combinación de las palabras en inglés “paw” (pata) y “perfect” (perfecto), lo que transmite el concepto de “cuidado perfecto para las mascotas”. El nombre refleja el compromiso del producto con la salud, el bienestar y la atención responsable de los animales, a través de una solución tecnológica intuitiva, profesional y centrada tanto en veterinarias como en dueños de mascotas.
+
+### 1.2.2. Antecedentes y problemática
 
 Con la finalidad de poder conocer y comprender con mayor precisión las necesidades de nuestros usuarios, en este caso universitarios, hemos hecho un estudio por medio de la técnica 5w’s & 2H’s. Según el sitio web Rockcontent (2019) 5w’s & 2H’s es una de las metodologías de gestión empresarial más utilizadas. Puede aplicarse en muchos momentos, empresas y proyectos, ayuda a responder una serie de preguntas decisivas para hacer que las acciones de un negocio sean más estratégicas y precisas. Sin más preámbulos, por siguiente mostraremos la información que hemos logrado recopilar por medio de esta técnica.
 
@@ -168,13 +175,13 @@ Con la finalidad de poder conocer y comprender con mayor precisión las necesida
 | How Much?   | ¿Con qué frecuencia o en qué cantidad se utilizará nuestro producto? |                                                           Nuestro producto está diseñado para ser utilizado diariamente por las clínicas veterinarias. El sistema de gestión clínica se utilizará en la mayoría de las interacciones clínicas, desde la admisión de pacientes hasta el seguimiento post-tratamiento. Dado que el acceso a la información clínica y la gestión de citas es una necesidad recurrente, esperamos que el personal utilice la plataforma constantemente a lo largo del día. Además, los dueños de mascotas podrán acceder a la información relevante de sus mascotas, lo que también incentivará un uso frecuente por parte de ellos, especialmente para verificar el historial clínico y programar citas.                                 |
 
 
-## 1.2.2. Lean UX Process.
+## 1.2.3. Lean UX Process.
 
-#### 1.2.2.1. Lean UX Problem Statements.
+#### 1.2.3.1. Lean UX Problem Statements.
 
 La aplicación Pawfect Care busca resolver la necesidad de una herramienta integral que facilite la gestión diaria de las clínicas veterinarias. Al ofrecer una interfaz intuitiva y fácil de usar, la aplicación trata de eliminar las complejidades y dificultades asociadas con la administración de múltiples aspectos de la práctica veterinaria en un solo lugar, permitiendo que tanto veterinarios como propietarios de mascotas tengan acceso rápido y sencillo a la información relevante.
 
-#### 1.2.2.2. Lean UX Assumptions.
+#### 1.2.3.2. Lean UX Assumptions.
 
 Para desarrollar la aplicación Pawfect Care, partimos de varias suposiciones clave que guiarán nuestro proceso de diseño y desarrollo. Estas suposiciones están basadas en una comprensión inicial de las necesidades y problemas de nuestros usuarios objetivo, así como en los resultados esperados para el negocio. A medida que avanzamos en el desarrollo, estas suposiciones se validarán mediante pruebas y retroalimentación continua para asegurar que la solución propuesta cumpla con las expectativas y resuelva eficazmente los desafíos identificados.
 
@@ -236,7 +243,7 @@ Para desarrollar la aplicación Pawfect Care, partimos de varias suposiciones cl
 - Habrá una aceptación de la aplicación tanto por usuarios jóvenes familiarizados con la tecnología como por aquellos menos habituados al uso de herramientas digitales.
 
 
-#### 1.2.2.3. Lean UX Hypothesis Statements.
+#### 1.2.3.3. Lean UX Hypothesis Statements.
 
 Para asegurar que nuestra solución esté alineada con las necesidades y expectativas de nuestros usuarios, hemos formulado las siguientes hipótesis utilizando el enfoque Lean UX. Este enfoque nos permitirá validar nuestras suposiciones a través de iteraciones constantes y ajustes basados en el feedback de los usuarios
 
@@ -256,7 +263,7 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
 **cuando** tanto veterinarios como propietarios de mascotas reporten una experiencia de usuario fluida y sin frustraciones, habremos validado que nuestra aplicación cumple con las expectativas de simplicidad y funcionalidad..
 
 
-#### 1.2.2.4. Lean UX Canvas
+#### 1.2.3.4. Lean UX Canvas
 
 <table border="1" cellpadding="10" cellspacing="0">
     <tr>
@@ -1478,212 +1485,39 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
       <th>User Story ID</th>
       <th>Título</th>
       <th>Descripción</th>
-      <th>Story Points (1/2/3/5/8)</th>
+      <th>Story Points</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>US08</td>
-      <td>Agendamiento de Citas</td>
-      <td>Como usuario, deseo agendar citas para que mis mascotas reciban atención veterinaria.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>US09</td>
-      <td>Cancelación de Citas</td>
-      <td>Como usuario, deseo cancelar citas si no puedo asistir, para reorganizar la atención de mis mascotas.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>US17</td>
-      <td>Creación de Perfiles de Clientes</td>
-      <td>Como usuario, deseo registrar mi perfil para poder gestionar mis mascotas y citas.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>US03</td>
-      <td>Creación de Perfil de Mascota</td>
-      <td>Como usuario, deseo crear un perfil para cada una de mis mascotas y llevar el control de su información.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>US04</td>
-      <td>Edición de Perfil de Mascota</td>
-      <td>Como usuario, deseo editar la información de mis mascotas para mantenerla actualizada.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>US05</td>
-      <td>Visualización de Perfiles de Mascotas</td>
-      <td>Como usuario, deseo consultar los perfiles de mis mascotas en cualquier momento.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>US10</td>
-      <td>Gestión de Citas (Admin/Doctor)</td>
-      <td>Como personal médico o administrador, deseo gestionar las citas para atender a los clientes.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>US25</td>
-      <td>Visualización del Historial Médico</td>
-      <td>Como usuario, deseo consultar el historial médico de mis mascotas para conocer diagnósticos y tratamientos anteriores.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>US26</td>
-      <td>Actualización del Historial Médico (Doctor)</td>
-      <td>Como veterinario, deseo registrar el historial médico de una mascota para llevar un control clínico.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>US27</td>
-      <td>Publicar Reseñas sobre Veterinarios</td>
-      <td>Como usuario, deseo dejar reseñas sobre la atención recibida para compartir mi experiencia.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>US28</td>
-      <td>Visualización de Reseñas</td>
-      <td>Como usuario, deseo leer reseñas de otros para elegir al mejor profesional para mi mascota.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>US20</td>
-      <td>Chatbot: Consejos de Alimentación</td>
-      <td>Como usuario, deseo obtener consejos sobre la alimentación adecuada para mis mascotas mediante un chatbot.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>US21</td>
-      <td>Chatbot: Higiene Animal</td>
-      <td>Como usuario, deseo obtener consejos sobre higiene para cuidar mejor a mis mascotas.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>US22</td>
-      <td>Chatbot: Salud y Síntomas</td>
-      <td>Como usuario, deseo identificar síntomas comunes de enfermedades para actuar rápidamente.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>US23</td>
-      <td>Chatbot: Entrenamiento Básico</td>
-      <td>Como usuario, deseo obtener consejos básicos de entrenamiento para mejorar el comportamiento de mis mascotas.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>US24</td>
-      <td>Chatbot: Recomendaciones según Mascota</td>
-      <td>Como usuario, deseo obtener recomendaciones personalizadas para cada tipo de mascota.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>US06</td>
-      <td>Búsqueda de Mascotas por ID</td>
-      <td>Como administrador o médico veterinario, deseo buscar mascotas por su ID para facilitar su gestión interna.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>US07</td>
-      <td>Gestión de Perfiles de Mascotas (Admin)</td>
-      <td>Como administrador, deseo gestionar todos los perfiles de mascotas registrados en la plataforma.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>US11</td>
-      <td>Búsqueda de Citas por ID</td>
-      <td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>US12</td>
-      <td>Edición de Citas (Admin/Doctor)</td>
-      <td>Como personal médico o administrador, deseo editar las citas programadas para adaptarlas según disponibilidad.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>US13</td>
-      <td>Barra de Navegación en la Landing Page</td>
-      <td>Como usuario, quiero un menú para navegar entre las secciones principales de la página.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>US14</td>
-      <td>Sección "Why Choose Us?"</td>
-      <td>Como usuario, quiero conocer las razones para elegir esta plataforma y confiar en sus servicios.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>US15</td>
-      <td>Formulario de Contacto</td>
-      <td>Como usuario, deseo contactar a la clínica para resolver dudas o pedir ayuda.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>US16</td>
-      <td>Videos de Características</td>
-      <td>Como usuario, deseo ver videos informativos sobre el uso y beneficios de la aplicación.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>US29</td>
-      <td>Cambio de Idioma</td>
-      <td>Como usuario, deseo cambiar el idioma de la aplicación para entender mejor el contenido.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>US01</td>
-      <td>Registro de Usuarios</td>
-      <td>Como usuario, deseo registrarme en la plataforma para acceder a los servicios ofrecidos.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>US02</td>
-      <td>Gestión de Perfiles de Usuario (Admin)</td>
-      <td>Como administrador, deseo gestionar los cuentas de los usuarios para asegurar el correcto uso del sistema.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>US18</td>
-      <td>Edición de Perfil de Cliente (Admin)</td>
-      <td>Como administrador, deseo editar los datos de los clientes en caso de errores o cambios solicitados.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>US19</td>
-      <td>Búsqueda de Clientes por ID</td>
-      <td>Como administrador, deseo buscar a los clientes por su ID para dar seguimiento a sus casos.</td>
-      <td>2</td>
-    </tr>
+    <tr><td>1</td><td>US01</td><td>Registro de Usuarios</td><td>Como usuario, deseo registrarme en la plataforma para acceder a los servicios ofrecidos.</td><td>3</td></tr>
+    <tr><td>2</td><td>US17</td><td>Creación de Perfiles de Clientes</td><td>Como usuario, deseo registrar mi perfil para poder gestionar mis mascotas y citas.</td><td>3</td></tr>
+    <tr><td>3</td><td>US03</td><td>Creación de Perfil de Mascota</td><td>Como usuario, deseo crear un perfil para cada una de mis mascotas y llevar el control de su información.</td><td>3</td></tr>
+    <tr><td>4</td><td>US08</td><td>Agendamiento de Citas</td><td>Como usuario, deseo agendar citas para que mis mascotas reciban atención veterinaria.</td><td>3</td></tr>
+    <tr><td>5</td><td>US09</td><td>Cancelación de Citas</td><td>Como usuario, deseo cancelar citas si no puedo asistir, para reorganizar la atención de mis mascotas.</td><td>2</td></tr>
+    <tr><td>6</td><td>US10</td><td>Gestión de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo gestionar las citas para atender a los clientes.</td><td>5</td></tr>
+    <tr><td>7</td><td>US04</td><td>Edición de Perfil de Mascota</td><td>Como usuario, deseo editar la información de mis mascotas para mantenerla actualizada.</td><td>3</td></tr>
+    <tr><td>8</td><td>US05</td><td>Visualización de Perfiles de Mascotas</td><td>Como usuario, deseo consultar los perfiles de mis mascotas en cualquier momento.</td><td>2</td></tr>
+    <tr><td>9</td><td>US25</td><td>Visualización del Historial Médico</td><td>Como usuario, deseo consultar el historial médico de mis mascotas para conocer diagnósticos y tratamientos anteriores.</td><td>3</td></tr>
+    <tr><td>10</td><td>US26</td><td>Actualización del Historial Médico (Doctor)</td><td>Como veterinario, deseo registrar el historial médico de una mascota para llevar un control clínico.</td><td>3</td></tr>
+    <tr><td>11</td><td>US07</td><td>Gestión de Perfiles de Mascotas (Admin)</td><td>Como administrador, deseo gestionar todos los perfiles de mascotas registrados en la plataforma.</td><td>3</td></tr>
+    <tr><td>12</td><td>US06</td><td>Búsqueda de Mascotas por ID</td><td>Como administrador o médico veterinario, deseo buscar mascotas por su ID para facilitar su gestión interna.</td><td>2</td></tr>
+    <tr><td>13</td><td>US12</td><td>Edición de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo editar las citas programadas para adaptarlas según disponibilidad.</td><td>3</td></tr>
+    <tr><td>14</td><td>US11</td><td>Búsqueda de Citas por ID</td><td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td><td>2</td></tr>
+    <tr><td>15</td><td>US28</td><td>Visualización de Reseñas</td><td>Como usuario, deseo leer reseñas de otros para elegir al mejor profesional para mi mascota.</td><td>2</td></tr>
+    <tr><td>16</td><td>US27</td><td>Publicar Reseñas sobre Veterinarios</td><td>Como usuario, deseo dejar reseñas sobre la atención recibida para compartir mi experiencia.</td><td>2</td></tr>
+    <tr><td>17</td><td>US02</td><td>Gestión de Perfiles de Usuario (Admin)</td><td>Como administrador, deseo gestionar los cuentas de los usuarios para asegurar el correcto uso del sistema.</td><td>5</td></tr>
+    <tr><td>18</td><td>US18</td><td>Edición de Perfil de Cliente (Admin)</td><td>Como administrador, deseo editar los datos de los clientes en caso de errores o cambios solicitados.</td><td>3</td></tr>
+    <tr><td>19</td><td>US19</td><td>Búsqueda de Clientes por ID</td><td>Como administrador, deseo buscar a los clientes por su ID para dar seguimiento a sus casos.</td><td>2</td></tr>
+    <tr><td>20</td><td>US22</td><td>Chatbot: Salud y Síntomas</td><td>Como usuario, deseo identificar síntomas comunes de enfermedades para actuar rápidamente.</td><td>3</td></tr>
+    <tr><td>21</td><td>US20</td><td>Chatbot: Consejos de Alimentación</td><td>Como usuario, deseo obtener consejos sobre la alimentación adecuada para mis mascotas mediante un chatbot.</td><td>5</td></tr>
+    <tr><td>22</td><td>US21</td><td>Chatbot: Higiene Animal</td><td>Como usuario, deseo obtener consejos sobre higiene para cuidar mejor a mis mascotas.</td><td>5</td></tr>
+    <tr><td>23</td><td>US23</td><td>Chatbot: Entrenamiento Básico</td><td>Como usuario, deseo obtener consejos básicos de entrenamiento para mejorar el comportamiento de mis mascotas.</td><td>2</td></tr>
+    <tr><td>24</td><td>US24</td><td>Chatbot: Recomendaciones según Mascota</td><td>Como usuario, deseo obtener recomendaciones personalizadas para cada tipo de mascota.</td><td>2</td></tr>
+    <tr><td>25</td><td>US13</td><td>Barra de Navegación en la Landing Page</td><td>Como usuario, quiero un menú para navegar entre las secciones principales de la página.</td><td>2</td></tr>
+    <tr><td>26</td><td>US14</td><td>Sección "Why Choose Us?"</td><td>Como usuario, quiero conocer las razones para elegir esta plataforma y confiar en sus servicios.</td><td>2</td></tr>
+    <tr><td>27</td><td>US15</td><td>Formulario de Contacto</td><td>Como usuario, deseo contactar a la clínica para resolver dudas o pedir ayuda.</td><td>2</td></tr>
+    <tr><td>28</td><td>US16</td><td>Videos de Características</td><td>Como usuario, deseo ver videos informativos sobre el uso y beneficios de la aplicación.</td><td>2</td></tr>
+    <tr><td>29</td><td>US29</td><td>Cambio de Idioma</td><td>Como usuario, deseo cambiar el idioma de la aplicación para entender mejor el contenido.</td><td>3</td></tr>
   </tbody>
 </table>
+

@@ -748,6 +748,7 @@ Historia de usuario base:
 Tomamos como referencia US06: Como usuario, quiero agendar citas para que mi mascota reciba atención veterinaria a tiempo. (Posee 3 puntos de historia).
 Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar en grupo y decidir la dificultad de cada historia de usuario, tomando como punto intermedio el User Story 06
 
+
 <table>
   <thead>
     <tr>
@@ -755,212 +756,39 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
       <th>User Story ID</th>
       <th>Título</th>
       <th>Descripción</th>
-      <th>Story Points (1/2/3/5/8)</th>
+      <th>Story Points</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>US08</td>
-      <td>Agendamiento de Citas</td>
-      <td>Como usuario, deseo agendar citas para que mis mascotas reciban atención veterinaria.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>US09</td>
-      <td>Cancelación de Citas</td>
-      <td>Como usuario, deseo cancelar citas si no puedo asistir, para reorganizar la atención de mis mascotas.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>US17</td>
-      <td>Creación de Perfiles de Clientes</td>
-      <td>Como usuario, deseo registrar mi perfil para poder gestionar mis mascotas y citas.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>US03</td>
-      <td>Creación de Perfil de Mascota</td>
-      <td>Como usuario, deseo crear un perfil para cada una de mis mascotas y llevar el control de su información.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>US04</td>
-      <td>Edición de Perfil de Mascota</td>
-      <td>Como usuario, deseo editar la información de mis mascotas para mantenerla actualizada.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>US05</td>
-      <td>Visualización de Perfiles de Mascotas</td>
-      <td>Como usuario, deseo consultar los perfiles de mis mascotas en cualquier momento.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>US10</td>
-      <td>Gestión de Citas (Admin/Doctor)</td>
-      <td>Como personal médico o administrador, deseo gestionar las citas para atender a los clientes.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>US25</td>
-      <td>Visualización del Historial Médico</td>
-      <td>Como usuario, deseo consultar el historial médico de mis mascotas para conocer diagnósticos y tratamientos anteriores.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>US26</td>
-      <td>Actualización del Historial Médico (Doctor)</td>
-      <td>Como veterinario, deseo registrar el historial médico de una mascota para llevar un control clínico.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>US27</td>
-      <td>Publicar Reseñas sobre Veterinarios</td>
-      <td>Como usuario, deseo dejar reseñas sobre la atención recibida para compartir mi experiencia.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>US28</td>
-      <td>Visualización de Reseñas</td>
-      <td>Como usuario, deseo leer reseñas de otros para elegir al mejor profesional para mi mascota.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>US20</td>
-      <td>Chatbot: Consejos de Alimentación</td>
-      <td>Como usuario, deseo obtener consejos sobre la alimentación adecuada para mis mascotas mediante un chatbot.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>US21</td>
-      <td>Chatbot: Higiene Animal</td>
-      <td>Como usuario, deseo obtener consejos sobre higiene para cuidar mejor a mis mascotas.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>US22</td>
-      <td>Chatbot: Salud y Síntomas</td>
-      <td>Como usuario, deseo identificar síntomas comunes de enfermedades para actuar rápidamente.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>US23</td>
-      <td>Chatbot: Entrenamiento Básico</td>
-      <td>Como usuario, deseo obtener consejos básicos de entrenamiento para mejorar el comportamiento de mis mascotas.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>US24</td>
-      <td>Chatbot: Recomendaciones según Mascota</td>
-      <td>Como usuario, deseo obtener recomendaciones personalizadas para cada tipo de mascota.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>US06</td>
-      <td>Búsqueda de Mascotas por ID</td>
-      <td>Como administrador o médico veterinario, deseo buscar mascotas por su ID para facilitar su gestión interna.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>US07</td>
-      <td>Gestión de Perfiles de Mascotas (Admin)</td>
-      <td>Como administrador, deseo gestionar todos los perfiles de mascotas registrados en la plataforma.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>US11</td>
-      <td>Búsqueda de Citas por ID</td>
-      <td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>US12</td>
-      <td>Edición de Citas (Admin/Doctor)</td>
-      <td>Como personal médico o administrador, deseo editar las citas programadas para adaptarlas según disponibilidad.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>US13</td>
-      <td>Barra de Navegación en la Landing Page</td>
-      <td>Como usuario, quiero un menú para navegar entre las secciones principales de la página.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>US14</td>
-      <td>Sección "Why Choose Us?"</td>
-      <td>Como usuario, quiero conocer las razones para elegir esta plataforma y confiar en sus servicios.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>US15</td>
-      <td>Formulario de Contacto</td>
-      <td>Como usuario, deseo contactar a la clínica para resolver dudas o pedir ayuda.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>US16</td>
-      <td>Videos de Características</td>
-      <td>Como usuario, deseo ver videos informativos sobre el uso y beneficios de la aplicación.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>US29</td>
-      <td>Cambio de Idioma</td>
-      <td>Como usuario, deseo cambiar el idioma de la aplicación para entender mejor el contenido.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>US01</td>
-      <td>Registro de Usuarios</td>
-      <td>Como usuario, deseo registrarme en la plataforma para acceder a los servicios ofrecidos.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>US02</td>
-      <td>Gestión de Perfiles de Usuario (Admin)</td>
-      <td>Como administrador, deseo gestionar los cuentas de los usuarios para asegurar el correcto uso del sistema.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>US18</td>
-      <td>Edición de Perfil de Cliente (Admin)</td>
-      <td>Como administrador, deseo editar los datos de los clientes en caso de errores o cambios solicitados.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>US19</td>
-      <td>Búsqueda de Clientes por ID</td>
-      <td>Como administrador, deseo buscar a los clientes por su ID para dar seguimiento a sus casos.</td>
-      <td>2</td>
-    </tr>
+    <tr><td>1</td><td>US01</td><td>Registro de Usuarios</td><td>Como usuario, deseo registrarme en la plataforma para acceder a los servicios ofrecidos.</td><td>3</td></tr>
+    <tr><td>2</td><td>US17</td><td>Creación de Perfiles de Clientes</td><td>Como usuario, deseo registrar mi perfil para poder gestionar mis mascotas y citas.</td><td>3</td></tr>
+    <tr><td>3</td><td>US03</td><td>Creación de Perfil de Mascota</td><td>Como usuario, deseo crear un perfil para cada una de mis mascotas y llevar el control de su información.</td><td>3</td></tr>
+    <tr><td>4</td><td>US08</td><td>Agendamiento de Citas</td><td>Como usuario, deseo agendar citas para que mis mascotas reciban atención veterinaria.</td><td>3</td></tr>
+    <tr><td>5</td><td>US09</td><td>Cancelación de Citas</td><td>Como usuario, deseo cancelar citas si no puedo asistir, para reorganizar la atención de mis mascotas.</td><td>2</td></tr>
+    <tr><td>6</td><td>US10</td><td>Gestión de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo gestionar las citas para atender a los clientes.</td><td>5</td></tr>
+    <tr><td>7</td><td>US04</td><td>Edición de Perfil de Mascota</td><td>Como usuario, deseo editar la información de mis mascotas para mantenerla actualizada.</td><td>3</td></tr>
+    <tr><td>8</td><td>US05</td><td>Visualización de Perfiles de Mascotas</td><td>Como usuario, deseo consultar los perfiles de mis mascotas en cualquier momento.</td><td>2</td></tr>
+    <tr><td>9</td><td>US25</td><td>Visualización del Historial Médico</td><td>Como usuario, deseo consultar el historial médico de mis mascotas para conocer diagnósticos y tratamientos anteriores.</td><td>3</td></tr>
+    <tr><td>10</td><td>US26</td><td>Actualización del Historial Médico (Doctor)</td><td>Como veterinario, deseo registrar el historial médico de una mascota para llevar un control clínico.</td><td>3</td></tr>
+    <tr><td>11</td><td>US07</td><td>Gestión de Perfiles de Mascotas (Admin)</td><td>Como administrador, deseo gestionar todos los perfiles de mascotas registrados en la plataforma.</td><td>3</td></tr>
+    <tr><td>12</td><td>US06</td><td>Búsqueda de Mascotas por ID</td><td>Como administrador o médico veterinario, deseo buscar mascotas por su ID para facilitar su gestión interna.</td><td>2</td></tr>
+    <tr><td>13</td><td>US12</td><td>Edición de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo editar las citas programadas para adaptarlas según disponibilidad.</td><td>3</td></tr>
+    <tr><td>14</td><td>US11</td><td>Búsqueda de Citas por ID</td><td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td><td>2</td></tr>
+    <tr><td>15</td><td>US28</td><td>Visualización de Reseñas</td><td>Como usuario, deseo leer reseñas de otros para elegir al mejor profesional para mi mascota.</td><td>2</td></tr>
+    <tr><td>16</td><td>US27</td><td>Publicar Reseñas sobre Veterinarios</td><td>Como usuario, deseo dejar reseñas sobre la atención recibida para compartir mi experiencia.</td><td>2</td></tr>
+    <tr><td>17</td><td>US02</td><td>Gestión de Perfiles de Usuario (Admin)</td><td>Como administrador, deseo gestionar los cuentas de los usuarios para asegurar el correcto uso del sistema.</td><td>5</td></tr>
+    <tr><td>18</td><td>US18</td><td>Edición de Perfil de Cliente (Admin)</td><td>Como administrador, deseo editar los datos de los clientes en caso de errores o cambios solicitados.</td><td>3</td></tr>
+    <tr><td>19</td><td>US19</td><td>Búsqueda de Clientes por ID</td><td>Como administrador, deseo buscar a los clientes por su ID para dar seguimiento a sus casos.</td><td>2</td></tr>
+    <tr><td>20</td><td>US22</td><td>Chatbot: Salud y Síntomas</td><td>Como usuario, deseo identificar síntomas comunes de enfermedades para actuar rápidamente.</td><td>3</td></tr>
+    <tr><td>21</td><td>US20</td><td>Chatbot: Consejos de Alimentación</td><td>Como usuario, deseo obtener consejos sobre la alimentación adecuada para mis mascotas mediante un chatbot.</td><td>5</td></tr>
+    <tr><td>22</td><td>US21</td><td>Chatbot: Higiene Animal</td><td>Como usuario, deseo obtener consejos sobre higiene para cuidar mejor a mis mascotas.</td><td>5</td></tr>
+    <tr><td>23</td><td>US23</td><td>Chatbot: Entrenamiento Básico</td><td>Como usuario, deseo obtener consejos básicos de entrenamiento para mejorar el comportamiento de mis mascotas.</td><td>2</td></tr>
+    <tr><td>24</td><td>US24</td><td>Chatbot: Recomendaciones según Mascota</td><td>Como usuario, deseo obtener recomendaciones personalizadas para cada tipo de mascota.</td><td>2</td></tr>
+    <tr><td>25</td><td>US13</td><td>Barra de Navegación en la Landing Page</td><td>Como usuario, quiero un menú para navegar entre las secciones principales de la página.</td><td>2</td></tr>
+    <tr><td>26</td><td>US14</td><td>Sección "Why Choose Us?"</td><td>Como usuario, quiero conocer las razones para elegir esta plataforma y confiar en sus servicios.</td><td>2</td></tr>
+    <tr><td>27</td><td>US15</td><td>Formulario de Contacto</td><td>Como usuario, deseo contactar a la clínica para resolver dudas o pedir ayuda.</td><td>2</td></tr>
+    <tr><td>28</td><td>US16</td><td>Videos de Características</td><td>Como usuario, deseo ver videos informativos sobre el uso y beneficios de la aplicación.</td><td>2</td></tr>
+    <tr><td>29</td><td>US29</td><td>Cambio de Idioma</td><td>Como usuario, deseo cambiar el idioma de la aplicación para entender mejor el contenido.</td><td>3</td></tr>
   </tbody>
 </table>
+
