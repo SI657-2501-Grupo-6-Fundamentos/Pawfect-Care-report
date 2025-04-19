@@ -363,18 +363,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ---
 
 
-
-### 2.3.3. User Journey Mapping.
-
-- **Primer segmento: Médicos Veterinarios**
-
-[![Journey-Map1.png](https://i.postimg.cc/bN9Dp3QG/Journey-Map1.png)](https://postimg.cc/cr64c7kZ)
-
-- **Segundo segmento: Dueños de Mascotas**
-
-[![Journey-Map2.png](https://i.postimg.cc/BnZ86Hgm/Journey-Map2.png)](https://postimg.cc/vcj821Cn)
-
-### 2.3.4. Empathy Mapping.
+### 2.3.3. Empathy Mapping.
 
 - **Primer segmento: Médicos Veterinarios**
 [![Empathy-Map1.png](https://i.postimg.cc/mZM16bky/Empathy-Map1.png)](https://postimg.cc/jCxjDYzD)
@@ -382,7 +371,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 - **Segundo segmento: Dueños de Mascotas**
 [![Empathy-Map2.png](https://i.postimg.cc/L6pYcrZK/Empathy-Map2.png)](https://postimg.cc/Z0w53scV)
 
-### 2.3.5. As-is Scenario Mapping.
+### 2.3.4. As-is Scenario Mapping.
 
 - **Primer segmento: Médicos Veterinarios**
 [![Asis1.jpg](https://i.postimg.cc/fR59jBy4/Asis1.jpg)](https://postimg.cc/Sn2RmLcV)
@@ -390,33 +379,6 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 - **Segundo segmento: Dueños de Mascotas**
 [![Asis2.jpg](https://i.postimg.cc/kgP6dL6P/Asis2.jpg)](https://postimg.cc/qzQMsbx1)
 
-
-## 2.4. Ubiquitous Language.
-
-En esta sección se presenta un glosario de términos y conceptos utilizados en el dominio veterinario, específicos al área de especialidad y sector en el que se encuentra el problema y la solución. El propósito de este glosario es asegurar una comunicación clara y efectiva entre todos los miembros del equipo y los stakeholders, evitando ambigüedades. Este glosario se mantendrá actualizado a lo largo del proyecto.
-
-**Términos del Glosario**
-
-- **Clinical History (Historia Clínica):**
-  Registro detallado de la salud de un paciente veterinario, incluyendo diagnósticos, tratamientos, y observaciones previas.
-- **Diagnosis (Diagnóstico):**
-  Proceso de identificación de una enfermedad o condición en un paciente basado en la evaluación de los síntomas y pruebas.
-- **Treatment Plan (Plan de Tratamiento):**
-  Conjunto de acciones médicas recomendadas por el veterinario para tratar la enfermedad o condición del paciente.
-- **Follow-up (Seguimiento):**
-  Evaluación continua del paciente después de un tratamiento para asegurarse de que se esté recuperando adecuadamente.
-- **Preventive Care (Cuidado Preventivo):**
-  Medidas y prácticas aplicadas para prevenir enfermedades en los animales, como vacunaciones y desparasitaciones.
-- **Consultation (Consulta):**
-  Sesión en la que un veterinario examina al paciente, discute síntomas con el propietario, y proporciona un diagnóstico o plan de tratamiento.
-- **Pet Owner (Propietario de Mascota):**
-  Persona responsable del cuidado y bienestar de una mascota, y quien toma decisiones sobre su salud y tratamiento.
-- **Surgical Procedure (Procedimiento Quirúrgico):**
-  Intervención médica que requiere una operación para tratar o corregir un problema de salud en el paciente.
-- **Emergency Care (Cuidado de Emergencia):**
-  Atención veterinaria proporcionada en situaciones críticas donde la vida del paciente está en riesgo.
-- **Veterinary Clinic (Clínica Veterinaria):**
-  Establecimiento donde se brindan servicios de salud a los animales, incluyendo consultas, tratamientos y cirugías.
 
 <br>
 
