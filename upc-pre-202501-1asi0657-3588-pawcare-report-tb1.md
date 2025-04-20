@@ -1725,3 +1725,7 @@ Entrevistas a Dueños de Mascotas:<br>
 Respositorio en GitHub para el reporte:
 [`https://github.com/SI657-2501-Grupo-6-Fundamentos/Pawfect-Care-report`](https://github.com/SI657-2501-Grupo-6-Fundamentos/Pawfect-Care-report)
 
+**Anexo 3:**
+Link del video exposicion TB1:
+[``]()
+
