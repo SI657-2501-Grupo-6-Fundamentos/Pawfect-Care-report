@@ -14,31 +14,31 @@
 ## 3.1.1. Requisitos Funcionales
 
 ### Gestión de Usuarios y Clientes
-- **RF01.** El sistema debe permitir a los usuarios registrarse en la plataforma.
-- **RF02.** El sistema debe permitir a los usuarios crear y editar su perfil.
+- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma.
+- **RF02.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
 - **RF03.** El administrador debe poder gestionar y editar los perfiles de los clientes.
-- **RF04.** El administrador debe poder buscar clientes por su ID.
+- **RF04.** El administrador debe poder buscar a los dueños por su nombre.
 
 ### Gestión de Mascotas
-- **RF05.** El sistema debe permitir a los usuarios crear perfiles de sus mascotas.
-- **RF06.** El sistema debe permitir a los usuarios editar la información de sus mascotas.
+- **RF05.** El sistema debe permitir a los dueños crear perfiles de sus mascotas.
+- **RF06.** El sistema debe permitir a los dueños editar la información de sus mascotas.
 - **RF07.** El sistema debe permitir consultar los perfiles de mascotas.
 - **RF08.** El administrador debe poder gestionar los perfiles de todas las mascotas.
-- **RF09.** El administrador o el veterinario deben poder buscar mascotas por su ID.
+- **RF09.** El administrador o el veterinario deben poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
 
 ### Gestión de Citas
-- **RF10.** El sistema debe permitir a los usuarios agendar citas veterinarias.
-- **RF11.** El sistema debe permitir a los usuarios cancelar sus citas.
+- **RF10.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
+- **RF11.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
 - **RF12.** El sistema debe permitir al personal médico o administrativo gestionar y editar citas.
-- **RF13.** El sistema debe permitir al administrador buscar citas por su ID.
+- **RF13.** El sistema debe permitir al administrador buscar citas por su fecha.
 
 ### Historial Médico
-- **RF14.** El sistema debe permitir a los usuarios visualizar el historial médico de sus mascotas.
+- **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
 - **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
 
 ### Reseñas
-- **RF16.** El sistema debe permitir a los usuarios publicar reseñas sobre la atención veterinaria recibida.
-- **RF17.** El sistema debe permitir a los usuarios visualizar las reseñas publicadas por otros usuarios.
+- **RF16.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
+- **RF17.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
 
 ### Chatbot Informativo
 - **RF18.** El sistema debe proporcionar un chatbot que brinde consejos sobre:
@@ -47,6 +47,10 @@
   - Salud y síntomas.
   - Entrenamiento básico.
   - Recomendaciones personalizadas según tipo de mascota.
+
+### Gestión de Servicios
+- **RF19.** El sistema debe permitir a los veterinarios ingresar cada servicio que brindan.
+- **RF20.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
 
 
 ## 3.1.2. Requisitos No Funcionales
