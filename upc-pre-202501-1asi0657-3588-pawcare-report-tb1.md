@@ -117,12 +117,12 @@
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> A partir de la etapa del Needfinding pude definir nuestros requisitos funcionales y no funcionales. Estos fueron fundamentales para identificar nuestras historias de usuario y establecer un product backlog consistente. <br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Durante la elaboración del Capítulo 1 (Introducción y análisis de la problemática) y del Capítulo 2 (Especificación de requisitos), profundicé en metodologías de Lean UX, mapeo de impacto y definición de segmentos de usuarios. Me capacité en el uso de herramientas colaborativas (Git, Markdown, GitFlow) y en buenas prácticas de documentación técnica, lo que me permitió estructurar el informe de manera coherente y profesional. Gracias a este proceso, fortalecí mi comprensión de cómo alinear las necesidades del negocio con soluciones de software efectivas. <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> Mediante el desarrollo de entrevistas logré interpretar las funcionalidades que debería incluir nuestra propuesta y las necesidades del cliente. <br> | TB1: <br> El equipo ha demostrado una actualización efectiva de conceptos y conocimientos clave para el desarrollo de PawFect Care. Al profundizar en metodologías ágiles (Lean UX, mapeo de impacto), herramientas de control de versiones (Git, GitFlow) y documentación técnica ( Markdown), cada miembro fortaleció su base profesional y aportó soluciones más alineadas con las necesidades del proyecto. Esto se traduce en una implementación más sólida, coherente y escalable de la plataforma veterinaria.|
+|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> A partir de la etapa del Needfinding pude definir nuestros requisitos funcionales y no funcionales. Estos fueron fundamentales para identificar nuestras historias de usuario y establecer un product backlog consistente. <br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> Al hacer las preguntas para las entrevistas se pudo mapear las funcionalidades del proyecto y realizar de la mejor manera el product backlog, junto con los requisitos funcionales bien especificados. <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Durante la elaboración del Capítulo 1 (Introducción y análisis de la problemática) y del Capítulo 2 (Especificación de requisitos), profundicé en metodologías de Lean UX, mapeo de impacto y definición de segmentos de usuarios. Me capacité en el uso de herramientas colaborativas (Git, Markdown, GitFlow) y en buenas prácticas de documentación técnica, lo que me permitió estructurar el informe de manera coherente y profesional. Gracias a este proceso, fortalecí mi comprensión de cómo alinear las necesidades del negocio con soluciones de software efectivas. <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> Mediante el desarrollo de entrevistas logré interpretar las funcionalidades que debería incluir nuestra propuesta y las necesidades del cliente. <br> | TB1: <br> El equipo ha demostrado una actualización efectiva de conceptos y conocimientos clave para el desarrollo de PawFect Care. Al profundizar en metodologías ágiles (Lean UX, mapeo de impacto), herramientas de control de versiones (Git, GitFlow) y documentación técnica ( Markdown), cada miembro fortaleció su base profesional y aportó soluciones más alineadas con las necesidades del proyecto. Esto se traduce en una implementación más sólida, coherente y escalable de la plataforma veterinaria.|
 
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> Al desarrollar las historias de usuario, identifiqué y reconocí áreas clave para ser implementadas en bounded contexts. Para ello, utilicé el product backlog con el fin de extraer las historias de usuario más relevantes para el core del negocio y visualizar los futuros bounded context en base a sus epics. <br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Al enfrentar nuevos desafíos—como definir los bounded contexts, redactar user stories y diseñar el backlog—identifiqué áreas donde debía profundizar: gestión de proyectos ágiles, documentación   y diseño de experiencia de usuario. Para ello, consulté tutoriales, documentación oficial y prácticas recomendadas en foros especializados. Este proceso reafirmó mi compromiso con el aprendizaje continuo, indispensable para mantener la calidad y escalabilidad de cualquier solución de software. <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> Con el análisis de entrevistas pude reconocer otros competidores y factores clave que nos ayudarían a ofrecer un valor agregado superior. <br> | TB1: <br> El proyecto reforzó en todos nosotros la importancia del aprendizaje permanente. Identificamos brechas en áreas como gestión de APIs, diseño UX y despliegue en la nube, y las abordamos mediante investigación, auto‑formación y consulta de fuentes especializadas. Este compromiso con la mejora continua asegura que, más allá de esta entrega, mantendremos la capacidad de adaptarnos a nuevas tecnologías y mejores prácticas en el desarrollo de soluciones de software.|
+|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> Al desarrollar las historias de usuario, identifiqué y reconocí áreas clave para ser implementadas en bounded contexts. Para ello, utilicé el product backlog con el fin de extraer las historias de usuario más relevantes para el core del negocio y visualizar los futuros bounded context en base a sus epics. <br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> En el desarrollo de esta parte inicial del proyecto el product backlog y los requisitos funcionales y no funcionales fueron lo fundamental para desarrollar el servicio en base a las necesidades de los usuarios. <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Al enfrentar nuevos desafíos—como definir los bounded contexts, redactar user stories y diseñar el backlog—identifiqué áreas donde debía profundizar: gestión de proyectos ágiles, documentación   y diseño de experiencia de usuario. Para ello, consulté tutoriales, documentación oficial y prácticas recomendadas en foros especializados. Este proceso reafirmó mi compromiso con el aprendizaje continuo, indispensable para mantener la calidad y escalabilidad de cualquier solución de software. <br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> Con el análisis de entrevistas pude reconocer otros competidores y factores clave que nos ayudarían a ofrecer un valor agregado superior. <br> | TB1: <br> El proyecto reforzó en todos nosotros la importancia del aprendizaje permanente. Identificamos brechas en áreas como gestión de APIs, diseño UX y despliegue en la nube, y las abordamos mediante investigación, auto‑formación y consulta de fuentes especializadas. Este compromiso con la mejora continua asegura que, más allá de esta entrega, mantendremos la capacidad de adaptarnos a nuevas tecnologías y mejores prácticas en el desarrollo de soluciones de software.|
 
 ----
 
@@ -603,7 +603,7 @@ Entrevista N°1:
 **Inicio de la Entrevista:** 0:00<br>
 **Duración de la Entrevista:** 2:20<br>
 
-[![Captura.png](https://i.postimg.cc/4dCBHV5h/Captura.png)](https://postimg.cc/Y431J4Tp)
+<img src="./assets/Chapter02/entrevista-ana.png" alt="Entrevista con Ana" style="width: 600px; height: auto;"><br>
 
 **Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS)
 
@@ -744,31 +744,31 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ## 3.1.1. Requisitos Funcionales
 
 ### Gestión de Usuarios y Clientes
-- **RF01.** El sistema debe permitir a los usuarios registrarse en la plataforma.
-- **RF02.** El sistema debe permitir a los usuarios crear y editar su perfil.
+- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma.
+- **RF02.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
 - **RF03.** El administrador debe poder gestionar y editar los perfiles de los clientes.
-- **RF04.** El administrador debe poder buscar clientes por su ID.
+- **RF04.** El administrador debe poder buscar a los dueños por su nombre.
 
 ### Gestión de Mascotas
-- **RF05.** El sistema debe permitir a los usuarios crear perfiles de sus mascotas.
-- **RF06.** El sistema debe permitir a los usuarios editar la información de sus mascotas.
+- **RF05.** El sistema debe permitir a los dueños crear perfiles de sus mascotas.
+- **RF06.** El sistema debe permitir a los dueños editar la información de sus mascotas.
 - **RF07.** El sistema debe permitir consultar los perfiles de mascotas.
 - **RF08.** El administrador debe poder gestionar los perfiles de todas las mascotas.
-- **RF09.** El administrador o el veterinario deben poder buscar mascotas por su ID.
+- **RF09.** El administrador o el veterinario deben poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
 
 ### Gestión de Citas
-- **RF10.** El sistema debe permitir a los usuarios agendar citas veterinarias.
-- **RF11.** El sistema debe permitir a los usuarios cancelar sus citas.
+- **RF10.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
+- **RF11.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
 - **RF12.** El sistema debe permitir al personal médico o administrativo gestionar y editar citas.
-- **RF13.** El sistema debe permitir al administrador buscar citas por su ID.
+- **RF13.** El sistema debe permitir al administrador buscar citas por su fecha.
 
 ### Historial Médico
-- **RF14.** El sistema debe permitir a los usuarios visualizar el historial médico de sus mascotas.
+- **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
 - **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
 
 ### Reseñas
-- **RF16.** El sistema debe permitir a los usuarios publicar reseñas sobre la atención veterinaria recibida.
-- **RF17.** El sistema debe permitir a los usuarios visualizar las reseñas publicadas por otros usuarios.
+- **RF16.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
+- **RF17.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
 
 ### Chatbot Informativo
 - **RF18.** El sistema debe proporcionar un chatbot que brinde consejos sobre:
@@ -777,6 +777,11 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
   - Salud y síntomas.
   - Entrenamiento básico.
   - Recomendaciones personalizadas según tipo de mascota.
+
+### Gestión de Servicios
+- **RF19.** El sistema debe permitir a los veterinarios ingresar cada servicio que brindan.
+- **RF20.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
+
 
 
 ## 3.1.2. Requisitos No Funcionales
