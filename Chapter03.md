@@ -2,7 +2,7 @@
 
 ## 3.1. To-Be Scenario Mapping.
 
-- **Primer segmento: Médicos Veterinarios**
+- **Primer segmento: Clinicas Veterinarias**
 
 <br><img src="./assets/Chapter03/Tobe1.jpeg" alt="To Be Scenario Map 1" style="width: 1000px; height: auto;" ><br>
 

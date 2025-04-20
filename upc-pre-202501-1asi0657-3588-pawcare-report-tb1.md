@@ -295,7 +295,7 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
     <tr>
         <td>
             <strong>Users</strong><br>
-            - <strong>Segmento 1 – Médicos Veterinarios:</strong> Clínicas de diferentes tamaños que necesitan mejorar la gestión de información médica, citas e inventarios.<br>
+            - <strong>Segmento 1 – Clinicas Veterinarias:</strong> Clínicas de diferentes tamaños que necesitan mejorar la gestión de información médica, citas e inventarios.<br>
             - <strong>Segmento 2 – Dueños de Mascotas:</strong> Propietarios que buscan una forma eficiente de gestionar la salud de sus mascotas y acceder a la información médica de manera digital.
         </td>
         <td>
@@ -728,6 +728,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 
 ---
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping.
@@ -744,23 +745,22 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ## 3.1.1. Requisitos Funcionales
 
 ### Gestión de Usuarios y Clientes
-- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma.
+- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma, ingresando su nombre y contraseña.
 - **RF02.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
-- **RF03.** El administrador debe poder gestionar y editar los perfiles de los clientes.
-- **RF04.** El administrador debe poder buscar a los dueños por su nombre.
+- **RF03.** El sistema debe permitir a los veterinarios poder buscar a los dueños de mascota por su nombre y dni.
 
 ### Gestión de Mascotas
-- **RF05.** El sistema debe permitir a los dueños crear perfiles de sus mascotas.
-- **RF06.** El sistema debe permitir a los dueños editar la información de sus mascotas.
-- **RF07.** El sistema debe permitir consultar los perfiles de mascotas.
-- **RF08.** El administrador debe poder gestionar los perfiles de todas las mascotas.
-- **RF09.** El administrador o el veterinario deben poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
+- **RF04.** El sistema debe permitir a los dueños crear perfiles de sus mascotas y asignarle un historial médico en blanco.
+- **RF05.** El sistema debe permitir a los dueños editar la información de sus mascotas.
+- **RF06.** El sistema debe permitir a los dueños de mascotas visualizar los perfiles de sus mascotas.
+- **RF07.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
+- **RF08.** El veterinario debe poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
 
 ### Gestión de Citas
-- **RF10.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
-- **RF11.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
-- **RF12.** El sistema debe permitir al personal médico o administrativo gestionar y editar citas.
-- **RF13.** El sistema debe permitir al administrador buscar citas por su fecha.
+- **RF09.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
+- **RF10.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
+- **RF11.** El sistema debe permitir al médico veterinario gestionar y editar citas.
+- **RF13.** El sistema debe permitir que, tanto médicos veterinarios como dueños de mascotas, busquen citas por su fecha.
 
 ### Historial Médico
 - **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
@@ -771,7 +771,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 - **RF17.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
 
 ### Chatbot Informativo
-- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos sobre:
+- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos a los dueños de mascotas sobre:
   - Alimentación de mascotas.
   - Higiene animal.
   - Salud y síntomas.
@@ -779,25 +779,48 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
   - Recomendaciones personalizadas según tipo de mascota.
 
 ### Gestión de Servicios
-- **RF19.** El sistema debe permitir a los veterinarios ingresar cada servicio que brindan.
+- **RF19.** El sistema debe permitir a los veterinarios ingresar cada servicio especializado que brindan. Entre ellos se encuentran los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
 - **RF20.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
-
 
 
 ## 3.1.2. Requisitos No Funcionales
 
-- **RNF01:** El sistema debe tener alta disponibilidad al estar activo las 24 horas del día, los 7 días de la semana.
-- **RNF02:** La interfaz debe ser intuitiva y fácil de usar para cualquier tipo de usuario, cumpliendo con la heurística de User Control and Freedom como mínimo.
-- **RNF03:** El sistema debe estar desarrollado bajo una arquitectura web responsive.
-- **RNF04:** Las respuestas del sistema no deben superar los 3 segundos en operaciones comunes.
-- **RNF05:** El sistema debe enviar correos electrónicos de forma segura utilizando un proveedor confiable como Outlook o Gmail.
-- **RNF06:** Toda la información de los usuarios y sus mascotas debe almacenarse en un proveedor de base de datos relacional como PostgreSQL o MySQL.
-- **RNF07:** El frontend debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
-- **RNF08:** La landing page debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
-- **RNF09:** El frontend de la aplicación web debe ser implementado con Angular y TypeScript.
-- **RNF10:** El backend de la aplicación web debe ser implementado con Java y Spring Boot.
+Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad que el sistema debe cumplir, más allá de sus funciones básicas. A continuación se muestran los RNF alineados con los atributos de calidad definidos por Bass, Clements y Kazman (2012), los cuales se enfocan en las siguientes áreas.
+1. **Disponibilidad**  
+   Indica si el sistema está operable y accesible cuando los usuarios lo necesitan. Un sistema altamente disponible puede tolerar fallos y mantenerse en ejecución sin interrupciones.
 
+2. **Seguridad**  
+   Representa el grado de protección del sistema contra accesos no autorizados, uso indebido o ataques. Un sistema seguro protege tanto la información como sus servicios.
 
+3. **Desempeño**  
+   Evalúa la eficiencia con la que el sistema responde a solicitudes y realiza tareas, considerando el uso de recursos como CPU, memoria y tiempo de respuesta.
+
+4. **Facilidad de prueba**  
+   Mide cuán fácil es diseñar, ejecutar y evaluar pruebas efectivas del sistema. Esto incluye pruebas unitarias, de integración y de aceptación.
+
+5. **Modificabilidad**  
+   Describe el esfuerzo requerido para realizar cambios en el sistema, como agregar nuevas funcionalidades, corregir errores o adaptar el sistema a nuevos entornos.
+
+6. **Usabilidad**  
+   Indica qué tan fácil y eficiente es para los usuarios interactuar con el sistema. Incluye factores como intuición, accesibilidad y curva de aprendizaje.
+
+7. **Interoperabilidad**  
+   Se refiere a la capacidad del sistema para intercambiar información y trabajar conjuntamente con otros sistemas mediante interfaces bien definidas.
+
+| Código | Descripción                                                                                            | Métrica (con Método de Evaluación)                                                                                                           | Atributo de Calidad       |
+|--------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| RNF01  | El sistema debe estar disponible 24/7 para todos los usuarios.                                         | Debe tener más del 99.9% de disponibilidad mensual                                                                                           | Disponibilidad            |
+| RNF02  | El sistema debe requerir contraseñas robustas para el inicio de sesión.                                | El 100% de contraseñas cumplen con política de tener más de 8 caracteres entre mayúsculas, minúsculas, números y un símbolo.                 | Seguridad                 |
+| RNF03  | La información de los dni de los usuarios deben almacenarse cifrados.                                  | El 100% de los campos  sobre los dni de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos.       | Seguridad                 |
+| RNF04  | La información de los teléfonos de los usuarios deben almacenarse cifrados.                            | El 100% de los campos  sobre los teléfonos de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos. | Seguridad                 |
+| RNF05  | El 95% de las operaciones CRUD deben completarse en menos de 3 segundos. Esto incluye agregar, editar o eliminar un registro de historial medico, un registro de mascota, el perfil del dueño de mascota y el perfil del médico veterinario encargado             | El tiempo de respuesta de una operación CRUD debe ser, como mínimo, menor a 3 segundos en un 95% de 100 operaciones simuladas con Apache JMeter.                                                        | Desempeño                 |
+| RNF06  | La pantalla de inicio debe cargar en menos de 2 segundos en conexión de 20 Mbps.                       | El tiempo de carga de la pantalla de inicio debe ser menor a 2 segundos en al menos 3 navegadores modernos (Edge, Chrome y Opera).                                                      | Desempeño                 |
+| RNF07  | El sistema debe soportar al menos 100 usuarios simultáneos sin degradación.                            | Debe existir menos del 10% de degradación en los tiempos de carga de la pantalla principal de la aplicación durante prueba de carga con 100 usuarios concurrentes.                                                  | Desempeño                 |
+| RNF08  | El código debe estar documentado para facilitar su comprensión.                                        | El 60% del código del backend  debe estar documentado con JavaDoc y en inglés, colocando información de propósito como mínimo.                                                   | Modificabilidad           |
+| RNF09  | El sistema debe permitir añadir nuevas funcionalidades sin modificar más del 30% del código existente. | Debe haber menos del 30% de líneas modificadas, respecto al total de líneas, para agregar nueva funcionalidad. Esto se puede medir con Git diff.                                                                    | Modificabilidad           |
+| RNF10  | El sistema debe ser calificado como fácil de usar por los usuarios.                                    | El 80% de usuarios califican  la facilidad de uso de la interfaz con un 4 en escala de 1 a 5 en encuestas post-prueba                                        | Usabilidad                |
+| RNF11  | El sistema debe ser compatible con navegadores modernos.                                               | Funcionalidad completa debe poder realizarse en 3 navegadores como mínimo (Chrome, Edge, Opera).                                                                | Interoperabilidad         |
+| RNF12  | El sistema debe escalar horizontalmente si la carga supera el 80%.                                     | Latencia media de 3 segundos durante escalamiento automático con 200 usuarios simultáneos.                                                           | Escalabilidad             |                                                     | Escalabilidad             |
 
 
 
@@ -861,7 +884,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ---
 
 # Consultas Automatizadas
-**EP06: Como usuario, deseo realizar consultas simples para obtener información rápida sobre el cuidado y bienestar de mi mascota.
+**EP06: Como usuario, deseo realizar consultas simples para obtener información rápida sobre el cuidado y bienestar de mi mascota.**
 
 | User Story ID | Título                                | Descripción                                                                                                                                      |
 |---------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -888,8 +911,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US27          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros 
-usuarios.                   |
+| US27          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios.                   |
 | US28          | Visualización de Reseñas | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. |
 
 ---
@@ -1483,6 +1505,7 @@ Historia de usuario base:
 Tomamos como referencia US06: Como usuario, quiero agendar citas para que mi mascota reciba atención veterinaria a tiempo. (Posee 3 puntos de historia).
 Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar en grupo y decidir la dificultad de cada historia de usuario, tomando como punto intermedio el User Story 06
 
+
 <table>
   <thead>
     <tr>
@@ -1525,6 +1548,8 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
     <tr><td>29</td><td>US29</td><td>Cambio de Idioma</td><td>Como usuario, deseo cambiar el idioma de la aplicación para entender mejor el contenido.</td><td>3</td></tr>
   </tbody>
 </table>
+
+
 
 ## Bibliografía
 
