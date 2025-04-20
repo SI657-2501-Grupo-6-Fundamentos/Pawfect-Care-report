@@ -587,9 +587,8 @@ Entrevista N°3:
 **Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EVHJf-z0S_xLmFGdEM4xjqgBlsb3F-q3hD-1zjTQ1UHpLA?e=kZdvhS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EVHJf-z0S_xLmFGdEM4xjqgBlsb3F-q3hD-1zjTQ1UHpLA?e=kZdvhS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 **Resumen de la Entrevista:** <br>
-El Dr. Carlos Ventura, médico veterinario de 38 años residente en Lima, Perú, trabaja en una clínica especializada en animales pequeños. Actualmente utiliza la aplicación VetClinic Manager para la gestión veterinaria, principalmente por su capacidad de almacenar historiales médicos digitalmente.
-Antes de usar esta app, probó herramientas como Excel y agendas físicas, pero estas se volvieron poco prácticas con el crecimiento de su clientela. Lo que más valora de VetClinic Manager es que centraliza el historial clínico, la agenda de citas y la facturación. Sin embargo, critica que el sistema es lento, confuso en ciertas áreas y carece de una interfaz amigable.
-Como mejora principal, propondría una interfaz más limpia, con accesos más rápidos a información clave, y una mejor gestión del inventario.
+El Dr. Carlos Ventura, médico veterinario de 38 años residente en Lima, Perú, trabaja en una clínica especializada en animales pequeños. Actualmente utiliza la aplicación VetClinic Manager para la gestión veterinaria, principalmente por su capacidad de almacenar historiales médicos digitalmente. Antes de usar esta app, probó herramientas como Excel y agendas físicas, pero estas se volvieron poco prácticas con el crecimiento de su clientela. Lo que más valora de VetClinic Manager es que centraliza el historial clínico, la agenda de citas y la facturación. Sin embargo, critica que el sistema es lento, confuso en ciertas áreas y carece de una interfaz amigable. Como mejora principal, propondría una interfaz más limpia, con accesos más rápidos a información clave, y una mejor gestión del inventario.
+
 ---
 
 <br>
@@ -1744,7 +1743,7 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
 | 4      | US07           | Búsqueda de Mascotas                      | Como médico veterinario, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema. | 2            |
 | 5      | US05           | Edición de Perfil de Mascota              | Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.           | 2            |
 | 6      | US06           | Visualización de Perfiles de Mascotas     | Como dueño, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.               | 2            |
-| 7      | US13           | Búsqueda de dueño de mascota      a                | Como médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente. | 2            |
+| 7      | US13           | Búsqueda de dueño de mascota                     | Como médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente. | 2            |
 | 8      | US11           | Búsqueda de Citas por fecha               | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita. | 2            |
 | 9      | US12           | Edición de Citas Veterinarias             | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.  | 3            |
 |10      | US10           | Cancelación de Citas                      | Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención. | 2            |
