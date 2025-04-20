@@ -1000,7 +1000,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | US03          | Creación de Perfil de Mascota | Como usuario, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.                                                  |
 | US04          | Edición de Perfil de Mascota | Como usuario, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.                                                    |
 | US05          | Visualización de Perfiles de Mascotas | Como usuario, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.                                                    |
-| US06          | Búsqueda de Mascotas por ID | Como administrador, deseo buscar mascotas por ID para acceder rápidamente a su información en el sistema.                                                   |
+| US06          | Búsqueda de Mascotas por nombre del dueño y luego por el nombre de la mascota | Como administrador, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema.                                                   |
 | US07          | Gestión de Perfiles de Mascotas | Como administrador, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada.          |
 
 ---
@@ -1013,7 +1013,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | US08          | Agendamiento de Citas      | Como usuario, deseo agendar citas veterinarias para asegurar que mi mascota reciba atención médica en el momento adecuado.                                     |
 | US09          | Cancelación de Citas       | Como usuario, deseo cancelar una cita si no puedo asistir, para evitar problemas de horario y reorganizar la atención.                                        |
 | US10          | Gestión de Citas Veterinarias | Como administrador o médico veterinario, deseo gestionar las citas veterinarias para coordinar correctamente la atención de las mascotas.                                     |
-| US11          | Búsqueda de Citas por ID   | Como administrador o médico veterinario, deseo buscar citas por ID para acceder rápidamente a la información de la cita.                                                           |
+| US11          | Búsqueda de Citas por fecha   | Como administrador o médico veterinario, deseo buscar citas por fecha para acceder rápidamente a la información de la cita.                                                           |
 | US12          | Edición de Citas Veterinarias | Como administrador o médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.                                                 |
 
 ---
@@ -1037,7 +1037,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | US17          | Creación de Perfiles de Clientes | Como administrador, deseo crear perfiles de clientes para registrar la información de contacto y sus mascotas.                                            |
 | US18          | Edición de Perfiles de Clientes | Como administrador, deseo editar los perfiles de clientes para actualizar su información personal y de contacto.                                          |
-| US19          | Búsqueda de Clientes por ID | Como administrador, deseo buscar clientes por su ID para acceder rápidamente a su información.                                      |
+| US19          | Búsqueda de Clientes por nombre | Como administrador, deseo buscar clientes por su nombre para acceder rápidamente a su información.                                      |
 
 ---
 
@@ -1686,14 +1686,14 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
     <tr><td>9</td><td>US25</td><td>Visualización del Historial Médico</td><td>Como usuario, deseo consultar el historial médico de mis mascotas para conocer diagnósticos y tratamientos anteriores.</td><td>3</td></tr>
     <tr><td>10</td><td>US26</td><td>Actualización del Historial Médico (Doctor)</td><td>Como veterinario, deseo registrar el historial médico de una mascota para llevar un control clínico.</td><td>3</td></tr>
     <tr><td>11</td><td>US07</td><td>Gestión de Perfiles de Mascotas (Admin)</td><td>Como administrador, deseo gestionar todos los perfiles de mascotas registrados en la plataforma.</td><td>3</td></tr>
-    <tr><td>12</td><td>US06</td><td>Búsqueda de Mascotas por ID</td><td>Como administrador o médico veterinario, deseo buscar mascotas por su ID para facilitar su gestión interna.</td><td>2</td></tr>
+    <tr><td>12</td><td>US06</td><td>Búsqueda de Mascotas por nombre del dueño y luego por el nombre de la mascota</td><td>Como administrador o médico veterinario, deseo buscar mascotas por su nombre para facilitar su gestión interna.</td><td>2</td></tr>
     <tr><td>13</td><td>US12</td><td>Edición de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo editar las citas programadas para adaptarlas según disponibilidad.</td><td>3</td></tr>
-    <tr><td>14</td><td>US11</td><td>Búsqueda de Citas por ID</td><td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td><td>2</td></tr>
+    <tr><td>14</td><td>US11</td><td>Búsqueda de Citas por fecha</td><td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td><td>2</td></tr>
     <tr><td>15</td><td>US28</td><td>Visualización de Reseñas</td><td>Como usuario, deseo leer reseñas de otros para elegir al mejor profesional para mi mascota.</td><td>2</td></tr>
     <tr><td>16</td><td>US27</td><td>Publicar Reseñas sobre Veterinarios</td><td>Como usuario, deseo dejar reseñas sobre la atención recibida para compartir mi experiencia.</td><td>2</td></tr>
     <tr><td>17</td><td>US02</td><td>Gestión de Perfiles de Usuario (Admin)</td><td>Como administrador, deseo gestionar los cuentas de los usuarios para asegurar el correcto uso del sistema.</td><td>5</td></tr>
     <tr><td>18</td><td>US18</td><td>Edición de Perfil de Cliente (Admin)</td><td>Como administrador, deseo editar los datos de los clientes en caso de errores o cambios solicitados.</td><td>3</td></tr>
-    <tr><td>19</td><td>US19</td><td>Búsqueda de Clientes por ID</td><td>Como administrador, deseo buscar a los clientes por su ID para dar seguimiento a sus casos.</td><td>2</td></tr>
+    <tr><td>19</td><td>US19</td><td>Búsqueda de Clientes por nombre</td><td>Como administrador, deseo buscar a los clientes por su nombre para dar seguimiento a sus casos.</td><td>2</td></tr>
     <tr><td>20</td><td>US22</td><td>Chatbot: Salud y Síntomas</td><td>Como usuario, deseo identificar síntomas comunes de enfermedades para actuar rápidamente.</td><td>3</td></tr>
     <tr><td>21</td><td>US20</td><td>Chatbot: Consejos de Alimentación</td><td>Como usuario, deseo obtener consejos sobre la alimentación adecuada para mis mascotas mediante un chatbot.</td><td>5</td></tr>
     <tr><td>22</td><td>US21</td><td>Chatbot: Higiene Animal</td><td>Como usuario, deseo obtener consejos sobre higiene para cuidar mejor a mis mascotas.</td><td>5</td></tr>
