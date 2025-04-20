@@ -14,23 +14,22 @@
 ## 3.1.1. Requisitos Funcionales
 
 ### Gestión de Usuarios y Clientes
-- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma.
+- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma, ingresando su nombre y contraseña.
 - **RF02.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
-- **RF03.** El administrador debe poder gestionar y editar los perfiles de los clientes.
-- **RF04.** El administrador debe poder buscar a los dueños por su nombre.
+- **RF03.** El sistema debe permitir a los veterinarios poder buscar a los dueños de mascota por su nombre y dni.
 
 ### Gestión de Mascotas
-- **RF05.** El sistema debe permitir a los dueños crear perfiles de sus mascotas.
-- **RF06.** El sistema debe permitir a los dueños editar la información de sus mascotas.
-- **RF07.** El sistema debe permitir consultar los perfiles de mascotas.
-- **RF08.** El administrador debe poder gestionar los perfiles de todas las mascotas.
-- **RF09.** El administrador o el veterinario deben poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
+- **RF04.** El sistema debe permitir a los dueños crear perfiles de sus mascotas y asignarle un historial médico en blanco.
+- **RF05.** El sistema debe permitir a los dueños editar la información de sus mascotas.
+- **RF06.** El sistema debe permitir a los dueños de mascotas visualizar los perfiles de sus mascotas.
+- **RF07.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
+- **RF08.** El veterinario debe poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
 
 ### Gestión de Citas
-- **RF10.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
-- **RF11.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
-- **RF12.** El sistema debe permitir al personal médico o administrativo gestionar y editar citas.
-- **RF13.** El sistema debe permitir al administrador buscar citas por su fecha.
+- **RF09.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
+- **RF10.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
+- **RF11.** El sistema debe permitir al médico veterinario gestionar y editar citas.
+- **RF13.** El sistema debe permitir que, tanto médicos veterinarios como dueños de mascotas, busquen citas por su fecha.
 
 ### Historial Médico
 - **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
@@ -41,7 +40,7 @@
 - **RF17.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
 
 ### Chatbot Informativo
-- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos sobre:
+- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos a los dueños de mascotas sobre:
   - Alimentación de mascotas.
   - Higiene animal.
   - Salud y síntomas.
@@ -49,7 +48,7 @@
   - Recomendaciones personalizadas según tipo de mascota.
 
 ### Gestión de Servicios
-- **RF19.** El sistema debe permitir a los veterinarios ingresar cada servicio que brindan.
+- **RF19.** El sistema debe permitir a los veterinarios ingresar cada servicio especializado que brindan. Entre ellos se encuentran los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
 - **RF20.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
 
 
@@ -83,17 +82,14 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | RNF02  | El sistema debe requerir contraseñas robustas para el inicio de sesión.                                | El 100% de contraseñas cumplen con política de tener más de 8 caracteres entre mayúsculas, minúsculas, números y un símbolo.                 | Seguridad                 |
 | RNF03  | La información de los dni de los usuarios deben almacenarse cifrados.                                  | El 100% de los campos  sobre los dni de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos.       | Seguridad                 |
 | RNF04  | La información de los teléfonos de los usuarios deben almacenarse cifrados.                            | El 100% de los campos  sobre los teléfonos de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos. | Seguridad                 |
-| RNF05  | El 95% de las operaciones comunes deben completarse en menos de 3 segundos.                            | Tiempo de respuesta ≤ 3 s para ≥ 95% de 1000 operaciones simuladas con Apache JMeter.                                                        | Desempeño                 |
-| RNF06  | La pantalla de inicio debe cargar en menos de 2 segundos en conexión de 20 Mbps.                       | Tiempo de carga ≤ 2 s en al menos 3 navegadores modernos, medido con Google Lighthouse.                                                      | Desempeño                 |
-| RNF07  | El sistema debe soportar al menos 100 usuarios simultáneos sin degradación.                            | ≤ 10% de degradación del rendimiento durante prueba de carga con 100 usuarios concurrentes.                                                  | Desempeño                 |
-| RNF08  | El código debe estar documentado para facilitar su comprensión.                                        | ≥ 90% de funciones y clases documentadas, medido por herramientas como TypeDoc o JavaDoc.                                                    | Modificabilidad           |
-| RNF09  | El sistema debe permitir añadir nuevas funcionalidades sin modificar más del 30% del código existente. | ≤ 30% de líneas modificadas por nueva funcionalidad, medido con Git diff.                                                                    | Modificabilidad           |
-| RNF10  | Un nuevo usuario debe aprender a usar el sistema en menos de 15 minutos.                               | ≥ 85% de usuarios nuevos completan una tarea clave en ≤ 15 minutos sin ayuda, durante prueba de usabilidad.                                  | Usabilidad                |
-| RNF11  | La interfaz debe minimizar errores mediante retroalimentación adecuada.                                | ≤ 5% de errores de navegación durante prueba de 10 tareas clave con 10 usuarios.                                                             | Usabilidad                |
-| RNF12  | El sistema debe ser calificado como fácil de usar por los usuarios.                                    | ≥ 80% de usuarios califican la interfaz ≥ 4 en escala Likert de 1 a 5 en encuesta post-prueba (SUS).                                         | Usabilidad                |
-| RNF13  | El sistema debe ser compatible con navegadores modernos.                                               | Funcionalidad completa verificada en ≥ 3 navegadores (Chrome, Firefox, Edge).                                                                | Interoperabilidad         |
-| RNF14  | Las tareas comunes deben poder completarse sin capacitación previa.                                    | ≥ 85% de usuarios completan 5 tareas clave sin ayuda en prueba de usabilidad.                                                                | Usabilidad                |
-| RNF15  | El sistema debe escalar horizontalmente si la carga supera el 80%.                                     | Latencia media ≤ 3 s durante escalamiento automático con 200 usuarios simultáneos.                                                           | Escalabilidad             |
+| RNF05  | El 95% de las operaciones CRUD deben completarse en menos de 3 segundos. Esto incluye agregar, editar o eliminar un registro de historial medico, un registro de mascota, el perfil del dueño de mascota y el perfil del médico veterinario encargado             | El tiempo de respuesta de una operación CRUD debe ser, como mínimo, menor a 3 segundos en un 95% de 100 operaciones simuladas con Apache JMeter.                                                        | Desempeño                 |
+| RNF06  | La pantalla de inicio debe cargar en menos de 2 segundos en conexión de 20 Mbps.                       | El tiempo de carga de la pantalla de inicio debe ser menor a 2 segundos en al menos 3 navegadores modernos (Edge, Chrome y Opera).                                                      | Desempeño                 |
+| RNF07  | El sistema debe soportar al menos 100 usuarios simultáneos sin degradación.                            | Debe existir menos del 10% de degradación en los tiempos de carga de la pantalla principal de la aplicación durante prueba de carga con 100 usuarios concurrentes.                                                  | Desempeño                 |
+| RNF08  | El código debe estar documentado para facilitar su comprensión.                                        | El 60% del código del backend  debe estar documentado con JavaDoc y en inglés, colocando información de propósito como mínimo.                                                   | Modificabilidad           |
+| RNF09  | El sistema debe permitir añadir nuevas funcionalidades sin modificar más del 30% del código existente. | Debe haber menos del 30% de líneas modificadas, respecto al total de líneas, para agregar nueva funcionalidad. Esto se puede medir con Git diff.                                                                    | Modificabilidad           |
+| RNF10  | El sistema debe ser calificado como fácil de usar por los usuarios.                                    | El 80% de usuarios califican  la facilidad de uso de la interfaz con un 4 en escala de 1 a 5 en encuestas post-prueba                                        | Usabilidad                |
+| RNF11  | El sistema debe ser compatible con navegadores modernos.                                               | Funcionalidad completa debe poder realizarse en 3 navegadores como mínimo (Chrome, Edge, Opera).                                                                | Interoperabilidad         |
+| RNF12  | El sistema debe escalar horizontalmente si la carga supera el 80%.                                     | Latencia media de 3 segundos durante escalamiento automático con 200 usuarios simultáneos.                                                           | Escalabilidad             |                                                     | Escalabilidad             |
 
 
 
