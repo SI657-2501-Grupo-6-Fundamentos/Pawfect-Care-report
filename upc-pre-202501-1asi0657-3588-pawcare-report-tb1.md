@@ -1016,12 +1016,12 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | US10          | Cancelación de Citas       | Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención.                                        |
 | US11          | Búsqueda de Citas por fecha   | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita.                                                           |
 | US12          | Edición de Citas Veterinarias | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.                                                 |
-| US13          | Búsqueda de mascotas | Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente.    |
+| US13          | Búsqueda de dueños de mascota | Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente.    |
 
 ---
 
 # Consultas Automatizadas
-**EP06: Como usuario, deseo realizar consultas simples para obtener información rápida sobre el cuidado y bienestar de mi mascota.**
+**EP04: Como usuario, deseo realizar consultas simples para obtener información rápida sobre el cuidado y bienestar de mi mascota.**
 
 | User Story ID | Título                                | Descripción                                                                                                                                      |
 |---------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1034,7 +1034,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 ---
 
 # Gestión de Historial Médico de las Mascotas
-**EP07: Como usuario o administrador, deseo gestionar el historial médico de las mascotas para llevar un registro de sus atenciones y tratamientos.**
+**EP05: Como usuario o administrador, deseo gestionar el historial médico de las mascotas para llevar un registro de sus atenciones y tratamientos.**
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1044,7 +1044,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 ---
 
 # Reviews y Feedback
-**EP08: Como usuario dueño de una mascota, deseo poder dejar reseñas y comentarios sobre un doctor veterinario.**
+**EP06: Como usuario dueño de una mascota, deseo poder dejar reseñas y comentarios sobre un doctor veterinario.**
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1054,7 +1054,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 ---
 
 # Gestión de Servicios y Tarifas
-**EP09: Como médico veterinario, deseo ingresar tarifas por los servicios requeridos por un dueño de mascota para que él pueda conocer los precios que le ofrezco.**
+**EP07: Como médico veterinario, deseo ingresar tarifas por los servicios requeridos por un dueño de mascota para que él pueda conocer los precios que le ofrezco.**
 
 | User Story ID | Título                           | Descripción                                                                                                                                                                  |
 |---------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1065,7 +1065,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 ---
 
 # Navegación y Funcionalidades de la Landing Page
-**EP04: Como visitante, deseo explorar la página principal de Pawfect Care para entender los servicios y características que ofrece la plataforma.**
+**EP08: Como visitante, deseo explorar la página principal de Pawfect Care para entender los servicios y características que ofrece la plataforma.**
 
 | User Story ID | Título                                     | Descripción                                                                                                                                                      |
 |---------------|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1084,6 +1084,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | TS05         | Cambio de Idioma en la App Web | Como usuario, deseo cambiar el idioma de la app web para poder utilizarla en inglés o español según mi preferencia.                                        |
 
 <br><br>
+
 # Historias de Usuario y Criterios de Aceptación
 
 ## US01: Registro de Usuario
@@ -1110,11 +1111,41 @@ Como administrador, deseo gestionar los usuarios para asegurar que solo personas
 
 ---
 
-## US02: Gestión de Cuentas de Usuarios
+## US02: Autenticación de Usuarios
+**Relacionado con (Epic ID):** EP01
+
+**Descripción:**
+Como usuario registrado, deseo poder iniciar sesión, ingresando mi correo electrónico y contraseña para poder utilizar los servicios de la aplicación.
+
+### Criterios de Aceptación:
+
+- **Escenario 1: Inicio de sesión exitoso**  
+  - **Dado que** el usuario está registrado en el sistema  
+  - **Y** se encuentra en la pantalla de inicio de sesión  
+  - **Cuando** ingresa un correo electrónico y una contraseña válidos  
+  - **Y** hace clic en el botón "Iniciar sesión"  
+  - **Entonces** el sistema debe autenticar al usuario  
+  - **Y** redirigirlo al panel principal de la aplicación  
+
+- **Escenario 2: Credenciales inválidas**  
+  - **Dado que** el usuario está en la pantalla de inicio de sesión  
+  - **Cuando** ingresa un correo electrónico o una contraseña incorrectos  
+  - **Y** hace clic en el botón "Iniciar sesión"  
+  - **Entonces** el sistema debe mostrar un mensaje de error indicando que las credenciales son inválidas  
+  - **Y** permanecer en la misma pantalla  
+
+- **Escenario 3: Campos vacíos**  
+  - **Dado que** el usuario está en la pantalla de inicio de sesión  
+  - **Cuando** deja el campo de correo electrónico o contraseña vacío  
+  - **Y** hace clic en el botón "Iniciar sesión"  
+  - **Entonces** el sistema debe mostrar un mensaje de validación indicando que los campos son obligatorios
+
+
+## US03: Gestión de Cuentas de Usuarios
 **Relacionado con (Epic ID):** EP01
 
 **Descripción:**  
-Como administrador, deseo gestionar los cuentas de los usuarios para mantener la información y permisos actualizados.
+Como usuario registrado, deseo poder iniciar sesión, ingresando mi correo electrónico y contraseña para poder utilizar los servicios de la aplicación.
 
 ### Criterios de Aceptación:
 - **Escenario 1:** El administrador edita el perfil de un usuario  
@@ -1134,7 +1165,7 @@ Como administrador, deseo gestionar los cuentas de los usuarios para mantener la
 
 ---
 
-## US03: Creación de Perfil de Mascota
+## US04: Creación de Perfil de Mascota
 **Relacionado con (Epic ID):** EP02
 
 **Descripción:**  
@@ -1158,7 +1189,7 @@ Como usuario, deseo crear un perfil de mi mascota para tener su información alm
 
 ---
 
-## US04: Edición de Perfil de Mascota
+## US05: Edición de Perfil de Mascota
 **Relacionado con (Epic ID):** EP02
 
 **Descripción:**  
@@ -1177,7 +1208,7 @@ Como usuario, deseo editar el perfil de mi mascota para actualizar su informaci�
 
 ---
 
-## US05: Visualización de Perfiles de Mascotas  
+## US06: Visualización de Perfiles de Mascotas  
 **Relacionado con (Epic ID):** EP02
 
 **Descripción:**  
@@ -1196,112 +1227,105 @@ Como usuario, deseo visualizar los perfiles de mis mascotas para revisar la info
 
 ---
 
-## US06: Búsqueda de Mascotas por ID  
+## US07: Búsqueda de Mascotas por el nombre del dueño y de la mascota  
 **Relacionado con (Epic ID):** EP02
 
 **Descripción:**  
-Como administrador, deseo buscar mascotas por ID para acceder rápidamente a su información en el sistema.
+Como médico veterinario, deseo buscar mascotas por el nombre del dueño y de la mascota para acceder rápidamente a su información en el sistema.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** El administrador busca una mascota por ID válido  
-  - **Dado que** el administrador está en la sección de gestión de mascotas,  
-  - **Cuando** ingresa un ID de mascota válido en el campo de búsqueda,  
-  - **Entonces** el sistema debe mostrar el perfil correspondiente a ese ID.
 
-- **Escenario 2:** El administrador ingresa un ID inexistente  
-  - **Dado que** el administrador intenta buscar una mascota,  
-  - **Cuando** ingresa un ID que no está registrado,  
-  - **Entonces** el sistema debe mostrar un mensaje indicando que no se encontró ninguna mascota con ese ID.
+- **Escenario 1: El médico veterinario busca una mascota por nombre del dueño y nombre de la mascota válidos**  
+  - **Dado que** el médico veterinario está en la sección de gestión de mascotas  
+  - **Cuando** ingresa el nombre del dueño y el nombre de la mascota en el campo de búsqueda  
+  - **Entonces** el sistema debe mostrar el perfil correspondiente a la combinación de esos datos
+
+- **Escenario 2: El médico veterinario ingresa un nombre de dueño o mascota inexistente**  
+  - **Dado que** el médico veterinario intenta buscar una mascota  
+  - **Cuando** ingresa un nombre de dueño y/o nombre de mascota que no están registrados  
+  - **Entonces** el sistema debe mostrar un mensaje indicando que no se encontró ninguna mascota con esos datos
+
+- **Escenario 3: El médico veterinario deja uno o ambos campos vacíos**  
+  - **Dado que** el médico veterinario se encuentra en la sección de búsqueda de mascotas  
+  - **Cuando** deja el campo del nombre del dueño, el nombre de la mascota, o ambos vacíos  
+  - **Entonces** el sistema debe mostrar un mensaje de validación indicando que ambos campos son obligatorios para realizar la búsqueda
 
 ---
 
-## US07: Gestión de Perfiles de Mascotas  
+## US08: Gestión de Perfiles de Mascotas  
 **Relacionado con (Epic ID):** EP02
 
 **Descripción:**  
-Como administrador, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada.
+Como dueño, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** El administrador edita un perfil de mascota  
-  - **Dado que** el administrador está gestionando perfiles de mascotas,  
+- **Escenario 1:** El dueño edita un perfil de mascota  
+  - **Dado que** el dueño está gestionando perfiles de mascotas,  
   - **Cuando** selecciona un perfil y actualiza la información,  
   - **Entonces** el sistema debe permitir guardar los cambios y mostrar una confirmación de éxito.
 
-- **Escenario 2:** El administrador elimina un perfil de mascota  
-  - **Dado que** el administrador está en la lista de mascotas,  
+- **Escenario 2:** El dueño elimina un perfil de mascota  
+  - **Dado que** el dueño está en la lista de mascotas,  
   - **Cuando** selecciona la opción de eliminar en un perfil,  
   - **Entonces** el sistema debe solicitar confirmación y, al aceptarse, eliminar permanentemente el perfil y sus datos.
 
-- **Escenario 3:** El administrador visualiza el historial de cambios en un perfil  
-  - **Dado que** el administrador desea verificar cambios anteriores,  
+- **Escenario 3:** El dueño visualiza el historial de cambios en un perfil  
+  - **Dado que** el dueño desea verificar cambios anteriores,  
   - **Cuando** accede a un perfil de mascota,  
   - **Entonces** el sistema debe mostrar un historial con las modificaciones realizadas al perfil.
 
 ---
 
-## US08: Agendamiento de Citas  
+## US09: Agendamiento de Citas  
 **Relacionado con (Epic ID):** EP03
 
 **Descripción:**  
-Como usuario, quiero agendar citas para que mi mascota reciba atención veterinaria a tiempo.
+Como dueño, quiero agendar citas para que mi mascota reciba atención veterinaria a tiempo.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** El usuario necesita agendar una cita  
-  - **Dado que** el usuario necesita una consulta veterinaria,  
+- **Escenario 1:** El dueño necesita agendar una cita  
+  - **Dado que** el dueño necesita una consulta veterinaria,  
   - **Cuando** acceda a la opción de "Agendar Cita" y seleccione la fecha, hora y tipo de servicio,  
   - **Entonces** la cita será agendada correctamente y recibirá una confirmación.
 
 ---
 
-## US09: Cancelación de Citas  
+## US10: Cancelación de Citas  
 **Relacionado con (Epic ID):** EP03
 
 **Descripción:**  
-Como usuario, quiero cancelar citas agendadas en caso de que no pueda asistir.
+Como dueño de mascota, quiero cancelar citas agendadas en caso de que no pueda asistir.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** El usuario necesita cancelar una cita previamente agendada  
-  - **Dado que** el usuario ha reservado una cita,  
+- **Escenario 1:** El dueño de mascota necesita cancelar una cita previamente agendada  
+  - **Dado que** el dueño de mascota ha reservado una cita,  
   - **Cuando** haga clic en "Cancelar Cita" en su historial de citas,  
   - **Entonces** la cita será eliminada y se enviará una notificación de cancelación.
 
 ---
 
-## US10: Gestión de Citas Veterinarias
+## US11: Búsqueda de Citas por fecha 
 **Relacionado con (Epic ID):** EP03
 
 **Descripción:**  
-Como administrador, deseo gestionar las citas veterinarias para coordinar correctamente la atención de las mascotas.
+Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** El administrador visualiza todas las citas  
-  - **Dado que** el administrador está en la sección de gestión de citas,  
-  - **Cuando** accede al listado de citas agendadas,  
-  - **Entonces** el sistema debe mostrar todas las citas con detalles como fecha, hora, veterinario asignado, y estado de la cita (agendada, cancelada, etc.).
 
-- **Escenario 2:** El administrador filtra las citas por estado o fecha  
-  - **Dado que** el administrador está gestionando las citas,  
-  - **Cuando** utiliza los filtros para buscar citas según estado (agendada, cancelada, completada) o fecha,  
-  - **Entonces** el sistema debe mostrar solo las citas que coincidan con los criterios seleccionados.
+- **Escenario 1: El usuario busca citas por una fecha válida**  
+  - **Dado que** el usuario (dueño o veterinario) está en la sección de citas  
+  - **Cuando** ingresa una fecha válida en el campo de búsqueda  
+  - **Entonces** el sistema debe mostrar todas las citas correspondientes a esa fecha
 
----
+- **Escenario 2: El usuario ingresa una fecha sin citas registradas**  
+  - **Dado que** el usuario desea buscar citas por fecha  
+  - **Cuando** ingresa una fecha para la cual no hay citas registradas en el sistema  
+  - **Entonces** el sistema debe mostrar un mensaje indicando que no se encontraron citas para esa fecha
 
-## US11: Búsqueda de Citas por ID
-**Relacionado con (Epic ID):** EP03
-
-**Descripción:**  
-Como administrador, deseo buscar citas por ID para acceder rápidamente a la información de la cita.
-
-### Criterios de Aceptación:
-- **Escenario 1:** El administrador busca una cita por su ID  
-  - **Dado que** el administrador está en la sección de citas,  
-  - **Cuando** ingresa el ID de una cita en el campo de búsqueda,  
-  - **Entonces** el sistema debe mostrar la cita correspondiente al ID ingresado.
-
-- **Escenario 2:** El administrador ingresa un ID inválido  
-  - **Dado que** el administrador está buscando una cita por ID,  
-  - **Cuando** ingresa un ID que no existe en el sistema,  
-  - **Entonces** el sistema debe mostrar un mensaje de error indicando que no se encontró ninguna cita con ese ID.
+- **Escenario 3: El usuario deja el campo de fecha vacío o con un formato incorrecto**  
+  - **Dado que** el usuario está en la sección de búsqueda de citas  
+  - **Cuando** deja el campo vacío o introduce una fecha con un formato inválido  
+  - **Entonces** el sistema debe mostrar un mensaje de validación indicando que debe ingresar una fecha válida
 
 ---
 
@@ -1309,347 +1333,392 @@ Como administrador, deseo buscar citas por ID para acceder rápidamente a la inf
 **Relacionado con (Epic ID):** EP03
 
 **Descripción:**  
-Como administrador, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.
+Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** El administrador edita la fecha de una cita  
-  - **Dado que** el administrador está en la página de gestión de citas,  
+- **Escenario 1:** El médico veterinario edita la fecha de una cita  
+  - **Dado que** el médico veterinario está en la página de gestión de citas,  
   - **Cuando** selecciona una cita y cambia su fecha u hora,  
   - **Entonces** el sistema debe actualizar la cita y enviar una notificación al usuario afectado indicando el cambio.
 
-- **Escenario 2:** El administrador cambia el estado de una cita  
-  - **Dado que** el administrador está gestionando citas,  
-  - **Cuando** selecciona una cita y cambia su estado (de agendada a completada o cancelada),  
-  - **Entonces** el sistema debe reflejar el cambio y enviar una actualización al usuario de la cita.
+---
+
+## US13: Búsqueda de dueño de mascota  
+**Relacionado con (Epic ID):** EP03
+
+**Descripción:**  
+Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente.
+
+### Criterios de Aceptación:
+
+- **Escenario 1: Búsqueda por nombre y DNI válidos**  
+  - **Dado que** el médico veterinario está en la sección de búsqueda de citas  
+  - **Cuando** ingresa el nombre completo y el DNI de un cliente que tiene citas registradas  
+  - **Entonces** el sistema debe mostrar todas las citas asociadas a ese cliente
+
+- **Escenario 2: Búsqueda sin resultados**  
+  - **Dado que** el médico veterinario desea buscar citas por nombre y DNI  
+  - **Cuando** ingresa un nombre y/o DNI que no corresponde a ningún cliente con citas registradas  
+  - **Entonces** el sistema debe mostrar un mensaje indicando que no se encontraron citas para ese cliente
+
+- **Escenario 3: Campos incompletos o inválidos**  
+  - **Dado que** el médico veterinario intenta realizar una búsqueda  
+  - **Cuando** deja uno de los campos vacío o introduce un formato inválido en el campo del DNI  
+  - **Entonces** el sistema debe mostrar un mensaje de validación solicitando que complete correctamente los campos
 
 ---
 
-## US13: Barra de Navegación en la Landing Page  
+## US14: Consulta sobre alimentación adecuada  
 **Relacionado con (Epic ID):** EP04
 
 **Descripción:**  
-Como visitante, deseo usar la barra de navegación para acceder fácilmente a las diferentes secciones de la plataforma.
+Como dueño, deseo consultar al asistente artificial (chatbot) sobre qué tipo de comida es ideal para mi mascota según su especie, edad y tamaño.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** Visualización de la barra de navegación  
-  - **Dado que** un visitante accede a la landing page,  
-  - **Cuando** se carga la página,  
-  - **Entonces** el sistema debe mostrar una barra de navegación en la parte superior con enlaces a secciones clave (inicio, servicios, contacto, etc.).
 
-- **Escenario 2:** Navegación mediante la barra  
-  - **Dado que** un visitante visualiza la barra de navegación,  
-  - **Cuando** hace clic en una de las secciones,  
-  - **Entonces** el sistema debe redirigirlo correctamente a la sección correspondiente de la landing page.
+- **Escenario 1:** Consulta exitosa de alimentación adecuada
+  - **Dado que** soy un dueño que accede al chatbot del sistema
+  - **Y** proporciono la especie, edad y tamaño de mi mascota
+  - **Cuando** solicito una recomendación de alimentación adecuada
+  - **Entonces** el chatbot debe responder con una sugerencia de comida específica
+  - **Y** debe explicar por qué es adecuada para la especie, edad y tamaño de la mascota
+  - **Y** debe incluir recomendaciones generales sobre cantidad y frecuencia de alimentación
 
----
+- **Escenario 2:** Información incompleta proporcionada
+  - **Dado que** soy un dueño que accede al chatbot del sistema
+  - **Y** no proporciono todos los datos requeridos 
+  - **Cuando** solicito una recomendación de alimentación
+  - **Entonces** el chatbot debe pedirme que complete la información faltante
 
-## US14: Visualización de la Sección "Why Choose Us?"  
+- **Escenario 3:** Especie de mascota no soportada
+  - **Dado que** ingreso una especie de mascota poco común o no registrada en el sistema
+  - **Cuando** solicito recomendaciones de alimentación
+  - **Entonces** el chatbot debe indicar que no tiene información disponible para esa especie
+  - **Y** debe sugerirme consultar con un veterinario
+
+- **Escenario 4:** Recomendación personalizada según condiciones especiales
+  - **Dado que** mi mascota tiene condiciones especiales de salud conocidas 
+  - **Cuando** incluyo esta información en la consulta
+  - **Entonces** el chatbot debe adaptar la recomendación de alimentación teniendo en cuenta dichas condiciones
+  - **Y** debe advertir que se consulte con un especialista si es necesario
+
+- **Escenario 5:** Consulta repetida para diferentes mascotas
+  - **Dado que** tengo más de una mascota
+  - **Cuando** realizo varias consultas sobre alimentación para distintas mascotas
+  - **Entonces** el chatbot debe permitir gestionar múltiples consultas de forma continua y sin reiniciar la conversación
+
+
+## US15: Consejos de higiene para mascotas  
 **Relacionado con (Epic ID):** EP04
 
 **Descripción:**  
-Como visitante, deseo revisar la sección "Why Choose Us?" para entender los beneficios y servicios de la aplicación.
+Como dueño, deseo recibir recomendaciones básicas de higiene para mantener saludable a mi mascota mediante el asistente artificial (chatbot).
 
 ### Criterios de Aceptación:
-- **Escenario 1:** Acceso a la sección "Why Choose Us?"
-  - **Dado que** el visitante se desplaza por la landing page,  
-  - **Cuando** llega a la sección "Why Choose Us?",  
-  - **Entonces** el visitante visualiza una sección destacada con información clara sobre los beneficios de la aplicación.
 
-- **Escenario 2:** Visualización de contenido  
-  - **Dado que** el visitante está en la sección "Why Choose Us?",  
-  - **Cuando** revisa el contenido,  
-  - **Entonces** el visitante debe encontrar íconos, textos o elementos visuales que expliquen los valores diferenciales de Pawfect Care.
+- **Escenario 1:** Consulta exitosa de consejos de higiene
+  - **Dado que** soy un dueño que accede al chatbot del sistema
+  - **Y** proporciono la especie de mi mascota
+  - **Cuando** solicito recomendaciones de higiene
+  - **Entonces** el chatbot debe responder con consejos básicos de higiene específicos para esa especie
+  - **Y** debe explicar por qué son importantes para la salud de la mascota
+
+- **Escenario 2:** Información incompleta
+  - **Dado que** soy un dueño que accede al chatbot
+  - **Y** no proporciono la especie de la mascota
+  - **Cuando** solicito consejos de higiene
+  - **Entonces** el chatbot debe pedirme que proporcione la especie para ofrecer recomendaciones adecuadas
+
+- **Escenario 3:** Especie no registrada
+  - **Dado que** ingreso una especie no común o no registrada en el sistema
+  - **Cuando** pido consejos de higiene
+  - **Entonces** el chatbot debe informar que no tiene recomendaciones específicas para esa especie
+  - **Y** debe sugerirme consultar con un veterinario
+
+- **Escenario 4:** Consejos personalizados según edad o condición
+  - **Dado que** mi mascota es muy joven, anciana o tiene una condición especial de salud
+  - **Cuando** incluyo esta información en la consulta
+  - **Entonces** el chatbot debe adaptar los consejos de higiene a las necesidades especiales de la mascota
+
+- **Escenario 5:** Solicitud de consejos para múltiples mascotas
+  - **Dado que** soy dueño de varias mascotas de diferentes especies
+  - **Cuando** realizo múltiples consultas de higiene en una misma sesión
+  - **Entonces** el chatbot debe responder adecuadamente sin necesidad de reiniciar la conversación
 
 ---
 
-## US15: Envío de Mensajes de Contacto  
+## US16: Preguntas frecuentes sobre salud  
 **Relacionado con (Epic ID):** EP04
 
 **Descripción:**  
-Como visitante, deseo enviar un mensaje de contacto a través de la landing page para comunicarme con el equipo de Pawfect Care.
+Como dueño de mascota, deseo obtener respuestas rápidas sobre síntomas comunes y saber cuándo debo acudir al veterinario.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** Visualización del formulario de contacto  
-  - **Dado que** el visitante está en la sección de contacto,  
-  - **Cuando** la sección es visible,  
-  - **Entonces** el sistema muestra un formulario con campos para nombre, correo electrónico, asunto y mensaje.
 
-- **Escenario 2:** Envío exitoso del formulario  
-  - **Dado que** el visitante ha llenado todos los campos requeridos,  
-  - **Cuando** hace clic en el botón de enviar,  
-  - **Entonces** el sistema debe enviar el mensaje y mostrar una confirmación de envío exitoso.
+- **Escenario 1:** Consulta exitosa sobre síntoma común
+  - **Dado que** soy un dueño preocupado por un síntoma en mi mascota
+  - **Y** accedo al chatbot del sistema
+  - **Cuando** describo un síntoma común (como vómitos, diarrea, letargo, pérdida de apetito, etc.)
+  - **Entonces** el chatbot debe brindarme una respuesta rápida explicando posibles causas
+  - **Y** debe indicarme si es necesario acudir al veterinario de inmediato o monitorear en casa
+
+- **Escenario 2:** Síntoma no reconocido
+  - **Dado que** proporciono un síntoma poco común o ambiguo
+  - **Cuando** realizo la consulta al chatbot
+  - **Entonces** el chatbot debe indicar que no puede brindar una respuesta precisa
+  - **Y** debe recomendarme acudir a un veterinario para una evaluación profesional
+
+- **Escenario 3:** Solicitud de lista de síntomas frecuentes
+  - **Dado que** quiero estar preparado ante problemas de salud comunes
+  - **Cuando** solicito al chatbot información general sobre síntomas frecuentes
+  - **Entonces** el chatbot debe mostrarme una lista de los síntomas más comunes por especie
+  - **Y** debe explicar brevemente qué hacer en cada caso
+
+- **Escenario 4:** Consulta sobre cuándo acudir al veterinario
+  - **Dado que** no sé cuándo un síntoma es realmente grave
+  - **Cuando** le pregunto al chatbot si debo llevar a mi mascota al veterinario
+  - **Entonces** el chatbot debe brindar criterios generales de urgencia
+  - **Y** debe recomendar acudir a un especialista si el síntoma persiste o empeora
+
+- **Escenario 5:** Consulta para distintas especies
+  - **Dado que** tengo varias mascotas de diferentes especies
+  - **Cuando** hago preguntas sobre síntomas en cada una
+  - **Entonces** el chatbot debe identificar la especie y dar respuestas apropiadas para cada caso
 
 ---
 
-## US16: Visualización de Videos en la Sección de Características  
+## US17: Consejos de entrenamiento básico  
 **Relacionado con (Epic ID):** EP04
 
 **Descripción:**  
-Como visitante, deseo ver los videos informativos sobre los productos y servicios para conocer más sobre Pawfect Care.
+Como dueño de mascota, deseo consultar sobre técnicas de adiestramiento o corrección de comportamientos no deseados.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** Visualización de reproductores de video  
-  - **Dado que** el visitante llega a la sección de características,  
-  - **Cuando** se carga la página,  
-  - **Entonces** el sistema muestra los reproductores de video que están disponibles.
 
-- **Escenario 2:** Reproducción de video  
-  - **Dado que** el visitante está en la sección de características,  
-  - **Cuando** hace clic en el botón de reproducción de un video,  
-  - **Entonces** el sistema comienza a reproducir el video correctamente sin errores.
+- **Escenario 1:** Consulta exitosa sobre entrenamiento básico
+  - **Dado que** soy un dueño que desea entrenar a su mascota
+  - **Y** accedo al chatbot del sistema
+  - **Cuando** solicito consejos sobre técnicas de adiestramiento
+  - **Entonces** el chatbot debe proporcionarme recomendaciones básicas específicas según la especie y edad de la mascota
+  - **Y** debe incluir ejemplos de comandos comunes o técnicas positivas de refuerzo
+
+- **Escenario 2:** Corrección de comportamiento no deseado
+  - **Dado que** mi mascota presenta un comportamiento no deseado (como morder, ladrar mucho, hacer sus necesidades en lugares inadecuados)
+  - **Cuando** describo este comportamiento al chatbot
+  - **Entonces** el chatbot debe brindarme consejos prácticos para corregir dicha conducta
+  - **Y** debe explicar cómo aplicar la técnica y cuánto tiempo podría tomar ver resultados
+
+- **Escenario 3:** Información insuficiente proporcionada
+  - **Dado que** realizo una consulta de entrenamiento sin indicar la especie o edad de la mascota
+  - **Cuando** envío mi mensaje al chatbot
+  - **Entonces** el chatbot debe pedirme que complete esa información antes de brindar recomendaciones
+
+- **Escenario 4:** Técnicas según etapa de vida
+  - **Dado que** mi mascota es un cachorro, adulto o anciano
+  - **Cuando** solicito orientación sobre entrenamiento
+  - **Entonces** el chatbot debe adaptar los consejos a la etapa de vida correspondiente
+
+- **Escenario 5:** Consulta para distintas mascotas
+  - **Dado que** tengo más de una mascota con comportamientos distintos
+  - **Cuando** hago múltiples preguntas en una misma sesión
+  - **Entonces** el chatbot debe gestionar cada caso por separado
+  - **Y** brindar respuestas adecuadas a cada especie, comportamiento y situación
+
 
 ---
 
-## US17: Creación de Perfiles de Clientes  
+## US18: Recomendaciones según tipo de mascota  
+**Relacionado con (Epic ID):** EP04
+
+**Descripción:**  
+Como dueño, deseo que el chatbot me dé consejos generales adaptados al tipo de mascota que tengo (perro, gato, ave, etc).
+
+### Criterios de Aceptación:
+
+- **Escenario 1:** Recomendaciones generales exitosas según tipo de mascota
+  - **Dado que** soy un dueño que accede al chatbot del sistema
+  - **Y** proporciono el tipo de mascota que tengo (por ejemplo, perro, gato, ave)
+  - **Cuando** solicito consejos generales para el cuidado de mi mascota
+  - **Entonces** el chatbot debe responder con recomendaciones adaptadas a ese tipo de mascota
+  - **Y** debe cubrir aspectos como alimentación, higiene, salud y actividad física
+
+- **Escenario 2:** Tipo de mascota no registrado
+  - **Dado que** ingreso un tipo de mascota que no está en la base de datos del sistema
+  - **Cuando** pido recomendaciones
+  - **Entonces** el chatbot debe informarme que no tiene información disponible para ese tipo de mascota
+  - **Y** debe sugerirme consultar a un veterinario u otro especialista
+
+
+---
+
+## US19: Visualización del Historial Médico  
 **Relacionado con (Epic ID):** EP05
 
 **Descripción:**  
-Como administrador, deseo crear perfiles de clientes para registrar la información de contacto y sus mascotas.
+Como dueño, deseo visualizar el historial médico de mi mascota para revisar su estado de salud y tratamientos previos.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** Visualización del formulario de creación  
-  - **Dado que** el administrador accede a la sección de gestión de clientes,  
-  - **Cuando** selecciona la opción de "crear cliente",  
-  - **Entonces** el administrador debe visualizar un formulario con campos para nombre, correo, teléfono y datos de mascotas.
 
-- **Escenario 2:** Envío exitoso del formulario  
-  - **Dado que** el administrador completa todos los campos requeridos,  
-  - **Cuando** hace clic en "Guardar",  
-  - **Entonces** el administrador debe visualizar el nuevo perfil creado y añadido en la lista de clientes.
+- **Escenario 1:** Visualización exitosa del historial médico
+  - **Dado que** soy un dueño autenticado en el sistema
+  - **Y** tengo registrada a mi mascota
+  - **Cuando** accedo a la opción de historial médico
+  - **Entonces** el sistema debe mostrar una lista organizada con las visitas veterinarias, diagnósticos, tratamientos y vacunas aplicadas
+
+- **Escenario 2:** Mascota sin historial registrado
+  - **Dado que** soy un dueño autenticado
+  - **Y** la mascota aún no tiene historial médico cargado
+  - **Cuando** intento visualizar el historial
+  - **Entonces** el sistema debe mostrar un mensaje indicando que aún no hay datos disponibles
+  - **Y** debe sugerir registrar la primera visita médica
+
+- **Escenario 3:** Acceso sin autenticación
+  - **Dado que** intento acceder al historial médico sin iniciar sesión
+  - **Cuando** ingreso a la sección de historial
+  - **Entonces** el sistema debe redirigirme a la pantalla de autenticación o mostrar un mensaje de acceso restringido
 
 ---
 
-## US18: Edición de Perfiles de Clientes  
+## US20: Actualización del Historial Médico  
 **Relacionado con (Epic ID):** EP05
 
 **Descripción:**  
-Como administrador, deseo editar los perfiles de clientes para actualizar su información personal y de contacto.
+Como doctor veterinario, deseo actualizar el historial médico de las mascotas para que los dueños tengan la información más reciente sobre sus tratamientos.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** Acceso a la edición de perfil  
-  - **Dado que** el administrador se encuentra en la lista de clientes,  
-  - **Cuando** selecciona un perfil y elige la opción "Editar",  
-  - **Entonces** el administrador debe mostrarse un formulario editable con los datos actuales del cliente.
 
-- **Escenario 2:** Actualización exitosa de la información  
-  - **Dado que** el administrador modifica los datos del cliente,  
-  - **Cuando** hace clic en "Guardar cambios",  
-  - **Entonces** el sistema actualiza la información y la refleja correctamente en el perfil del cliente.
+- **Escenario 1:** Actualización exitosa del historial médico
+  - **Dado que** soy un doctor veterinario autenticado en el sistema
+  - **Y** tengo acceso al perfil de una mascota registrada
+  - **Cuando** ingreso nuevos datos médicos (como diagnóstico, tratamiento o vacuna)
+  - **Entonces** el sistema debe guardar correctamente la información en el historial médico de la mascota
+  - **Y** debe estar disponible para ser consultada por el dueño
+
+- **Escenario 2:** Intento de actualización sin autenticación
+  - **Dado que** no he iniciado sesión como veterinario
+  - **Cuando** intento acceder o modificar el historial médico de una mascota
+  - **Entonces** el sistema debe denegar el acceso
+  - **Y** debe mostrar un mensaje indicando que se requiere autenticación como profesional autorizado
+
+- **Escenario 3:** Ingreso de datos incompletos o inválidos
+  - **Dado que** soy un veterinario autenticado
+  - **Cuando** intento registrar un historial sin llenar campos obligatorios (como fecha o diagnóstico)
+  - **Entonces** el sistema debe mostrar un mensaje de error
+  - **Y** no debe guardar la información hasta que todos los campos requeridos sean completados
 
 ---
 
-## US19: Búsqueda de Clientes por ID  
-**Relacionado con (Epic ID):** EP05
-
-**Descripción:**  
-Como administrador, deseo buscar clientes por su ID para acceder rápidamente a su información.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Ingreso del ID en el buscador  
-  - **Dado que** el administrador se encuentra en la sección de búsqueda de clientes,  
-  - **Cuando** introduce un ID válido en el campo de búsqueda,  
-  - **Entonces** el sistema debe mostrar la información correspondiente al cliente con ese ID.
-
-- **Escenario 2:** ID inexistente  
-  - **Dado que** el administrador introduce un ID no registrado,  
-  - **Cuando** ejecuta la búsqueda,  
-  - **Entonces** el sistema debe mostrar un mensaje indicando que no se encontró ningún cliente con ese ID.
-
----
-
-## US20: Consulta sobre Alimentación Adecuada  
+## US21: Publicar Reseñas  
 **Relacionado con (Epic ID):** EP06
-
-**Descripción:**  
-Como usuario, deseo consultar al chatbot sobre qué tipo de comida es ideal para mi mascota según su especie, edad y tamaño.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Consulta con datos completos  
-  - **Dado que** el usuario ha proporcionado la especie, edad y tamaño de su mascota,  
-  - **Cuando** el usuario pregunta por el tipo de comida adecuada,  
-  - **Entonces** el chatbot debe proporcionar una recomendación personalizada basada en esos datos.
-
-- **Escenario 2:** Consulta con datos incompletos  
-  - **Dado que** el usuario no ha proporcionado todos los datos,  
-  - **Cuando** el usuario pregunta por el tipo de comida adecuada,  
-  - **Entonces** el chatbot debe pedir información adicional o proporcionar una respuesta más general.
-
----
-
-## US21: Consejos de Higiene para Mascotas  
-**Relacionado con (Epic ID):** EP06
-
-**Descripción:**  
-Como usuario, deseo recibir recomendaciones básicas de higiene para mantener saludable a mi mascota.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Consulta sobre higiene  
-  - **Dado que** el usuario pregunta por consejos de higiene,  
-  - **Cuando** el chatbot responde,  
-  - **Entonces** debe proporcionar consejos generales sobre el baño, cuidado de dientes y otras prácticas de higiene.
-
-- **Escenario 2:** Consulta específica sobre problemas de higiene  
-  - **Dado que** el usuario pregunta sobre un problema específico de higiene (por ejemplo, mal aliento, piel seca),  
-  - **Cuando** el chatbot responde,  
-  - **Entonces** debe dar recomendaciones más detalladas según el problema planteado.
-
----
-
-## US22: Preguntas Frecuentes sobre Salud  
-**Relacionado con (Epic ID):** EP06
-
-**Descripción:**  
-Como usuario, deseo obtener respuestas rápidas sobre síntomas comunes y saber cuándo debo acudir al veterinario.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Consulta sobre síntomas comunes  
-  - **Dado que** el usuario pregunta sobre síntomas comunes,  
-  - **Cuando** el chatbot responde,  
-  - **Entonces** debe proporcionar información sobre posibles causas y cuándo es necesario consultar a un veterinario.
-
-- **Escenario 2:** Consulta sobre cuándo acudir al veterinario  
-  - **Dado que** el usuario pregunta cuándo debería ir al veterinario,  
-  - **Cuando** el chatbot responde,  
-  - **Entonces** debe dar ejemplos de situaciones críticas en las que es importante buscar atención profesional.
-
----
-
-## US23: Consejos de Entrenamiento Básico  
-**Relacionado con (Epic ID):** EP06
-
-**Descripción:**  
-Como usuario, deseo consultar sobre técnicas de adiestramiento o corrección de comportamientos no deseados.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Consulta sobre adiestramiento básico  
-  - **Dado que** el usuario pregunta sobre técnicas de adiestramiento,  
-  - **Cuando** el chatbot responde,  
-  - **Entonces** debe proporcionar consejos sobre entrenamiento de comandos básicos como "sentado", "quieto", etc.
-
-- **Escenario 2:** Consulta sobre corrección de comportamientos no deseados  
-  - **Dado que** el usuario pregunta sobre cómo corregir un comportamiento no deseado (por ejemplo, ladridos excesivos),  
-  - **Cuando** el chatbot responde,  
-  - **Entonces** debe ofrecer sugerencias sobre cómo corregir ese comportamiento específico.
-
----
-
-## US24: Recomendaciones Según Tipo de Mascota  
-**Relacionado con (Epic ID):** EP06
-
-**Descripción:**  
-Como usuario, deseo que el chatbot me dé consejos generales adaptados al tipo de mascota que tengo (perro, gato, ave, etc).
-
-### Criterios de Aceptación:
-- **Escenario 1:** Consulta sobre tipo de mascota  
-  - **Dado que** el usuario especifica el tipo de mascota (perro, gato, etc.),  
-  - **Cuando** el usuario pide recomendaciones,  
-  - **Entonces** el chatbot debe proporcionar consejos específicos según el tipo de mascota.
-
-- **Escenario 2:** Consulta sin especificar tipo de mascota  
-  - **Dado que** el usuario no especifica el tipo de mascota,  
-  - **Cuando** el usuario pide recomendaciones,  
-  - **Entonces** el chatbot debe pedir al usuario que indique el tipo de mascota para personalizar las recomendaciones.
-
----
-
-## US25: Visualización del Historial Médico
-**Relacionado con (Epic ID):** EP07
-
-**Descripción:**  
-Como usuario, deseo visualizar el historial médico de mi mascota para revisar su estado de salud y tratamientos previos.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Visualización exitosa del historial médico  
-  - **Dado que** soy un usuario autenticado en la plataforma,  
-  - **Cuando** accedo al perfil de mi mascota y selecciono la opción de visualizar el historial médico,  
-  - **Entonces** el sistema debe mostrarme todos los detalles del historial médico, incluyendo diagnósticos, tratamientos, y citas previas de mi mascota.
-
-- **Escenario 2:** Historial médico sin información registrada  
-  - **Dado que** soy un usuario autenticado accediendo al perfil de mi mascota,  
-  - **Cuando** intento visualizar el historial médico y no existen registros previos de atención,  
-  - **Entonces** el sistema debe mostrar un mensaje indicando que no hay información médica disponible en el historial de la mascota.
-
----
-
-## US26: Actualización del Historial Médico
-**Relacionado con (Epic ID):** EP07
-
-**Descripción:**  
-Como administrador o doctor veterinario, deseo actualizar el historial médico de las mascotas para que los usuarios tengan la información más reciente sobre sus tratamientos.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Actualización exitosa del historial médico  
-  - **Dado que** soy un administrador o doctor veterinario,  
-  - **Cuando** realizo una actualización en el historial médico de una mascota (ej. registrar un nuevo diagnóstico o tratamiento),  
-  - **Entonces** el sistema debe guardar los cambios y reflejar la nueva información en el perfil de la mascota, accesible para los usuarios.
-
-- **Escenario 2:** Intento de actualización con campos obligatorios incompletos  
-  - **Dado que** soy un administrador o doctor veterinario intentando actualizar el historial médico,  
-  - **Cuando** dejo campos obligatorios sin completar (ej. fecha del tratamiento o diagnóstico),  
-  - **Entonces** el sistema debe mostrar un mensaje de error solicitando que se completen los campos obligatorios antes de guardar los cambios.
-
-- **Escenario 3:** Verificación de actualizaciones previas en el historial  
-  - **Dado que** soy un administrador o doctor veterinario,  
-  - **Cuando** accedo a un historial médico previamente actualizado,  
-  - **Entonces** el sistema debe poder mostrar un registro detallado de todas las actualizaciones realizadas, incluyendo las fechas y los usuarios que realizaron cada modificación.
-
----
-
-## US27: Publicar Reseñas  
-**Relacionado con (Epic ID):** EP08  
 
 **Descripción:**  
 Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** Publicación de una reseña completa  
-  - **Dado que** el usuario ha tenido una consulta con un doctor veterinario,  
-  - **Cuando** accede al formulario de reseña y completa los campos requeridos (comentario, calificación, nombre del doctor),  
-  - **Entonces** el sistema debe guardar la reseña y mostrarla públicamente en el perfil del doctor.
 
-- **Escenario 2:** Publicación con campos incompletos  
-  - **Dado que** el usuario intenta enviar la reseña sin llenar todos los campos obligatorios,  
-  - **Cuando** hace clic en “Publicar”,  
-  - **Entonces** el sistema debe mostrar un mensaje de error indicando qué campos están faltando.
+- **Escenario 1:** Publicación exitosa de una reseña
+  - **Dado que** soy un usuario autenticado en el sistema
+  - **Y** he tenido una consulta con un doctor veterinario registrado
+  - **Cuando** accedo a la sección de reseñas y escribo mi opinión junto con una calificación
+  - **Entonces** el sistema debe guardar y mostrar la reseña públicamente en el perfil del doctor
+
+- **Escenario 2:** Intento de publicación sin autenticación
+  - **Dado que** no he iniciado sesión
+  - **Cuando** intento dejar una reseña sobre un doctor veterinario
+  - **Entonces** el sistema debe redirigirme a la pantalla de inicio de sesión
+  - **Y** mostrar un mensaje indicando que solo usuarios autenticados pueden dejar reseñas
+
+- **Escenario 3:** Ingreso de reseña incompleta
+  - **Dado que** estoy autenticado
+  - **Cuando** intento publicar una reseña sin completar campos obligatorios (como texto o calificación)
+  - **Entonces** el sistema debe notificarme qué campos faltan
+  - **Y** no debe permitir publicar la reseña hasta que esté completa
 
 ---
 
-## US28: Visualización de Reseñas  
-**Relacionado con (Epic ID):** EP08  
+## US22: Visualización de Reseñas  
+**Relacionado con (Epic ID):** EP06
 
 **Descripción:**  
 Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** Visualización de reseñas existentes  
-  - **Dado que** el usuario accede al perfil de un doctor veterinario,  
-  - **Cuando** navega a la sección de reseñas,  
-  - **Entonces** el sistema debe mostrar todas las reseñas publicadas, incluyendo comentarios y calificaciones.
 
-- **Escenario 2:** Doctor sin reseñas  
-  - **Dado que** el doctor veterinario no tiene reseñas aún,  
-  - **Cuando** el usuario accede a su perfil,  
-  - **Entonces** el sistema debe mostrar un mensaje indicando que aún no hay reseñas disponibles.
+- **Escenario 1:** Visualización exitosa de reseñas
+  - **Dado que** soy un usuario autenticado en el sistema
+  - **Y** busco un doctor veterinario específico
+  - **Cuando** accedo a su perfil
+  - **Entonces** el sistema debe mostrar todas las reseñas publicadas por otros usuarios
+  - **Y** debe incluir la calificación promedio y las reseñas individuales con texto y puntuación
+
+- **Escenario 2:** No hay reseñas disponibles
+  - **Dado que** soy un usuario autenticado
+  - **Y** el doctor veterinario no tiene reseñas publicadas
+  - **Cuando** accedo al perfil del doctor
+  - **Entonces** el sistema debe mostrar un mensaje indicando que no hay reseñas disponibles para este doctor
+
+- **Escenario 3:** Visualización de reseñas sin autenticación
+  - **Dado que** no he iniciado sesión en el sistema
+  - **Cuando** intento acceder a las reseñas de un doctor veterinario
+  - **Entonces** el sistema debe permitir la visualización pública de las reseñas, si están disponibles
 
 ---
 
-## US29: Cambio de Idioma en la App Web  
-**Relacionado con (Epic ID):** EP09 
+## US23: Ofrecer tarifa por servicio  
+**Relacionado con (Epic ID):** EP07
 
 **Descripción:**  
-Como usuario, deseo cambiar el idioma de la app web para poder utilizarla en inglés o español según mi preferencia.
+Como médico veterinario, deseo ofrecer una tarifa personalizada para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda evaluar mi propuesta.
 
 ### Criterios de Aceptación:
 
-- **Escenario 1:** Cambio de idioma desde el menú  
-  - **Dado que** el usuario está navegando en la app web,  
-  - **Cuando** selecciona un idioma diferente desde el selector de idioma ("English" o "Español"),  
-  - **Entonces** el sistema actualiza todo el contenido visible de la interfaz al idioma seleccionado.
+- **Escenario 1:** Oferta de tarifa exitosa por servicio
+  - **Dado que** soy un médico veterinario autenticado en el sistema
+  - **Y** un dueño de mascota ha solicitado una cita para un servicio específico
+  - **Cuando** ingreso la tarifa personalizada para dicho servicio
+  - **Entonces** el sistema debe guardar la tarifa y mostrarla al dueño de la mascota en su solicitud de cita
 
-- **Escenario 2:** Elementos no traducidos  
-  - **Dado que** el usuario ha seleccionado un idioma,  
-  - **Cuando** algún texto no esté disponible en el idioma elegido,  
-  - **Entonces** el sistema debe mostrarlo en el idioma por defecto (español), acompañado de una alerta para los desarrolladores.
+- **Escenario 2:** Modificación de tarifa para un servicio existente
+  - **Dado que** soy un veterinario autenticado y ya he ofrecido una tarifa para un servicio
+  - **Cuando** decido modificar la tarifa propuesta
+  - **Entonces** el sistema debe permitir la modificación
+  - **Y** debe notificar al dueño de la mascota sobre el cambio en la tarifa
+
+- **Escenario 3:** Intento de ofrecer tarifa sin autenticación
+  - **Dado que** no estoy autenticado como médico veterinario
+  - **Cuando** intento ofrecer una tarifa por un servicio
+  - **Entonces** el sistema debe redirigirme a la pantalla de inicio de sesión
+  - **Y** mostrar un mensaje indicando que solo los veterinarios autenticados pueden ofrecer tarifas por servicio
+
+---
+
+## US24: Visualización de Reseñas y Tarifas  
+**Relacionado con (Epic ID):** EP07
+
+**Descripción:**  
+Como dueño de una mascota, deseo ver las reseñas y tarifas ofrecidas por distintos veterinarios para un servicio específico solicitado en una cita, y así elegir la mejor opción.
+
+### Criterios de Aceptación:
+
+- **Escenario 1:** Visualización de reseñas y tarifas para un servicio específico
+  - **Dado que** soy un dueño de mascota autenticado en el sistema
+  - **Y** he solicitado un servicio específico de veterinario (por ejemplo, consulta, vacunación)
+  - **Cuando** accedo a las opciones de veterinarios disponibles para este servicio
+  - **Entonces** el sistema debe mostrar las reseñas de otros usuarios sobre cada veterinario
+  - **Y** debe mostrar la tarifa personalizada ofrecida por cada veterinario para el servicio solicitado
+
+- **Escenario 2:** No hay reseñas o tarifas disponibles
+  - **Dado que** soy un dueño de mascota autenticado
+  - **Y** el veterinario no tiene reseñas publicadas o no ha ofrecido una tarifa para el servicio solicitado
+  - **Cuando** accedo a su perfil
+  - **Entonces** el sistema debe mostrar un mensaje indicando que no hay reseñas o tarifas disponibles
+
+- **Escenario 3:** Acceso sin autenticación
+  - **Dado que** no he iniciado sesión como dueño de mascota
+  - **Cuando** intento ver las reseñas y tarifas de los veterinarios
+  - **Entonces** el sistema debe redirigirme a la pantalla de inicio de sesión
+  - **Y** mostrar un mensaje indicando que solo los usuarios autenticados pueden acceder a esta información
+
 
 
 ## 3.3. Impact Mapping.
@@ -1673,7 +1742,7 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
 | 4      | US07           | Búsqueda de Mascotas                      | Como médico veterinario, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema. | 2            |
 | 5      | US05           | Edición de Perfil de Mascota              | Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.           | 2            |
 | 6      | US06           | Visualización de Perfiles de Mascotas     | Como dueño, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.               | 2            |
-| 7      | US13           | Búsqueda de Mascotas                      | Como médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente. | 2            |
+| 7      | US13           | Búsqueda de dueño de mascota      a                | Como médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente. | 2            |
 | 8      | US11           | Búsqueda de Citas por fecha               | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita. | 2            |
 | 9      | US12           | Edición de Citas Veterinarias             | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.  | 3            |
 |10      | US10           | Cancelación de Citas                      | Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención. | 2            |
@@ -1691,7 +1760,6 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
 |22      | US01           | Registro de Usuario                       | Como visitante, deseo registrarme en la plataforma para poder utilizar las funcionalidades del sistema.         | 3            |
 |23      | US02           | Autenticación de Usuarios                 | Como usuario registrado, deseo poder iniciar sesión, ingresando mi correo electrónico y contraseña para poder utilizar los servicios de la aplicación. | 3            |
 |24      | US03           | Gestión de Cuentas de Usuarios            | Como dueño de mascota y médico veterinario, deseo gestionar el perfil de mi cuenta para mantener la información actualizada. | 2            |
-
 
 ## Bibliografía
 
