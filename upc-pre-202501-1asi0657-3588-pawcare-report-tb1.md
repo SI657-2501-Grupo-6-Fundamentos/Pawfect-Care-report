@@ -746,33 +746,34 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ## 3.1.1. Requisitos Funcionales
 
 ### Gestión de Usuarios y Clientes
-- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma, ingresando su nombre y contraseña.
-- **RF02.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
-- **RF03.** El sistema debe permitir a los veterinarios poder buscar a los dueños de mascota por su nombre y dni.
+- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma. Para ello se requiere que ingresen su nombre completo, teléfono, correo electrónico, dirección y contraseña. Además, si el usuario es un médico veterinario se le pedirá ingresar el tipo de servicio que ofrece.
+- **RF02.** El sistema debe permitir a los usuarios iniciar sesión, ingresando su correo electrónico y contraseña.
+- **RF03.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
 
 ### Gestión de Mascotas
-- **RF04.** El sistema debe permitir a los dueños crear perfiles de sus mascotas y asignarle un historial médico en blanco.
-- **RF05.** El sistema debe permitir a los dueños editar la información de sus mascotas.
-- **RF06.** El sistema debe permitir a los dueños de mascotas visualizar los perfiles de sus mascotas.
-- **RF07.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
-- **RF08.** El veterinario debe poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
+- **RF05.** El sistema debe permitir a los dueños crear perfiles de sus mascotas y asignarle un historial médico en blanco.
+- **RF06.** El sistema debe permitir a los dueños editar la información de sus mascotas.
+- **RF07.** El sistema debe permitir a los dueños de mascotas visualizar los perfiles de sus mascotas.
+- **RF08.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
+- **RF09.** El veterinario debe poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
 
 ### Gestión de Citas
-- **RF09.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
-- **RF10.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
+- **RF10.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
+- **RF11.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
 - **RF11.** El sistema debe permitir al médico veterinario gestionar y editar citas.
 - **RF13.** El sistema debe permitir que, tanto médicos veterinarios como dueños de mascotas, busquen citas por su fecha.
+- **RF14.** El sistema debe permitir a los veterinarios poder buscar, por su nombre y dni, a un dueño de una mascota con los cuales se haya agendado una cita pendiente.
 
 ### Historial Médico
-- **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
-- **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
+- **RF15.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
+- **RF16.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
 
 ### Reseñas
-- **RF16.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
-- **RF17.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
+- **RF17.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
+- **RF18.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
 
 ### Chatbot Informativo
-- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos a los dueños de mascotas sobre:
+- **RF19.** El sistema debe proporcionar un chatbot que brinde consejos a los dueños de mascotas sobre:
   - Alimentación de mascotas.
   - Higiene animal.
   - Salud y síntomas.
@@ -780,8 +781,8 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
   - Recomendaciones personalizadas según tipo de mascota.
 
 ### Gestión de Servicios
-- **RF19.** El sistema debe permitir a los veterinarios ingresar cada servicio especializado que brindan. Entre ellos se encuentran los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
-- **RF20.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
+- **RF20.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen. Los servicios que puede realizar un veterinarios fueron seleccionados al momento de su registro y pueden ser los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
+- **RF21.** El sistema debe permitir a los dueños de mascotas seleccionar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
 
 
 ## 3.1.2. Requisitos No Funcionales
@@ -988,8 +989,9 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US01          | Registro de Usuario        | Como visitante, deseo registrarme en la plataforma para poder utilizar las funcionalidades del sistema                                                        |
-| US02          | Gestión de Cuentas de Usuarios | Como administrador, deseo gestionar los cuentas de los usuarios para mantener la información y permisos actualizados.                                    |
+| US01          | Registro de Usuario        | Como visitante, deseo registrarme en la plataforma para poder utilizar las funcionalidades del sistema.                                                        |
+| US02          | Autenticación de Usuarios | Como usuario registrado, deseo poder iniciar sesión, ingresando mi correo electrónico y contraseña para poder utilizar los servicios de la aplicación.     |
+| US03          | Gestión de Cuentas de Usuarios | Como dueño de mascota y médico veterinario, deseo gestionar el perfil de mi cuenta para mantener la información actualizada.                                    |
 
 ---
 # Gestión de Mascotas
@@ -997,11 +999,11 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US03          | Creación de Perfil de Mascota | Como usuario, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.                                                  |
-| US04          | Edición de Perfil de Mascota | Como usuario, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.                                                    |
-| US05          | Visualización de Perfiles de Mascotas | Como usuario, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.                                                    |
-| US06          | Búsqueda de Mascotas por nombre del dueño y luego por el nombre de la mascota | Como administrador, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema.                                                   |
-| US07          | Gestión de Perfiles de Mascotas | Como administrador, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada.          |
+| US04          | Creación de Perfil de Mascota | Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.                                                  |
+| US05          | Edición de Perfil de Mascota | Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.                                                    |
+| US06          | Visualización de Perfiles de Mascotas | Como dueño, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.                                                    |
+| US07          | Búsqueda de Mascotas por nombre del dueño y luego por el nombre de la mascota | Como médico veterinario, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema.                                                   |
+| US08          | Gestión de Perfiles de Mascotas | Como dueño, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada.          |
 
 ---
 
@@ -1010,34 +1012,11 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US08          | Agendamiento de Citas      | Como usuario, deseo agendar citas veterinarias para asegurar que mi mascota reciba atención médica en el momento adecuado.                                     |
-| US09          | Cancelación de Citas       | Como usuario, deseo cancelar una cita si no puedo asistir, para evitar problemas de horario y reorganizar la atención.                                        |
-| US10          | Gestión de Citas Veterinarias | Como administrador o médico veterinario, deseo gestionar las citas veterinarias para coordinar correctamente la atención de las mascotas.                                     |
-| US11          | Búsqueda de Citas por fecha   | Como administrador o médico veterinario, deseo buscar citas por fecha para acceder rápidamente a la información de la cita.                                                           |
-| US12          | Edición de Citas Veterinarias | Como administrador o médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.                                                 |
-
----
-
-# Navegación y Funcionalidades de la Landing Page
-**EP04: Como visitante, deseo explorar la página principal de Pawfect Care para entender los servicios y características que ofrece la plataforma.**
-
-| User Story ID | Título                                     | Descripción                                                                                                                                                     |
-|---------------|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US13          | Barra de Navegación en la Landing Page     | Como visitante, deseo usar la barra de navegación para acceder fácilmente a las diferentes secciones de la plataforma.                                        |
-| US14          | Visualización de la Sección "Why Choose Us?" | Como visitante, deseo revisar la sección "Why Choose Us?" para entender los beneficios y servicios de la plataforma.                                     |
-| US15          | Envío de Mensajes de Contacto             | Como visitante, deseo enviar un mensaje de contacto a través de la landing page para comunicarme con el equipo de Pawfect Care.                             |
-| US16          | Visualización de Videos en la Sección de Características | Como visitante, deseo ver los videos informativos sobre los productos y servicios para conocer más sobre Pawfect Care.                                    |
-
----
-
-# Gestión de Clientes
-**EP05: Como administrador, deseo gestionar la información de los clientes para mantener los datos actualizados y organizados.**
-
-| User Story ID | Título                     | Descripción                                                                                                                                                    |
-|---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US17          | Creación de Perfiles de Clientes | Como administrador, deseo crear perfiles de clientes para registrar la información de contacto y sus mascotas.                                            |
-| US18          | Edición de Perfiles de Clientes | Como administrador, deseo editar los perfiles de clientes para actualizar su información personal y de contacto.                                          |
-| US19          | Búsqueda de Clientes por nombre | Como administrador, deseo buscar clientes por su nombre para acceder rápidamente a su información.                                      |
+| US09         | Agendamiento de Citas      | Como usuario, deseo agendar citas veterinarias para asegurar que mi mascota reciba atención médica en el momento adecuado.                                     |
+| US10          | Cancelación de Citas       | Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención.                                        |
+| US11          | Búsqueda de Citas por fecha   | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita.                                                           |
+| US12          | Edición de Citas Veterinarias | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.                                                 |
+| US13          | Búsqueda de mascotas | Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente.    |
 
 ---
 
@@ -1046,11 +1025,11 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                                | Descripción                                                                                                                                      |
 |---------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| US20          | Consulta sobre alimentación adecuada   | Como usuario, deseo consultar al chatbot sobre qué tipo de comida es ideal para mi mascota según su especie, edad y tamaño.                      |
-| US21          | Consejos de higiene para mascotas      | Como usuario, deseo recibir recomendaciones básicas de higiene para mantener saludable a mi mascota.                                            |
-| US22          | Preguntas frecuentes sobre salud       | Como usuario, deseo obtener respuestas rápidas sobre síntomas comunes y saber cuándo debo acudir al veterinario.                                |
-| US23          | Consejos de entrenamiento básico       | Como usuario, deseo consultar sobre técnicas de adiestramiento o corrección de comportamientos no deseados.                                     |
-| US24          | Recomendaciones según tipo de mascota  | Como usuario, deseo que el chatbot me dé consejos generales adaptados al tipo de mascota que tengo (perro, gato, ave, etc).                    |
+| US14         | Consulta sobre alimentación adecuada   | Como dueño, deseo consultar al asistente artificial (chatbot) sobre qué tipo de comida es ideal para mi mascota según su especie, edad y tamaño.                      |
+| US15         | Consejos de higiene para mascotas      | Como dueño, deseo recibir recomendaciones básicas de higiene para mantener saludable a mi mascota mediante el asistente artificial (chatbot).                                            |
+| US16         | Preguntas frecuentes sobre salud       | Como dueño de mascota, deseo obtener respuestas rápidas sobre síntomas comunes y saber cuándo debo acudir al veterinario.                                |
+| US17          | Consejos de entrenamiento básico       | Como dueño de mascota, deseo consultar sobre técnicas de adiestramiento o corrección de comportamientos no deseados.                                     |
+| US18          | Recomendaciones según tipo de mascota  | Como dueño, deseo que el chatbot me dé consejos generales adaptados al tipo de mascota que tengo (perro, gato, ave, etc).                    |
 
 ---
 
@@ -1059,8 +1038,8 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US25          | Visualización del Historial Médico | Como usuario, deseo visualizar el historial médico de mi mascota para revisar su estado de salud y tratamientos previos.                                  |
-| US26          | Actualización del Historial Médico | Como administrador o doctor veterinario, deseo actualizar el historial médico de las mascotas para que los usuarios tengan la información más reciente sobre sus tratamientos. |
+| US19          | Visualización del Historial Médico | Como dueño, deseo visualizar el historial médico de mi mascota para revisar su estado de salud y tratamientos previos.                                  |
+| US20          | Actualización del Historial Médico | Como doctor veterinario, deseo actualizar el historial médico de las mascotas para que los dueños tengan la información más reciente sobre sus tratamientos. |
 
 ---
 
@@ -1069,8 +1048,31 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US27          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios.                   |
-| US28          | Visualización de Reseñas | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. |
+| US21          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios.                   |
+| US22          | Visualización de Reseñas | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. |
+
+---
+
+# Gestión de Servicios y Tarifas
+**EP09: Como médico veterinario, deseo ingresar tarifas por los servicios requeridos por un dueño de mascota para que él pueda conocer los precios que le ofrezco.**
+
+| User Story ID | Título                           | Descripción                                                                                                                                                                  |
+|---------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| US23          | Ofrecer tarifa por servicio      | Como médico veterinario, deseo ofrecer una tarifa personalizada para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda evaluar mi propuesta. |
+| US24          | Visualización de Reseñas y Tarifas | Como dueño de una mascota, deseo ver las reseñas y tarifas ofrecidas por distintos veterinarios para un servicio específico solicitado en una cita, y así elegir la mejor opción. |
+
+
+---
+
+# Navegación y Funcionalidades de la Landing Page
+**EP04: Como visitante, deseo explorar la página principal de Pawfect Care para entender los servicios y características que ofrece la plataforma.**
+
+| User Story ID | Título                                     | Descripción                                                                                                                                                      |
+|---------------|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TS01          | Barra de Navegación en la Landing Page     | Como visitante, deseo usar la barra de navegación para acceder fácilmente a las diferentes secciones de la plataforma.                                        |
+| TS02          | Visualización de la Sección "Why Choose Us?" | Como visitante, deseo revisar la sección "Why Choose Us?" para entender los beneficios y servicios de la plataforma.                                     |
+| TS03          | Envío de Mensajes de Contacto             | Como visitante, deseo enviar un mensaje de contacto a través de la landing page para comunicarme con el equipo de Pawfect Care.                             |
+| TS04          | Visualización de Videos en la Sección de Características | Como visitante, deseo ver los videos informativos sobre los productos y servicios para conocer más sobre Pawfect Care.                                    |
 
 ---
 
@@ -1079,7 +1081,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US29          | Cambio de Idioma en la App Web | Como usuario, deseo cambiar el idioma de la app web para poder utilizarla en inglés o español según mi preferencia.                                        |
+| TS05         | Cambio de Idioma en la App Web | Como usuario, deseo cambiar el idioma de la app web para poder utilizarla en inglés o español según mi preferencia.                                        |
 
 <br><br>
 # Historias de Usuario y Criterios de Aceptación
@@ -1663,50 +1665,32 @@ Historia de usuario base:
 Tomamos como referencia US06: Como usuario, quiero agendar citas para que mi mascota reciba atención veterinaria a tiempo. (Posee 3 puntos de historia).
 Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar en grupo y decidir la dificultad de cada historia de usuario, tomando como punto intermedio el User Story 06
 
-
-<table>
-  <thead>
-    <tr>
-      <th># Orden</th>
-      <th>User Story ID</th>
-      <th>Título</th>
-      <th>Descripción</th>
-      <th>Story Points</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>US01</td><td>Registro de Usuarios</td><td>Como usuario, deseo registrarme en la plataforma para acceder a los servicios ofrecidos.</td><td>3</td></tr>
-    <tr><td>2</td><td>US17</td><td>Creación de Perfiles de Clientes</td><td>Como usuario, deseo registrar mi perfil para poder gestionar mis mascotas y citas.</td><td>3</td></tr>
-    <tr><td>3</td><td>US03</td><td>Creación de Perfil de Mascota</td><td>Como usuario, deseo crear un perfil para cada una de mis mascotas y llevar el control de su información.</td><td>3</td></tr>
-    <tr><td>4</td><td>US08</td><td>Agendamiento de Citas</td><td>Como usuario, deseo agendar citas para que mis mascotas reciban atención veterinaria.</td><td>3</td></tr>
-    <tr><td>5</td><td>US09</td><td>Cancelación de Citas</td><td>Como usuario, deseo cancelar citas si no puedo asistir, para reorganizar la atención de mis mascotas.</td><td>2</td></tr>
-    <tr><td>6</td><td>US10</td><td>Gestión de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo gestionar las citas para atender a los clientes.</td><td>5</td></tr>
-    <tr><td>7</td><td>US04</td><td>Edición de Perfil de Mascota</td><td>Como usuario, deseo editar la información de mis mascotas para mantenerla actualizada.</td><td>3</td></tr>
-    <tr><td>8</td><td>US05</td><td>Visualización de Perfiles de Mascotas</td><td>Como usuario, deseo consultar los perfiles de mis mascotas en cualquier momento.</td><td>2</td></tr>
-    <tr><td>9</td><td>US25</td><td>Visualización del Historial Médico</td><td>Como usuario, deseo consultar el historial médico de mis mascotas para conocer diagnósticos y tratamientos anteriores.</td><td>3</td></tr>
-    <tr><td>10</td><td>US26</td><td>Actualización del Historial Médico (Doctor)</td><td>Como veterinario, deseo registrar el historial médico de una mascota para llevar un control clínico.</td><td>3</td></tr>
-    <tr><td>11</td><td>US07</td><td>Gestión de Perfiles de Mascotas (Admin)</td><td>Como administrador, deseo gestionar todos los perfiles de mascotas registrados en la plataforma.</td><td>3</td></tr>
-    <tr><td>12</td><td>US06</td><td>Búsqueda de Mascotas por nombre del dueño y luego por el nombre de la mascota</td><td>Como administrador o médico veterinario, deseo buscar mascotas por su nombre para facilitar su gestión interna.</td><td>2</td></tr>
-    <tr><td>13</td><td>US12</td><td>Edición de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo editar las citas programadas para adaptarlas según disponibilidad.</td><td>3</td></tr>
-    <tr><td>14</td><td>US11</td><td>Búsqueda de Citas por fecha</td><td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td><td>2</td></tr>
-    <tr><td>15</td><td>US28</td><td>Visualización de Reseñas</td><td>Como usuario, deseo leer reseñas de otros para elegir al mejor profesional para mi mascota.</td><td>2</td></tr>
-    <tr><td>16</td><td>US27</td><td>Publicar Reseñas sobre Veterinarios</td><td>Como usuario, deseo dejar reseñas sobre la atención recibida para compartir mi experiencia.</td><td>2</td></tr>
-    <tr><td>17</td><td>US02</td><td>Gestión de Perfiles de Usuario (Admin)</td><td>Como administrador, deseo gestionar los cuentas de los usuarios para asegurar el correcto uso del sistema.</td><td>5</td></tr>
-    <tr><td>18</td><td>US18</td><td>Edición de Perfil de Cliente (Admin)</td><td>Como administrador, deseo editar los datos de los clientes en caso de errores o cambios solicitados.</td><td>3</td></tr>
-    <tr><td>19</td><td>US19</td><td>Búsqueda de Clientes por nombre</td><td>Como administrador, deseo buscar a los clientes por su nombre para dar seguimiento a sus casos.</td><td>2</td></tr>
-    <tr><td>20</td><td>US22</td><td>Chatbot: Salud y Síntomas</td><td>Como usuario, deseo identificar síntomas comunes de enfermedades para actuar rápidamente.</td><td>3</td></tr>
-    <tr><td>21</td><td>US20</td><td>Chatbot: Consejos de Alimentación</td><td>Como usuario, deseo obtener consejos sobre la alimentación adecuada para mis mascotas mediante un chatbot.</td><td>5</td></tr>
-    <tr><td>22</td><td>US21</td><td>Chatbot: Higiene Animal</td><td>Como usuario, deseo obtener consejos sobre higiene para cuidar mejor a mis mascotas.</td><td>5</td></tr>
-    <tr><td>23</td><td>US23</td><td>Chatbot: Entrenamiento Básico</td><td>Como usuario, deseo obtener consejos básicos de entrenamiento para mejorar el comportamiento de mis mascotas.</td><td>2</td></tr>
-    <tr><td>24</td><td>US24</td><td>Chatbot: Recomendaciones según Mascota</td><td>Como usuario, deseo obtener recomendaciones personalizadas para cada tipo de mascota.</td><td>2</td></tr>
-    <tr><td>25</td><td>US13</td><td>Barra de Navegación en la Landing Page</td><td>Como usuario, quiero un menú para navegar entre las secciones principales de la página.</td><td>2</td></tr>
-    <tr><td>26</td><td>US14</td><td>Sección "Why Choose Us?"</td><td>Como usuario, quiero conocer las razones para elegir esta plataforma y confiar en sus servicios.</td><td>2</td></tr>
-    <tr><td>27</td><td>US15</td><td>Formulario de Contacto</td><td>Como usuario, deseo contactar a la clínica para resolver dudas o pedir ayuda.</td><td>2</td></tr>
-    <tr><td>28</td><td>US16</td><td>Videos de Características</td><td>Como usuario, deseo ver videos informativos sobre el uso y beneficios de la aplicación.</td><td>2</td></tr>
-    <tr><td>29</td><td>US29</td><td>Cambio de Idioma</td><td>Como usuario, deseo cambiar el idioma de la aplicación para entender mejor el contenido.</td><td>3</td></tr>
-  </tbody>
-</table>
-
+| # Orden | User Story ID | Título                                   | Descripción                                                                                                     | Story Points |
+|--------|----------------|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------|--------------|
+| 1      | US09           | Agendamiento de Citas                     | Como usuario, deseo agendar citas veterinarias para asegurar que mi mascota reciba atención médica en el momento adecuado. | 5            |
+| 2      | US19           | Visualización del Historial Médico        | Como dueño, deseo visualizar el historial médico de mi mascota para revisar su estado de salud y tratamientos previos. | 3            |
+| 3      | US20           | Actualización del Historial Médico        | Como doctor veterinario, deseo actualizar el historial médico de las mascotas para que los dueños tengan la información más reciente sobre sus tratamientos. | 3            |
+| 4      | US07           | Búsqueda de Mascotas                      | Como médico veterinario, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema. | 2            |
+| 5      | US05           | Edición de Perfil de Mascota              | Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.           | 2            |
+| 6      | US06           | Visualización de Perfiles de Mascotas     | Como dueño, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.               | 2            |
+| 7      | US13           | Búsqueda de Mascotas                      | Como médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente. | 2            |
+| 8      | US11           | Búsqueda de Citas por fecha               | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita. | 2            |
+| 9      | US12           | Edición de Citas Veterinarias             | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.  | 3            |
+|10      | US10           | Cancelación de Citas                      | Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención. | 2            |
+|11      | US14           | Consulta sobre alimentación adecuada      | Como dueño, deseo consultar al chatbot sobre qué tipo de comida es ideal para mi mascota según su especie, edad y tamaño. | 5            |
+|12      | US15           | Consejos de higiene para mascotas         | Como dueño, deseo recibir recomendaciones básicas de higiene para mantener saludable a mi mascota mediante el asistente artificial (chatbot). | 3            |
+|13      | US16           | Preguntas frecuentes sobre salud          | Como dueño de mascota, deseo obtener respuestas rápidas sobre síntomas comunes y saber cuándo debo acudir al veterinario. | 3            |
+|14      | US17           | Consejos de entrenamiento básico          | Como dueño de mascota, deseo consultar sobre técnicas de adiestramiento o corrección de comportamientos no deseados. | 3            |
+|15      | US18           | Recomendaciones según tipo de mascota     | Como dueño, deseo que el chatbot me dé consejos generales adaptados al tipo de mascota que tengo (perro, gato, ave, etc). | 3            |
+|16      | US23           | Ofrecer tarifa por servicio               | Como médico veterinario, deseo ofrecer una tarifa personalizada para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda evaluar mi propuesta. | 3            |
+|17      | US24           | Visualización de Tarifas                  | Como dueño de una mascota, deseo ver las tarifas ofrecidas por distintos veterinarios para un servicio específico solicitado en una cita, y así elegir la mejor opción. | 3            |
+|18      | US21           | Publicar Reseñas                          | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios. | 3            |
+|19      | US22           | Visualización de Reseñas                  | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. | 3            |
+|20      | US04           | Creación de Perfil de Mascota             | Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.         | 2            |
+|21      | US08           | Gestión de Perfiles de Mascotas           | Como dueño, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada. | 2            |
+|22      | US01           | Registro de Usuario                       | Como visitante, deseo registrarme en la plataforma para poder utilizar las funcionalidades del sistema.         | 3            |
+|23      | US02           | Autenticación de Usuarios                 | Como usuario registrado, deseo poder iniciar sesión, ingresando mi correo electrónico y contraseña para poder utilizar los servicios de la aplicación. | 3            |
+|24      | US03           | Gestión de Cuentas de Usuarios            | Como dueño de mascota y médico veterinario, deseo gestionar el perfil de mi cuenta para mantener la información actualizada. | 2            |
 
 
 ## Bibliografía

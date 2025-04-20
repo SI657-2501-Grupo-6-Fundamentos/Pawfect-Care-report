@@ -257,7 +257,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | US01          | Registro de Usuario        | Como visitante, deseo registrarme en la plataforma para poder utilizar las funcionalidades del sistema                                                        |
-| US02          | Gestión de Cuentas de Usuarios | Como administrador, deseo gestionar los cuentas de los usuarios para mantener la información y permisos actualizados.                                    |
+| US02          | Gestión de Cuentas de Usuarios | Como dueño de mascota o médico veterinario, deseo gestionar mi cuenta para mantener la información actualizada.                                    |
 
 ---
 # Gestión de Mascotas
