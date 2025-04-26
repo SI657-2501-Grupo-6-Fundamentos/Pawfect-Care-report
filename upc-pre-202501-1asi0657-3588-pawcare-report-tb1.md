@@ -752,29 +752,29 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 - **RF03.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
 
 ### Gestión de Mascotas
-- **RF05.** El sistema debe permitir a los dueños crear perfiles de sus mascotas y asignarle un historial médico en blanco.
-- **RF06.** El sistema debe permitir a los dueños editar la información de sus mascotas.
-- **RF07.** El sistema debe permitir a los dueños de mascotas visualizar los perfiles de sus mascotas.
-- **RF08.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
-- **RF09.** El veterinario debe poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
+- **RF04.** El sistema debe permitir a los dueños crear perfiles de sus mascotas y asignarle un historial médico en blanco.
+- **RF05.** El sistema debe permitir a los dueños editar la información de sus mascotas.
+- **RF06.** El sistema debe permitir a los dueños de mascotas visualizar los perfiles de sus mascotas.
+- **RF07.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
+- **RF08.** El veterinario debe poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
 
 ### Gestión de Citas
-- **RF10.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
-- **RF11.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
+- **RF09.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
+- **RF10.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
 - **RF11.** El sistema debe permitir al médico veterinario gestionar y editar citas.
-- **RF13.** El sistema debe permitir que, tanto médicos veterinarios como dueños de mascotas, busquen citas por su fecha.
-- **RF14.** El sistema debe permitir a los veterinarios poder buscar, por su nombre y dni, a un dueño de una mascota con los cuales se haya agendado una cita pendiente.
+- **RF12.** El sistema debe permitir que, tanto médicos veterinarios como dueños de mascotas, busquen citas por su fecha.
+- **RF13.** El sistema debe permitir a los veterinarios poder buscar, por su nombre y dni, a un dueño de una mascota con los cuales se haya agendado una cita pendiente.
 
 ### Historial Médico
-- **RF15.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
-- **RF16.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
+- **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
+- **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
 
 ### Reseñas
-- **RF17.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
-- **RF18.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
+- **RF16.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
+- **RF17.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
 
 ### Chatbot Informativo
-- **RF19.** El sistema debe proporcionar un chatbot que brinde consejos a los dueños de mascotas sobre:
+- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos a los dueños de mascotas sobre:
   - Alimentación de mascotas.
   - Higiene animal.
   - Salud y síntomas.
@@ -829,160 +829,30 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | US   | Requisito |
 |------|-----------|
-| US1  | RF1       |
-| US1  | RF2       |
-| US1  | RNF1      |
-| US1  | RNF2      |
-| US1  | RNF3      |
-| US2  | RF3       |
-| US2  | RF4       |
-| US2  | RNF1      |
-| US2  | RNF2      |
-| US2  | RNF3      |
-| US3  | RF5       |
-| US3  | RF6       |
-| US3  | RNF1      |
-| US3  | RNF2      |
-| US3  | RNF3      |
-| US4  | RF7       |
-| US4  | RNF1      |
-| US4  | RNF2      |
-| US4  | RNF3      |
-| US5  | RF8       |
-| US5  | RNF1      |
-| US5  | RNF2      |
-| US5  | RNF3      |
-| US6  | RF1       |
-| US6  | RF2       |
-| US6  | RNF1      |
-| US6  | RNF2      |
-| US6  | RNF3      |
-| US7  | RF1       |
-| US7  | RF3       |
-| US7  | RNF1      |
-| US7  | RNF2      |
-| US7  | RNF3      |
-| US8  | RF2       |
-| US8  | RF4       |
-| US8  | RNF1      |
-| US8  | RNF2      |
-| US8  | RNF3      |
-| US9  | RF3       |
-| US9  | RF4       |
-| US9  | RNF1      |
-| US9  | RNF2      |
-| US9  | RNF3      |
-| US10 | RF5       |
-| US10 | RF6       |
-| US10 | RNF1      |
-| US10 | RNF2      |
-| US10 | RNF3      |
-| US11 | RF7       |
-| US11 | RNF1      |
-| US11 | RNF2      |
-| US11 | RNF3      |
-| US12 | RF8       |
-| US12 | RNF1      |
-| US12 | RNF2      |
-| US12 | RNF3      |
-| US13 | RF1       |
-| US13 | RF3       |
-| US13 | RNF1      |
-| US13 | RNF2      |
-| US13 | RNF3      |
-| US14 | RF2       |
-| US14 | RF4       |
-| US14 | RNF1      |
-| US14 | RNF2      |
-| US14 | RNF3      |
-| US15 | RF1       |
-| US15 | RF3       |
-| US15 | RF5       |
-| US15 | RNF1      |
-| US15 | RNF2      |
-| US15 | RNF3      |
-| US16 | RF6       |
-| US16 | RF7       |
-| US16 | RNF1      |
-| US16 | RNF2      |
-| US16 | RNF3      |
-| US17 | RF2       |
-| US17 | RF4       |
-| US17 | RF8       |
-| US17 | RNF1      |
-| US17 | RNF2      |
-| US17 | RNF3      |
-| US18 | RF3       |
-| US18 | RF4       |
-| US18 | RF7       |
-| US18 | RNF1      |
-| US18 | RNF2      |
-| US18 | RNF3      |
-| US19 | RF1       |
-| US19 | RF5       |
-| US19 | RF6       |
-| US19 | RNF1      |
-| US19 | RNF2      |
-| US19 | RNF3      |
-| US20 | RF2       |
-| US20 | RF4       |
-| US20 | RF8       |
-| US20 | RNF1      |
-| US20 | RNF2      |
-| US20 | RNF3      |
-| US21 | RF1       |
-| US21 | RF3       |
-| US21 | RF7       |
-| US21 | RNF1      |
-| US21 | RNF2      |
-| US21 | RNF3      |
-| US22 | RF2       |
-| US22 | RF4       |
-| US22 | RF8       |
-| US22 | RNF1      |
-| US22 | RNF2      |
-| US22 | RNF3      |
-| US23 | RF3       |
-| US23 | RF6       |
-| US23 | RNF1      |
-| US23 | RNF2      |
-| US23 | RNF3      |
-| US24 | RF2       |
-| US24 | RF4       |
-| US24 | RF8       |
-| US24 | RNF1      |
-| US24 | RNF2      |
-| US24 | RNF3      |
-| US25 | RF5       |
-| US25 | RF6       |
-| US25 | RF7       |
-| US25 | RNF1      |
-| US25 | RNF2      |
-| US25 | RNF3      |
-| US26 | RF1       |
-| US26 | RF2       |
-| US26 | RF3       |
-| US26 | RNF1      |
-| US26 | RNF2      |
-| US26 | RNF3      |
-| US27 | RF1       |
-| US27 | RF2       |
-| US27 | RF5       |
-| US27 | RF6       |
-| US27 | RNF1      |
-| US27 | RNF2      |
-| US27 | RNF3      |
-| US28 | RF7       |
-| US28 | RF8       |
-| US28 | RNF1      |
-| US28 | RNF2      |
-| US28 | RNF3      |
-| US29 | RF6       |
-| US29 | RF8       |
-| US29 | RNF1      |
-| US29 | RNF2      |
-| US29 | RNF3      |
-
+| US01 | RF01       |
+| US02 | RF02       |
+| US03 | RF03       |
+| US04 | RF04       |
+| US05 | RF05       |
+| US06 | RF06       |
+| US07 | RF08       |
+| US08 | RF07       |
+| US09 | RF09       |
+| US10 | RF10       |
+| US11 | RF0X       |
+| US12 | RF0X       |
+| US13 | RF0X       |
+| US14 | RF0X       |
+| US15 | RF0X       |
+| US16 | RF0X       |
+| US17 | RF0X       |
+| US18 | RF0X       |
+| US19 | RF0X       |
+| US20 | RF0X       |
+| US21 | RF0X       |
+| US22 | RF0X       |
+| US23 | RF0X       |
+| US24 | RF0X       |
 
 ## 3.2. User Stories
 ## Gestión de Usuarios
@@ -1004,7 +874,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | US05          | Edición de Perfil de Mascota | Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.                                                    |
 | US06          | Visualización de Perfiles de Mascotas | Como dueño, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.                                                    |
 | US07          | Búsqueda de Mascotas por nombre del dueño y luego por el nombre de la mascota | Como médico veterinario, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema.                                                   |
-| US08          | Gestión de Perfiles de Mascotas | Como dueño, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada.          |
+| US08          | Gestión de Perfiles de Mascotas | Como dueño de mascota, deseo gestionar y poder eliminar los perfiles de mis mascotas para asegurarme de que la información esté correctamente registrada y actualizada.      |
 
 ---
 
@@ -1257,7 +1127,7 @@ Como médico veterinario, deseo buscar mascotas por el nombre del dueño y de la
 **Relacionado con (Epic ID):** EP02
 
 **Descripción:**  
-Como dueño, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada.
+Como dueño de mascota, deseo gestionar y poder eliminar los perfiles de mis mascotas (de ser necesario) para asegurarme de que la información esté correctamente registrada y actualizada.
 
 ### Criterios de Aceptación:
 - **Escenario 1:** El dueño edita un perfil de mascota  
@@ -1757,7 +1627,7 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
 |18      | US21           | Publicar Reseñas                          | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios. | 3            |
 |19      | US22           | Visualización de Reseñas                  | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. | 3            |
 |20      | US04           | Creación de Perfil de Mascota             | Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.         | 2            |
-|21      | US08           | Gestión de Perfiles de Mascotas           | Como dueño, deseo gestionar los perfiles de mascotas para asegurarme de que la información esté correctamente registrada y actualizada. | 2            |
+|21      | US08           | Gestión de Perfiles de Mascotas           | Como dueño de mascota, deseo gestionar y poder eliminar los perfiles de mis mascotas para asegurarme de que la información esté correctamente registrada y actualizada. | 2            |
 |22      | US01           | Registro de Usuario                       | Como visitante, deseo registrarme en la plataforma para poder utilizar las funcionalidades del sistema.         | 3            |
 |23      | US02           | Autenticación de Usuarios                 | Como usuario registrado, deseo poder iniciar sesión, ingresando mi correo electrónico y contraseña para poder utilizar los servicios de la aplicación. | 3            |
 |24      | US03           | Gestión de Cuentas de Usuarios            | Como dueño de mascota y médico veterinario, deseo gestionar el perfil de mi cuenta para mantener la información actualizada. | 2            |
