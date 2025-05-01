@@ -782,8 +782,8 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
   - Recomendaciones personalizadas según tipo de mascota.
 
 ### Gestión de Servicios
-- **RF20.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen. Los servicios que puede realizar un veterinarios fueron seleccionados al momento de su registro y pueden ser los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
-- **RF21.** El sistema debe permitir a los dueños de mascotas seleccionar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
+- **RF19.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen. Los servicios que puede realizar un veterinarios fueron seleccionados al momento de su registro y pueden ser los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
+- **RF20.** El sistema debe permitir a los dueños de mascotas seleccionar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
 
 
 ## 3.1.2. Requisitos No Funcionales
@@ -825,34 +825,35 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | RNF11  | El sistema debe ser compatible con navegadores modernos.                                               | Funcionalidad completa debe poder realizarse en 3 navegadores como mínimo (Chrome, Edge, Opera).                                                                | Interoperabilidad         |
 | RNF12  | El sistema debe escalar horizontalmente si la carga supera el 80%.                                     | Latencia media de 3 segundos durante escalamiento automático con 200 usuarios simultáneos.                                                           | Escalabilidad             |                                                     | Escalabilidad             |
 
-## 3.1.3 Matriz User Stories vs Requisitos Funcionales y No Funcionales
+## 3.1.3 Matriz User Stories vs Requisitos Funcionales
 
-| US   | Requisito |
-|------|-----------|
-| US01 | RF01       |
-| US02 | RF02       |
-| US03 | RF03       |
-| US04 | RF04       |
-| US05 | RF05       |
-| US06 | RF06       |
-| US07 | RF08       |
-| US08 | RF07       |
-| US09 | RF09       |
-| US10 | RF10       |
-| US11 | RF0X       |
-| US12 | RF0X       |
-| US13 | RF0X       |
-| US14 | RF0X       |
-| US15 | RF0X       |
-| US16 | RF0X       |
-| US17 | RF0X       |
-| US18 | RF0X       |
-| US19 | RF0X       |
-| US20 | RF0X       |
-| US21 | RF0X       |
-| US22 | RF0X       |
-| US23 | RF0X       |
-| US24 | RF0X       |
+| Requisito | US01 | US02 | US03 | US04 | US05 | US06 | US07 | US08 | US09 | US10 | US11 | US12 |
+|-----------|------|------|------|------|------|------|------|------|------|------|------|------|
+| **RF01**  | ✔    |      |      |      |      |      |      |      |      |      |      |      |
+| **RF02**  |      | ✔    |      |      |      |      |      |      |      |      |      |      |
+| **RF03**  |      |      | ✔    |      |      |      |      |      |      |      |      |      |
+| **RF04**  |      |      |      | ✔    |      |      |      |      |      |      |      |      |
+| **RF05**  |      |      |      |      | ✔    |      |      |      |      |      |      |      |
+| **RF06**  |      |      |      |      |      | ✔    |      |      |      |      |      |      |
+| **RF07**  |      |      |      |      |      |      |      | ✔    |      |      |      |      |
+| **RF08**  |      |      |      |      |      |      | ✔    |      |      |      |      |      |
+| **RF09**  |      |      |      |      |      |      |      |      | ✔    |      |      |      |
+| **RF10**  |      |      |      |      |      |      |      |      |      | ✔    |      |      |
+| **RF11**  |      |      |      |      |      |      |      |      |      |      |      | ✔    |
+| **RF12**  |      |      |      |      |      |      |      |      |      |      | ✔    |      |
+
+| Requisito | US13 | US14 | US15 | US16 | US17 | US18 | US19 | US20 | US21 | US22 | US23 | US24 |
+|-----------|------|------|------|------|------|------|------|------|------|------|------|------|
+| **RF13**  | ✔    |      |      |      |      |      |      |      |      |      |      |      |
+| **RF14**  |      |      |      |      |      |      | ✔    |      |      |      |      |      |
+| **RF15**  |      |      |      |      |      |      |      | ✔    |      |      |      |      |
+| **RF16**  |      |      |      |      |      |      |      |      | ✔    |      |      |      |
+| **RF17**  |      |      |      |      |      |      |      |      |      | ✔    |      |      |
+| **RF18**  |      | ✔    | ✔    | ✔    | ✔    | ✔    |      |      |      |      |      |      |
+| **RF19**  |      |      |      |      |      |      |      |      |      |      | ✔    |      |
+| **RF20**  |      |      |      |      |      |      |      |      |      |      |      | ✔    |
+
+
 
 ## 3.2. User Stories
 ## Gestión de Usuarios
