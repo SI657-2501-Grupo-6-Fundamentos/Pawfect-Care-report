@@ -166,7 +166,7 @@ RideFind es una plataforma que facilita el alquiler de vehículos alternativos y
 - ¿Donde resides?
 - ¿Cuál es tu ocupación?
 
-**Preguntas para el Segmento Objetivo 1 - Médicos Veterinarios:**
+**Preguntas para el Segmento Objetivo 1 - Clinicas Veterinarias:**
 
 - ¿Conoces alguna aplicación de gestión veterinaria? ¿Cuál es?
 - ¿Lo escogieron por alguna razón es especial?
@@ -189,24 +189,25 @@ RideFind es una plataforma que facilita el alquiler de vehículos alternativos y
 
 ### 2.2.2. Registro de entrevistas.
 
-**Entrevista para el Segmento Objetivo 1 - Médicos Veterinarios:**
+**Entrevista para el Segmento Objetivo 1 - Clinicas Veterinarias:**
 
 ---
 
 Entrevista N°1:
 
-**Entrevistado:** [Nonmbre] <br>
-**Sexo:** [masculino o femenino] <br>
-**Edad:** [n] años<br>
-**Domicilio:** [Distrito] <br>
-**Inicio de la Entrevista:** 0:00<br>
-**Duración de la Entrevista:** 6:58<br>
+**Entrevistado:** Elvia Garcia<br>
+**Sexo:** Femenino <br>
+**Edad:** 44 años<br>
+**Domicilio:** Magdalena del Mar<br>
+**Inicio de la Entrevista:** 0:09<br>
+**Duración de la Entrevista:** 3:44<br>
 
-<img src="./assets/Chapter02/entrevista3.png" alt="Entrevista con [Nombre]" style="width: 600px; height: auto;"><br>
+<img src="./assets/Chapter02/entrevista-elvia.png" alt="Entrevista con Nasthya" style="width: 600px; height: auto;"><br>
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com"> https://upcedupe-my.sharepoint.com </a>
+**Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EYevHRw9GQ5PmnarGePq9lsB9kIXpRvegYORyQnQLeUsQg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=wTtOfn`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EYevHRw9GQ5PmnarGePq9lsB9kIXpRvegYORyQnQLeUsQg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=wTtOfn)
 
-**Resumen de la Entrevista:** -
+**Resumen de la Entrevista:** <br>
+La Doctora Elvia García, médico veterinaria con 20 años de experiencia, actualmente trabaja en una clínica donde utilizan la aplicación VetPraxis para la gestión veterinaria. Eligieron esta herramienta por ser una de las más reconocidas en el mercado y por las buenas referencias que recibieron. Valora que la plataforma permite tener un historial clínico bien organizado y accesible, además de facilitar la programación de citas y el seguimiento de tratamientos. Sin embargo, Elvia señala como una gran desventaja la cantidad excesiva de campos obligatorios en los formularios, muchos de los cuales considera innecesarios, como el RUC del cliente o sus redes sociales. Esto complica la atención en situaciones de emergencia, donde se necesita rapidez. Como mejora clave, propone reducir o eliminar estos campos para hacer el sistema más ágil y funcional en el día a día.
 
 ---
 
@@ -221,9 +222,10 @@ Entrevista N°2:
 
 [![image.png](https://i.postimg.cc/6qhMgd0d/image.png)](https://postimg.cc/BPX51PR6)
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EenhPQh7QtNJv8TMRTHvYP0BzjPaqB_rTUv0wqjPt7JQIQ?e=FNTg1h&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D"> Click aquí </a>
+**Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EenhPQh7QtNJv8TMRTHvYP0BzjPaqB_rTUv0wqjPt7JQIQ?e=FNTg1h&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EenhPQh7QtNJv8TMRTHvYP0BzjPaqB_rTUv0wqjPt7JQIQ?e=FNTg1h&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-**Resumen de la Entrevista:** - El Doctor Carlos menciona que en su lugar de trabajo utilizan VetPraxis, principalmente por ser una aplicación ampliamente conocida y adoptada por muchas clínicas veterinarias. No obstante, destaca que presenta algunas limitaciones, sobre todo en términos de eficiencia. Una de sus principales observaciones es la presencia de numerosos campos obligatorios que, desde su perspectiva, no son necesarios. Esto provoca que la elaboración de historias clínicas tome aproximadamente 5 minutos, lo cual resulta problemático, especialmente en contextos de urgencia donde se requiere actuar con rapidez. Por su parte, subraya que una de las modificaciones que haría con mayor urgencia sería eliminar estos campos innecesarios, con el fin de optimizar el proceso y mejorar el desempeño de la aplicación.
+**Resumen de la Entrevista:** <br>
+El Doctor Carlos menciona que en su lugar de trabajo utilizan VetPraxis, principalmente por ser una aplicación ampliamente conocida y adoptada por muchas clínicas veterinarias. No obstante, destaca que presenta algunas limitaciones, sobre todo en términos de eficiencia. Una de sus principales observaciones es la presencia de numerosos campos obligatorios que, desde su perspectiva, no son necesarios. Esto provoca que la elaboración de historias clínicas tome aproximadamente 5 minutos, lo cual resulta problemático, especialmente en contextos de urgencia donde se requiere actuar con rapidez. Por su parte, subraya que una de las modificaciones que haría con mayor urgencia sería eliminar estos campos innecesarios, con el fin de optimizar el proceso y mejorar el desempeño de la aplicación.
 
 ---
 
@@ -238,9 +240,9 @@ Entrevista N°3:
 
 <img src="./assets/Chapter02/entrevista3.png" alt="Entrevista con [Nombre]" style="width: 600px; height: auto;"><br>
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com"> https://upcedupe-my.sharepoint.com </a>
+**Enlace:** [``]()
 
-**Resumen de la Entrevista:** -
+**Resumen de la Entrevista:** <br>
 
 ---
 
@@ -258,11 +260,12 @@ Entrevista N°1:
 **Inicio de la Entrevista:** 0:00<br>
 **Duración de la Entrevista:** 2:20<br>
 
-[![Captura.png](https://i.postimg.cc/4dCBHV5h/Captura.png)](https://postimg.cc/Y431J4Tp)
+<img src="./assets/Chapter02/entrevista-ana.png" alt="Entrevista con Ana" style="width: 600px; height: auto;"><br>
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS"> Clic aquí </a>
+**Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS)
 
-**Resumen de la Entrevista:** - Ana nos comenta que lleva a su mascota al veterinario cada vez que nota algún comportamiento raro en su mascota o cuando lo ve enfermo. Explica que siempre lleva los documentos que le da el veterinario, como su tarjeta de vacunas o chequeos, aunque ha habido el caso donde ha perdido dichos documentos. Ella considera que una aplicación que le permita ver la historia clínica sería excelente porque toda la información lo tendría en su pc o laptop y podría ingresar a revisar desde cualquier navegador. 
+**Resumen de la Entrevista:** <br>
+ Ana nos comenta que lleva a su mascota al veterinario cada vez que nota algún comportamiento raro en su mascota o cuando lo ve enfermo. Explica que siempre lleva los documentos que le da el veterinario, como su tarjeta de vacunas o chequeos, aunque ha habido el caso donde ha perdido dichos documentos. Ella considera que una aplicación que le permita ver la historia clínica sería excelente porque toda la información lo tendría en su pc o laptop y podría ingresar a revisar desde cualquier navegador. 
 
 ---
 
@@ -277,33 +280,34 @@ Entrevista N°2:
 
 [![image.png](https://i.postimg.cc/ZRsk2z5b/image.png)](https://postimg.cc/R6tbJ8ty)
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/Ee5rXgJAqnREmSoDnOD-WfUBGOscyXbOLMpNCqAw-zoysg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SSRBR3"> Click aquí </a>
+**Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/Ee5rXgJAqnREmSoDnOD-WfUBGOscyXbOLMpNCqAw-zoysg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SSRBR3`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/Ee5rXgJAqnREmSoDnOD-WfUBGOscyXbOLMpNCqAw-zoysg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SSRBR3)
 
-**Resumen de la Entrevista:** - Diego es un estudiantes de 20 años que solo lleva a su mascota al veterinario cada vez que necesita bañarlo, ya que menciona que su mascota no se suele enfermar. Además, menciona que usa una cartilla física para llevar el control de su mascota. Por otro lado, explica que jamás a perdido la cartilla de control de su mascota, y que nunca ha cambiado de veterinario. Él considera que tener una app para ver la historia clínica de su mascota sería excelente, ya que podría ver toda la información desde su celular.
+**Resumen de la Entrevista:** <br>
+ Diego es un estudiantes de 20 años que solo lleva a su mascota al veterinario cada vez que necesita bañarlo, ya que menciona que su mascota no se suele enfermar. Además, menciona que usa una cartilla física para llevar el control de su mascota. Por otro lado, explica que jamás a perdido la cartilla de control de su mascota, y que nunca ha cambiado de veterinario. Él considera que tener una app para ver la historia clínica de su mascota sería excelente, ya que podría ver toda la información desde su celular.
 
 ---
 
 Entrevista N°3:
 
-**Entrevistado:** [Nonmbre] <br>
-**Sexo:** [masculino o femenino] <br>
-**Edad:** [n] años<br>
-**Domicilio:** [Distrito] <br>
+**Entrevistado:** Sergio <br>
+**Sexo:** Masculino <br>
+**Edad:** 20 años<br>
+**Domicilio:** Comas <br>
 **Inicio de la Entrevista:** 0:00<br>
-**Duración de la Entrevista:** 6:58<br>
+**Duración de la Entrevista:** 4:11<br>
 
-<img src="./assets/Chapter02/entrevista3.png" alt="Entrevista con [Nombre]" style="width: 600px; height: auto;"><br>
+[![Captura-de-pantalla-2025-04-18-232019.png](https://i.postimg.cc/k4DsmRv9/Captura-de-pantalla-2025-04-18-232019.png)](https://postimg.cc/DJkLQZNY)
 
-**Enlace:** <a href="https://upcedupe-my.sharepoint.com"> https://upcedupe-my.sharepoint.com </a>
+**Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/ESaf-2VJ0zJGpLnNv2DsVwsBl6m8PtmuTuQSefq_dH90YQ?e=lp9DhQ`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/ESaf-2VJ0zJGpLnNv2DsVwsBl6m8PtmuTuQSefq_dH90YQ?e=lp9DhQ)
 
-**Resumen de la Entrevista:** -
+**Resumen de la Entrevista:**<br>
 
----
+Sergio es un estudiante de 20 años que acude al veterinario con su mascota para hacerle revisiones generales y control de vacunas cada 4 meses. Además, se menciona que debe utilizar una aplicación de block de notas en su celular para anotar fechas de citas importantes y que en raras ocasiones suele perder documentos de vacunación importantes. Él considera que una aplicación sería vital para gestionar de manera eficiente todos los documentos relacionados a su mascota y no volver a perder algún registro que podría necesitar más adelante.
 
 
 ### 2.2.3. Análisis de entrevistas.
 
-***Segmento 1: Médicos Veterinarios***
+***Segmento 1: Clinicas Veterinarias***
 
 - El 100% de los entrevistados utilizan software de gestión en sus clínicas veterinarias. Dos de ellos (66.7%) emplean VetPraxis debido a su reconocimiento en el mercado, mientras que uno (33.3%) utiliza otro software específico para veterinarias.
 - El 100% de los veterinarios expresaron preocupaciones sobre el tiempo que toma completar las historias clínicas. El 66.7% de ellos reportaron que el proceso puede tomar entre 7 y 15 minutos, lo cual consideran excesivo. Esto destaca la necesidad de soluciones más eficientes.
@@ -323,7 +327,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### 2.3.1. User Personas.
 
-- **Segmento Objetivo 1 - Médicos Veterinarios**
+- **Segmento Objetivo 1 - Clinicas Veterinarias**
 
 [![user-Persona1.png](https://i.postimg.cc/8zy7rcXN/user-Persona1.png)](https://postimg.cc/VJCfxfcV)
 
@@ -334,7 +338,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### 2.3.2. User Task Matrix.
 
-***Segmento 1: Médicos Veterinarios***
+***Segmento 1: Clinicas Veterinarias***
 
 |**Vanesa Gómez Suarez**|||
 | :-: | :- | :- |
@@ -363,111 +367,20 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ---
 
 
+### 2.3.3. Empathy Mapping.
 
-### 2.3.3. User Journey Mapping.
-
-- **Primer segmento: Médicos Veterinarios**
-
-[![Journey-Map1.png](https://i.postimg.cc/bN9Dp3QG/Journey-Map1.png)](https://postimg.cc/cr64c7kZ)
-
-- **Segundo segmento: Dueños de Mascotas**
-
-[![Journey-Map2.png](https://i.postimg.cc/BnZ86Hgm/Journey-Map2.png)](https://postimg.cc/vcj821Cn)
-
-### 2.3.4. Empathy Mapping.
-
-- **Primer segmento: Médicos Veterinarios**
+- **Primer segmento: Clinicas Veterinarias Veterinarios**
 [![Empathy-Map1.png](https://i.postimg.cc/mZM16bky/Empathy-Map1.png)](https://postimg.cc/jCxjDYzD)
 
 - **Segundo segmento: Dueños de Mascotas**
 [![Empathy-Map2.png](https://i.postimg.cc/L6pYcrZK/Empathy-Map2.png)](https://postimg.cc/Z0w53scV)
 
-### 2.3.5. As-is Scenario Mapping.
+### 2.3.4. As-is Scenario Mapping.
 
-- **Primer segmento: Médicos Veterinarios**
+- **Primer segmento: Clinicas Veterinarias Veterinarios**
 [![Asis1.jpg](https://i.postimg.cc/fR59jBy4/Asis1.jpg)](https://postimg.cc/Sn2RmLcV)
 
 - **Segundo segmento: Dueños de Mascotas**
 [![Asis2.jpg](https://i.postimg.cc/kgP6dL6P/Asis2.jpg)](https://postimg.cc/qzQMsbx1)
 
-
-## 2.4. Ubiquitous Language.
-
-En esta sección se presenta un glosario de términos y conceptos utilizados en el dominio veterinario, específicos al área de especialidad y sector en el que se encuentra el problema y la solución. El propósito de este glosario es asegurar una comunicación clara y efectiva entre todos los miembros del equipo y los stakeholders, evitando ambigüedades. Este glosario se mantendrá actualizado a lo largo del proyecto.
-
-**Términos del Glosario**
-
-- **Clinical History (Historia Clínica):**
-  Registro detallado de la salud de un paciente veterinario, incluyendo diagnósticos, tratamientos, y observaciones previas.
-- **Diagnosis (Diagnóstico):**
-  Proceso de identificación de una enfermedad o condición en un paciente basado en la evaluación de los síntomas y pruebas.
-- **Treatment Plan (Plan de Tratamiento):**
-  Conjunto de acciones médicas recomendadas por el veterinario para tratar la enfermedad o condición del paciente.
-- **Follow-up (Seguimiento):**
-  Evaluación continua del paciente después de un tratamiento para asegurarse de que se esté recuperando adecuadamente.
-- **Preventive Care (Cuidado Preventivo):**
-  Medidas y prácticas aplicadas para prevenir enfermedades en los animales, como vacunaciones y desparasitaciones.
-- **Consultation (Consulta):**
-  Sesión en la que un veterinario examina al paciente, discute síntomas con el propietario, y proporciona un diagnóstico o plan de tratamiento.
-- **Pet Owner (Propietario de Mascota):**
-  Persona responsable del cuidado y bienestar de una mascota, y quien toma decisiones sobre su salud y tratamiento.
-- **Surgical Procedure (Procedimiento Quirúrgico):**
-  Intervención médica que requiere una operación para tratar o corregir un problema de salud en el paciente.
-- **Emergency Care (Cuidado de Emergencia):**
-  Atención veterinaria proporcionada en situaciones críticas donde la vida del paciente está en riesgo.
-- **Veterinary Clinic (Clínica Veterinaria):**
-  Establecimiento donde se brindan servicios de salud a los animales, incluyendo consultas, tratamientos y cirugías.
-
-<br>
-
-## 2.5. Requisitos Funcionales
-
-### Gestión de Usuarios y Clientes
-- **RF01.** El sistema debe permitir a los usuarios registrarse en la plataforma.  
-- **RF02.** El sistema debe permitir a los usuarios crear y editar su perfil.  
-- **RF03.** El administrador debe poder gestionar y editar los perfiles de los clientes.  
-- **RF04.** El administrador debe poder buscar clientes por su ID.
-
-### Gestión de Mascotas
-- **RF05.** El sistema debe permitir a los usuarios crear perfiles de sus mascotas.  
-- **RF06.** El sistema debe permitir a los usuarios editar la información de sus mascotas.  
-- **RF07.** El sistema debe permitir consultar los perfiles de mascotas.  
-- **RF08.** El administrador debe poder gestionar los perfiles de todas las mascotas.  
-- **RF09.** El administrador o el veterinario deben poder buscar mascotas por su ID.
-
-### Gestión de Citas
-- **RF10.** El sistema debe permitir a los usuarios agendar citas veterinarias.  
-- **RF11.** El sistema debe permitir a los usuarios cancelar sus citas.  
-- **RF12.** El sistema debe permitir al personal médico o administrativo gestionar y editar citas.  
-- **RF13.** El sistema debe permitir al administrador buscar citas por su ID.
-
-### Historial Médico
-- **RF14.** El sistema debe permitir a los usuarios visualizar el historial médico de sus mascotas.  
-- **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
-
-### Reseñas
-- **RF16.** El sistema debe permitir a los usuarios publicar reseñas sobre la atención veterinaria recibida.  
-- **RF17.** El sistema debe permitir a los usuarios visualizar las reseñas publicadas por otros usuarios.
-
-### Chatbot Informativo
-- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos sobre:
-  - Alimentación de mascotas.
-  - Higiene animal.
-  - Salud y síntomas.
-  - Entrenamiento básico.
-  - Recomendaciones personalizadas según tipo de mascota.
-
-
-## 2.6. Requisitos No Funcionales
-
-- **RNF01:** El sistema debe tener alta disponibilidad al estar activo las 24 horas del día, los 7 días de la semana.
-- **RNF02:** La interfaz debe ser intuitiva y fácil de usar para cualquier tipo de usuario, cumpliendo con la heurística de User Control and Freedom como mínimo.
-- **RNF03:** El sistema debe estar desarrollado bajo una arquitectura web responsive.
-- **RNF04:** Las respuestas del sistema no deben superar los 3 segundos en operaciones comunes.
-- **RNF05:** El sistema debe enviar correos electrónicos de forma segura utilizando un proveedor confiable como Outlook o Gmail.
-- **RNF06:** Toda la información de los usuarios y sus mascotas debe almacenarse en un proveedor de base de datos relacional como PostgreSQL o MySQL.
-- **RNF07:** El frontend debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
-- **RNF08:** La landing page debe cargarse completamente en menos de 3 segundos con conexión de red promedio.
-- **RNF09:** El frontend de la aplicación web debe ser implementado con Angular y TypeScript.
-- **RNF10:** El backend de la aplicación web debe ser implementado con Java y Spring Boot.
 

@@ -1,14 +1,253 @@
-# Capítulo III: Requirements Specification## 
+# Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping.
 
-- **Primer segmento: Médicos Veterinarios**
+- **Primer segmento: Clinicas Veterinarias**
 
-<br><img src="./assets/Chapter03/Tobe1.png" alt="To Be Scenario Map 1" style="width: 1000px; height: auto;" ><br>
+<br><img src="./assets/Chapter03/Tobe1.jpeg" alt="To Be Scenario Map 1" style="width: 1000px; height: auto;" ><br>
 
 - **Segundo segmento: Dueños de Mascotas**
 
-<br><img src="./assets/Chapter03/Tobe2.png" alt="To Be Scenario Map 2" style="width: 1000px; height: auto;" ><br>
+<br><img src="./assets/Chapter03/Tobe2.jpeg" alt="To Be Scenario Map 2" style="width: 1000px; height: auto;" ><br>
+
+
+## 3.1.1. Requisitos Funcionales
+
+### Gestión de Usuarios y Clientes
+- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma, ingresando su nombre y contraseña.
+- **RF02.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
+- **RF03.** El sistema debe permitir a los veterinarios poder buscar a los dueños de mascota por su nombre y dni.
+
+### Gestión de Mascotas
+- **RF04.** El sistema debe permitir a los dueños crear perfiles de sus mascotas y asignarle un historial médico en blanco.
+- **RF05.** El sistema debe permitir a los dueños editar la información de sus mascotas.
+- **RF06.** El sistema debe permitir a los dueños de mascotas visualizar los perfiles de sus mascotas.
+- **RF07.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
+- **RF08.** El veterinario debe poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
+
+### Gestión de Citas
+- **RF09.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
+- **RF10.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
+- **RF11.** El sistema debe permitir al médico veterinario gestionar y editar citas.
+- **RF13.** El sistema debe permitir que, tanto médicos veterinarios como dueños de mascotas, busquen citas por su fecha.
+
+### Historial Médico
+- **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
+- **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
+
+### Reseñas
+- **RF16.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
+- **RF17.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
+
+### Chatbot Informativo
+- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos a los dueños de mascotas sobre:
+  - Alimentación de mascotas.
+  - Higiene animal.
+  - Salud y síntomas.
+  - Entrenamiento básico.
+  - Recomendaciones personalizadas según tipo de mascota.
+
+### Gestión de Servicios
+- **RF19.** El sistema debe permitir a los veterinarios ingresar cada servicio especializado que brindan. Entre ellos se encuentran los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
+- **RF20.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
+
+
+## 3.1.2. Requisitos No Funcionales
+
+Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad que el sistema debe cumplir, más allá de sus funciones básicas. A continuación se muestran los RNF alineados con los atributos de calidad definidos por Bass, Clements y Kazman (2012), los cuales se enfocan en las siguientes áreas.
+1. **Disponibilidad**  
+   Indica si el sistema está operable y accesible cuando los usuarios lo necesitan. Un sistema altamente disponible puede tolerar fallos y mantenerse en ejecución sin interrupciones.
+
+2. **Seguridad**  
+   Representa el grado de protección del sistema contra accesos no autorizados, uso indebido o ataques. Un sistema seguro protege tanto la información como sus servicios.
+
+3. **Desempeño**  
+   Evalúa la eficiencia con la que el sistema responde a solicitudes y realiza tareas, considerando el uso de recursos como CPU, memoria y tiempo de respuesta.
+
+4. **Facilidad de prueba**  
+   Mide cuán fácil es diseñar, ejecutar y evaluar pruebas efectivas del sistema. Esto incluye pruebas unitarias, de integración y de aceptación.
+
+5. **Modificabilidad**  
+   Describe el esfuerzo requerido para realizar cambios en el sistema, como agregar nuevas funcionalidades, corregir errores o adaptar el sistema a nuevos entornos.
+
+6. **Usabilidad**  
+   Indica qué tan fácil y eficiente es para los usuarios interactuar con el sistema. Incluye factores como intuición, accesibilidad y curva de aprendizaje.
+
+7. **Interoperabilidad**  
+   Se refiere a la capacidad del sistema para intercambiar información y trabajar conjuntamente con otros sistemas mediante interfaces bien definidas.
+
+| Código | Descripción                                                                                            | Métrica (con Método de Evaluación)                                                                                                           | Atributo de Calidad       |
+|--------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| RNF01  | El sistema debe estar disponible 24/7 para todos los usuarios.                                         | Debe tener más del 99.9% de disponibilidad mensual                                                                                           | Disponibilidad            |
+| RNF02  | El sistema debe requerir contraseñas robustas para el inicio de sesión.                                | El 100% de contraseñas cumplen con política de tener más de 8 caracteres entre mayúsculas, minúsculas, números y un símbolo.                 | Seguridad                 |
+| RNF03  | La información de los dni de los usuarios deben almacenarse cifrados.                                  | El 100% de los campos  sobre los dni de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos.       | Seguridad                 |
+| RNF04  | La información de los teléfonos de los usuarios deben almacenarse cifrados.                            | El 100% de los campos  sobre los teléfonos de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos. | Seguridad                 |
+| RNF05  | El 95% de las operaciones CRUD deben completarse en menos de 3 segundos. Esto incluye agregar, editar o eliminar un registro de historial medico, un registro de mascota, el perfil del dueño de mascota y el perfil del médico veterinario encargado             | El tiempo de respuesta de una operación CRUD debe ser, como mínimo, menor a 3 segundos en un 95% de 100 operaciones simuladas con Apache JMeter.                                                        | Desempeño                 |
+| RNF06  | La pantalla de inicio debe cargar en menos de 2 segundos en conexión de 20 Mbps.                       | El tiempo de carga de la pantalla de inicio debe ser menor a 2 segundos en al menos 3 navegadores modernos (Edge, Chrome y Opera).                                                      | Desempeño                 |
+| RNF07  | El sistema debe soportar al menos 100 usuarios simultáneos sin degradación.                            | Debe existir menos del 10% de degradación en los tiempos de carga de la pantalla principal de la aplicación durante prueba de carga con 100 usuarios concurrentes.                                                  | Desempeño                 |
+| RNF08  | El código debe estar documentado para facilitar su comprensión.                                        | El 60% del código del backend  debe estar documentado con JavaDoc y en inglés, colocando información de propósito como mínimo.                                                   | Modificabilidad           |
+| RNF09  | El sistema debe permitir añadir nuevas funcionalidades sin modificar más del 30% del código existente. | Debe haber menos del 30% de líneas modificadas, respecto al total de líneas, para agregar nueva funcionalidad. Esto se puede medir con Git diff.                                                                    | Modificabilidad           |
+| RNF10  | El sistema debe ser calificado como fácil de usar por los usuarios.                                    | El 80% de usuarios califican  la facilidad de uso de la interfaz con un 4 en escala de 1 a 5 en encuestas post-prueba                                        | Usabilidad                |
+| RNF11  | El sistema debe ser compatible con navegadores modernos.                                               | Funcionalidad completa debe poder realizarse en 3 navegadores como mínimo (Chrome, Edge, Opera).                                                                | Interoperabilidad         |
+| RNF12  | El sistema debe escalar horizontalmente si la carga supera el 80%.                                     | Latencia media de 3 segundos durante escalamiento automático con 200 usuarios simultáneos.                                                           | Escalabilidad             |                                                     | Escalabilidad             |
+
+## 3.1.3 Matriz User Stories vs Requisitos Funcionales y No Funcionales
+
+| US   | Requisito |
+|------|-----------|
+| US1  | RF1       |
+| US1  | RF2       |
+| US1  | RNF1      |
+| US1  | RNF2      |
+| US1  | RNF3      |
+| US2  | RF3       |
+| US2  | RF4       |
+| US2  | RNF1      |
+| US2  | RNF2      |
+| US2  | RNF3      |
+| US3  | RF5       |
+| US3  | RF6       |
+| US3  | RNF1      |
+| US3  | RNF2      |
+| US3  | RNF3      |
+| US4  | RF7       |
+| US4  | RNF1      |
+| US4  | RNF2      |
+| US4  | RNF3      |
+| US5  | RF8       |
+| US5  | RNF1      |
+| US5  | RNF2      |
+| US5  | RNF3      |
+| US6  | RF1       |
+| US6  | RF2       |
+| US6  | RNF1      |
+| US6  | RNF2      |
+| US6  | RNF3      |
+| US7  | RF1       |
+| US7  | RF3       |
+| US7  | RNF1      |
+| US7  | RNF2      |
+| US7  | RNF3      |
+| US8  | RF2       |
+| US8  | RF4       |
+| US8  | RNF1      |
+| US8  | RNF2      |
+| US8  | RNF3      |
+| US9  | RF3       |
+| US9  | RF4       |
+| US9  | RNF1      |
+| US9  | RNF2      |
+| US9  | RNF3      |
+| US10 | RF5       |
+| US10 | RF6       |
+| US10 | RNF1      |
+| US10 | RNF2      |
+| US10 | RNF3      |
+| US11 | RF7       |
+| US11 | RNF1      |
+| US11 | RNF2      |
+| US11 | RNF3      |
+| US12 | RF8       |
+| US12 | RNF1      |
+| US12 | RNF2      |
+| US12 | RNF3      |
+| US13 | RF1       |
+| US13 | RF3       |
+| US13 | RNF1      |
+| US13 | RNF2      |
+| US13 | RNF3      |
+| US14 | RF2       |
+| US14 | RF4       |
+| US14 | RNF1      |
+| US14 | RNF2      |
+| US14 | RNF3      |
+| US15 | RF1       |
+| US15 | RF3       |
+| US15 | RF5       |
+| US15 | RNF1      |
+| US15 | RNF2      |
+| US15 | RNF3      |
+| US16 | RF6       |
+| US16 | RF7       |
+| US16 | RNF1      |
+| US16 | RNF2      |
+| US16 | RNF3      |
+| US17 | RF2       |
+| US17 | RF4       |
+| US17 | RF8       |
+| US17 | RNF1      |
+| US17 | RNF2      |
+| US17 | RNF3      |
+| US18 | RF3       |
+| US18 | RF4       |
+| US18 | RF7       |
+| US18 | RNF1      |
+| US18 | RNF2      |
+| US18 | RNF3      |
+| US19 | RF1       |
+| US19 | RF5       |
+| US19 | RF6       |
+| US19 | RNF1      |
+| US19 | RNF2      |
+| US19 | RNF3      |
+| US20 | RF2       |
+| US20 | RF4       |
+| US20 | RF8       |
+| US20 | RNF1      |
+| US20 | RNF2      |
+| US20 | RNF3      |
+| US21 | RF1       |
+| US21 | RF3       |
+| US21 | RF7       |
+| US21 | RNF1      |
+| US21 | RNF2      |
+| US21 | RNF3      |
+| US22 | RF2       |
+| US22 | RF4       |
+| US22 | RF8       |
+| US22 | RNF1      |
+| US22 | RNF2      |
+| US22 | RNF3      |
+| US23 | RF3       |
+| US23 | RF6       |
+| US23 | RNF1      |
+| US23 | RNF2      |
+| US23 | RNF3      |
+| US24 | RF2       |
+| US24 | RF4       |
+| US24 | RF8       |
+| US24 | RNF1      |
+| US24 | RNF2      |
+| US24 | RNF3      |
+| US25 | RF5       |
+| US25 | RF6       |
+| US25 | RF7       |
+| US25 | RNF1      |
+| US25 | RNF2      |
+| US25 | RNF3      |
+| US26 | RF1       |
+| US26 | RF2       |
+| US26 | RF3       |
+| US26 | RNF1      |
+| US26 | RNF2      |
+| US26 | RNF3      |
+| US27 | RF1       |
+| US27 | RF2       |
+| US27 | RF5       |
+| US27 | RF6       |
+| US27 | RNF1      |
+| US27 | RNF2      |
+| US27 | RNF3      |
+| US28 | RF7       |
+| US28 | RF8       |
+| US28 | RNF1      |
+| US28 | RNF2      |
+| US28 | RNF3      |
+| US29 | RF6       |
+| US29 | RF8       |
+| US29 | RNF1      |
+| US29 | RNF2      |
+| US29 | RNF3      |
 
 
 ## 3.2. User Stories
@@ -18,7 +257,7 @@
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | US01          | Registro de Usuario        | Como visitante, deseo registrarme en la plataforma para poder utilizar las funcionalidades del sistema                                                        |
-| US02          | Gestión de Cuentas de Usuarios | Como administrador, deseo gestionar los cuentas de los usuarios para mantener la información y permisos actualizados.                                    |
+| US02          | Gestión de Cuentas de Usuarios | Como dueño de mascota o médico veterinario, deseo gestionar mi cuenta para mantener la información actualizada.                                    |
 
 ---
 # Gestión de Mascotas
@@ -71,7 +310,7 @@
 ---
 
 # Consultas Automatizadas
-**EP06: Como usuario, deseo realizar consultas simples para obtener información rápida sobre el cuidado y bienestar de mi mascota.
+**EP06: Como usuario, deseo realizar consultas simples para obtener información rápida sobre el cuidado y bienestar de mi mascota.**
 
 | User Story ID | Título                                | Descripción                                                                                                                                      |
 |---------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -98,8 +337,7 @@
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US27          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros 
-usuarios.                   |
+| US27          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios.                   |
 | US28          | Visualización de Reseñas | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. |
 
 ---
@@ -693,6 +931,7 @@ Historia de usuario base:
 Tomamos como referencia US06: Como usuario, quiero agendar citas para que mi mascota reciba atención veterinaria a tiempo. (Posee 3 puntos de historia).
 Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar en grupo y decidir la dificultad de cada historia de usuario, tomando como punto intermedio el User Story 06
 
+
 <table>
   <thead>
     <tr>
@@ -700,212 +939,39 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
       <th>User Story ID</th>
       <th>Título</th>
       <th>Descripción</th>
-      <th>Story Points (1/2/3/5/8)</th>
+      <th>Story Points</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>US08</td>
-      <td>Agendamiento de Citas</td>
-      <td>Como usuario, deseo agendar citas para que mis mascotas reciban atención veterinaria.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>US09</td>
-      <td>Cancelación de Citas</td>
-      <td>Como usuario, deseo cancelar citas si no puedo asistir, para reorganizar la atención de mis mascotas.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>US17</td>
-      <td>Creación de Perfiles de Clientes</td>
-      <td>Como usuario, deseo registrar mi perfil para poder gestionar mis mascotas y citas.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>US03</td>
-      <td>Creación de Perfil de Mascota</td>
-      <td>Como usuario, deseo crear un perfil para cada una de mis mascotas y llevar el control de su información.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>US04</td>
-      <td>Edición de Perfil de Mascota</td>
-      <td>Como usuario, deseo editar la información de mis mascotas para mantenerla actualizada.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>US05</td>
-      <td>Visualización de Perfiles de Mascotas</td>
-      <td>Como usuario, deseo consultar los perfiles de mis mascotas en cualquier momento.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>US10</td>
-      <td>Gestión de Citas (Admin/Doctor)</td>
-      <td>Como personal médico o administrador, deseo gestionar las citas para atender a los clientes.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>US25</td>
-      <td>Visualización del Historial Médico</td>
-      <td>Como usuario, deseo consultar el historial médico de mis mascotas para conocer diagnósticos y tratamientos anteriores.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>US26</td>
-      <td>Actualización del Historial Médico (Doctor)</td>
-      <td>Como veterinario, deseo registrar el historial médico de una mascota para llevar un control clínico.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>US27</td>
-      <td>Publicar Reseñas sobre Veterinarios</td>
-      <td>Como usuario, deseo dejar reseñas sobre la atención recibida para compartir mi experiencia.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>US28</td>
-      <td>Visualización de Reseñas</td>
-      <td>Como usuario, deseo leer reseñas de otros para elegir al mejor profesional para mi mascota.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>US20</td>
-      <td>Chatbot: Consejos de Alimentación</td>
-      <td>Como usuario, deseo obtener consejos sobre la alimentación adecuada para mis mascotas mediante un chatbot.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>US21</td>
-      <td>Chatbot: Higiene Animal</td>
-      <td>Como usuario, deseo obtener consejos sobre higiene para cuidar mejor a mis mascotas.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>US22</td>
-      <td>Chatbot: Salud y Síntomas</td>
-      <td>Como usuario, deseo identificar síntomas comunes de enfermedades para actuar rápidamente.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>US23</td>
-      <td>Chatbot: Entrenamiento Básico</td>
-      <td>Como usuario, deseo obtener consejos básicos de entrenamiento para mejorar el comportamiento de mis mascotas.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>US24</td>
-      <td>Chatbot: Recomendaciones según Mascota</td>
-      <td>Como usuario, deseo obtener recomendaciones personalizadas para cada tipo de mascota.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>US06</td>
-      <td>Búsqueda de Mascotas por ID</td>
-      <td>Como administrador o médico veterinario, deseo buscar mascotas por su ID para facilitar su gestión interna.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>US07</td>
-      <td>Gestión de Perfiles de Mascotas (Admin)</td>
-      <td>Como administrador, deseo gestionar todos los perfiles de mascotas registrados en la plataforma.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>US11</td>
-      <td>Búsqueda de Citas por ID</td>
-      <td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>US12</td>
-      <td>Edición de Citas (Admin/Doctor)</td>
-      <td>Como personal médico o administrador, deseo editar las citas programadas para adaptarlas según disponibilidad.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>US13</td>
-      <td>Barra de Navegación en la Landing Page</td>
-      <td>Como usuario, quiero un menú para navegar entre las secciones principales de la página.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>US14</td>
-      <td>Sección "Why Choose Us?"</td>
-      <td>Como usuario, quiero conocer las razones para elegir esta plataforma y confiar en sus servicios.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>US15</td>
-      <td>Formulario de Contacto</td>
-      <td>Como usuario, deseo contactar a la clínica para resolver dudas o pedir ayuda.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>US16</td>
-      <td>Videos de Características</td>
-      <td>Como usuario, deseo ver videos informativos sobre el uso y beneficios de la aplicación.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>US29</td>
-      <td>Cambio de Idioma</td>
-      <td>Como usuario, deseo cambiar el idioma de la aplicación para entender mejor el contenido.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>US01</td>
-      <td>Registro de Usuarios</td>
-      <td>Como usuario, deseo registrarme en la plataforma para acceder a los servicios ofrecidos.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>US02</td>
-      <td>Gestión de Perfiles de Usuario (Admin)</td>
-      <td>Como administrador, deseo gestionar los cuentas de los usuarios para asegurar el correcto uso del sistema.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>US18</td>
-      <td>Edición de Perfil de Cliente (Admin)</td>
-      <td>Como administrador, deseo editar los datos de los clientes en caso de errores o cambios solicitados.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>US19</td>
-      <td>Búsqueda de Clientes por ID</td>
-      <td>Como administrador, deseo buscar a los clientes por su ID para dar seguimiento a sus casos.</td>
-      <td>2</td>
-    </tr>
+    <tr><td>1</td><td>US01</td><td>Registro de Usuarios</td><td>Como usuario, deseo registrarme en la plataforma para acceder a los servicios ofrecidos.</td><td>3</td></tr>
+    <tr><td>2</td><td>US17</td><td>Creación de Perfiles de Clientes</td><td>Como usuario, deseo registrar mi perfil para poder gestionar mis mascotas y citas.</td><td>3</td></tr>
+    <tr><td>3</td><td>US03</td><td>Creación de Perfil de Mascota</td><td>Como usuario, deseo crear un perfil para cada una de mis mascotas y llevar el control de su información.</td><td>3</td></tr>
+    <tr><td>4</td><td>US08</td><td>Agendamiento de Citas</td><td>Como usuario, deseo agendar citas para que mis mascotas reciban atención veterinaria.</td><td>3</td></tr>
+    <tr><td>5</td><td>US09</td><td>Cancelación de Citas</td><td>Como usuario, deseo cancelar citas si no puedo asistir, para reorganizar la atención de mis mascotas.</td><td>2</td></tr>
+    <tr><td>6</td><td>US10</td><td>Gestión de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo gestionar las citas para atender a los clientes.</td><td>5</td></tr>
+    <tr><td>7</td><td>US04</td><td>Edición de Perfil de Mascota</td><td>Como usuario, deseo editar la información de mis mascotas para mantenerla actualizada.</td><td>3</td></tr>
+    <tr><td>8</td><td>US05</td><td>Visualización de Perfiles de Mascotas</td><td>Como usuario, deseo consultar los perfiles de mis mascotas en cualquier momento.</td><td>2</td></tr>
+    <tr><td>9</td><td>US25</td><td>Visualización del Historial Médico</td><td>Como usuario, deseo consultar el historial médico de mis mascotas para conocer diagnósticos y tratamientos anteriores.</td><td>3</td></tr>
+    <tr><td>10</td><td>US26</td><td>Actualización del Historial Médico (Doctor)</td><td>Como veterinario, deseo registrar el historial médico de una mascota para llevar un control clínico.</td><td>3</td></tr>
+    <tr><td>11</td><td>US07</td><td>Gestión de Perfiles de Mascotas (Admin)</td><td>Como administrador, deseo gestionar todos los perfiles de mascotas registrados en la plataforma.</td><td>3</td></tr>
+    <tr><td>12</td><td>US06</td><td>Búsqueda de Mascotas por ID</td><td>Como administrador o médico veterinario, deseo buscar mascotas por su ID para facilitar su gestión interna.</td><td>2</td></tr>
+    <tr><td>13</td><td>US12</td><td>Edición de Citas (Admin/Doctor)</td><td>Como personal médico o administrador, deseo editar las citas programadas para adaptarlas según disponibilidad.</td><td>3</td></tr>
+    <tr><td>14</td><td>US11</td><td>Búsqueda de Citas por ID</td><td>Como administrador, deseo buscar citas médicas por su ID para controlar su trazabilidad.</td><td>2</td></tr>
+    <tr><td>15</td><td>US28</td><td>Visualización de Reseñas</td><td>Como usuario, deseo leer reseñas de otros para elegir al mejor profesional para mi mascota.</td><td>2</td></tr>
+    <tr><td>16</td><td>US27</td><td>Publicar Reseñas sobre Veterinarios</td><td>Como usuario, deseo dejar reseñas sobre la atención recibida para compartir mi experiencia.</td><td>2</td></tr>
+    <tr><td>17</td><td>US02</td><td>Gestión de Perfiles de Usuario (Admin)</td><td>Como administrador, deseo gestionar los cuentas de los usuarios para asegurar el correcto uso del sistema.</td><td>5</td></tr>
+    <tr><td>18</td><td>US18</td><td>Edición de Perfil de Cliente (Admin)</td><td>Como administrador, deseo editar los datos de los clientes en caso de errores o cambios solicitados.</td><td>3</td></tr>
+    <tr><td>19</td><td>US19</td><td>Búsqueda de Clientes por ID</td><td>Como administrador, deseo buscar a los clientes por su ID para dar seguimiento a sus casos.</td><td>2</td></tr>
+    <tr><td>20</td><td>US22</td><td>Chatbot: Salud y Síntomas</td><td>Como usuario, deseo identificar síntomas comunes de enfermedades para actuar rápidamente.</td><td>3</td></tr>
+    <tr><td>21</td><td>US20</td><td>Chatbot: Consejos de Alimentación</td><td>Como usuario, deseo obtener consejos sobre la alimentación adecuada para mis mascotas mediante un chatbot.</td><td>5</td></tr>
+    <tr><td>22</td><td>US21</td><td>Chatbot: Higiene Animal</td><td>Como usuario, deseo obtener consejos sobre higiene para cuidar mejor a mis mascotas.</td><td>5</td></tr>
+    <tr><td>23</td><td>US23</td><td>Chatbot: Entrenamiento Básico</td><td>Como usuario, deseo obtener consejos básicos de entrenamiento para mejorar el comportamiento de mis mascotas.</td><td>2</td></tr>
+    <tr><td>24</td><td>US24</td><td>Chatbot: Recomendaciones según Mascota</td><td>Como usuario, deseo obtener recomendaciones personalizadas para cada tipo de mascota.</td><td>2</td></tr>
+    <tr><td>25</td><td>US13</td><td>Barra de Navegación en la Landing Page</td><td>Como usuario, quiero un menú para navegar entre las secciones principales de la página.</td><td>2</td></tr>
+    <tr><td>26</td><td>US14</td><td>Sección "Why Choose Us?"</td><td>Como usuario, quiero conocer las razones para elegir esta plataforma y confiar en sus servicios.</td><td>2</td></tr>
+    <tr><td>27</td><td>US15</td><td>Formulario de Contacto</td><td>Como usuario, deseo contactar a la clínica para resolver dudas o pedir ayuda.</td><td>2</td></tr>
+    <tr><td>28</td><td>US16</td><td>Videos de Características</td><td>Como usuario, deseo ver videos informativos sobre el uso y beneficios de la aplicación.</td><td>2</td></tr>
+    <tr><td>29</td><td>US29</td><td>Cambio de Idioma</td><td>Como usuario, deseo cambiar el idioma de la aplicación para entender mejor el contenido.</td><td>3</td></tr>
   </tbody>
 </table>
+
