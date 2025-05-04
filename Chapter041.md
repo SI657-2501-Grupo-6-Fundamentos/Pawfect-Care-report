@@ -54,8 +54,29 @@ Además del enfoque DDD, se considerarán otros patrones arquitectónicos y esti
 
 Estos enfoques y patrones serán evaluados y aplicados según las necesidades específicas del proyecto, asegurando un diseño arquitectónico robusto.
 
-##  4.1.3. Context Diagram
+## 4.1.3. Context Diagram
 
 El diagrama de contexto es un recurso clave para analizar las conexiones entre Pawfect Care y los elementos externos que lo rodean. Este enfoque permite identificar posibles áreas de mejora e integración, proporcionando una visión clara de cómo el sistema interactúa con su entorno.
 
-[![context-diagram.png](https://i.postimg.cc/7ZFnD6pb/context-diagram.png)](https://postimg.cc/PCMwQtfk)
+[![Pawfect-Care-vpd-1.png](https://i.postimg.cc/tCSZzXPr/Pawfect-Care-vpd-1.png)](https://postimg.cc/WhZ1Nc5r)
+
+## 4.1.4. Approach driven ViewPoints Diagrams
+
+### Container Diagram
+
+En este diagrama se expresa una representación visual que muestra los principales contenedores de software que componen un sistema. Por ejemplo, aplicaciones, bases de datos y microservicios que interactúan entre sí.
+
+[![Pawfect-Care-vpd.png](https://i.postimg.cc/kgTcK3X9/Pawfect-Care-vpd.png)](https://postimg.cc/TKWgvsDH)
+
+
+### Pet Management Component Diagram
+A continuación, se presenta el diagrama de componentes para el microservicio de gestión de mascotas.
+<!-- -->
+
+### Medical Appointment Management Component Diagram
+A continuación, se presenta el diagrama de componentes para el microservicio de gestión de citas.
+<!-- -->
+
+### Reviews & Feedback Component Diagram
+A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
+<!-- -->
