@@ -66,17 +66,17 @@ El diagrama de contexto es un recurso clave para analizar las conexiones entre P
 
 En este diagrama se expresa una representación visual que muestra los principales contenedores de software que componen un sistema. Por ejemplo, aplicaciones, bases de datos y microservicios que interactúan entre sí.
 
-[![Pawfect-Care-vpd.png](https://i.postimg.cc/kgTcK3X9/Pawfect-Care-vpd.png)](https://postimg.cc/TKWgvsDH)
+[![Pawfect-Care-Container.png](https://i.postimg.cc/9FxzvSZg/Pawfect-Care-Container.png)](https://postimg.cc/vcVQn0P5)
 
 
 ### Pet Management Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de gestión de mascotas.
-<!-- -->
+[![Pet-Management-Component.png](https://i.postimg.cc/15Rf7PnN/Pet-Management-Component.png)](https://postimg.cc/NLVsL3xg)
 
 ### Medical Appointment Management Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de gestión de citas.
-<!-- -->
+[![Appointment-Management-Component.png](https://i.postimg.cc/v8t4vDBs/Appointment-Management-Component.png)](https://postimg.cc/6TT6WWnj)
 
 ### Reviews & Feedback Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
-<!-- -->
+[![Feedback-Component.png](https://i.postimg.cc/N08tw9ZG/Feedback-Component.png)](https://postimg.cc/3ywVXRKz)
