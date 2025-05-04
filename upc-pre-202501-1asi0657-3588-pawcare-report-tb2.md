@@ -747,7 +747,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ## 3.1.1. Requisitos Funcionales
 
 ### Gestión de Usuarios y Clientes
-- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma. Para ello se requiere que ingresen su nombre completo, teléfono, correo electrónico, dirección y contraseña. Además, si el usuario es un médico veterinario se le pedirá ingresar el tipo de servicio que ofrece.
+- **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma. Para ello se requiere que ingresen su nombre completo, teléfono, correo electrónico y contraseña. Además, si el usuario es un médico veterinario se le pedirá ingresar su especialidad. Por otro lado, si es dueño de mascota, deberá añadir su dirección.
 - **RF02.** El sistema debe permitir a los usuarios iniciar sesión, ingresando su correo electrónico y contraseña.
 - **RF03.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
 
@@ -966,17 +966,22 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 Como administrador, deseo gestionar los usuarios para asegurar que solo personas autorizadas tengan acceso al sistema.
 
 ### Criterios de Aceptación:
-- **Escenario 1:** El usuario necesita registrarse en el sistema  
-  - **Dado que** el usuario está en la página de registro,  
-  - **Cuando** el usuario completa todos los campos requeridos (nombre completo, teléfono, correo electrónico, dirección y contraseña),  
+- **Escenario 1:** El dueño de mascota necesita registrarse en el sistema  
+  - **Dado que** el dueño de mascota está en la página de registro,  
+  - **Cuando** el dueño de mascota completa todos los campos requeridos (nombre completo, teléfono, correo electrónico, dirección y contraseña),  
   - **Entonces** el sistema debe permitir al usuario crear una cuenta y mostrar un mensaje de confirmación.
 
-- **Escenario 2:** El usuario ingresa un correo electrónico ya registrado  
+  - **Escenario 2:** El veterinario necesita registrarse en el sistema  
+  - **Dado que** el veterinario está en la página de registro,  
+  - **Cuando** el veterinario completa todos los campos requeridos (nombre completo, teléfono, correo electrónico, especialidad y contraseña),  
+  - **Entonces** el sistema debe permitir al usuario crear una cuenta y mostrar un mensaje de confirmación.
+
+- **Escenario 3:** El usuario ingresa un correo electrónico ya registrado  
   - **Dado que** el usuario intenta registrarse con un correo electrónico ya asociado a una cuenta,  
   - **Cuando** el usuario ingresa el correo duplicado y envía el formulario,  
   - **Entonces** el sistema debe mostrar un mensaje de error indicando que el correo ya está registrado.
 
-- **Escenario 3:** El usuario deja campos obligatorios sin llenar  
+- **Escenario 4:** El usuario deja campos obligatorios sin llenar  
   - **Dado que** el usuario intenta registrarse sin completar todos los campos obligatorios,  
   - **Cuando** el usuario presiona el botón de registro sin llenar todos los campos,  
   - **Entonces** el sistema debe mostrar un mensaje de error solicitando que se completen todos los campos requeridos.
