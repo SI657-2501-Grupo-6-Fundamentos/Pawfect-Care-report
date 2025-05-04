@@ -1,4 +1,5 @@
 
+
 # **Capítulo II: Requirements Elicitation & Analysis**
 
 ## 2.1. Competidores.
@@ -231,18 +232,19 @@ El Doctor Carlos menciona que en su lugar de trabajo utilizan VetPraxis, princip
 
 Entrevista N°3:
 
-**Entrevistado:** [Nonmbre] <br>
-**Sexo:** [masculino o femenino] <br>
-**Edad:** [n] años<br>
-**Domicilio:** [Distrito] <br>
+**Entrevistado:** Carlos Ventura <br>
+**Sexo:** Masculino <br>
+**Edad:** 38 años<br>
+**Domicilio:** Lima <br>
 **Inicio de la Entrevista:** 0:00<br>
-**Duración de la Entrevista:** 6:58<br>
+**Duración de la Entrevista:** 2:49<br>
 
-<img src="./assets/Chapter02/entrevista3.png" alt="Entrevista con [Nombre]" style="width: 600px; height: auto;"><br>
+[![image.png](https://i.postimg.cc/J7YGL53T/image.png)](https://postimg.cc/fkXw7XrX)
 
-**Enlace:** [``]()
+**Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EVHJf-z0S_xLmFGdEM4xjqgBlsb3F-q3hD-1zjTQ1UHpLA?e=kZdvhS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EVHJf-z0S_xLmFGdEM4xjqgBlsb3F-q3hD-1zjTQ1UHpLA?e=kZdvhS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 **Resumen de la Entrevista:** <br>
+El Dr. Carlos Ventura, médico veterinario de 38 años residente en Lima, Perú, trabaja en una clínica especializada en animales pequeños. Actualmente utiliza la aplicación VetClinic Manager para la gestión veterinaria, principalmente por su capacidad de almacenar historiales médicos digitalmente. Antes de usar esta app, probó herramientas como Excel y agendas físicas, pero estas se volvieron poco prácticas con el crecimiento de su clientela. Lo que más valora de VetClinic Manager es que centraliza el historial clínico, la agenda de citas y la facturación. Sin embargo, critica que el sistema es lento, confuso en ciertas áreas y carece de una interfaz amigable. Como mejora principal, propondría una interfaz más limpia, con accesos más rápidos a información clave, y una mejor gestión del inventario.
 
 ---
 
@@ -260,7 +262,7 @@ Entrevista N°1:
 **Inicio de la Entrevista:** 0:00<br>
 **Duración de la Entrevista:** 2:20<br>
 
-<img src="./assets/Chapter02/entrevista-ana.png" alt="Entrevista con Ana" style="width: 600px; height: auto;"><br>
+[![entrevista-ana.png](https://i.postimg.cc/025jhjYD/entrevista-ana.png)](https://postimg.cc/z3MqgJPG)
 
 **Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS)
 
@@ -307,7 +309,7 @@ Sergio es un estudiante de 20 años que acude al veterinario con su mascota para
 
 ### 2.2.3. Análisis de entrevistas.
 
-***Segmento 1: Clinicas Veterinarias***
+***Segmento 1:  Clinicas Veterinarias***
 
 - El 100% de los entrevistados utilizan software de gestión en sus clínicas veterinarias. Dos de ellos (66.7%) emplean VetPraxis debido a su reconocimiento en el mercado, mientras que uno (33.3%) utiliza otro software específico para veterinarias.
 - El 100% de los veterinarios expresaron preocupaciones sobre el tiempo que toma completar las historias clínicas. El 66.7% de ellos reportaron que el proceso puede tomar entre 7 y 15 minutos, lo cual consideran excesivo. Esto destaca la necesidad de soluciones más eficientes.
@@ -369,7 +371,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### 2.3.3. Empathy Mapping.
 
-- **Primer segmento: Clinicas Veterinarias Veterinarios**
+- **Primer segmento: Clinicas Veterinarias**
 [![Empathy-Map1.png](https://i.postimg.cc/mZM16bky/Empathy-Map1.png)](https://postimg.cc/jCxjDYzD)
 
 - **Segundo segmento: Dueños de Mascotas**
@@ -377,10 +379,11 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### 2.3.4. As-is Scenario Mapping.
 
-- **Primer segmento: Clinicas Veterinarias Veterinarios**
+- **Primer segmento: Clinicas Veterinarias**
 [![Asis1.jpg](https://i.postimg.cc/fR59jBy4/Asis1.jpg)](https://postimg.cc/Sn2RmLcV)
 
 - **Segundo segmento: Dueños de Mascotas**
 [![Asis2.jpg](https://i.postimg.cc/kgP6dL6P/Asis2.jpg)](https://postimg.cc/qzQMsbx1)
 
 
+---
