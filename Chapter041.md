@@ -90,8 +90,48 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 
 ## 4.1.5. Relational/Non Relational Database Diagram
 Optamos por utilizar MySQL como sistema de gestión de bases de datos, gestionado mediante MySQL Workbench. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
-[![Database-Diagram.png](https://i.postimg.cc/k5pD10X3/image.png)](https://postimg.cc/WD02tfkX)
+[![Pawfect-Care-Database-Diagram.png](https://i.postimg.cc/Xq40Bx5y/Pawfect-Care-2025-05-04-15-45.png)](https://postimg.cc/FdW62yD9)
 
 ## 4.1.6. Design Patterns
+
+Los patrones de diseño identificados para el desarrollo del sistema son los siguientes:
+
+### Command
+
+Este patrón encapsula una solicitud como un objeto, permitiendo parametrizar clientes con diferentes solicitudes, encolar o registrar solicitudes, y soportar operaciones como deshacer. Es especialmente útil para desacoplar el objeto que envía una solicitud del que la recibe.
+
+**Aplicación en el sistema:**
+
+- **En Pet Management:**
+  - `CreatePetCommand`
+  - `EditPetCommand`
+  - `DeletePetCommand`
+  - `CreateMedicalRecordCommand`
+  - `EditMedicalRecordCommand`
+  - `DeleteMedicalRecordCommand`
+
+- **En Medical Appointment:**
+  - `CreateMedicalAppointmentCommand`
+  - `EditMedicalAppointmentCommand`
+  - `DeleteMedicalAppointmentCommand`
+
+- **En Reviews & Feedback:**
+  - `CreateReviewCommand`
+  - `EditReviewCommand`
+  - `DeleteReviewCommand`
+
+Con ello se permite implementar de forma flexible la gestión de operaciones (como creación, edición o eliminación) y facilita características futuras como el historial de acciones o deshacer cambios.
+
+---
+
+### Builder
+
+Este patrón permite construir un objeto complejo paso a paso. Es ideal cuando el proceso de construcción debe permitir diferentes representaciones del objeto que se está construyendo.
+
+**Aplicación en el sistema:**
+
+- Para construir objetos de tipo perfil (Profile) tanto de **pet owners** como de **veterinarians**, ya que estos pueden contener múltiples atributos opcionales como la foto de perfil para dueños de mascotas y veterinarios.
+
+Con ello se permite crear perfiles personalizados de forma clara y escalable, evitando constructores con demasiados parámetros y mejorando la legibilidad del código.
 
 ## 4.1.7. Tactics
