@@ -88,9 +88,12 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 #### Bounded Context: Medical Appointment Management 
 [![Diagrama-Actividades-Medical-Appointment-Management.png](https://i.postimg.cc/xjHXfjPc/Diagrama-Actividades-Medical-Appointment-Management.png)](https://postimg.cc/z3zzpr6r)
 
+### UML Class Diagram
+[![Class-Diagram.png](https://i.postimg.cc/FKgWck31/Class-Diagram.png)](https://postimg.cc/McHmJTs8)
+
 ## 4.1.5. Relational/Non Relational Database Diagram
 Optamos por utilizar MySQL como sistema de gestión de bases de datos, gestionado mediante MySQL Workbench. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
-[![Pawfect-Care-Database-Diagram.png](https://i.postimg.cc/Xq40Bx5y/Pawfect-Care-2025-05-04-15-45.png)](https://postimg.cc/FdW62yD9)
+[![Database-Diagram.png](https://i.postimg.cc/0y9Jj6kV/image.png)](https://postimg.cc/cr5J5L83)
 
 ## 4.1.6. Design Patterns
 
