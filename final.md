@@ -29,3 +29,9 @@ Entrevistas a Dueños de Mascotas:<br>
 **Anexo 2:**
 Respositorio en GitHub para el reporte:
 [`https://github.com/SI657-2501-Grupo-6-Fundamentos/Pawfect-Care-report`](https://github.com/SI657-2501-Grupo-6-Fundamentos/Pawfect-Care-report)
+
+
+**Anexo 3:**
+**Link del Trello**
+
+[`https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog`](https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog)
