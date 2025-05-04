@@ -58,7 +58,7 @@ Estos enfoques y patrones serán evaluados y aplicados según las necesidades es
 
 El diagrama de contexto es un recurso clave para analizar las conexiones entre Pawfect Care y los elementos externos que lo rodean. Este enfoque permite identificar posibles áreas de mejora e integración, proporcionando una visión clara de cómo el sistema interactúa con su entorno.
 
-[![Pawfect-Care-vpd-1.png](https://i.postimg.cc/tCSZzXPr/Pawfect-Care-vpd-1.png)](https://postimg.cc/WhZ1Nc5r)
+[![Pawfect-Care-Context-Diagram.png](https://i.postimg.cc/PrKSpm8v/Pawfect-Care-Context-Diagram.png)](https://postimg.cc/LnYtGgDm)
 
 ## 4.1.4. Approach driven ViewPoints Diagrams
 
@@ -66,7 +66,7 @@ El diagrama de contexto es un recurso clave para analizar las conexiones entre P
 
 En este diagrama se expresa una representación visual que muestra los principales contenedores de software que componen un sistema. Por ejemplo, aplicaciones, bases de datos y microservicios que interactúan entre sí.
 
-[![Pawfect-Care-Container.png](https://i.postimg.cc/9FxzvSZg/Pawfect-Care-Container.png)](https://postimg.cc/vcVQn0P5)
+[![Pawfect-Care-Containers-Diagram.png](https://i.postimg.cc/sD3ngn1R/Pawfect-Care-Containers-Diagram.png)](https://postimg.cc/ThHjkJrk)
 
 
 ### Pet Management Component Diagram
@@ -75,7 +75,7 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 
 ### Medical Appointment Management Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de gestión de citas.
-[![Appointment-Management-Component.png](https://i.postimg.cc/v8t4vDBs/Appointment-Management-Component.png)](https://postimg.cc/6TT6WWnj)
+[![Pawfect-Care-Appointment-Microservice-Component-Diagram.png](https://i.postimg.cc/L8LhQVBn/Pawfect-Care-Appointment-Microservice-Component-Diagram.png)](https://postimg.cc/PCftPY7j)
 
 ### Reviews & Feedback Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
