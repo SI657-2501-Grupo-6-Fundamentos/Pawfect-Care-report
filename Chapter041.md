@@ -81,6 +81,13 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
 [![Feedback-Component.png](https://i.postimg.cc/N08tw9ZG/Feedback-Component.png)](https://postimg.cc/3ywVXRKz)
 
+### UML Activity Diagrams
+#### Bounded Context: Pet Management
+[![Diagrama-Actividades-Pet-Management.png](https://i.postimg.cc/Dw7JYVLm/Diagrama-Actividades-Pet-Management.png)](https://postimg.cc/QHndHy6r)
+
+#### Bounded Context: Medical Appointment Management 
+[![Diagrama-Actividades-Medical-Appointment-Management.png](https://i.postimg.cc/xjHXfjPc/Diagrama-Actividades-Medical-Appointment-Management.png)](https://postimg.cc/z3zzpr6r)
+
 ## 4.1.5. Relational/Non Relational Database Diagram
 Optamos por utilizar MySQL como sistema de gestión de bases de datos, gestionado mediante MySQL Workbench. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
 [![Database-Diagram.png](https://i.postimg.cc/k5pD10X3/image.png)](https://postimg.cc/WD02tfkX)
