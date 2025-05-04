@@ -82,5 +82,9 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 [![Feedback-Component.png](https://i.postimg.cc/N08tw9ZG/Feedback-Component.png)](https://postimg.cc/3ywVXRKz)
 
 ## 4.1.5. Relational/Non Relational Database Diagram
-A continuación, se presenta el diagrama de base de datos relacional. Optamos por utilizar MySQL como sistema de gestión de bases de datos, gestionado mediante MySQL Workbench. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
+Optamos por utilizar MySQL como sistema de gestión de bases de datos, gestionado mediante MySQL Workbench. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
 [![Database-Diagram.png](https://i.postimg.cc/k5pD10X3/image.png)](https://postimg.cc/WD02tfkX)
+
+## 4.1.6. Design Patterns
+
+## 4.1.7. Tactics
