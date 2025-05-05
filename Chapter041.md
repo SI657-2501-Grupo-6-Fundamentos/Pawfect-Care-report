@@ -80,3 +80,74 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 ### Reviews & Feedback Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
 [![Feedback-Component.png](https://i.postimg.cc/N08tw9ZG/Feedback-Component.png)](https://postimg.cc/3ywVXRKz)
+
+### UML Activity Diagrams
+#### Bounded Context: Pet Management
+[![Diagrama-Actividades-Pet-Management.png](https://i.postimg.cc/Dw7JYVLm/Diagrama-Actividades-Pet-Management.png)](https://postimg.cc/QHndHy6r)
+
+#### Bounded Context: Medical Appointment Management 
+[![Diagrama-Actividades-Medical-Appointment-Management.png](https://i.postimg.cc/xjHXfjPc/Diagrama-Actividades-Medical-Appointment-Management.png)](https://postimg.cc/z3zzpr6r)
+
+### UML Class Diagram
+[![Class-Diagram.png](https://i.postimg.cc/FKgWck31/Class-Diagram.png)](https://postimg.cc/McHmJTs8)
+
+## 4.1.5. Relational/Non Relational Database Diagram
+Optamos por utilizar MySQL como sistema de gestión de bases de datos, gestionado mediante MySQL Workbench. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
+[![Database-Diagram.png](https://i.postimg.cc/0y9Jj6kV/image.png)](https://postimg.cc/cr5J5L83)
+
+## 4.1.6. Design Patterns
+
+Los patrones de diseño identificados para el desarrollo del sistema son los siguientes:
+
+### Command
+
+Este patrón encapsula una solicitud como un objeto, permitiendo parametrizar clientes con diferentes solicitudes, encolar o registrar solicitudes, y soportar operaciones como deshacer. Es especialmente útil para desacoplar el objeto que envía una solicitud del que la recibe.
+
+**Aplicación en el sistema:**
+
+- **En Pet Management:**
+  - `CreatePetCommand`
+  - `EditPetCommand`
+  - `DeletePetCommand`
+  - `CreateMedicalRecordCommand`
+  - `EditMedicalRecordCommand`
+  - `DeleteMedicalRecordCommand`
+
+- **En Medical Appointment:**
+  - `CreateMedicalAppointmentCommand`
+  - `EditMedicalAppointmentCommand`
+  - `DeleteMedicalAppointmentCommand`
+
+- **En Reviews & Feedback:**
+  - `CreateReviewCommand`
+  - `EditReviewCommand`
+  - `DeleteReviewCommand`
+
+Con ello se permite implementar de forma flexible la gestión de operaciones (como creación, edición o eliminación) y facilita características futuras como el historial de acciones o deshacer cambios.
+
+---
+
+### Builder
+
+Este patrón permite construir un objeto complejo paso a paso. Es ideal cuando el proceso de construcción debe permitir diferentes representaciones del objeto que se está construyendo.
+
+**Aplicación en el sistema:**
+
+- Para construir objetos de tipo perfil (Profile) tanto de **pet owners** como de **veterinarians**, ya que estos pueden contener múltiples atributos opcionales como la foto de perfil para dueños de mascotas y veterinarios.
+
+Con ello se permite crear perfiles personalizados de forma clara y escalable, evitando constructores con demasiados parámetros y mejorando la legibilidad del código.
+
+## 4.1.7. Tactics
+
+Los atributos de calidad seleccionados para este proyecto son rendimiento, seguridad, disponibilidad, usabilidad y escalabilidad. Las tácticas que se aplicarán para cada una de ellas son las siguientes:
+
+- **Rendimiento:** Para optimizar el rendimiento del sistema, se emplearán técnicas de caché para reducir los tiempos de respuesta ante solicitudes repetidas. Asimismo, se utilizará el balanceo de carga para distribuir eficientemente las peticiones entre múltiples servidores, evitando cuellos de botella y mejorando el tiempo de respuesta global.
+
+- **Seguridad:** La protección del sistema se garantizará mediante el uso de autenticación segura (como OAuth 2.0 o MFA) y encriptación de datos sensibles en tránsito y en reposo. Además, se validarán todas las entradas del usuario y se aplicarán controles de acceso estrictos para prevenir accesos no autorizados o vulnerabilidades como la inyección de código.
+
+- **Disponibilidad:** Se implementará una arquitectura tolerante a fallos que incluya réplicas automáticas y monitoreo continuo. Además, se hará uso de infraestructura en la nube con mecanismos de recuperación ante desastres para asegurar que el sistema esté disponible incluso en caso de fallas o interrupciones del servicio.
+
+- **Usabilidad:** Se diseñará una interfaz centrada en la experiencia del usuario, con flujos de navegación simples e intuitivos. La retroalimentación inmediata a las acciones y la consistencia en los elementos de interfaz permitirán una curva de aprendizaje baja y una interacción eficiente.
+
+- **Escalabilidad:** Se adoptará una arquitectura basada en microservicios que permita escalar componentes de manera independiente según la carga. También se utilizarán herramientas de orquestación y contenedores para facilitar el despliegue automatizado y el crecimiento horizontal del sistema en función de la demanda.
+
