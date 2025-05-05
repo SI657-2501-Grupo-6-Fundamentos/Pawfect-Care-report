@@ -29,7 +29,6 @@ Para el desarrollo de la aplicación "Pawfect Care", que conecta a las veterinar
 | QA04 | Usabilidad | Un veterinario o dueño debe poder buscar y acceder al perfil de una mascota en máximo 3 clics. | US07 (Búsqueda de Mascotas) |
 | QA05 | Escalabilidad | El sistema debe soportar hasta 1 000 usuarios concurrentes (veterinarios y dueños) sin degradar tiempos de respuesta. | US19 (Visualización del Historial Médico) - US20 (Actualización del Historial Médico) |
 ### 4.2.4  Constraints
-//MySQL, Angular, Spring Boot
 | ID | CONSTRAINTS | DESCRIPCIÓN |
 |----|-------------|-------------|
 | CONS01 | Tecnológico – Front-end | La UI debe implementarse con Angular y TypeScript, siguiendo las buenas prácticas de modularidad, lazy-loading y responsive design. |
@@ -39,8 +38,8 @@ Para el desarrollo de la aplicación "Pawfect Care", que conecta a las veterinar
 ### 4.2.5  Architectural Concerns
 | ID | ARQUITECTURAL CONCERNS |
 |----|------------------------|
-| ARC-01 |  Los datos personales de los usuarios podrían estar expuestos a riesgos si no se implementan adecuadamente medidas de seguridad robustas. |
-| ARC-02 | Utilizar lo aprendido en tecnologías en proyectos previos como Java Spring Boot, Angular, MySQL y Github |
-| ARC-03 | Asignar responsabilidades cada integrante según su mejor especialidad para un mejor desempeño. |
-| ARC-04 | Lograr un rendimiento óptimo en términos de tiempos de respuesta y eficiencia del procesamiento podría ser difícil, particularmente bajo cargas de trabajo elevadas. |
-| ARC-05 | Integrar microservicios de manera que se mantenga la cohesión y se facilite el mantenimiento podría ser un desafío, especialmente si se busca mantener una alta modularidad y flexibilidad en la arquitectura. |
+| ARC01 |  Los datos personales de los usuarios podrían estar expuestos a riesgos si no se implementan adecuadamente medidas de seguridad robustas. |
+| ARC02 | Utilizar lo aprendido en tecnologías en proyectos previos como Java Spring Boot, Angular, MySQL y Github |
+| ARC03 | Asignar responsabilidades cada integrante según su mejor especialidad para un mejor desempeño. |
+| ARC04 | Lograr un rendimiento óptimo en términos de tiempos de respuesta y eficiencia del procesamiento podría ser difícil, particularmente bajo cargas de trabajo elevadas. |
+| ARC05 | Integrar microservicios de manera que se mantenga la cohesión y se facilite el mantenimiento podría ser un desafío, especialmente si se busca mantener una alta modularidad y flexibilidad en la arquitectura. |
