@@ -48,10 +48,6 @@ Ya que es la primera iteracion, se debe escojer elementos para refinar.
   </tr>
   <tr>
     <td>Patrón CQRS en AppointmentService</td>
-    <td>Implementar un API Gateway como punto único de entrada nos permite centralizar funciones transversales (autenticación, autorización, rate limiting, logging y monitorización) y redirigir dinámicamente las peticiones hacia el microservicio correspondiente. Esto simplifica el enrutamiento, refuerza la seguridad perimetral y ofrece una capa de abstracción ante cambios internos en la arquitectura, sin afectar al cliente.</td>
-  </tr>
-  <tr>
-    <td>Patrón CQRS en AppointmentService</td>
     <td>Aplicamos CQRS (Command Query Responsibility Segregation) en el servicio de citas para separar rutas de escritura (crear, editar, cancelar) de consultas (listar, filtrar por fecha o estado). Gracias a esta segregación, optimizamos el rendimiento de lectura en escenarios de alta concurrencia, podemos escalar independientemente cada lado y facilitar la implementación de mecanismos de event sourcing o materialized views que aceleren aún más la entrega de datos.</td>
   </tr>
 </table>
