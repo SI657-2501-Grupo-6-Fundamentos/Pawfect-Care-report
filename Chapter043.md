@@ -6,7 +6,7 @@
 
 ![ADD Desgin 1](./assets/chapter04/Addbacklog1.png)
 
-#### 4.3.1.2       Establish Iteration Goal by Selecting Drivers\
+#### 4.3.1.2       Establish Iteration Goal by Selecting Drivers
 
 **Drivers:**
 
@@ -116,13 +116,13 @@ Ya que es la primera iteracion, se debe escojer elementos para refinar.
   </tr>
 </table>
 
-#### 4.3.1.7   	Analysis of Current Design and Review Iteration Goal (Kanban Board)  (Avance 2)
+#### 4.3.1.7   	Analysis of Current Design and Review Iteration Goal (Kanban Board)  (Avance 1)
 ![ADD Board](./assets/chapter04/addboard.png)
 
 
 ### 4.3.2   Iteration N: 2
 
-#### 4.3.2.1        Architectural Design Backlog N: 1
+#### 4.3.2.1        Architectural Design Backlog N: 2
 
 #### 4.3.2.2       Establish Iteration Goal by Selecting Drivers
 
