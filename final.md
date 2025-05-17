@@ -1,3 +1,21 @@
+## Conclusiones
+
+### Conclusiones Y Recomendaciones
+
+**Conclusiones**
+
+Durante el desarrollo de este proyecto, el equipo ha podido aplicar varios conceptos que hemos aprendido a lo largo de la carrera, como el uso de microservicios, control de versiones con Git y GitFlow, y metodologías ágiles como el trabajo por sprints. Esto nos ha ayudado a organizarnos mejor, repartir tareas de forma clara y avanzar de manera ordenada.
+
+También nos dimos cuenta de lo importante que es entender bien los requisitos del cliente desde el inicio. Gracias a eso, pudimos desarrollar una solución que realmente responde a sus necesidades. Además, en cada iteración aprendimos algo nuevo, tanto a nivel técnico como en trabajo en equipo, y eso ha sido clave para mejorar el producto y nuestra propia formación profesional.
+
+**Recomendaciones**
+
+Para continuar con el desarrollo del sistema, recomendamos realizar pruebas con usuarios reales para validar que la experiencia sea la adecuada y detectar posibles mejoras. También sería bueno reforzar la documentación, sobre todo para facilitar el mantenimiento o si alguien más se suma al equipo más adelante.
+
+Además, se debería considerar implementar funciones de seguridad como login y control de accesos, y en etapas futuras pensar en herramientas de monitoreo que ayuden a revisar el rendimiento y estabilidad del sistema una vez que esté en producción.
+
+Por último, sería útil analizar cómo escalar el sistema en caso aumente la cantidad de usuarios o se añadan más módulos, así evitamos problemas de rendimiento más adelante.
+
 ## Bibliografía
 
 - Sedano, L. (2024). _Manual para la gestión eficaz de clínicas veterinarias: Estrategias administrativas y organizativas._ Recuperado de https://puntomedic.cl/blogs/manuales-y-guias/manual-para-la-gestion-eficaz-de-clinicas-veterinarias-estrategias-administrativas-y-organizativas 
@@ -37,11 +55,13 @@ Respositorio en GitHub para el reporte:
 [`https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog`](https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog)
 
 
-**Anexo 4:**
-**Deploys**
+**Anexo 4: Deploys**
 
-Frontend:
+- Landing Page:
+[`https://si657-2501-grupo-6-fundamentos.github.io/Pawfect-CareLanding-Page/`](https://si657-2501-grupo-6-fundamentos.github.io/Pawfect-CareLanding-Page/)
+
+- Frontend:
 [`https://pawfect-care-app-web-ef319.web.app/`](https://pawfect-care-app-web-ef319.web.app/)
 
-Backend:
+- Backend:
 [`https://pawfect-caree-bahjeqd5hze7cffy.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/`](https://pawfect-caree-bahjeqd5hze7cffy.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
