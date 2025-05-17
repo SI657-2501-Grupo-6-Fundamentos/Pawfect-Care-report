@@ -51,13 +51,13 @@
 <br>
 
 ---
-
 # Registro de Versiones del Informe
 
 | Versión | Fecha | Autor | Descripción de la modificación |
 |----|----|----|----|
-| TB1 | 25/08/2024 | VetCare | Redacción de los Capítulos I: Introduction, II: Requirements Elicitation & Analysis, III: Requirements Specification. |
-| TB2 | 04/05/2025 | VetCare | Redacción de el Capítulo IV: Product Architecture Design. |
+| TB1 | 25/08/2024 | PawCare | Redacción de los Capítulos I: Introduction, II: Requirements Elicitation & Analysis, III: Requirements Specification. |
+| TB2 | 04/05/2025 | PawCare | Redacción de el Capítulo IV: Product Architecture Design.  |
+| TP1 | 17/05/2025 | PawCare | Redacción de el Capítulo V: Product Implementation, Validation & Deployment.  |
 
 
 # Contenido
@@ -97,9 +97,8 @@
   - [**2.3. Needfinding**](#23-needfinding)
     - [**2.3.1. User Personas**](#231-user-personas)
     - [**2.3.2. User Task Matrix**](#232-user-task-matrix)
-    - [**2.3.3. User Journey Mapping**](#233-user-journey-mapping)
-    - [**2.3.4. Empathy Mapping**](#234-empathy-mapping)
-    - [**2.3.5. As-is Scenario Mapping**](#235-as-is-scenario-mapping)
+    - [**2.3.3. Empathy Mapping**](#234-empathy-mapping)
+    - [**2.3.4. As-is Scenario Mapping**](#235-as-is-scenario-mapping)
   - [**2.4. Ubiquitous Language**](#24-ubiquitous-language)
 - ## [ **Capítulo III: Requirements Specification**](#-capítulo-iii-requirements-specification)
   - [**3.1. To-Be Scenario Mapping**](#31-to-be-scenario-mapping)
@@ -110,7 +109,7 @@
   - [**3.3. Impact Mapping**](#33-impact-mapping)
   - [**3.4. Product Backlog**](#34-product-backlog)
   - ## [**Capítulo IV: Product Architecture Design**](#capítulo-iv-product-architecture-design)
-  - [**4.1. 4.1	Desing Concepts, ViewPoints & ER Diagrams**](#41-design-concepts,-viewpoints-&-er-diagrams)
+  - [**4.1	Desing Concepts, ViewPoints & ER Diagrams**](#41-design-concepts,-viewpoints-&-er-diagrams)
     - [**4.1.1. Principles Statements**](#411-principles-statements)
     - [**4.1.2. Approaches Statements Architectural Styles & Patterns**](#412-approaches-statements-architectural-styles-&-patterns)
     - [**4.1.3. Context Diagram**](#413-context-diagram)
@@ -133,6 +132,27 @@
       - [**4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces**](#4315-instantiate-architectural-elements,-allocate-responsibilities,-and-define-interfaces)
       - [**4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions**](#4316-sketch-views-(c4-&-uml)-and-record-design-decisions)
       - [**4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)**](#4317-analysis-of-current-design-and-review-iteration-iteration-goal-(kanban-board))
+- ## [**Capítulo V: Product Implementation, Validation & Deployment**](#capítulo-v-product-implementation-validation--deployment)
+  - [**5.1. Testing Suites & General Patterns**](#51-testing-suites--general-patterns)
+    - [**5.1.1. Backend Application Core Testing Suite**](#511-backend-application-core-testing-suite)
+    - [**5.1.2. Pattern Based Backend Application(s)**](#512-pattern-based-backend-applications)
+    - [**5.1.3. Pattern Based Custom Software Library**](#513-pattern-based-custom-software-library)
+    - [**5.1.4. Framework Pattern Driven Refactoring Report**](#514-framework-pattern-driven-refactoring-report)
+  - [**5.2. Software Configuration Management**](#52-software-configuration-management)
+    - [**5.2.1. Software Development Environment Configuration**](#521-software-development-environment-configuration)
+    - [**5.2.2. Source Code Management**](#522-source-code-management)
+    - [**5.2.3. Source Code Style Guide & Conventions**](#523-source-code-style-guide--conventions)
+    - [**5.2.4. Software Deployment Configuration**](#524-software-deployment-configuration)
+  - [**5.3. Microservices Implementation**](#53-microservices-implementation)
+    - [**5.3.1. Sprint 1**](#531-sprint-1)
+      - [**5.3.1.1. Sprint Backlog 1**](#5311-sprint-backlog-1)
+      - [**5.3.1.2. Development Evidence for Sprint Review**](#5312-development-evidence-for-sprint-review)
+      - [**5.3.1.3. Testing Suite Evidence for Sprint Review**](#5313-testing-suite-evidence-for-sprint-review)
+      - [**5.3.1.4. Execution Evidence for Sprint Review**](#5314-execution-evidence-for-sprint-review)
+      - [**5.3.1.5. Microservices Documentation Evidence for Sprint Review**](#5315-microservices-documentation-evidence-for-sprint-review)
+      - [**5.3.1.6. Software Deployment Evidence for Sprint Review**](#5316-software-deployment-evidence-for-sprint-review)
+      - [**5.3.1.7. Team Collaboration Insights during Sprint**](#5317-team-collaboration-insights-during-sprint)
+      - [**5.3.1.8. Kanban Board**](#5318-kanban-board)
 - [**Conclusiones**](#conclusiones)
 - [**Conclusiones y recomendaciones**](#conclusiones-y-recomendaciones)
 - [**Video About-the-Team**](#video-about-the-team)
@@ -141,14 +161,16 @@
 
 # Student Outcome
 
+# Student Outcome
+
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> A partir de la etapa del Needfinding pude definir nuestros requisitos funcionales y no funcionales. Estos fueron fundamentales para identificar nuestras historias de usuario y establecer un product backlog consistente.<br>*TB2*<br>Durante esta iteración, investigué y actualicé conceptos clave relacionados con la arquitectura de software, como el uso del modelo C4 para la representación visual de sistemas y la aplicación de principios SOLID en el diseño de componentes.<br><br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> Al hacer las preguntas para las entrevistas se pudo mapear las funcionalidades del proyecto y realizar de la mejor manera el product backlog, junto con los requisitos funcionales bien especificados.<br>*TB2*<br>Tras desarrollar drivers arquitectónicos como los architectural concerns, pude actualizar nociones sobre los requirimientos no funcionales del sistema. Esto, junto a los primary functionality y constrains, me permitieron ofrecer una visión renovada sobre los requerimientos fundamentales del core del negocio y limitaciones que deberemos respetar. <br><br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Durante la elaboración del Capítulo 1 (Introducción y análisis de la problemática) y del Capítulo 2 (Especificación de requisitos), profundicé en metodologías de Lean UX, mapeo de impacto y definición de segmentos de usuarios. Me capacité en el uso de herramientas colaborativas (Git, Markdown, GitFlow) y en buenas prácticas de documentación técnica, lo que me permitió estructurar el informe de manera coherente y profesional. Gracias a este proceso, fortalecí mi comprensión de cómo alinear las necesidades del negocio con soluciones de software efectivas.<br>*TB2*<br>Durante esta iteración analicé los constrains, atributos de calidad y el modelo c4 para seleccionar elementos que requieran una refinación y desarrollar nuestro Kanban Board.<br><br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> Mediante el desarrollo de entrevistas logré interpretar las funcionalidades que debería incluir nuestra propuesta y las necesidades del cliente. <br>*TB2*<br>Tras diseñar y actualizar el diagrama de base de datos de manera continua, pude ser consciente de los atributos o campos requeridos al momento de gestionar mascotas y citas veterinarias.<br> | TB1: <br> El equipo ha demostrado una actualización efectiva de conceptos y conocimientos clave para el desarrollo de PawFect Care. Al profundizar en metodologías ágiles (Lean UX, mapeo de impacto), herramientas de control de versiones (Git, GitFlow) y documentación técnica ( Markdown), cada miembro fortaleció su base profesional y aportó soluciones más alineadas con las necesidades del proyecto. Esto se traduce en una implementación más sólida, coherente y escalable de la plataforma veterinaria.<br><br>TB2: <br> El equipo consolidó su conocimiento en arquitectura de software mediante la implementación de conceptos fundamentales como el modelo C4, principios SOLID y patrones de diseño. Además, se fortaleció la capacidad de análisis al trabajar con drivers arquitectónicos, constraints y atributos de calidad, lo que permitió una mejor alineación entre los objetivos del negocio y las decisiones técnicas. Este enfoque iterativo y colaborativo asegura que el proyecto avance con una base sólida y escalable, adaptándose a las necesidades del sistema y del cliente. |
+|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> A partir de la etapa del Needfinding pude definir nuestros requisitos funcionales y no funcionales. Estos fueron fundamentales para identificar nuestras historias de usuario y establecer un product backlog consistente.<br>*TB2*<br>Durante esta iteración, investigué y actualicé conceptos clave relacionados con la arquitectura de software, como el uso del modelo C4 para la representación visual de sistemas y la aplicación de principios SOLID en el diseño de componentes.<br>*TP1*<br>Durante esta entrega, profundicé en conceptos clave sobre pruebas automatizadas para aplicaciones backend, investigando buenas prácticas y estructuras comunes de testeo. Además, exploré el uso de patrones en bibliotecas personalizadas y la importancia del refactor basado en frameworks para mejorar la mantenibilidad del software.<br><br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> Al hacer las preguntas para las entrevistas se pudo mapear las funcionalidades del proyecto y realizar de la mejor manera el product backlog, junto con los requisitos funcionales bien especificados.<br>*TB2*<br>Tras desarrollar drivers arquitectónicos como los architectural concerns, pude actualizar nociones sobre los requirimientos no funcionales del sistema. Esto, junto a los primary functionality y constrains, me permitieron ofrecer una visión renovada sobre los requerimientos fundamentales del core del negocio y limitaciones que deberemos respetar.<br>*TP1*<br>En esta etapa, trabajé en la implementación de microservicios, enfocándome en la evidencia técnica de desarrollo, testing y despliegue del Sprint 1. Esto implicó una comprensión más profunda de prácticas CI/CD, pruebas automatizadas, y colaboración ágil en equipo. <br><br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Durante la elaboración del Capítulo 1 (Introducción y análisis de la problemática) y del Capítulo 2 (Especificación de requisitos), profundicé en metodologías de Lean UX, mapeo de impacto y definición de segmentos de usuarios. Me capacité en el uso de herramientas colaborativas (Git, Markdown, GitFlow) y en buenas prácticas de documentación técnica, lo que me permitió estructurar el informe de manera coherente y profesional. Gracias a este proceso, fortalecí mi comprensión de cómo alinear las necesidades del negocio con soluciones de software efectivas.<br>*TB2*<br>Durante esta iteración analicé los constrains, atributos de calidad y el modelo c4 para seleccionar elementos que requieran una refinación y desarrollar nuestro Kanban Board.<br>*TP1*<br>Durante esta fase, participé activamente en la implementación de microservicios y documentación técnica del Sprint 1. Reforcé conocimientos sobre integración continua, despliegue, y control de versiones, y me familiaricé con herramientas para evidencia de testing, ejecución y colaboración de equipo.<br><br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> Mediante el desarrollo de entrevistas logré interpretar las funcionalidades que debería incluir nuestra propuesta y las necesidades del cliente. <br>*TB2*<br>Tras diseñar y actualizar el diagrama de base de datos de manera continua, pude ser consciente de los atributos o campos requeridos al momento de gestionar mascotas y citas veterinarias.<br>*TP1*<br>Me encargué de la configuración del entorno de desarrollo, manejo del código fuente y despliegue del software. Este proceso me permitió consolidar conocimientos sobre herramientas de control de versiones, guías de estilo de código y configuraciones para entornos de producción. | El equipo aplicó y profundizó sus conocimientos técnicos clave para el desarrollo, testeo e implementación del sistema PawFect Care. A través del uso de microservicios, pruebas automatizadas, refactorización basada en patrones, y la configuración del entorno, se reforzaron competencias esenciales en ingeniería de software. Estas acciones aseguran una solución más mantenible, escalable y alineada con estándares profesionales. <br> | TB1: <br> El equipo ha demostrado una actualización efectiva de conceptos y conocimientos clave para el desarrollo de PawFect Care. Al profundizar en metodologías ágiles (Lean UX, mapeo de impacto), herramientas de control de versiones (Git, GitFlow) y documentación técnica ( Markdown), cada miembro fortaleció su base profesional y aportó soluciones más alineadas con las necesidades del proyecto. Esto se traduce en una implementación más sólida, coherente y escalable de la plataforma veterinaria.<br><br>TB2: <br> El equipo consolidó su conocimiento en arquitectura de software mediante la implementación de conceptos fundamentales como el modelo C4, principios SOLID y patrones de diseño. Además, se fortaleció la capacidad de análisis al trabajar con drivers arquitectónicos, constraints y atributos de calidad, lo que permitió una mejor alineación entre los objetivos del negocio y las decisiones técnicas. Este enfoque iterativo y colaborativo asegura que el proyecto avance con una base sólida y escalable, adaptándose a las necesidades del sistema y del cliente.<br><br>TP1: <br> Durante esta tercera entrega, el equipo fortaleció sus competencias técnicas y profesionales al aplicar conocimientos clave en pruebas automatizadas, implementación de microservicios, y gestión del entorno de desarrollo. Cada integrante asumió un rol específico que permitió profundizar en aspectos como CI/CD, testing, refactorización con patrones, y control de versiones. Estas acciones consolidan una base sólida para el desarrollo escalable y mantenible del sistema PawFect Care, alineándose con buenas prácticas de la ingeniería de software moderna y contribuyendo de manera efectiva al logro de los objetivos del proyecto. |
 
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> Al desarrollar las historias de usuario, identifiqué y reconocí áreas clave para ser implementadas en bounded contexts. Para ello, utilicé el product backlog con el fin de extraer las historias de usuario más relevantes para el core del negocio y visualizar los futuros bounded context en base a sus epics.<br>*TB2*<br>Reconocí sistemas externos y elementos de la arquitectura del negocio para diagramas de contexto, contenedores y componentes. Además reconocí la importancia de cada panaroma del sistema para implementar el modelo de microservicios.<br><br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> En el desarrollo de esta parte inicial del proyecto el product backlog y los requisitos funcionales y no funcionales fueron lo fundamental para desarrollar el servicio en base a las necesidades de los usuarios. <br>*TB2*<br>Al definir los drivers arquitectónicos, pude reconocer de qué manera se relacionan con otros items. Pude desarrollar las primary user stories y ver como se relacionan con las historias de usuario que son core para el negocio. <br><br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Al enfrentar nuevos desafíos — como definir los bounded contexts, redactar user stories y diseñar el backlog — identifiqué áreas donde debía profundizar: gestión de proyectos ágiles, documentación   y diseño de experiencia de usuario. Para ello, consulté tutoriales, documentación oficial y prácticas recomendadas en foros especializados. Este proceso reafirmó mi compromiso con el aprendizaje continuo, indispensable para mantener la calidad y escalabilidad de cualquier solución de software.<br>*TB2*<br>Identifiqué la necesidad de mantenerse actualizado en herramientas y enfoques modernos, como el uso de Kanban para la gestión de tareas y la integración de patrones arquitectónicos como Domain Driven Design (DDD).<br><br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> Con el análisis de entrevistas pude reconocer otros competidores y factores clave que nos ayudarían a ofrecer un valor agregado superior.<br>*TB2*<br>Tras identificar patrones de diseño, pude determinar un nuevo enfoque para el modelado de los diagramas UML. Esto me permitió asegurar una alineación con los objetivos del negocio y utilizar los requisitos funcionales a modo de validación.<br> | TB1: <br> El proyecto reforzó en todos nosotros la importancia del aprendizaje permanente. Identificamos brechas en áreas como gestión de APIs, diseño UX y despliegue en la nube, y las abordamos mediante investigación, auto‑formación y consulta de fuentes especializadas. Este compromiso con la mejora continua asegura que, más allá de esta entrega, mantendremos la capacidad de adaptarnos a nuevas tecnologías y mejores prácticas en el desarrollo de soluciones de software.<br><br> TB2: <br> El equipo reforzó su compromiso con el aprendizaje continuo al profundizar en conceptos avanzados como patrones de diseño, modelado UML y la implementación de microservicios. Además, se fortaleció la capacidad de análisis al trabajar con drivers arquitectónicos y herramientas modernas como Kanban, lo que permitió una mejor alineación entre los objetivos técnicos y de negocio. Este enfoque asegura que el equipo esté preparado para enfrentar desafíos futuros y mantener la calidad del proyecto. |
+|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| **Aranda Vallejos, Oscar Gabriel**<br>*TB1*<br> Al desarrollar las historias de usuario, identifiqué y reconocí áreas clave para ser implementadas en bounded contexts. Para ello, utilicé el product backlog con el fin de extraer las historias de usuario más relevantes para el core del negocio y visualizar los futuros bounded context en base a sus epics.<br>*TB2*<br>Reconocí sistemas externos y elementos de la arquitectura del negocio para diagramas de contexto, contenedores y componentes. Además reconocí la importancia de cada panaroma del sistema para implementar el modelo de microservicios.<br>*TP1*<br>Durante la elaboración del apartado de testing, investigué sobre frameworks modernos para pruebas unitarias y de integración en aplicaciones backend. También me capacité en patrones de diseño aplicables al testing, lo cual me permitió mejorar la cobertura y eficiencia de las pruebas implementadas.<br><br>**Chirinos Zúñiga, Rodrigo Manuel**<br>*TB1*<br> En el desarrollo de esta parte inicial del proyecto el product backlog y los requisitos funcionales y no funcionales fueron lo fundamental para desarrollar el servicio en base a las necesidades de los usuarios. <br>*TB2*<br>Al definir los drivers arquitectónicos, pude reconocer de qué manera se relacionan con otros items. Pude desarrollar las primary user stories y ver como se relacionan con las historias de usuario que son core para el negocio.<br>*TP1*<br>Para cumplir con la implementación de microservicios, busqué comprender las buenas prácticas del diseño desacoplado y los principios de escalabilidad. Me capacité en el uso de herramientas modernas como Postman y Docker, y en cómo documentar y testear servicios de forma continua. <br><br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Al enfrentar nuevos desafíos — como definir los bounded contexts, redactar user stories y diseñar el backlog — identifiqué áreas donde debía profundizar: gestión de proyectos ágiles, documentación   y diseño de experiencia de usuario. Para ello, consulté tutoriales, documentación oficial y prácticas recomendadas en foros especializados. Este proceso reafirmó mi compromiso con el aprendizaje continuo, indispensable para mantener la calidad y escalabilidad de cualquier solución de software.<br>*TB2*<br>Identifiqué la necesidad de mantenerse actualizado en herramientas y enfoques modernos, como el uso de Kanban para la gestión de tareas y la integración de patrones arquitectónicos como Domain Driven Design (DDD).<br>*TP1*<br>Durante esta entrega, profundicé en conceptos de microservicios y CI/CD, y exploré herramientas como Docker y GitHub Actions. Asimismo, investigué sobre la correcta documentación de endpoints y despliegues para mejorar la mantenibilidad del sistema.<br><br>**Silva Morales, Renzo Cesar**<br>*TB1*<br> Con el análisis de entrevistas pude reconocer otros competidores y factores clave que nos ayudarían a ofrecer un valor agregado superior.<br>*TB2*<br>Tras identificar patrones de diseño, pude determinar un nuevo enfoque para el modelado de los diagramas UML. Esto me permitió asegurar una alineación con los objetivos del negocio y utilizar los requisitos funcionales a modo de validación.<br>*TP1*<br>Al trabajar en la configuración del entorno de desarrollo, aprendí sobre convenciones de estilo de código, automatización del despliegue y control de versiones. También estudié sobre el impacto de una buena gestión de entorno en la eficiencia y calidad del desarrollo.<br> | TB1: <br> El proyecto reforzó en todos nosotros la importancia del aprendizaje permanente. Identificamos brechas en áreas como gestión de APIs, diseño UX y despliegue en la nube, y las abordamos mediante investigación, auto‑formación y consulta de fuentes especializadas. Este compromiso con la mejora continua asegura que, más allá de esta entrega, mantendremos la capacidad de adaptarnos a nuevas tecnologías y mejores prácticas en el desarrollo de soluciones de software.<br><br> TB2: <br> El equipo reforzó su compromiso con el aprendizaje continuo al profundizar en conceptos avanzados como patrones de diseño, modelado UML y la implementación de microservicios. Además, se fortaleció la capacidad de análisis al trabajar con drivers arquitectónicos y herramientas modernas como Kanban, lo que permitió una mejor alineación entre los objetivos técnicos y de negocio. Este enfoque asegura que el equipo esté preparado para enfrentar desafíos futuros y mantener la calidad del proyecto.<br><br>TP1: <br> A lo largo de esta tercera entrega, el equipo demostró una actitud proactiva frente al aprendizaje continuo, adoptando nuevas herramientas, tecnologías y buenas prácticas esenciales en la industria del software. Este enfoque constante hacia la mejora profesional no solo elevó la calidad del producto, sino que también potenció el desarrollo individual de competencias clave para enfrentar los desafíos del entorno tecnológico actual. |
 
 ----
 
@@ -1987,7 +2009,6 @@ Ya que es la primera iteracion, se debe escojer elementos para refinar.
 
 ---
 
-
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Testing Suites & General Patterns
@@ -2017,7 +2038,13 @@ Validan si el sistema cumple con las necesidades del cliente/usuario. Para ello,
 
 [![cucumber.jpg](https://i.postimg.cc/3xvvffHB/cucumber.jpg)](https://postimg.cc/jDR2LX2w)
 
+
+#### 🔹 Pruebas automatizadas (Automated Tests)
+Permiten realizar pruebas funcionales de forma automática para acciones como llenar formularios, hacer clic en botones o verificar textos en pantalla. Esto es útil para validar que una aplicación funciona correctamente después de cada cambio, sin necesidad de realizar pruebas manuales repetitivas.
+
 ---
+
+
 
 ## 2. Pruebas no funcionales
 Evalúan atributos del sistema **como rendimiento, seguridad o usabilidad**.
@@ -2478,13 +2505,49 @@ US10: Cancelación de citas
 [![Captura-de-pantalla-2025-05-17-002801.png](https://i.postimg.cc/JnBLXFDf/Captura-de-pantalla-2025-05-17-002801.png)](https://postimg.cc/CBYXTm47)
 <br>
 
-### 5.1.1.4 Quality Attributes Tests
+### 5.1.1.4 Automated Tests
+
+Para la ejecución de las pruebas automatizadas se tomaron en cuenta las historias de usuario primarias que formaban parte del core bussines y se utilizó la herramienta Selenium.
+
+US02: Autenticación de Usuarios
+
+[![Captura-de-pantalla-2025-05-17-031953.png](https://i.postimg.cc/C57hFLPF/Captura-de-pantalla-2025-05-17-031953.png)](https://postimg.cc/GTBwKrnN)
+<br>
+
+US06: Visualización de Mascotas
+
+[![Captura-de-pantalla-2025-05-17-032251.png](https://i.postimg.cc/yYW4JPWh/Captura-de-pantalla-2025-05-17-032251.png)](https://postimg.cc/0bgHF7Yr)
+<br>
+
+US08: Gestión de Perfiles de Mascotas
+
+[![Captura-de-pantalla-2025-05-17-032518.png](https://i.postimg.cc/QCH4MfSH/Captura-de-pantalla-2025-05-17-032518.png)](https://postimg.cc/CnpHPH3g)
+<br>
+
+US09: Agendamiento de Citas
+
+[![Captura-de-pantalla-2025-05-17-032758.png](https://i.postimg.cc/7YN9k8qm/Captura-de-pantalla-2025-05-17-032758.png)](https://postimg.cc/svv7YLQh)
+<br>
+
+[![Captura-de-pantalla-2025-05-17-032809.png](https://i.postimg.cc/GtFQt6G3/Captura-de-pantalla-2025-05-17-032809.png)](https://postimg.cc/Zvq3D7wX)
+<br>
+
+### 5.1.1.5 Quality Attributes Tests
 
 Para realizar pruebas no funcionales tomamos en cuenta evaluar los atributos de calidad de escalabilidad y rendimiento. Decidimos utilizar Google Lighthouse porque es una herramienta automatizada de código abierto que permite auditar aplicaciones web en aspectos clave como el rendimiento de carga, optimización para dispositivos móviles, accesibilidad, buenas prácticas de desarrollo y SEO. Lighthouse proporciona métricas cuantitativas y sugerencias de mejora, lo que nos permite identificar cuellos de botella en el rendimiento y oportunidades para optimizar la experiencia del usuario. Además, su integración con navegadores como Chrome facilita su uso en entornos de desarrollo y pruebas continuas.
+
+**Backend**
 
 [![Captura-de-pantalla-2025-05-17-011514.png](https://i.postimg.cc/br5pW2Dt/Captura-de-pantalla-2025-05-17-011514.png)](https://postimg.cc/ctfp8Ccx)
 
 [![Captura-de-pantalla-2025-05-17-011503.png](https://i.postimg.cc/ZK9T3j2F/Captura-de-pantalla-2025-05-17-011503.png)](https://postimg.cc/XpbS6KVp)
+
+**Frontend**
+
+[![Captura-de-pantalla-2025-05-17-030840.png](https://i.postimg.cc/pTVV3vTK/Captura-de-pantalla-2025-05-17-030840.png)](https://postimg.cc/5HGMFZ8t)
+
+[![Captura-de-pantalla-2025-05-17-030732.png](https://i.postimg.cc/R07qjGTx/Captura-de-pantalla-2025-05-17-030732.png)](https://postimg.cc/rdp841bf)
+
 
 ## 5.1.2. Pattern Based Backend Application(s)
 
@@ -2865,6 +2928,11 @@ En esta seccion mostramos las evidencias de nuestro deployment con azure app ser
 #### Vista del servicio Servidor flexible de Azure Database for PostgreSQL :
 ![Deployment Evidence 2](./assets/chapter05/sprint1/deployment_evidence/deploy_evidence2.png)
 
+#### Vista del dashboard del servicio de hosting Firebase para el web frontend
+
+[![Captura-de-pantalla-2025-05-17-030141.png](https://i.postimg.cc/KYkDBXFr/Captura-de-pantalla-2025-05-17-030141.png)](https://postimg.cc/VSwtPVJd)
+
+
 #### 5.3.1.7       Team Collaboration Insights during Sprint
 
 En esta seccion Mostramos la colaboracion de todos los integrantes en todos nuestros repositorios.
@@ -2893,7 +2961,26 @@ A continuación presentamos nuestro Kanban Board Realizado en Trello, correspond
 Link del Trello:[`https://trello.com/invite/b/68182726f3abe511b7a3fd1b/ATTIa80fc72e5abff414c8889e41de34c05c628F4462/kanban-board-pawfectcare`](https://trello.com/invite/b/68182726f3abe511b7a3fd1b/ATTIa80fc72e5abff414c8889e41de34c05c628F4462/kanban-board-pawfectcare)
 
 
+
 ---
+
+## Conclusiones
+
+### Conclusiones Y Recomendaciones
+
+**Conclusiones**
+
+Durante el desarrollo de este proyecto, el equipo ha podido aplicar varios conceptos que hemos aprendido a lo largo de la carrera, como el uso de microservicios, control de versiones con Git y GitFlow, y metodologías ágiles como el trabajo por sprints. Esto nos ha ayudado a organizarnos mejor, repartir tareas de forma clara y avanzar de manera ordenada.
+
+También nos dimos cuenta de lo importante que es entender bien los requisitos del cliente desde el inicio. Gracias a eso, pudimos desarrollar una solución que realmente responde a sus necesidades. Además, en cada iteración aprendimos algo nuevo, tanto a nivel técnico como en trabajo en equipo, y eso ha sido clave para mejorar el producto y nuestra propia formación profesional.
+
+**Recomendaciones**
+
+Para continuar con el desarrollo del sistema, recomendamos realizar pruebas con usuarios reales para validar que la experiencia sea la adecuada y detectar posibles mejoras. También sería bueno reforzar la documentación, sobre todo para facilitar el mantenimiento o si alguien más se suma al equipo más adelante.
+
+Además, se debería considerar implementar funciones de seguridad como login y control de accesos, y en etapas futuras pensar en herramientas de monitoreo que ayuden a revisar el rendimiento y estabilidad del sistema una vez que esté en producción.
+
+Por último, sería útil analizar cómo escalar el sistema en caso aumente la cantidad de usuarios o se añadan más módulos, así evitamos problemas de rendimiento más adelante.
 
 ## Bibliografía
 
@@ -2901,6 +2988,7 @@ Link del Trello:[`https://trello.com/invite/b/68182726f3abe511b7a3fd1b/ATTIa80fc
 
 - BioSystems S.A. (s.f.). _Guía de buenas prácticas en veterinaria._ Barcelona, España: ioSystems S.A. Recuperado de https://covetrioja.org/wp-content/uploads/2021/10/VET_GuiaBuenasPracticas_ESP.pdf 
 
+---
 
 ## Anexos
 
@@ -2933,3 +3021,14 @@ Respositorio en GitHub para el reporte:
 
 [`https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog`](https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog)
 
+
+**Anexo 4: Deploys**
+
+- Landing Page:
+[`https://si657-2501-grupo-6-fundamentos.github.io/Pawfect-CareLanding-Page/`](https://si657-2501-grupo-6-fundamentos.github.io/Pawfect-CareLanding-Page/)
+
+- Frontend:
+[`https://pawfect-care-app-web-ef319.web.app/`](https://pawfect-care-app-web-ef319.web.app/)
+
+- Backend:
+[`https://pawfect-caree-bahjeqd5hze7cffy.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/`](https://pawfect-caree-bahjeqd5hze7cffy.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
