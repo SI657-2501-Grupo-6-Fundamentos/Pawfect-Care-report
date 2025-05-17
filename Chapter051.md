@@ -427,12 +427,32 @@ public class MedicalAppointmentCommandServiceTest {
 
 ### 5.1.1.2. Core Integration Tests
 
-/* Pruebas de Postman
-*
-*
-*
-*
-*/
+Las Core Integration Tests aseguran que los componentes clave del sistema trabajan bien juntos. Usar Postman te permite verificar manualmente y de forma visual que la API cumple con lo esperado antes o junto a las pruebas automatizadas. Es especialmente útil en etapas de desarrollo, debugging o cuando se integra un nuevo módulo.
+
+#### HTTP GETS 
+
+[![Captura-de-pantalla-2025-05-17-015437.png](https://i.postimg.cc/Cx5BtjRc/Captura-de-pantalla-2025-05-17-015437.png)](https://postimg.cc/3kMx00CG)
+
+[![Captura-de-pantalla-2025-05-17-015531.png](https://i.postimg.cc/rF8tG6MX/Captura-de-pantalla-2025-05-17-015531.png)](https://postimg.cc/5jR01RXn)
+
+[![Captura-de-pantalla-2025-05-17-015352.png](https://i.postimg.cc/FH6dQ7cN/Captura-de-pantalla-2025-05-17-015352.png)](https://postimg.cc/K1nvPcJH)
+
+[![Captura-de-pantalla-2025-05-17-015105.png](https://i.postimg.cc/MGjcZqbR/Captura-de-pantalla-2025-05-17-015105.png)](https://postimg.cc/cK01Xqz4)
+
+[![Captura-de-pantalla-2025-05-17-015016.png](https://i.postimg.cc/BQMPMhn8/Captura-de-pantalla-2025-05-17-015016.png)](https://postimg.cc/D84zzPsF)
+
+#### HTTP POSTS
+
+[![Captura-de-pantalla-2025-05-17-020125.png](https://i.postimg.cc/zfnJPBFd/Captura-de-pantalla-2025-05-17-020125.png)](https://postimg.cc/wtj819PJ)
+
+#### HTTP UPDATE
+
+[![Captura-de-pantalla-2025-05-17-020504.png](https://i.postimg.cc/02M1Bj8p/Captura-de-pantalla-2025-05-17-020504.png)](https://postimg.cc/BX0z8qP6)
+
+#### HTTP DELETE
+
+[![Captura-de-pantalla-2025-05-17-020559.png](https://i.postimg.cc/kXtLyHcs/Captura-de-pantalla-2025-05-17-020559.png)](https://postimg.cc/HVdSYBF8)
+
 
 ### 5.1.1.3 User Acceptance Tests
 
