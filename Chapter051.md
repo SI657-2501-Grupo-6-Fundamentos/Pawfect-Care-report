@@ -40,8 +40,98 @@ Miden tiempos de respuesta, velocidad, escalabilidad. Para ello, utilizaremos la
 
 ### 5.1.1.1. Core Entities Unit Tests
 
+#### US04: Creación de Perfil de Mascota<br>
+	Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.
+
+#### PetCommandService Unit Test: CreatePetCommand
+
+```java
+public class PetCommandServiceTest {
+    /**
+     * Test for handleCreatePetCommand method
+     */
+    @Test
+    void handleCreatePetCommand() {
+        /*
+          Arrange
+          Mock the dependencies
+         */
+        PetRepository petRepository = Mockito.mock(PetRepository.class);
+        OwnerRepository ownerRepository = Mockito.mock(OwnerRepository.class);
+        ExternalMedicalHistoryService medicalHistoryService = Mockito.mock(ExternalMedicalHistoryService.class);
+
+        // Create an instance of the PetCommandService
+        PetCommandService petCommandService = new PetCommandServicelmpl(petRepository, ownerRepository, medicalHistoryService);
+
+        // Simulate the creation of an Owner
+        Owner mockOwner = Mockito.mock(Owner.class);
+        when(mockOwner.getId()).thenReturn(1L);
+        when(ownerRepository.findById(1L)).thenReturn(Optional.of(mockOwner));
+
+        // Create the command to add a pet
+        CreatePetCommand command = new CreatePetCommand(
+                "Buddy",
+                LocalDate.of(2020, 1, 1),
+                LocalDate.now(),
+                "Golden Retriever",
+                PetGender.MALE,
+                1L
+        );
+
+        // Simulate the behavior of PetRepository
+        Pet mockPet = new Pet(command);
+        mockPet.setOwner(mockOwner);
+        when(petRepository.save(any(Pet.class))).thenReturn(mockPet);
+
+        // Simulate the behavior of ExternalMedicalHistoryService
+        MedicalHistory mockMedicalHistory = Mockito.mock(MedicalHistory.class);
+        when(medicalHistoryService.createMedicalHistory(any(String.class)))
+                .thenReturn(Optional.of(mockMedicalHistory));
+
+        /*
+          Act
+          Call the method to be tested
+         */
+        Long petId = petCommandService.handle(command);
+
+        // Debugging: Print the created pet details
+        System.out.println("\nCreated Pet: \n------------------------------\n");
+        System.out.println("Created Pet Name: " + mockPet.getPetName());
+        System.out.println("Created Pet Breed: " + mockPet.getAnimalBreed());
+        System.out.println("Created Pet Gender: " + mockPet.getPetGender());
+        System.out.println("Created Pet Owner ID: " + mockPet.getOwner().getId());
+        System.out.println("------------------------------\n");
+
+        /*
+          Assert
+          Verify the results
+         */
+        assertEquals(mockPet.getId(), petId);
+        verify(ownerRepository, times(1)).findById(command.ownerId());
+        verify(petRepository, times(1)).save(any(Pet.class));
+        verify(medicalHistoryService, times(1)).createMedicalHistory(any(String.class));
+    }
+}
+```
+
+#### US05: Edición de Perfil de Mascota<br>
+    Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.
+
+#### PetCommandService Unit Test: UpdatePetCommand
 
 
+
+
+
+#### US09:	Agendamiento de Citas<br>
+    Como dueño de mascota, deseo agendar citas veterinarias para asegurar que mi mascota reciba atención médica en el momento adecuado.
+
+#### ... Unit Test:
+
+#### US10:	Cancelación de Citas<br>
+    Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención.
+
+#### ... Unit Test:
 
 ### 5.1.1.2. Core Integration Tests
 
