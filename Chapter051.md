@@ -472,8 +472,9 @@ US10: Cancelación de citas
 
 Para realizar pruebas no funcionales tomamos en cuenta evaluar los atributos de calidad de escalabilidad y rendimiento. Decidimos utilizar Google Lighthouse porque es una herramienta automatizada de código abierto que permite auditar aplicaciones web en aspectos clave como el rendimiento de carga, optimización para dispositivos móviles, accesibilidad, buenas prácticas de desarrollo y SEO. Lighthouse proporciona métricas cuantitativas y sugerencias de mejora, lo que nos permite identificar cuellos de botella en el rendimiento y oportunidades para optimizar la experiencia del usuario. Además, su integración con navegadores como Chrome facilita su uso en entornos de desarrollo y pruebas continuas.
 
+[![Captura-de-pantalla-2025-05-17-011514.png](https://i.postimg.cc/br5pW2Dt/Captura-de-pantalla-2025-05-17-011514.png)](https://postimg.cc/ctfp8Ccx)
 
-
+[![Captura-de-pantalla-2025-05-17-011503.png](https://i.postimg.cc/ZK9T3j2F/Captura-de-pantalla-2025-05-17-011503.png)](https://postimg.cc/XpbS6KVp)
 
 ## 5.1.2. Pattern Based Backend Application(s)
 
