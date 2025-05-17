@@ -4,22 +4,22 @@
 
 En la presente sección se especifican las herramientas de software empleadas a lo largo de todas las fases del ciclo de vida del proyecto.
 - Product UX/UI Design:
- - UXPressia: Se empleó para la creación de User Personas, Empathy Map e Impact Map.
- - Miro: Se utilizó para elaborar los As-Is Scenario Map y To-Be Scenario Map.
+    - UXPressia: Se empleó para la creación de User Personas, Empathy Map e Impact Map.
+    - Miro: Se utilizó para elaborar los As-Is Scenario Map y To-Be Scenario Map.
 - Project Management:
- - Trello: Se utilizó esta herramienta para los Sprints y ADD Iterations.
+    - Trello: Se utilizó esta herramienta para los Sprints y ADD Iterations.
 - Software Documentation:
- - Visual Paradigm: Fue empleado para la elaboración del modelo C4 de la arquitectura de software.
- - LucidChart: Se empleó para la creación de los UML Diagrams.
- - Vertabelo: Se utilizó para elaborar nuestro Database Diagram.
- - Swagger: Se empleó para la documentación de la API.
+    - Visual Paradigm: Fue empleado para la elaboración del modelo C4 de la arquitectura de software.
+    - LucidChart: Se empleó para la creación de los UML Diagrams.
+    - Vertabelo: Se utilizó para elaborar nuestro Database Diagram.
+    - Swagger: Se empleó para la documentación de la API.
 - Software Development:
- - IntelliJ IDEA: Empleado para el desarrollo del frontend y backend.
+    - IntelliJ IDEA: Empleado para el desarrollo del frontend y backend.
 - Software Testing:
- - Gherkin / Cucumber: Acceptance Tests
- - JUnit / Mockito: Unit Tests
- - Postman: Integration Tests
- - Google Light House: Performance Tests
+    - Gherkin / Cucumber: Acceptance Tests
+    - JUnit / Mockito: Unit Tests
+    - Postman: Integration Tests
+    - Google Light House: Performance Tests
 
 ### 5.2.2    Source Code Management
 
