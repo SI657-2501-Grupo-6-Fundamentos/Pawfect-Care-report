@@ -36,6 +36,11 @@ En esta seccion mostramos las evidencias de nuestro deployment con azure app ser
 #### Vista del servicio Servidor flexible de Azure Database for PostgreSQL :
 ![Deployment Evidence 2](./assets/chapter05/sprint1/deployment_evidence/deploy_evidence2.png)
 
+#### Vista del dashboard del servicio de hosting Firebase para el web frontend
+
+[![Captura-de-pantalla-2025-05-17-030141.png](https://i.postimg.cc/KYkDBXFr/Captura-de-pantalla-2025-05-17-030141.png)](https://postimg.cc/VSwtPVJd)
+
+
 #### 5.3.1.7       Team Collaboration Insights during Sprint
 
 En esta seccion Mostramos la colaboracion de todos los integrantes en todos nuestros repositorios.

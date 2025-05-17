@@ -35,3 +35,13 @@ Respositorio en GitHub para el reporte:
 **Link del Trello**
 
 [`https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog`](https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog)
+
+
+**Anexo 4:**
+**Deploys**
+
+Frontend:
+[`https://pawfect-care-app-web-ef319.web.app/`](https://pawfect-care-app-web-ef319.web.app/)
+
+Backend:
+[`https://pawfect-caree-bahjeqd5hze7cffy.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/`](https://pawfect-caree-bahjeqd5hze7cffy.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
