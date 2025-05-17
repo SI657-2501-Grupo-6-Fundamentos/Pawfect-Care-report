@@ -27,7 +27,13 @@ Validan si el sistema cumple con las necesidades del cliente/usuario. Para ello,
 
 [![cucumber.jpg](https://i.postimg.cc/3xvvffHB/cucumber.jpg)](https://postimg.cc/jDR2LX2w)
 
+
+#### 🔹 Pruebas automatizadas (Automated Tests)
+Permiten realizar pruebas funcionales de forma automática para acciones como llenar formularios, hacer clic en botones o verificar textos en pantalla. Esto es útil para validar que una aplicación funciona correctamente después de cada cambio, sin necesidad de realizar pruebas manuales repetitivas.
+
 ---
+
+
 
 ## 2. Pruebas no funcionales
 Evalúan atributos del sistema **como rendimiento, seguridad o usabilidad**.
@@ -488,13 +494,49 @@ US10: Cancelación de citas
 [![Captura-de-pantalla-2025-05-17-002801.png](https://i.postimg.cc/JnBLXFDf/Captura-de-pantalla-2025-05-17-002801.png)](https://postimg.cc/CBYXTm47)
 <br>
 
-### 5.1.1.4 Quality Attributes Tests
+### 5.1.1.4 Automated Tests
+
+Para la ejecución de las pruebas automatizadas se tomaron en cuenta las historias de usuario primarias que formaban parte del core bussines y se utilizó la herramienta Selenium.
+
+US02: Autenticación de Usuarios
+
+[![Captura-de-pantalla-2025-05-17-031953.png](https://i.postimg.cc/C57hFLPF/Captura-de-pantalla-2025-05-17-031953.png)](https://postimg.cc/GTBwKrnN)
+<br>
+
+US06: Visualización de Mascotas
+
+[![Captura-de-pantalla-2025-05-17-032251.png](https://i.postimg.cc/yYW4JPWh/Captura-de-pantalla-2025-05-17-032251.png)](https://postimg.cc/0bgHF7Yr)
+<br>
+
+US08: Gestión de Perfiles de Mascotas
+
+[![Captura-de-pantalla-2025-05-17-032518.png](https://i.postimg.cc/QCH4MfSH/Captura-de-pantalla-2025-05-17-032518.png)](https://postimg.cc/CnpHPH3g)
+<br>
+
+US09: Agendamiento de Citas
+
+[![Captura-de-pantalla-2025-05-17-032758.png](https://i.postimg.cc/7YN9k8qm/Captura-de-pantalla-2025-05-17-032758.png)](https://postimg.cc/svv7YLQh)
+<br>
+
+[![Captura-de-pantalla-2025-05-17-032809.png](https://i.postimg.cc/GtFQt6G3/Captura-de-pantalla-2025-05-17-032809.png)](https://postimg.cc/Zvq3D7wX)
+<br>
+
+### 5.1.1.5 Quality Attributes Tests
 
 Para realizar pruebas no funcionales tomamos en cuenta evaluar los atributos de calidad de escalabilidad y rendimiento. Decidimos utilizar Google Lighthouse porque es una herramienta automatizada de código abierto que permite auditar aplicaciones web en aspectos clave como el rendimiento de carga, optimización para dispositivos móviles, accesibilidad, buenas prácticas de desarrollo y SEO. Lighthouse proporciona métricas cuantitativas y sugerencias de mejora, lo que nos permite identificar cuellos de botella en el rendimiento y oportunidades para optimizar la experiencia del usuario. Además, su integración con navegadores como Chrome facilita su uso en entornos de desarrollo y pruebas continuas.
+
+**Backend**
 
 [![Captura-de-pantalla-2025-05-17-011514.png](https://i.postimg.cc/br5pW2Dt/Captura-de-pantalla-2025-05-17-011514.png)](https://postimg.cc/ctfp8Ccx)
 
 [![Captura-de-pantalla-2025-05-17-011503.png](https://i.postimg.cc/ZK9T3j2F/Captura-de-pantalla-2025-05-17-011503.png)](https://postimg.cc/XpbS6KVp)
+
+**Frontend**
+
+[![Captura-de-pantalla-2025-05-17-030840.png](https://i.postimg.cc/pTVV3vTK/Captura-de-pantalla-2025-05-17-030840.png)](https://postimg.cc/5HGMFZ8t)
+
+[![Captura-de-pantalla-2025-05-17-030732.png](https://i.postimg.cc/R07qjGTx/Captura-de-pantalla-2025-05-17-030732.png)](https://postimg.cc/rdp841bf)
+
 
 ## 5.1.2. Pattern Based Backend Application(s)
 
