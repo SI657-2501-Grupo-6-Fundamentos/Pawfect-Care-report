@@ -55,12 +55,11 @@ Para mantener un código limpio, legible y fácil de mantener en equipo, se defi
 - Se adoptó Angular, el cual es un framework de desarrollo web frontend basado en TypeScript. Está diseñado para construir aplicaciones web de una sola página (SPA) estructuradas y escalables, mediante el uso de componentes, inyección de dependencias, enrutamiento, servicios y un sistema de templates declarativo.
 - Las convenciones usadas son:
   - Carpetas:
-    - Separadas por módulos (feature-modules)
-    - Nombres: Como nombre.component.ts, nombre.service.ts, nombre.module.ts.
+    - Separadas por módulos (`feature-modules`)
+    - Nombres: Como `nombre.component.ts`, `nombre.service.ts`, `nombre.module.ts`.
   - Nombres:
-    - Componentes, servicios, módulos: PascalCase.
-    - Variables y funciones: camelCase.
-
+    - Componentes, servicios, módulos: `PascalCase`.
+    - Variables y funciones: `camelCase`.
 
 #### **Backend (Spring Boot + Java)**
 - Se adoptó la guía oficial de estilo de Java + convención de Spring:
