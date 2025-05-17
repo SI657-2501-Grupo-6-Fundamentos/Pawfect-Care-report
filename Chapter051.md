@@ -40,12 +40,32 @@ Miden tiempos de respuesta, velocidad, escalabilidad. Para ello, utilizaremos la
 
 ### 5.1.1.1. Core Entities Unit Tests
 
-#### US04: Creación de Perfil de Mascota<br>
-	Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.
-
-#### PetCommandService Unit Test: CreatePetCommand
+#### PetCommandService Unit Test:
 
 ```java
+package pe.upc.pawfectcarebackend.petmanagement;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import pe.upc.pawfectcarebackend.medicalrecords.domain.model.aggregates.MedicalHistory;
+import pe.upc.pawfectcarebackend.petmanagement.application.PetCommandServicelmpl;
+import pe.upc.pawfectcarebackend.petmanagement.application.acl.ExternalMedicalHistoryService;
+import pe.upc.pawfectcarebackend.petmanagement.domain.model.aggregates.Owner;
+import pe.upc.pawfectcarebackend.petmanagement.domain.model.aggregates.Pet;
+import pe.upc.pawfectcarebackend.petmanagement.domain.model.commands.CreatePetCommand;
+import pe.upc.pawfectcarebackend.petmanagement.domain.model.commands.UpdatePetCommand;
+import pe.upc.pawfectcarebackend.petmanagement.domain.model.valueobjects.PetGender;
+import pe.upc.pawfectcarebackend.petmanagement.domain.services.PetCommandService;
+import pe.upc.pawfectcarebackend.petmanagement.infrastructure.persistence.jpa.repositories.OwnerRepository;
+import pe.upc.pawfectcarebackend.petmanagement.infrastructure.persistence.jpa.repositories.PetRepository;
+
+import java.time.LocalDate;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
+
 public class PetCommandServiceTest {
     /**
      * Test for handleCreatePetCommand method
@@ -111,35 +131,312 @@ public class PetCommandServiceTest {
         verify(petRepository, times(1)).save(any(Pet.class));
         verify(medicalHistoryService, times(1)).createMedicalHistory(any(String.class));
     }
+
+
+    /**
+     * Test for handleUpdatePetCommand method
+     */
+    @Test
+    void handleUpdatePetCommand() {
+    /*
+      Arrange
+      Mock the dependencies
+     */
+        PetRepository petRepository = Mockito.mock(PetRepository.class);
+
+        // Create an instance of the PetCommandService
+        PetCommandService petCommandService = new PetCommandServicelmpl(petRepository, null, null);
+
+        // Simulate the existing Pet
+        Pet mockPet = Mockito.mock(Pet.class);
+        when(mockPet.getId()).thenReturn(1L);
+        when(mockPet.getPetName()).thenReturn("Buddy");
+        when(mockPet.getAnimalBreed()).thenReturn("Golden Retriever");
+        when(mockPet.getPetGender()).thenReturn(PetGender.MALE);
+        when(petRepository.existsById(1L)).thenReturn(true);
+        when(petRepository.findById(1L)).thenReturn(Optional.of(mockPet));
+
+        // Mock the updateInformation method
+        when(mockPet.updateInformation(
+                anyString(),
+                any(LocalDate.class),
+                any(LocalDate.class),
+                anyString(),
+                any(PetGender.class)
+        )).thenAnswer(invocation -> {
+            System.out.println("\nBefore Update:");
+            System.out.println("Pet Name: " + mockPet.getPetName());
+            System.out.println("Pet Breed: " + mockPet.getAnimalBreed());
+            System.out.println("Pet Gender: " + mockPet.getPetGender());
+
+            // Simulate updating the pet
+            when(mockPet.getPetName()).thenReturn("Updated Buddy");
+            when(mockPet.getAnimalBreed()).thenReturn("Updated Breed");
+            when(mockPet.getPetGender()).thenReturn(PetGender.FEMALE);
+
+            System.out.println("\nAfter Update:");
+            System.out.println("Pet Name: Updated Buddy");
+            System.out.println("Pet Breed: Updated Breed");
+            System.out.println("Pet Gender: FEMALE");
+
+            return mockPet;
+        });
+
+        // Simulate the updated Pet
+        when(petRepository.save(any(Pet.class))).thenReturn(mockPet);
+
+        // Create the command to update a pet
+        UpdatePetCommand command = new UpdatePetCommand(
+                1L,
+                "Updated Buddy",
+                LocalDate.of(2020, 1, 1),
+                LocalDate.now(),
+                "Updated Breed",
+                PetGender.FEMALE
+        );
+
+    /*
+      Act
+      Call the method to be tested
+     */
+        Optional<Pet> result = petCommandService.handle(command);
+
+    /*
+      Assert
+      Verify the expected behavior
+     */
+        assertEquals(mockPet.getId(), result.get().getId());
+        verify(petRepository, times(1)).existsById(command.id());
+        verify(petRepository, times(1)).findById(command.id());
+        verify(petRepository, times(1)).save(any(Pet.class));
+    }
+
 }
 ```
 
-#### US05: Edición de Perfil de Mascota<br>
+##### US04: Creación de Perfil de Mascota<br>
+	Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.
+
+[![Captura-de-pantalla-2025-05-16-200025.png](https://i.postimg.cc/1z504cF1/Captura-de-pantalla-2025-05-16-200025.png)](https://postimg.cc/bZWSBnLm)
+
+
+##### US05: Edición de Perfil de Mascota<br>
     Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.
 
-#### PetCommandService Unit Test: UpdatePetCommand
+[![Captura-de-pantalla-2025-05-16-195441.png](https://i.postimg.cc/Xv0c36jq/Captura-de-pantalla-2025-05-16-195441.png)](https://postimg.cc/nX0QY5Qf)<br><br>
 
 
+#### AppointmentCommandService & MedicalAppointmentCommandService  Unit Test:
 
+```java
+package pe.upc.pawfectcarebackend.appointmentsscheduling;
 
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.application.AppointmentCommandServicelmpl;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.application.acl.ExternalPetService;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.domain.model.aggregates.Appointment;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.domain.model.commands.CreateAppointmentCommand;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.domain.model.valueobjects.AppointmentStatus;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.domain.services.AppointmentCommandService;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.infrastructure.persistence.jpa.repositories.AppointmentRepository;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.infrastructure.persistence.jpa.repositories.MedicalAppointmentRepository;
+import pe.upc.pawfectcarebackend.petmanagement.domain.model.aggregates.Pet;
+
+import java.time.LocalDateTime;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
+
+public class AppointmentCommandServiceTest {
+    /**
+     * Test for handleCreateAppointmentCommand method
+     */
+    @Test
+    void handleCreateAppointmentCommand() {
+        /*
+          Arrange
+          Mock the dependencies
+         */
+        AppointmentRepository appointmentRepository = Mockito.mock(AppointmentRepository.class);
+        MedicalAppointmentRepository medicalAppointmentRepository = Mockito.mock(MedicalAppointmentRepository.class);
+        ExternalPetService externalPetService = Mockito.mock(ExternalPetService.class);
+
+        // Create an instance of the AppointmentCommandService
+        AppointmentCommandService appointmentCommandService = new AppointmentCommandServicelmpl(
+                appointmentRepository,
+                externalPetService,
+                medicalAppointmentRepository
+        );
+
+        // Simulate the creation of a Pet
+        Pet mockPet = Mockito.mock(Pet.class);
+        when(mockPet.getId()).thenReturn(1L);
+        when(externalPetService.fetchPetById(1L)).thenReturn(Optional.of(mockPet));
+
+        // Create the command to add an appointment
+        CreateAppointmentCommand command = new CreateAppointmentCommand(
+                "Vet Visit",
+                LocalDateTime.of(2023, 10, 1, 10, 0),
+                LocalDateTime.of(2023, 10, 1, 11, 0),
+                true,
+                AppointmentStatus.SCHEDULED, // Use the AppointmentStatus enum
+                1L // Pass a Long instead of a long
+        );
+
+        // Simulate the behavior of AppointmentRepository
+        Appointment mockAppointment = new Appointment(command);
+        mockAppointment.setPet(mockPet);
+        when(appointmentRepository.save(any(Appointment.class))).thenReturn(mockAppointment);
+
+        /*
+          Act
+          Call the method to be tested
+         */
+        Long appointmentId = appointmentCommandService.handle(command);
+
+        // Debugging: Print the created appointment details
+        System.out.println("\nCreated Appointment: \n------------------------------\n");
+        System.out.println("Appointment Name: " + mockAppointment.getAppointmentName());
+        System.out.println("Registration Date: " + mockAppointment.getRegistrationDate());
+        System.out.println("End Date: " + mockAppointment.getEndDate());
+        System.out.println("Is Medical: " + mockAppointment.isMedical());
+        System.out.println("Pet ID: " + mockAppointment.getPet().getId());
+        System.out.println("------------------------------\n");
+
+        /*
+          Assert
+          Verify the results
+         */
+        assertEquals(mockAppointment.getId(), appointmentId);
+        verify(externalPetService, times(1)).fetchPetById(command.petId());
+        verify(appointmentRepository, times(1)).save(any(Appointment.class));
+    }
+}
+```
+
+```java
+package pe.upc.pawfectcarebackend.appointmentsscheduling;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.application.MedicalAppointmentCommandServiceImpl;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.domain.model.aggregates.Appointment;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.domain.model.aggregates.MedicalAppointment;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.domain.model.commands.CreateMedicalAppointmentCommand;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.infrastructure.persistence.jpa.repositories.AppointmentRepository;
+import pe.upc.pawfectcarebackend.appointmentsscheduling.infrastructure.persistence.jpa.repositories.MedicalAppointmentRepository;
+import pe.upc.pawfectcarebackend.petmanagement.application.acl.ExternalMedicalHistoryService;
+import pe.upc.pawfectcarebackend.medicalrecords.domain.model.aggregates.MedicalHistory;
+import pe.upc.pawfectcarebackend.petmanagement.domain.model.aggregates.Pet;
+
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
+
+public class MedicalAppointmentCommandServiceTest {
+
+    @Test
+    void handleCreateMedicalAppointmentCommand() {
+        /*
+          Arrange
+          Mock the dependencies
+         */
+        MedicalAppointmentRepository medicalAppointmentRepository = Mockito.mock(MedicalAppointmentRepository.class);
+        AppointmentRepository appointmentRepository = Mockito.mock(AppointmentRepository.class);
+        ExternalMedicalHistoryService externalMedicalHistoryService = Mockito.mock(ExternalMedicalHistoryService.class);
+
+        // Create an instance of the MedicalAppointmentCommandService
+        MedicalAppointmentCommandServiceImpl medicalAppointmentCommandService = new MedicalAppointmentCommandServiceImpl(
+                medicalAppointmentRepository,
+                appointmentRepository,
+                externalMedicalHistoryService
+        );
+
+        // Simulate the existing Appointment and Pet
+        MedicalHistory mockMedicalHistory = Mockito.mock(MedicalHistory.class);
+        when(mockMedicalHistory.getId()).thenReturn(1L);
+
+        Pet mockPet = Mockito.mock(Pet.class);
+        when(mockPet.getMedicalHistory()).thenReturn(mockMedicalHistory);
+
+        Appointment mockAppointment = Mockito.mock(Appointment.class);
+        when(mockAppointment.getPet()).thenReturn(mockPet);
+        when(appointmentRepository.findById(1L)).thenReturn(Optional.of(mockAppointment));
+
+        // Create the command to add a medical appointment
+        CreateMedicalAppointmentCommand command = new CreateMedicalAppointmentCommand(
+                "diagnosis",
+                "Treatment Example",
+                "Notes Example",
+                1L,
+                1L
+        );
+
+        // Simulate the behavior of MedicalAppointmentRepository
+        MedicalAppointment mockMedicalAppointment = new MedicalAppointment(
+                command.diagnosis(),
+                command.treatment(),
+                command.notes()
+        );
+        mockMedicalAppointment.setMedicalHistory(mockMedicalHistory);
+        mockMedicalAppointment.setAppointment(mockAppointment);
+        when(medicalAppointmentRepository.save(any(MedicalAppointment.class))).thenReturn(mockMedicalAppointment);
+
+        /*
+          Act
+          Call the method to be tested
+         */
+        Long medicalAppointmentId = medicalAppointmentCommandService.handle(command);
+
+        // Debugging: Print the created medical appointment details
+        System.out.println("\nCreated Medical Appointment: \n------------------------------\n");
+        System.out.println("Diagnosis: " + mockMedicalAppointment.getDiagnosis());
+        System.out.println("Treatment: " + mockMedicalAppointment.getTreatment());
+        System.out.println("Notes: " + mockMedicalAppointment.getNotes());
+        System.out.println("Appointment ID: " + mockMedicalAppointment.getAppointment().getId());
+        System.out.println("Medical History ID: " + mockMedicalAppointment.getMedicalHistory().getId());
+        System.out.println("------------------------------\n");
+
+        /*
+          Assert
+          Verify the results
+         */
+        assertEquals(mockMedicalAppointment.getId(), medicalAppointmentId);
+        verify(appointmentRepository, times(1)).findById(command.appointmentId());
+        verify(medicalAppointmentRepository, times(1)).save(any(MedicalAppointment.class));
+        verify(externalMedicalHistoryService, times(1)).AddMedicalAppointmentToMedicalHistory(
+                mockMedicalHistory.getId(),
+                mockMedicalAppointment.getId()
+        );
+    }
+}
+```
 
 #### US09:	Agendamiento de Citas<br>
     Como dueño de mascota, deseo agendar citas veterinarias para asegurar que mi mascota reciba atención médica en el momento adecuado.
 
-#### ... Unit Test:
+[![Captura-de-pantalla-2025-05-16-201707.png](https://i.postimg.cc/Pq9Lhmz4/Captura-de-pantalla-2025-05-16-201707.png)](https://postimg.cc/Mc0ZmfLM)
 
-#### US10:	Cancelación de Citas<br>
-    Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención.
+[![Captura-de-pantalla-2025-05-16-201838.png](https://i.postimg.cc/PryPNGQN/Captura-de-pantalla-2025-05-16-201838.png)](https://postimg.cc/w7t6bGPd)<br><br>
 
-#### ... Unit Test:
 
 ### 5.1.1.2. Core Integration Tests
 
-
+/* Pruebas de Postman
+*
+*
+*
+*
+*/
 
 ### 5.1.1.3 User Acceptance Tests
 
-
+// Gherkin
 
 
 ### 5.1.1.4 Quality Attributes Tests
