@@ -2655,7 +2655,6 @@ Es la puerta de entrada al backend. Expone la funcionalidad del sistema a los cl
 
 [![Captura-de-pantalla-2025-05-17-010751.png](https://i.postimg.cc/9fg8GPvZ/Captura-de-pantalla-2025-05-17-010751.png)](https://postimg.cc/GBYxRD3m)
 
-
 ## 5.1.4. Framework Pattern Driven Refactoring Report
 
 Actualmente, el sistema opera bajo una arquitectura monolítica con los siguientes Bounded Contexts:
@@ -2672,13 +2671,13 @@ Si bien esta estructura es funcional, la falta de segmentación genera desafíos
 
 - Medical Appointment Management: Permanece como un servicio autónomo para la programación de citas; sin embargo, este bounded context conocido como Appointment Scheduling será refactorizado a un modelo coherente con la arquitectura expresada en el C4 y, por lo tanto, su nombre es cambiado.
 
-Pet Management, que se divide en dos subdominios:
+Pet Management, que se divide en dos subdominios especiales:
 
-- Medical Record: Se encarga exclusivamente del historial clínico de la mascota, administrando diagnósticos, tratamientos y evolución médica. Separar esta funcionalidad permite un control más preciso sobre la información médica, facilitando integraciones con servicios especializados y asegurando la coherencia de los datos.
+- Owners Management: Se encarga exclusivamente de la gestión de propietarios, administrando su información, historial de adopción y relación con las mascotas. Este subdominio permite centralizar los datos de los dueños sin interferir con la administración específica de los animales.
 
-- Pet Management: Se enfoca en la administración de propietarios y mascotas, contemplando la relación entre ambos. Este subdominio maneja datos como información de identificación, historial de adopción, y características generales de la mascota, garantizando una gestión eficiente sin interferencias con aspectos clínicos.
+- Pet Management: Se enfoca en la gestión integral de las mascotas, contemplando información de identificación, características generales y vínculos con sus respectivos propietarios. Separar esta funcionalidad del manejo de propietarios asegura una estructura modular que favorece la escalabilidad y minimiza el acoplamiento entre servicios.
 
-Esta segmentación permite una mayor independencia entre servicios, reduciendo el acoplamiento y facilitando la evolución de cada módulo sin afectar el resto del sistema.
+Esta segmentación proporciona una mayor independencia entre los módulos, reduciendo el acoplamiento y facilitando la evolución de cada componente sin impacto en los demás. De este modo, se garantiza una arquitectura más flexible y preparada para futuras extensiones. Por consiguiente: Nuestros microservicios futuros serán: Pet Management, Owners Management, Medical Appointment Management y el IAM.
 
 ## 5.2  Software Configuration Management
 
