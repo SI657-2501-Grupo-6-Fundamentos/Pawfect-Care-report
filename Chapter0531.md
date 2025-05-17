@@ -56,25 +56,20 @@ En este sprint, se han incorporado pruebas de aceptación escritas en **Gherkin*
 
 #### 5.3.1.4       Execution Evidence for Sprint Review
 
-Acá presentamos las capturas de los endpoints que tiene nuestro backend:
+En esta seccion mostramos la ejecucion de nuestros servicios:
 
-![Back1](./assets/chapter05/Back1.png)
+#### Backend
 
-![Back2](./assets/chapter05/Back2.png)
+![Evidence Back1](./assets/chapter05/sprint1/exceution_evidence/execution_back1.png)
 
-![Back3](./assets/chapter05/Back3.png)
+![Evidence Back2](./assets/chapter05/sprint1/exceution_evidence/execution_back2.png)
 
+![Evidence Back3](./assets/chapter05/sprint1/exceution_evidence/execution_back3.png)
 
-Acá presentamos las capturas de nuestro frontend:
+![Evidence Back4](./assets/chapter05/sprint1/exceution_evidence/execution_back4.png)
 
-#### Inicio:
-![Front1](./assets/chapter05/Front1.png)
+![Evidence Back5](./assets/chapter05/sprint1/exceution_evidence/execution_back5.png)
 
-#### Vista para registrar clientes o para visualizarlos:
-![Front2](./assets/chapter05/Front2.png)
+#### FrontEnd
 
-#### Vista para registrar mascotas o para visualizarlas:
-![Front3](./assets/chapter05/Front3.png)
-
-#### Vista para registrar una cita o para visualizarlas:
-![Front4](./assets/chapter05/Front4.png)
+![Evidence Front](./assets/chapter05/sprint1/exceution_evidence/execution_front.jpg)
