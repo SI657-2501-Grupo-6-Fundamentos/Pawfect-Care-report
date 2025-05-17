@@ -436,8 +436,37 @@ public class MedicalAppointmentCommandServiceTest {
 
 ### 5.1.1.3 User Acceptance Tests
 
-// Gherkin
+Pruebas de aceptación para las historias pertenecientes al core business son mostradas a continuación:
 
+US01: Registro de Usuario
+
+[![Captura-de-pantalla-2025-05-16-232803.png](https://i.postimg.cc/Dz8nc044/Captura-de-pantalla-2025-05-16-232803.png)](https://postimg.cc/Z9tGbTcJ)
+<br>
+
+US02: Autenticación de Usuarios
+
+[![Captura-de-pantalla-2025-05-16-235349.png](https://i.postimg.cc/DZ1r82gR/Captura-de-pantalla-2025-05-16-235349.png)](https://postimg.cc/JD4DFCSQ)
+<br>
+
+US06: Visualización de Perfiles de Mascotas
+
+[![Captura-de-pantalla-2025-05-17-003231.png](https://i.postimg.cc/G2vfdnsm/Captura-de-pantalla-2025-05-17-003231.png)](https://postimg.cc/1n5BrTHk)
+<br>
+
+US08: Gestión de Perfiles de Mascotas
+
+[![Captura-de-pantalla-2025-05-17-000356.png](https://i.postimg.cc/4ydxjPmw/Captura-de-pantalla-2025-05-17-000356.png)](https://postimg.cc/vgJyVW76)
+<br>
+
+US09: Agendamiento de Citas
+
+[![Captura-de-pantalla-2025-05-17-000651.png](https://i.postimg.cc/RZfZrNZr/Captura-de-pantalla-2025-05-17-000651.png)](https://postimg.cc/BjS0HZFN)
+<br>
+
+US10: Cancelación de citas
+
+[![Captura-de-pantalla-2025-05-17-002801.png](https://i.postimg.cc/JnBLXFDf/Captura-de-pantalla-2025-05-17-002801.png)](https://postimg.cc/CBYXTm47)
+<br>
 
 ### 5.1.1.4 Quality Attributes Tests
 
@@ -489,9 +518,22 @@ Permite que otros servicios interactúen con el sistema de gestión de mascotas 
 Esta capa representa el núcleo del negocio. Aquí se define el **modelo de dominio** y se encapsulan las reglas de negocio más importantes. Contiene:
 
 - **Entidades y Aggregates**: Representan objetos del dominio con identidad persistente y lógica interna.
+
+[![Captura-de-pantalla-2025-05-17-004711.png](https://i.postimg.cc/vm0BhCmD/Captura-de-pantalla-2025-05-17-004711.png)](https://postimg.cc/LqZ26CLM)<br>
+
+[![Captura-de-pantalla-2025-05-17-004548.png](https://i.postimg.cc/3xHdxg6r/Captura-de-pantalla-2025-05-17-004548.png)](https://postimg.cc/VdDY7bm2)<br>
+
 - **Value Objects**: Elementos inmutables que encapsulan atributos relacionados.
+
+[![Captura-de-pantalla-2025-05-17-004303.png](https://i.postimg.cc/0QHzkhgh/Captura-de-pantalla-2025-05-17-004303.png)](https://postimg.cc/sQ7jK6gJ)
+
 - **Commands**: Representan acciones que modifican el estado del dominio (crear, actualizar, eliminar).
+
+[![Captura-de-pantalla-2025-05-17-005021.png](https://i.postimg.cc/tRZdcGVK/Captura-de-pantalla-2025-05-17-005021.png)](https://postimg.cc/LhSZq7DD)
+
 - **Queries**: Representan solicitudes de información sin intención de modificar el estado.
+
+[![Captura-de-pantalla-2025-05-17-005210.png](https://i.postimg.cc/xCbk6YFg/Captura-de-pantalla-2025-05-17-005210.png)](https://postimg.cc/62t53sKG)
 
 ---
 
@@ -502,12 +544,16 @@ Esta capa protege el modelo de dominio de las dependencias externas. Actúa como
 - **Servicios externos**: Interfaces y sus implementaciones para comunicarse con otros sistemas (por ejemplo, APIs externas).
 - **Traductores (Mappers/Transformers)**: Transforman modelos externos a modelos internos y viceversa.
 
+[![Captura-de-pantalla-2025-05-17-005722.png](https://i.postimg.cc/FHRHPNYc/Captura-de-pantalla-2025-05-17-005722.png)](https://postimg.cc/jLpT2VQd)
+
 ---
 
 ### Infrastructure Layer
 Se encarga de las dependencias técnicas del sistema. Aquí se implementan los detalles concretos definidos en las interfaces del dominio y se gestionan los recursos del entorno. Contiene:
 
 - **Implementaciones de Repositorios (JPA)**: Persistencia de entidades y aggregates.
+
+[![Captura-de-pantalla-2025-05-17-010046.png](https://i.postimg.cc/Y0hdn4BZ/Captura-de-pantalla-2025-05-17-010046.png)](https://postimg.cc/N2v8LjMk)
 
 ---
 
@@ -518,6 +564,8 @@ Coordina los casos de uso del backend. Aquí no hay lógica de negocio profunda,
 - **Comandos (Commands)**: Objetos que encapsulan los datos necesarios para ejecutar una acción.
 - **Consultas (Queries)**: Objetos que representan peticiones de lectura.
 - **Manejadores de Casos de Uso**: Métodos que coordinan validaciones, llamadas al dominio y persistencia.
+
+[![Captura-de-pantalla-2025-05-17-010600.png](https://i.postimg.cc/qBPFbLgG/Captura-de-pantalla-2025-05-17-010600.png)](https://postimg.cc/hh0MhVLJ)
 
 ---
 
@@ -530,6 +578,8 @@ Es la puerta de entrada al backend. Expone la funcionalidad del sistema a los cl
 - **ACL Context Facade**: Se utiliza en casos donde es necesario invocar servicios o APIs externas desde la capa de interfaz de manera simplificada y desacoplada, actuando como fachada que esconde detalles técnicos.
 - **Validaciones de entrada (Request Validation)**: Validan los datos que provienen del cliente (por ejemplo, con anotaciones "@Valid") antes de enviarlos al Application Layer. Aseguran que la entrada sea consistente.
 - **Autenticación y Autorización**: Incluye filtros, interceptores o resolvers que gestionan quién accede a qué recurso (por ejemplo, con Spring Security), garantizando seguridad a nivel de endpoints.
+
+[![Captura-de-pantalla-2025-05-17-010751.png](https://i.postimg.cc/9fg8GPvZ/Captura-de-pantalla-2025-05-17-010751.png)](https://postimg.cc/GBYxRD3m)
 
 
 ## 5.1.4. Framework Pattern Driven Refactoring Report
@@ -555,4 +605,6 @@ Pet Management, que se divide en dos subdominios:
 - Pet Management: Se enfoca en la administración de propietarios y mascotas, contemplando la relación entre ambos. Este subdominio maneja datos como información de identificación, historial de adopción, y características generales de la mascota, garantizando una gestión eficiente sin interferencias con aspectos clínicos.
 
 Esta segmentación permite una mayor independencia entre servicios, reduciendo el acoplamiento y facilitando la evolución de cada módulo sin afectar el resto del sistema.
+
+
 
