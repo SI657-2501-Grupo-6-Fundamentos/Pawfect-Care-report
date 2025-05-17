@@ -2958,9 +2958,6 @@ A continuación presentamos nuestro Kanban Board Realizado en Trello, correspond
 
 ![Kanban Board 1](./assets/chapter05/sprint1/kanbanboard1.png)
 
-Link del Trello:[`https://trello.com/invite/b/68182726f3abe511b7a3fd1b/ATTIa80fc72e5abff414c8889e41de34c05c628F4462/kanban-board-pawfectcare`](https://trello.com/invite/b/68182726f3abe511b7a3fd1b/ATTIa80fc72e5abff414c8889e41de34c05c628F4462/kanban-board-pawfectcare)
-
-
 
 ---
 
@@ -3019,7 +3016,9 @@ Respositorio en GitHub para el reporte:
 **Anexo 3:**
 **Link del Trello**
 
-[`https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog`](https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog)
+Avance 1 - [`https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog`](https://trello.com/invite/b/68173b56108458c9054e4b88/ATTIf1f82e9d1bf8cc315055176045a0cf762A3E947E/architectural-design-backlog)
+
+Sprints - [`https://trello.com/invite/b/68182726f3abe511b7a3fd1b/ATTIa80fc72e5abff414c8889e41de34c05c628F4462/kanban-board-pawfectcare`](https://trello.com/invite/b/68182726f3abe511b7a3fd1b/ATTIa80fc72e5abff414c8889e41de34c05c628F4462/kanban-board-pawfectcare)
 
 
 **Anexo 4: Deploys**
