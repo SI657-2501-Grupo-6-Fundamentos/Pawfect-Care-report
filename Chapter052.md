@@ -4,22 +4,22 @@
 
 En la presente sección se especifican las herramientas de software empleadas a lo largo de todas las fases del ciclo de vida del proyecto.
 - Product UX/UI Design:
- - UXPressia: Se empleó para la creación de User Personas, Empathy Map e Impact Map.
- - Miro: Se utilizó para elaborar los As-Is Scenario Map y To-Be Scenario Map.
+    - UXPressia: Se empleó para la creación de User Personas, Empathy Map e Impact Map.
+    - Miro: Se utilizó para elaborar los As-Is Scenario Map y To-Be Scenario Map.
 - Project Management:
- - Trello: Se utilizó esta herramienta para los Sprints y ADD Iterations.
+    - Trello: Se utilizó esta herramienta para los Sprints y ADD Iterations.
 - Software Documentation:
- - Visual Paradigm: Fue empleado para la elaboración del modelo C4 de la arquitectura de software.
- - LucidChart: Se empleó para la creación de los UML Diagrams.
- - Vertabelo: Se utilizó para elaborar nuestro Database Diagram.
- - Swagger: Se empleó para la documentación de la API.
+    - Visual Paradigm: Fue empleado para la elaboración del modelo C4 de la arquitectura de software.
+    - LucidChart: Se empleó para la creación de los UML Diagrams.
+    - Vertabelo: Se utilizó para elaborar nuestro Database Diagram.
+    - Swagger: Se empleó para la documentación de la API.
 - Software Development:
- - IntelliJ IDEA: Empleado para el desarrollo del frontend y backend.
+    - IntelliJ IDEA: Empleado para el desarrollo del frontend y backend.
 - Software Testing:
- - Gherkin / Cucumber: Acceptance Tests
- - JUnit / Mockito: Unit Tests
- - Postman: Integration Tests
- - Google Light House: Performance Tests
+    - Gherkin / Cucumber: Acceptance Tests
+    - JUnit / Mockito: Unit Tests
+    - Postman: Integration Tests
+    - Google Light House: Performance Tests
 
 ### 5.2.2    Source Code Management
 
@@ -41,9 +41,25 @@ Además, se implementa GitFlow como Workflow de control de versiones:
 ### 5.2.3    Source Code Style Guide & Conventions
 Para mantener un código limpio, legible y fácil de mantener en equipo, se definieron guías de estilo específicas por tecnología, complementadas con linters automáticos y convenciones de nomenclatura. Estas prácticas se alinean con los principios de *Clean Code* y las recomendaciones de la comunidad técnica para cada stack.
 
-#### **Frontend Web (Angular con TypeScript)**
-- 
+#### **Pruebas unitarias (Gherkin + Cucumber)**
+- Se adoptó Gherkin, el cual es un lenguaje estructurado utilizado para describir el comportamiento esperado del software mediante ejemplos concretos. Utiliza una sintaxis simple basada en palabras clave como `Feature`, `Escenario`, `Dado`, `Cuando` y `Entonces`, lo que permite que tanto desarrolladores como personas no técnicas colaboren en la definición de requisitos. Cada especificación se escribe en archivos con extensión `.feature`, facilitando la automatización de pruebas y asegurando que el sistema cumpla con las expectativas funcionales del usuario.
+    - Convenciones:
+        - `Feature`: Describe la funcionalidad a probar.
+        - `Escenario`: Describe una situación específica o caso de uso.
+        - `Dado`: Estado inicial o precondición.
+        - `Cuando`: Acción principal que se realiza.
+        - `Entonces`: Resultado esperado tras la acción.
+        - `Y`: Se usan para extender los pasos `Dado`, `Cuando` o `Entonces`.
 
+#### **Frontend Web (Angular con TypeScript)**
+- Se adoptó Angular, el cual es un framework de desarrollo web frontend basado en TypeScript. Está diseñado para construir aplicaciones web de una sola página (SPA) estructuradas y escalables, mediante el uso de componentes, inyección de dependencias, enrutamiento, servicios y un sistema de templates declarativo.
+- Las convenciones usadas son:
+  - Carpetas:
+    - Separadas por módulos (`feature-modules`)
+    - Nombres: Como `nombre.component.ts`, `nombre.service.ts`, `nombre.module.ts`.
+  - Nombres:
+    - Componentes, servicios, módulos: `PascalCase`.
+    - Variables y funciones: `camelCase`.
 
 #### **Backend (Spring Boot + Java)**
 - Se adoptó la guía oficial de estilo de Java + convención de Spring:
