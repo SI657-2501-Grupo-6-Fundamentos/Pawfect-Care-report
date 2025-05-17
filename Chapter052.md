@@ -41,8 +41,25 @@ Además, se implementa GitFlow como Workflow de control de versiones:
 ### 5.2.3    Source Code Style Guide & Conventions
 Para mantener un código limpio, legible y fácil de mantener en equipo, se definieron guías de estilo específicas por tecnología, complementadas con linters automáticos y convenciones de nomenclatura. Estas prácticas se alinean con los principios de *Clean Code* y las recomendaciones de la comunidad técnica para cada stack.
 
+#### **Pruebas unitarias (Gherkin + Cucumber)**
+- Se adoptó Gherkin, el cual es un lenguaje estructurado utilizado para describir el comportamiento esperado del software mediante ejemplos concretos. Utiliza una sintaxis simple basada en palabras clave como `Feature`, `Escenario`, `Dado`, `Cuando` y `Entonces`, lo que permite que tanto desarrolladores como personas no técnicas colaboren en la definición de requisitos. Cada especificación se escribe en archivos con extensión `.feature`, facilitando la automatización de pruebas y asegurando que el sistema cumpla con las expectativas funcionales del usuario.
+    - Convenciones:
+        - `Feature`: Describe la funcionalidad a probar.
+        - `Escenario`: Describe una situación específica o caso de uso.
+        - `Dado`: Estado inicial o precondición.
+        - `Cuando`: Acción principal que se realiza.
+        - `Entonces`: Resultado esperado tras la acción.
+        - `Y`: Se usan para extender los pasos `Dado`, `Cuando` o `Entonces`.
+
 #### **Frontend Web (Angular con TypeScript)**
-- 
+- Se adoptó Angular, el cual es un framework de desarrollo web frontend basado en TypeScript. Está diseñado para construir aplicaciones web de una sola página (SPA) estructuradas y escalables, mediante el uso de componentes, inyección de dependencias, enrutamiento, servicios y un sistema de templates declarativo.
+- Las convenciones usadas son:
+  - Carpetas:
+    - Separadas por módulos (feature-modules)
+    - Nombres: Como nombre.component.ts, nombre.service.ts, nombre.module.ts.
+  - Nombres:
+    - Componentes, servicios, módulos: PascalCase.
+    - Variables y funciones: camelCase.
 
 
 #### **Backend (Spring Boot + Java)**
