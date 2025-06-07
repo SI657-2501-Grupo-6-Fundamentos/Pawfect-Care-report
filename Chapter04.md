@@ -93,8 +93,8 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 [![Class-Diagram.png](https://i.postimg.cc/FKgWck31/Class-Diagram.png)](https://postimg.cc/McHmJTs8)
 
 ## 4.1.5. Relational/Non Relational Database Diagram
-Optamos por utilizar MySQL como sistema de gestión de bases de datos, gestionado mediante MySQL Workbench. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
-[![Database-Diagram.png](https://i.postimg.cc/0y9Jj6kV/image.png)](https://postimg.cc/cr5J5L83)
+Optamos por utilizar PostgreSQL como sistema de gestión de bases de datos, gestionado mediante pg Admin 4. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
+[![Pawfect-Care-2025-06-07-02-03.png](https://i.postimg.cc/sf7q51Yf/Pawfect-Care-2025-06-07-02-03.png)](https://postimg.cc/BtZm0S7R)
 
 ## 4.1.6. Design Patterns
 
