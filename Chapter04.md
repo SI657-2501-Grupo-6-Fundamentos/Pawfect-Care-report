@@ -97,7 +97,7 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 
 ## 4.1.5. Relational/Non Relational Database Diagram
 Optamos por utilizar PostgreSQL como sistema de gestión de bases de datos, gestionado mediante pg Admin 4. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
-[![Pawfect-Care-2025-06-07-02-03.png](https://i.postimg.cc/sf7q51Yf/Pawfect-Care-2025-06-07-02-03.png)](https://postimg.cc/BtZm0S7R)
+![Pawfect-Care-2025-06-07-02-03.png](./assets/chapter04/dclases.png)
 
 ## 4.1.6. Design Patterns
 
