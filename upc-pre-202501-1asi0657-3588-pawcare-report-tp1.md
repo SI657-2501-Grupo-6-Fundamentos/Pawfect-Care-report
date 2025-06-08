@@ -1755,20 +1755,20 @@ El diagrama de contexto es un recurso clave para analizar las conexiones entre P
 
 En este diagrama se expresa una representación visual que muestra los principales contenedores de software que componen un sistema. Por ejemplo, aplicaciones, bases de datos y microservicios que interactúan entre sí.
 
-[![Pawfect-Care-Containers-Diagram.png](https://i.postimg.cc/sD3ngn1R/Pawfect-Care-Containers-Diagram.png)](https://postimg.cc/ThHjkJrk)
+![Pawfect-Care-Containers-Diagram.png](./assets/chapter04/c4/contenedores.png)
 
 
 ### Pet Management Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de gestión de mascotas.
-[![Pet-Management-Component.png](https://i.postimg.cc/15Rf7PnN/Pet-Management-Component.png)](https://postimg.cc/NLVsL3xg)
+![Pet-Management-Component.png](./assets/chapter04/c4/petmanagment.png)
 
 ### Medical Appointment Management Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de gestión de citas.
-[![Pawfect-Care-Appointment-Microservice-Component-Diagram.png](https://i.postimg.cc/L8LhQVBn/Pawfect-Care-Appointment-Microservice-Component-Diagram.png)](https://postimg.cc/PCftPY7j)
+![Pawfect-Care-Appointment-Microservice-Component-Diagram.png](./assets/chapter04/c4/MedicalAppointment.png)
 
 ### Reviews & Feedback Component Diagram
 A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
-[![Feedback-Component.png](https://i.postimg.cc/N08tw9ZG/Feedback-Component.png)](https://postimg.cc/3ywVXRKz)
+![Feedback-Component.png](./assets/chapter04/c4/feedback.png)
 
 ### UML Activity Diagrams
 #### Bounded Context: Pet Management
@@ -1777,12 +1777,16 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 #### Bounded Context: Medical Appointment Management 
 [![Diagrama-Actividades-Medical-Appointment-Management.png](https://i.postimg.cc/xjHXfjPc/Diagrama-Actividades-Medical-Appointment-Management.png)](https://postimg.cc/z3zzpr6r)
 
+#### Bounded Context: IAM 
+![Diagrama-Actividades-Medical-Appointment-Management.png](./assets/chapter04/c4/iam.png)
+
 ### UML Class Diagram
 [![Class-Diagram.png](https://i.postimg.cc/FKgWck31/Class-Diagram.png)](https://postimg.cc/McHmJTs8)
 
 ## 4.1.5. Relational/Non Relational Database Diagram
-Optamos por utilizar MySQL como sistema de gestión de bases de datos, gestionado mediante MySQL Workbench. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
-[![Database-Diagram.png](https://i.postimg.cc/0y9Jj6kV/image.png)](https://postimg.cc/cr5J5L83)
+Optamos por utilizar PostgreSQL como sistema de gestión de bases de datos, gestionado mediante pg Admin 4. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
+![Pawfect-Care-2025-06-07-02-03.png](./assets/chapter04/dclases.png)
+
 
 ## 4.1.6. Design Patterns
 
