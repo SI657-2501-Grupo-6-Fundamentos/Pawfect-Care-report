@@ -1,0 +1,157 @@
+@startuml
+'!define TABLE(x) entity x
+'!define PK <<
+'!define FK >>
+
+skinparam entity {
+  BackgroundColor<<PK>> LightBlue
+  BackgroundColor<<FK>> LightYellow
+}
+
+' --- IAM / Account service ---
+entity "Account" as Account {
+  * id         : BIGINT <<PK>>
+  --
+  email       : VARCHAR
+  password    : VARCHAR
+  role        : ENUM('OWNER','VETERINARIAN','ADMIN')
+  created_at  : DATETIME
+}
+
+' --- Profiles service ---
+entity "Profile" as Profile {
+  * id               : BIGINT <<PK>>
+  --
+  account_id        : BIGINT <<FK>>
+  first_name        : VARCHAR
+  last_name         : VARCHAR
+  email             : VARCHAR
+  phone             : VARCHAR
+}
+
+entity "Owner" as Owner {
+  * id               : BIGINT <<PK>>
+  --
+  profile_id        : BIGINT <<FK>>
+  address           : VARCHAR
+}
+
+entity "Veterinarian" as Veterinarian {
+  * id               : BIGINT <<PK>>
+  --
+  profile_id        : BIGINT <<FK>>
+  specialty_id      : INT    <<FK>>
+}
+
+entity "Specialty" as Specialty {
+  * id    : INT    <<PK>>
+  --
+  name   : VARCHAR
+  notes  : VARCHAR
+}
+
+entity "Schedule" as Schedule {
+  * id               : BIGINT <<PK>>
+  --
+  veterinarian_id   : BIGINT <<FK>>
+  date              : DATE
+  time_slot         : VARCHAR
+  is_available      : BOOLEAN
+}
+
+entity "Breed" as Breed {
+  * id    : INT    <<PK>>
+  --
+  name   : VARCHAR
+}
+
+entity "PetStatus" as PetStatus {
+  * id      : INT    <<PK>>
+  --
+  status   : VARCHAR
+}
+
+entity "Pet" as Pet {
+  * id        : BIGINT <<PK>>
+  --
+  owner_id   : BIGINT <<FK>>
+  name       : VARCHAR
+  age        : INT
+  breed_id   : INT    <<FK>>
+  status_id  : INT    <<FK>>
+}
+
+entity "Appointment" as Appointment {
+  * id                 : BIGINT <<PK>>
+  --
+  schedule_id         : BIGINT <<FK>>
+  pet_id              : BIGINT <<FK>>
+  created_at          : DATETIME
+  appointment_status  : ENUM('SCHEDULED','COMPLETED','CANCELLED')
+}
+
+entity "MedicalHistory" as MedicalHistory {
+  * id               : BIGINT <<PK>>
+  --
+  appointment_id    : BIGINT <<FK>>
+  description       : TEXT
+  record_date       : DATE
+}
+
+entity "Vaccine" as Vaccine {
+  * id            : INT    <<PK>>
+  --
+  name           : VARCHAR
+  manufacturer   : VARCHAR
+}
+
+entity "Vaccination" as Vaccination {
+  * id                   : BIGINT <<PK>>
+  --
+  medical_history_id    : BIGINT <<FK>>
+  vaccine_id            : INT    <<FK>>
+  date_administered     : DATE
+}
+
+entity "Treatment" as Treatment {
+  * id                   : BIGINT <<PK>>
+  --
+  medical_history_id    : BIGINT <<FK>>
+  name                  : VARCHAR
+  description           : VARCHAR
+  duration_minutes      : INT
+}
+
+entity "Review" as Review {
+  * id                   : BIGINT <<PK>>
+  --
+  appointment_id        : BIGINT <<FK>>
+  rating                : INT
+  comments              : TEXT
+  review_date           : DATE
+}
+
+' --- Relaciones ---
+Account        ||--|| Profile           : 1:1
+Profile        ||--|| Owner             : 1:1
+Profile        ||--|| Veterinarian      : 1:1
+
+Owner          ||--o{ Pet               : 1:N
+Breed          ||--o{ Pet               : 1:N
+PetStatus      ||--o{ Pet               : 1:N
+
+Veterinarian   ||--o{ Schedule          : 1:N
+Schedule       ||--o{ Appointment       : 1:N
+Pet            ||--o{ Appointment       : 1:N
+
+Appointment    ||--o{ MedicalHistory    : 1:N
+MedicalHistory ||--o{ Treatment         : 1:N
+MedicalHistory ||--o{ Vaccination       : 1:N
+Vaccine        ||--o{ Vaccination       : 1:N
+
+Appointment    ||--o{ Review            : 1:N
+
+Veterinarian   }|..|| Specialty         : N:1
+
+@enduml
+
