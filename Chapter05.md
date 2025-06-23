@@ -221,7 +221,7 @@ public class PetCommandServiceTest {
 ```
 
 ##### US04: Creación de Perfil de Mascota<br>
-	Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.
+  Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.
 
 [![Captura-de-pantalla-2025-05-16-200025.png](https://i.postimg.cc/1z504cF1/Captura-de-pantalla-2025-05-16-200025.png)](https://postimg.cc/bZWSBnLm)
 
@@ -644,7 +644,6 @@ Es la puerta de entrada al backend. Expone la funcionalidad del sistema a los cl
 
 [![Captura-de-pantalla-2025-05-17-010751.png](https://i.postimg.cc/9fg8GPvZ/Captura-de-pantalla-2025-05-17-010751.png)](https://postimg.cc/GBYxRD3m)
 
-
 ## 5.1.4. Framework Pattern Driven Refactoring Report
 
 Actualmente, el sistema opera bajo una arquitectura monolítica con los siguientes Bounded Contexts:
@@ -667,7 +666,7 @@ Pet Management, que se divide en dos subdominios especiales:
 
 - Pet Management: Se enfoca en la gestión integral de las mascotas, contemplando información de identificación, características generales y vínculos con sus respectivos propietarios. Separar esta funcionalidad del manejo de propietarios asegura una estructura modular que favorece la escalabilidad y minimiza el acoplamiento entre servicios.
 
-Esta segmentación proporciona una mayor independencia entre los módulos, reduciendo el acoplamiento y facilitando la evolución de cada componente sin impacto en los demás. De este modo, se garantiza una arquitectura más flexible y preparada para futuras extensiones. Por consiguiente: Nuestros microservicios futuros serán: Pet Management, Owners Management, Medical Appointment Management y el IAM. 
+Esta segmentación proporciona una mayor independencia entre los módulos, reduciendo el acoplamiento y facilitando la evolución de cada componente sin impacto en los demás. De este modo, se garantiza una arquitectura más flexible y preparada para futuras extensiones. Por consiguiente: Nuestros microservicios futuros serán: Pet Management, Owners Management, Medical Appointment Management y el IAM.
 
 ## 5.2  Software Configuration Management
 
@@ -1034,3 +1033,83 @@ En esta seccion Mostramos la colaboracion de todos los integrantes en todos nues
 A continuación presentamos nuestro Kanban Board Realizado en Trello, correspondiente al Sprint 2. En él se reflejan las distintas etapas del flujo de trabajo (To‑Do, In‑Process, Testing y Done) y la asignación de cada User Story a su estado actual, facilitando la visualización clara del avance del equipo y la identificación de cuellos de botella. Este tablero nos permitió coordinar esfuerzos, priorizar tareas y asegurar que todas las historias de usuario planificadas para el sprint se completaran con éxito.
 
 ![Kanban Board 2](./assets/chapter05/sprint2/kanbanboard2.png)
+
+### 5.2.3   Sprint 3
+
+| **Sprint #**   | **Sprint 3**                                                                                                                                                                                                                  |     |     |                                                                                             |           |                    |     |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|-----|---------------------------------------------------------------------------------------------|-----------|--------------------|-----|
+| **User Story**  |   |  **Work-item / Task**    |     |                                                                                             |           |                    |     |
+| **ID**         | **Title**                        | **Id** | **Title**                        | **Description**                                                                             | **Estimation (hours)** | **Assigned To**    | **Status (To-do / In-Process / To-Review / Done)** |
+| **US01**     | Registro de Usuario | **T01** | Registro de Usuario | Implementar el registro de usuarios |   1h   |  José Gutierrez  |  Done   |
+| **US02**     | Autenticación de Usuarios | **T02** | Autenticación de Usuarios | Implementar la autenticación de usuarios |   1h   |  José Gutierrez  |  Done   |
+| **US04**     | Creación de Perfil de Mascota | **T03** | Creación de Perfil de Mascota | Implementar el correcto formulario para la creción del perfil de la mascota |   2h   |  Rodrigo Chirinos  |  Done   |
+| **US05**     | Edición de Perfil de Mascota | **T04** | Edición de Perfil de Mascota | Implementar el formulario adecuado para editar el perfil de la mascota |   2h   |  Rodrigo Chirinos  |  Done   |
+| **US06**     | Visualización de Perfiles de Mascotas	 | **T05** | Visualización de Perfiles de Mascotas	 | Implementar la vista para la visualización de Perfiles de Mascotas	 |   2h   |  José Gutierrez  |  Done   |
+| **US08**     | Gestión de Perfiles de Mascotas | **T06** | Gestión de Perfiles de Mascotas | Implementar la correcta gestión de los perfiles de las mascotas. |   2h   |  Oscar Aranda  |  Done   |
+| **US09**     | Agendamiento de Citas | **T07** | Agendamiento de Citas | Implementar el formulario pertinente para que se puedan agendar las citas. |   2h   |  Rodrigo Chirinos  |  Done   |
+| **US010**     | Cancelación de Citas | **T08** | Cancelación de Citas | Implementar la opción de cancelar una cita. |   2h   |  Oscar Aranda  |  Done   |
+| **US12**     | Edición de Citas Veterinarias | **T09** | Edición de Citas Veterinarias | Implementar la opción de editar una cita programada. |   2h   |  Renzo Silva  |  Done   |
+| **US13**     | Búsqueda de dueños de mascota | **T10** | Búsqueda de dueños de mascota | Implementar la opción de buscar a las mascotas. |   2h   |  José Gutierrez  |  Done   |
+| **US14**     | Consulta sobre alimentación adecuada | **T11** | Consulta sobre alimentación adecuada | Implementar la opción para que la veterinaria registre este servicio. |   2h   |  Oscar Aranda  |  Done   |
+| **US15**     | Consejos de higiene para mascotas | **T12** | Consejos de higiene para mascotas | Implementar la opción para que la veterinaria registre este servicio. |   3h   |  José Gutierrez  |  Done   |
+| **US16**     | Preguntas frecuentes sobre salud | **T13** | Preguntas frecuentes sobre salud | Implementar la opción para que la veterinaria registre este servicio.|   2h   |  Renzo Silva  |  Done   |
+| **US17**     | Consejos de entrenamiento básico | **T14** | Consejos de entrenamiento básico | Implementar la opción para que la veterinaria registre este servicio. |   3h   |  José Gutierrez  |  Done   |
+| **US18**     | Recomendaciones según tipo de mascota | **T15** | Recomendaciones según tipo de mascota | Implementar la opción de las recomendaciones. |   2h   |  Renzo Silva  |  Done   |
+| **US19**     | Visualización del Historial Médico | **T16** | Visualización del Historial Médico | Implementar la opción para visualizar el historial médico. |   2h   |  José Gutierrez  |  Done   |
+| **US20**     | Actualización del Historial Médico | **T17** | Actualización del Historial Médico | Implementar la opción para editar y actualizar el historial médico. |   2h   |  Oscar Aranda  |  Done   |
+#### 5.2.3.2       Development Evidence for Sprint Review
+
+En esta sección, mostramos los commits y ramas clave en los repositorios de microservicios que reflejan el trabajo realizado durante el Sprint 3:
+
+| **Repository**                                                                 | **Branch**     | **Commit Id**  | **Commit Message**                                   | **Date**    |
+|--------------------------------------------------------------------------------|----------------|----------------|------------------------------------------------------|-------------|
+| `<repo-backend-microservices>`                                                 | `feature/...`  | `abcdef1`      | feat: implementar X microservicio                    | dd/mm/25    |
+| `<repo-frontend>`                                                              | `feature/...`  | `1234567`      | feat: actualizar integración con microservicio Y     | dd/mm/25    |
+| *(Agregar más filas según corresponda)*                                                                                                                                                                                                 |
+
+#### 5.2.3.3       Testing Suite Evidence for Sprint Review
+
+En este sprint, se han incorporado pruebas de aceptación escritas en **Gherkin**, asegurando que los requisitos del usuario se validen de manera efectiva. A continuación, se proporciona el enlace al repositorio de las pruebas de aceptación, donde se encuentra una descripción detallada de los escenarios de prueba y su implementación:
+
+**Repositorio de pruebas de aceptación:**  
+[https://github.com/SI657-2501-Grupo-6-Fundamentos/Pawfect-Care-Backend-Testing](https://github.com/SI657-2501-Grupo-6-Fundamentos/Pawfect-Care-Backend-Testing)
+
+| **Repository**                                                                             | **Branch** | **Commit Id**                          | **Commit Message**                                                                                                                                                         | **Commit Message Body** | **Committed on (Date)** |
+|--------------------------------------------------------------------------------------------|------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|-------------------------|
+| [Pawfect-Care-Acceptance-Tests](https://github.com/SI657-2501-Grupo-6-Fundamentos/Pawfect-Care-Acceptance-Tests) | `main`     | `5ba730d2580f106bf46ee74aa7d6b9baab668554` | feat: add gherkin files .feature | - | 16/05/25 |
+
+
+
+#### 5.2.3.4       Execution Evidence for Sprint Review
+
+En esta sección se muestran capturas de pantalla o logs que prueban la ejecución de los microservicios y su correcto funcionamiento:
+
+- **Backend**  
+  ![Evidence Back Sprint 3](./assets/chapter05/sprint3/execution_back_sprint3.png)
+
+- **Frontend**  
+  ![Evidence Front Sprint 3](./assets/chapter05/sprint3/execution_front_sprint3.png)
+
+#### 5.2.3.5       Microservices Documentation Evidence for Sprint Review
+
+Aquí presentamos las capturas de los endpoints documentados (Swagger/Postman) para los nuevos servicios o actualizaciones:
+
+![Microservices Docs Sprint 3](./assets/chapter05/sprint3/docs_sprint3.png)
+
+#### 5.2.3.6       Software Deployment Evidence for Sprint Review
+
+Para este sprint uan no se ha hecho deployment, esta planeado para el sprint 4
+
+#### 5.2.3.7       Team Collaboration Insights during Sprint
+
+Capturas de las contribuciones de cada integrante en los repositorios:
+
+- **Repo Backend**: ![Insights Backend](./assets/chapter05/sprint3/insights_backend_s3.png)  
+- **Repo Frontend**: ![Insights Frontend](./assets/chapter05/sprint3/insights_frontend_s3.png)
+
+#### 5.2.3.8       Kanban Board
+
+A continuación presentamos nuestro Kanban Board realizado en Trello (o la herramienta que hayan usado) para el Sprint 3. En él se reflejan las distintas columnas (To-Do, In-Progress, To-Review, Done) y la asignación de cada User Story a su estado actual, facilitando la visualización del avance y la identificación de bloqueos:
+
+![Kanban Board 2](./assets/chapter05/sprint2/kanbanboard2.png)
+
