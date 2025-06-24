@@ -1087,14 +1087,15 @@ En esta sección se muestran capturas de pantalla o logs que prueban la ejecuci�
 - **Backend**  
   ![Evidence Back Sprint 3](./assets/chapter05/sprint3/execution_back_sprint3.png)
 
+
 - **Frontend**  
-  ![Evidence Front Sprint 3](./assets/chapter05/sprint3/execution_front_sprint3.png)
+  ![Evidence Front Sprint 3](./assets/chapter05/sprint3/execution_front_sprint3.jpeg)
 
 #### 5.2.3.5       Microservices Documentation Evidence for Sprint Review
 
 Aquí presentamos las capturas de los endpoints documentados (Swagger/Postman) para los nuevos servicios o actualizaciones:
 
-![Microservices Docs Sprint 3](./assets/chapter05/sprint3/docs_sprint3.png)
+![Microservices Docs Sprint 3](./assets/chapter05/sprint3/execution_back_sprint3.1.png)
 
 #### 5.2.3.6       Software Deployment Evidence for Sprint Review
 
