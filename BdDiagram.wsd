@@ -1,8 +1,4 @@
 @startuml
-'!define TABLE(x) entity x
-'!define PK <<
-'!define FK >>
-
 skinparam entity {
   BackgroundColor<<PK>> LightBlue
   BackgroundColor<<FK>> LightYellow
@@ -18,8 +14,8 @@ entity "Account" as Account {
   created_at  : DATETIME
 }
 
-' --- Profiles service ---
-entity "Profile" as Profile {
+' --- Owner ---
+entity "Owner" as Owner {
   * id               : BIGINT <<PK>>
   --
   account_id        : BIGINT <<FK>>
@@ -27,19 +23,18 @@ entity "Profile" as Profile {
   last_name         : VARCHAR
   email             : VARCHAR
   phone             : VARCHAR
-}
-
-entity "Owner" as Owner {
-  * id               : BIGINT <<PK>>
-  --
-  profile_id        : BIGINT <<FK>>
   address           : VARCHAR
 }
 
+' --- Veterinarian ---
 entity "Veterinarian" as Veterinarian {
   * id               : BIGINT <<PK>>
   --
-  profile_id        : BIGINT <<FK>>
+  account_id        : BIGINT <<FK>>
+  first_name        : VARCHAR
+  last_name         : VARCHAR
+  email             : VARCHAR
+  phone             : VARCHAR
   specialty_id      : INT    <<FK>>
 }
 
@@ -132,9 +127,8 @@ entity "Review" as Review {
 }
 
 ' --- Relaciones ---
-Account        ||--|| Profile           : 1:1
-Profile        ||--|| Owner             : 1:1
-Profile        ||--|| Veterinarian      : 1:1
+Account        ||--|| Owner             : 1:1
+Account        ||--|| Veterinarian      : 1:1
 
 Owner          ||--o{ Pet               : 1:N
 Breed          ||--o{ Pet               : 1:N
@@ -152,6 +146,3 @@ Vaccine        ||--o{ Vaccination       : 1:N
 Appointment    ||--o{ Review            : 1:N
 
 Veterinarian   }|..|| Specialty         : N:1
-
-@enduml
-
