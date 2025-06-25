@@ -59,7 +59,7 @@ Estos enfoques y patrones serán evaluados y aplicados según las necesidades es
 
 El diagrama de contexto es un recurso clave para analizar las conexiones entre Pawfect Care y los elementos externos que lo rodean. Este enfoque permite identificar posibles áreas de mejora e integración, proporcionando una visión clara de cómo el sistema interactúa con su entorno.
 
-[![Pawfect-Care-Context-Diagram.png](https://i.postimg.cc/PrKSpm8v/Pawfect-Care-Context-Diagram.png)](https://postimg.cc/LnYtGgDm)
+[![structurizr-103469-Diagram1.png](https://i.postimg.cc/Wz8X3tBT/structurizr-103469-Diagram1.png)](https://postimg.cc/ctKQk11b)
 
 ## 4.1.4. Approach driven ViewPoints Diagrams
 
@@ -67,23 +67,8 @@ El diagrama de contexto es un recurso clave para analizar las conexiones entre P
 
 En este diagrama se expresa una representación visual que muestra los principales contenedores de software que componen un sistema. Por ejemplo, aplicaciones, bases de datos y microservicios que interactúan entre sí.
 
-![Pawfect-Care-Containers-Diagram.png](./assets/chapter04/c4/contenedores.png)
+[![structurizr-103469-Diagram2.png](https://i.postimg.cc/8CGJywFX/structurizr-103469-Diagram2.png)](https://postimg.cc/0ztyjY07)
 
-
-### Pet Management Component Diagram
-A continuación, se presenta el diagrama de componentes para el microservicio de gestión de mascotas.
-![Pet-Management-Component.png](./assets/chapter04/c4/petmanagment.png)
-
-### Medical Appointment Management Component Diagram
-A continuación, se presenta el diagrama de componentes para el microservicio de gestión de citas.
-![Pawfect-Care-Appointment-Microservice-Component-Diagram.png](./assets/chapter04/c4/MedicalAppointment.png)
-
-### Reviews & Feedback Component Diagram
-A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
-![Feedback-Component.png](./assets/chapter04/c4/feedback.png)
-
-### IAM Component Diagram
-![Diagrama-Actividades-Medical-Appointment-Management.png](./assets/chapter04/c4/iam.png)
 
 ### UML Activity Diagrams
 #### Veterinarian
