@@ -83,11 +83,11 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 ![Feedback-Component.png](./assets/chapter04/c4/feedback.png)
 
 ### UML Activity Diagrams
-#### Bounded Context: Pet Management
-[![Diagrama-Actividades-Pet-Management.png](https://i.postimg.cc/Dw7JYVLm/Diagrama-Actividades-Pet-Management.png)](https://postimg.cc/QHndHy6r)
+#### Veterinarian
+[![Pawfect-Care-Diagrama-de-Actividades-Veterinarian.png](https://i.postimg.cc/kgw19JRY/Pawfect-Care-Diagrama-de-Actividades-Veterinarian.png)](https://postimg.cc/nXjYGtkq)
 
-#### Bounded Context: Medical Appointment Management 
-[![Diagrama-Actividades-Medical-Appointment-Management.png](https://i.postimg.cc/xjHXfjPc/Diagrama-Actividades-Medical-Appointment-Management.png)](https://postimg.cc/z3zzpr6r)
+#### Pet Owner
+[![Pawfect-Care-Diagrama-de-Actividades-Pet-Owner.png](https://i.postimg.cc/VvVf3QBJ/Pawfect-Care-Diagrama-de-Actividades-Pet-Owner.png)](https://postimg.cc/D413XNNh)
 
 #### Bounded Context: IAM 
 ![Diagrama-Actividades-Medical-Appointment-Management.png](./assets/chapter04/c4/iam.png)
