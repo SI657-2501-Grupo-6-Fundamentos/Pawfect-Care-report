@@ -1803,7 +1803,7 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 ![Diagrama-Actividades-Medical-Appointment-Management.png](./assets/chapter04/c4/iam.png)
 
 ### UML Class Diagram
-[![Class-Diagram.png](https://i.postimg.cc/FKgWck31/Class-Diagram.png)](https://postimg.cc/McHmJTs8)
+[![Class-Diagram-Pawfect-Care-TB4.png](https://i.postimg.cc/nhQG8sSN/Class-Diagram-Pawfect-Care-TB4.png)](https://postimg.cc/yDsZcNHT)
 
 ## 4.1.5. Relational/Non Relational Database Diagram
 Optamos por utilizar PostgreSQL como sistema de gestión de bases de datos, gestionado mediante pg Admin 4. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
