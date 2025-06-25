@@ -837,6 +837,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ### Historial Médico
 - **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
 - **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
+- **RF22.** El sistema debe permitir a los veterinarios registrar el historial médico de una mascota.
 
 ### Reseñas
 - **RF16.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
@@ -853,6 +854,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 ### Gestión de Servicios
 - **RF19.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen. Los servicios que puede realizar un veterinarios fueron seleccionados al momento de su registro y pueden ser los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
 - **RF20.** El sistema debe permitir a los dueños de mascotas seleccionar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
+- **RF21.** El sistema debe permitir a los veterinarios publicar sus horarios disponibles para la atención para que el dueño de la mascota elija el de su preferencia y la cita sea agendada. 
 
 
 ## 3.1.2. Requisitos No Funcionales
@@ -981,6 +983,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | US19          | Visualización del Historial Médico | Como dueño, deseo visualizar el historial médico de mi mascota para revisar su estado de salud y tratamientos previos.                                  |
 | US20          | Actualización del Historial Médico | Como doctor veterinario, deseo actualizar el historial médico de las mascotas para que los dueños tengan la información más reciente sobre sus tratamientos. |
+| US26          | Creación del Historial Médico | Como doctor veterinario, deseo crear el historial médico de las mascotas para que los dueños tengan la información de sus mascotas en el sistema. |
 
 ---
 
@@ -1001,7 +1004,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 |---------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | US23          | Ofrecer tarifa por servicio      | Como médico veterinario, deseo ofrecer una tarifa personalizada para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda evaluar mi propuesta. |
 | US24          | Visualización de Reseñas y Tarifas | Como dueño de una mascota, deseo ver las reseñas y tarifas ofrecidas por distintos veterinarios para un servicio específico solicitado en una cita, y así elegir la mejor opción. |
-
+| US25          | Registro de horarios | Como médico veterinario, deseo publicar mis horarios disponibles para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda elegir.  |
 
 ---
 
@@ -1792,15 +1795,16 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
 ![Feedback-Component.png](./assets/chapter04/c4/feedback.png)
 
-### UML Activity Diagrams
-#### Bounded Context: Pet Management
-[![Diagrama-Actividades-Pet-Management.png](https://i.postimg.cc/Dw7JYVLm/Diagrama-Actividades-Pet-Management.png)](https://postimg.cc/QHndHy6r)
-
-#### Bounded Context: Medical Appointment Management 
-[![Diagrama-Actividades-Medical-Appointment-Management.png](https://i.postimg.cc/xjHXfjPc/Diagrama-Actividades-Medical-Appointment-Management.png)](https://postimg.cc/z3zzpr6r)
-
-#### Bounded Context: IAM 
+### IAM Component Diagram
 ![Diagrama-Actividades-Medical-Appointment-Management.png](./assets/chapter04/c4/iam.png)
+
+### UML Activity Diagrams
+#### Veterinarian
+[![Pawfect-Care-Diagrama-de-Actividades-Veterinarian.png](https://i.postimg.cc/kgw19JRY/Pawfect-Care-Diagrama-de-Actividades-Veterinarian.png)](https://postimg.cc/nXjYGtkq)
+
+#### Pet Owner
+[![Pawfect-Care-Diagrama-de-Actividades-Pet-Owner.png](https://i.postimg.cc/VvVf3QBJ/Pawfect-Care-Diagrama-de-Actividades-Pet-Owner.png)](https://postimg.cc/D413XNNh)
+
 
 ### UML Class Diagram
 [![Class-Diagram-Pawfect-Care-TB4.png](https://i.postimg.cc/nhQG8sSN/Class-Diagram-Pawfect-Care-TB4.png)](https://postimg.cc/yDsZcNHT)

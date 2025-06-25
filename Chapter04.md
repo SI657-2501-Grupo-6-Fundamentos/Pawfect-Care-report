@@ -82,6 +82,9 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 A continuación, se presenta el diagrama de componentes para el microservicio de Feedback y reviews.
 ![Feedback-Component.png](./assets/chapter04/c4/feedback.png)
 
+### IAM Component Diagram
+![Diagrama-Actividades-Medical-Appointment-Management.png](./assets/chapter04/c4/iam.png)
+
 ### UML Activity Diagrams
 #### Veterinarian
 [![Pawfect-Care-Diagrama-de-Actividades-Veterinarian.png](https://i.postimg.cc/kgw19JRY/Pawfect-Care-Diagrama-de-Actividades-Veterinarian.png)](https://postimg.cc/nXjYGtkq)
@@ -89,8 +92,6 @@ A continuación, se presenta el diagrama de componentes para el microservicio de
 #### Pet Owner
 [![Pawfect-Care-Diagrama-de-Actividades-Pet-Owner.png](https://i.postimg.cc/VvVf3QBJ/Pawfect-Care-Diagrama-de-Actividades-Pet-Owner.png)](https://postimg.cc/D413XNNh)
 
-#### Bounded Context: IAM 
-![Diagrama-Actividades-Medical-Appointment-Management.png](./assets/chapter04/c4/iam.png)
 
 ### UML Class Diagram
 [![Class-Diagram-Pawfect-Care-TB4.png](https://i.postimg.cc/nhQG8sSN/Class-Diagram-Pawfect-Care-TB4.png)](https://postimg.cc/yDsZcNHT)
