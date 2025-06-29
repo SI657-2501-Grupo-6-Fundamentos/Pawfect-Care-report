@@ -79,11 +79,11 @@ En este diagrama se expresa una representación visual que muestra los principal
 
 
 ### UML Class Diagram
-[![Class-Diagram-Pawfect-Care-TB4.png](https://i.postimg.cc/nhQG8sSN/Class-Diagram-Pawfect-Care-TB4.png)](https://postimg.cc/yDsZcNHT)
+[![Class-Diagram-Pawfect-Care-TB3.png](https://i.postimg.cc/J7kx124d/Class-Diagram-Pawfect-Care-TB3.png)](https://postimg.cc/ThTg0Qbr)
 
 ## 4.1.5. Relational/Non Relational Database Diagram
 Optamos por utilizar PostgreSQL como sistema de gestión de bases de datos, gestionado mediante pg Admin 4. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
-[![Pawfect-Care-Database-Diagram.png](https://i.postimg.cc/xTP39D93/Pawfect-Care-Database-Diagram.png)](https://postimg.cc/w77mkry1)
+[![pawcare-database-diagram.png](https://i.postimg.cc/0NKMph4T/pawcare-database-diagram.png)](https://postimg.cc/3y7xhfY1)
 
 
 ## 4.1.6. Design Patterns
