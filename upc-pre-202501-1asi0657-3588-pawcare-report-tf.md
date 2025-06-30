@@ -1780,7 +1780,49 @@ El diagrama de contexto es un recurso clave para analizar las conexiones entre P
 
 En este diagrama se expresa una representación visual que muestra los principales contenedores de software que componen un sistema. Por ejemplo, aplicaciones, bases de datos y microservicios que interactúan entre sí.
 
-[![structurizr-103469-Diagram2.png](https://i.postimg.cc/8CGJywFX/structurizr-103469-Diagram2.png)](https://postimg.cc/0ztyjY07)
+[![structurizr-104011-Diagram-Contenedores.png](https://i.postimg.cc/gj6bT3Cj/structurizr-104011-Diagram-Contenedores.png)](https://postimg.cc/GTrfBThn)
+
+
+### Component Diagram
+
+En esta sección se presentan nuestros diagramas de componentes para cada microservicio existente en nuestra solución y que han sido expresados en nuestro diagrama de contenedores.
+
+#### 1. Account Service Component Diagram
+
+[![structurizr-104011-Account-Service-Component-Diagram.png](https://i.postimg.cc/qRDpYJgb/structurizr-104011-Account-Service-Component-Diagram.png)](https://postimg.cc/CBDynVGk)
+
+#### 2. Appointment Service Component Diagram
+
+[![structurizr-104011-Appointment-Service-Component-Diagram.png](https://i.postimg.cc/RZx42bVB/structurizr-104011-Appointment-Service-Component-Diagram.png)](https://postimg.cc/hfskdsdy)
+
+#### 3. Diagnostic Service Component Diagram
+
+[![structurizr-104011-Diagnostic-Service-Component-Diagram.png](https://i.postimg.cc/MGWxpMQ3/structurizr-104011-Diagnostic-Service-Component-Diagram.png)](https://postimg.cc/sM0bn2K5)
+
+#### 4. Medical Record Service Component Diagram
+
+[![structurizr-104011-Medical-Record-Service-Component-Diagram.png](https://i.postimg.cc/ZRnS6Gjr/structurizr-104011-Medical-Record-Service-Component-Diagram.png)](https://postimg.cc/jWpmbkp5)
+
+#### 5. Pet Owner Service Component Diagram
+
+[![structurizr-104011-Pet-Owner-Service-Component-Diagram.png](https://i.postimg.cc/LXWMDx0G/structurizr-104011-Pet-Owner-Service-Component-Diagram.png)](https://postimg.cc/Q9cPxJDq)
+
+#### 6. Pet Service Component Diagram
+
+[![structurizr-104011-Pet-Service-Component-Diagram.png](https://i.postimg.cc/kD3P3BCc/structurizr-104011-Pet-Service-Component-Diagram.png)](https://postimg.cc/T594n2pL)
+
+#### 7. Review Service Component Diagram
+
+[![structurizr-104011-Review-Service-Component-Diagram.png](https://i.postimg.cc/44KKgqZ7/structurizr-104011-Review-Service-Component-Diagram.png)](https://postimg.cc/Wtvpm9dT)
+
+#### 8. Schedule Service Component Diagram
+
+[![structurizr-104011-Schedule-Service-Component-Diagram.png](https://i.postimg.cc/MZhnK5Ks/structurizr-104011-Schedule-Service-Component-Diagram.png)](https://postimg.cc/xq3f6KmH)
+
+#### 9. Veterinary Service Component Diagram
+
+[![structurizr-104011-Veterinary-Service-Component-Diagram.png](https://i.postimg.cc/3JmdyGk3/structurizr-104011-Veterinary-Service-Component-Diagram.png)](https://postimg.cc/569xT65r)
+
 
 ### UML Activity Diagrams
 #### Veterinarian
