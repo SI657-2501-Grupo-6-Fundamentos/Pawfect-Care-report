@@ -1772,15 +1772,17 @@ Estos enfoques y patrones serán evaluados y aplicados según las necesidades es
 
 El diagrama de contexto es un recurso clave para analizar las conexiones entre Pawfect Care y los elementos externos que lo rodean. Este enfoque permite identificar posibles áreas de mejora e integración, proporcionando una visión clara de cómo el sistema interactúa con su entorno.
 
-[![structurizr-103469-Diagram1.png](https://i.postimg.cc/Wz8X3tBT/structurizr-103469-Diagram1.png)](https://postimg.cc/ctKQk11b)
 
-## 4.1.4. Approach Driven ViewPoints Diagrams
+![Diagrama de Contexto](./assets/chapter04/c4/ContextDiagram.png)
+
+
+## 4.1.4. Approach driven ViewPoints Diagrams
 
 ### Container Diagram
 
 En este diagrama se expresa una representación visual que muestra los principales contenedores de software que componen un sistema. Por ejemplo, aplicaciones, bases de datos y microservicios que interactúan entre sí.
 
-[![structurizr-104011-Diagram-Contenedores.png](https://i.postimg.cc/gj6bT3Cj/structurizr-104011-Diagram-Contenedores.png)](https://postimg.cc/GTrfBThn)
+![Diagrama de Contenedores](./assets/chapter04/c4/ContainersDiagram.png)
 
 
 ### Component Diagram
