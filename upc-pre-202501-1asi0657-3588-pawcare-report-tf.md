@@ -982,8 +982,9 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | US19          | Visualización del Historial Médico | Como dueño, deseo visualizar el historial médico de mi mascota para revisar su estado de salud y tratamientos previos.                                  |
-| US20          | Actualización del Historial Médico | Como doctor veterinario, deseo actualizar el historial médico de las mascotas para que los dueños tengan la información más reciente sobre sus tratamientos. |
-| US26          | Creación del Historial Médico | Como doctor veterinario, deseo crear el historial médico de las mascotas para que los dueños tengan la información de sus mascotas en el sistema. |
+| US20          | Creación del Historial Médico | Como doctor veterinario, deseo crear el historial médico de las mascotas para que los dueños tengan la información de sus mascotas en el sistema. |
+| US21          | Actualización del Historial Médico | Como doctor veterinario, deseo actualizar el historial médico de las mascotas para que los dueños tengan la información más reciente sobre sus tratamientos. |
+
 
 ---
 
@@ -992,8 +993,8 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US21          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios.                   |
-| US22          | Visualización de Reseñas | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. |
+| US22          | Publicar Reseñas | Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor veterinario para compartir mi experiencia con otros usuarios.                   |
+| US23          | Visualización de Reseñas | Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un doctor veterinario para conocer la calidad del servicio y su calificación general. |
 
 ---
 
@@ -1002,9 +1003,9 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 | User Story ID | Título                           | Descripción                                                                                                                                                                  |
 |---------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US23          | Ofrecer tarifa por servicio      | Como médico veterinario, deseo ofrecer una tarifa personalizada para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda evaluar mi propuesta. |
-| US24          | Visualización de Reseñas y Tarifas | Como dueño de una mascota, deseo ver las reseñas y tarifas ofrecidas por distintos veterinarios para un servicio específico solicitado en una cita, y así elegir la mejor opción. |
-| US25          | Registro de horarios | Como médico veterinario, deseo publicar mis horarios disponibles para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda elegir.  |
+| US24          | Ofrecer tarifa por servicio      | Como médico veterinario, deseo ofrecer una tarifa personalizada para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda evaluar mi propuesta. |
+| US25          | Visualización de Reseñas y Tarifas | Como dueño de una mascota, deseo ver las reseñas y tarifas ofrecidas por distintos veterinarios para un servicio específico solicitado en una cita, y así elegir la mejor opción. |
+| US26          | Registro de horarios | Como médico veterinario, deseo publicar mis horarios disponibles para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda elegir.  |
 
 ---
 
@@ -1528,7 +1529,36 @@ Como dueño, deseo visualizar el historial médico de mi mascota para revisar su
 
 ---
 
-## US20: Actualización del Historial Médico  
+## US20: Creación del Historial Médico  
+**Relacionado con (Epic ID):** EP05
+
+**Descripción:**  
+Como doctor veterinario, deseo crear el historial médico de las mascotas para que los dueños tengan la información de sus mascotas en el sistema.
+
+### Criterios de Aceptación:
+
+- **Escenario 1:** Creación exitosa del historial médico
+  - **Dado que** ccedo al perfil de una mascota que no tiene historial médico registrado
+  - **Y** tengo acceso al perfil de una mascota registrada
+  - **Cuando** ingreso los datos iniciales del historial
+  - **Entonces** el sistema debe crear un nuevo historial médico para la mascota
+  - **Y** mostrar un mensaje de confirmación
+
+- **Escenario 2:** Intento de registro sin autenticación
+  - **Dado que** no he iniciado sesión como veterinario
+  - **Cuando** intento acceder a la función para registrar el historial médico de una mascota
+  - **Entonces** el sistema debe denegar el acceso
+  - **Y** debe mostrar un mensaje indicando que se requiere autenticación como profesional autorizado
+
+- **Escenario 3:** Datos obligatorios incompletos o inválidos
+  - **Dado que** soy un veterinario autenticado
+  - **Cuando** intento crear un historial médico sin completar campos obligatorios
+  - **Entonces** el sistema debe mostrar un mensaje de error
+  - **Y** no debe permitir guardar el historial hasta que los datos requeridos sean completados correctamente
+
+---
+
+## US21: Actualización del Historial Médico  
 **Relacionado con (Epic ID):** EP05
 
 **Descripción:**  
@@ -1557,7 +1587,7 @@ Como doctor veterinario, deseo actualizar el historial médico de las mascotas p
 
 ---
 
-## US21: Publicar Reseñas  
+## US22: Publicar Reseñas  
 **Relacionado con (Epic ID):** EP06
 
 **Descripción:**  
@@ -1585,7 +1615,7 @@ Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor vete
 
 ---
 
-## US22: Visualización de Reseñas  
+## US23: Visualización de Reseñas  
 **Relacionado con (Epic ID):** EP06
 
 **Descripción:**  
@@ -1613,7 +1643,7 @@ Como dueño de una mascota, deseo ver las reseñas de otros usuarios sobre un do
 
 ---
 
-## US23: Ofrecer tarifa por servicio  
+## US24: Ofrecer tarifa por servicio  
 **Relacionado con (Epic ID):** EP07
 
 **Descripción:**  
@@ -1641,7 +1671,7 @@ Como médico veterinario, deseo ofrecer una tarifa personalizada para un servici
 
 ---
 
-## US24: Visualización de Reseñas y Tarifas  
+## US25: Visualización de Reseñas y Tarifas  
 **Relacionado con (Epic ID):** EP07
 
 **Descripción:**  
@@ -1668,7 +1698,33 @@ Como dueño de una mascota, deseo ver las reseñas y tarifas ofrecidas por disti
   - **Entonces** el sistema debe redirigirme a la pantalla de inicio de sesión
   - **Y** mostrar un mensaje indicando que solo los usuarios autenticados pueden acceder a esta información
 
+---
 
+## US26: Registro de horarios
+**Relacionado con (Epic ID):** EP07
+
+**Descripción:**  
+Como médico veterinario, deseo publicar mis horarios disponibles para un servicio solicitado por un dueño de mascota mediante una cita, para que él pueda elegir.
+
+### Criterios de Aceptación:
+
+- **Escenario 1:** Registro exitoso de horarios disponibles
+  - **Dado que** soy un médico veterinario autenticado en el sistema
+  - **Cuando** ingreso horarios disponibles para atención
+  - **Entonces** el sistema debe registrar correctamente los horarios
+  - **Y** mostrarlos como opciones disponibles al dueño de mascota cuando solicite una cita
+
+- **Escenario 2:** Intento de registro de horarios sin autenticación
+  - **Dado que** no he iniciado sesión como veterinario
+  - **Cuando** intento acceder a la funcionalidad de registrar horarios
+  - **Entonces** el sistema debe denegar el acceso
+  - **Y** mostrar un mensaje indicando que se requiere autenticación como profesional autorizado
+
+- **Escenario 3:** Registro con datos incompletos o inválidos
+  - **Dado que** soy un médico veterinario autenticado
+  - **Cuando** intento registrar un horario sin completar campos obligatorios o ingreso un rango horario inválido
+  - **Entonces** el sistema debe mostrar un mensaje de error
+  - **Y** no debe guardar el horario hasta que los datos sean corregidos
 
 ## 3.3. Impact Mapping.
 
