@@ -3,10 +3,10 @@
 ---
 
 <p align="center">
-    <strong>Universidad Peruana de Ciencias Aplicadas (UPC)</strong><br>    
+    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>    
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
     <strong>Carrera de Ingeniería de Software - Ciclo VII</strong><br><br>
-    <strong>Fundamentos de Arquitectura de Software - SI729</strong><br>
+    <strong>Fundamentos de Arquitectura de Software - SI657</strong><br>
     <br><strong>Profesor: Ernesto Ocampo Tello</strong><br>
     <br><strong><b>INFORME DEL TRABAJO FINAL</strong></b><br>
 </p>
@@ -58,8 +58,9 @@
 | TB1 | 19/04/2025 | PawCare | Redacción de los Capítulos I: Introduction, II: Requirements Elicitation & Analysis, III: Requirements Specification. |
 | TB2 | 04/05/2025 | PawCare | Redacción de el Capítulo IV: Product Architecture Design.  |
 | TP1 | 17/05/2025 | PawCare | Redacción de el Capítulo V: Product Implementation, Validation & Deployment.  |
-| TB3 | 08/06/2025 | PawCare | Redacción de el Capítulo V: Micorservices Implementation: 5.2.3	Sprint 2  |
-| TB4 | 22/06/2025 | PawCare | Redacción de el Capítulo V: Micorservices Implementation: 5.2.4	Sprint 3  |
+| TB3 | 08/06/2025 | PawCare | Redacción de el Capítulo V: Microservices Implementation: 5.3.2	Sprint 2  |
+| TB4 | 22/06/2025 | PawCare | Redacción de el Capítulo V: Microservices Implementation: 5.3.3	Sprint 3  |
+| TF1 | 04/07/2025 | PawCare | Redacción de el Capítulo V: Microservices Deployment: 5.3.4	Sprint 4  |
 
 
 
@@ -75,19 +76,12 @@
     - [**1.1.2. Perfiles de integrantes del equipo**](#113-perfiles-de-integrantes-del-equipo)
   - [**1.2. Solution Profile**](#12-solution-profile)
     - [**1.2.1. Nombre del Producto**](#121-nombre-del-producto)
-    - [**1.2.2 Antecedentes y problemática**](#122-antecedentes-y-problemática)
-    - [What (¿Qué?)](#what-qué)
-    - [Who (¿Quién?)](#who-quién)
-    - [Where (¿Dónde?)](#where-dónde)
-    - [When (¿Cuándo?)](#when-cuándo)
-    - [Why (¿Por qué?)](#why-por-qué)
-    - [How (¿Cómo?)](#how-cómo)
-    - [How much (¿Cuánto?)](#how-much-cuánto)
-    - [**1.2.3 Lean UX Process**](#122-lean-ux-process)
-    - [**1.2.3.1. Lean UX Problem Statements**](#1221-lean-ux-problem-statements)
-    - [**1.2.3.2. Lean UX Assumptions**](#1222-lean-ux-assumptions)
-    - [**1.2.3.3. Lean UX Hypothesis Statements**](#1223-lean-ux-hypothesis-statements)
-    - [**1.2.3.4. Lean UX Canvas**](#1224-lean-ux-canvas)
+    - [**1.2.2. Antecedentes y problemática**](#122-antecedentes-y-problemática)
+    - [**1.2.3. Lean UX Process**](#122-lean-ux-process)
+      - [**1.2.3.1. Lean UX Problem Statements**](#1221-lean-ux-problem-statements)
+      - [**1.2.3.2. Lean UX Assumptions**](#1222-lean-ux-assumptions)
+      - [**1.2.3.3. Lean UX Hypothesis Statements**](#1223-lean-ux-hypothesis-statements)
+      - [**1.2.3.4. Lean UX Canvas**](#1224-lean-ux-canvas)
   - [**1.3. Segmentos objetivo**](#13-segmentos-objetivo)
 - ## [ **Capítulo II: Requirements Elicitation \& Analysis**](#-capítulo-ii-requirements-elicitation--analysis)
   - [**2.1. Competidores**](#21-competidores)
@@ -102,7 +96,6 @@
     - [**2.3.2. User Task Matrix**](#232-user-task-matrix)
     - [**2.3.3. Empathy Mapping**](#234-empathy-mapping)
     - [**2.3.4. As-is Scenario Mapping**](#235-as-is-scenario-mapping)
-  - [**2.4. Ubiquitous Language**](#24-ubiquitous-language)
 - ## [ **Capítulo III: Requirements Specification**](#-capítulo-iii-requirements-specification)
   - [**3.1. To-Be Scenario Mapping**](#31-to-be-scenario-mapping)
       - [**3.1.1. Requisitos Funcionales**](#311-requisitos-funcionales)
@@ -112,7 +105,7 @@
   - [**3.3. Impact Mapping**](#33-impact-mapping)
   - [**3.4. Product Backlog**](#34-product-backlog)
   - ## [**Capítulo IV: Product Architecture Design**](#capítulo-iv-product-architecture-design)
-  - [**4.1	Desing Concepts, ViewPoints & ER Diagrams**](#41-design-concepts,-viewpoints-&-er-diagrams)
+  - [**4.1.	Desing Concepts, ViewPoints & ER Diagrams**](#41-design-concepts,-viewpoints-&-er-diagrams)
     - [**4.1.1. Principles Statements**](#411-principles-statements)
     - [**4.1.2. Approaches Statements Architectural Styles & Patterns**](#412-approaches-statements-architectural-styles-&-patterns)
     - [**4.1.3. Context Diagram**](#413-context-diagram)
@@ -173,7 +166,19 @@
       - [**5.3.3.5. Microservices Documentation Evidence for Sprint Review**](#5335-microservices-documentation-evidence-for-sprint-review)
       - [**5.3.3.6. Software Deployment Evidence for Sprint Review**](#5336-software-deployment-evidence-for-sprint-review)
       - [**5.3.3.7. Team Collaboration Insights during Sprint**](#5337-team-collaboration-insights-during-sprint)
-      - [**5.3.3.8. Kanban Board (Avance 4)**](#5338-kanban-board-avance-4)
+      - [**5.3.3.8. Kanban Board**](#5338-kanban-board)
+    - [**5.3.4. Sprint 4**](#534-sprint-4)
+      - [**5.3.4.1. Sprint Backlog 4**](#5341-sprint-backlog-4)
+      - [**5.3.4.2. Development Evidence for Sprint Review**](#5342-development-evidence-for-sprint-review)
+      - [**5.3.4.3. Testing Suite Evidence for Sprint Review**](#5343-testing-suite-evidence-for-sprint-review)
+      - [**5.3.4.4. Execution Evidence for Sprint Review**](#5344-execution-evidence-for-sprint-review)
+      - [**5.3.4.5. Microservices Documentation Evidence for Sprint Review**](#5345-microservices-documentation-evidence-for-sprint-review)
+      - [**5.3.4.6. Software Deployment Evidence for Sprint Review**](#5346-software-deployment-evidence-for-sprint-review)
+      - [**5.3.4.7. Team Collaboration Insights during Sprint**](#5347-team-collaboration-insights-during-sprint)
+      - [**5.3.4.8. Kanban Board**](#5348-kanban-board)
+  - [**5.4. Microservices Deployment**](#54-microservices-deployment)
+    - [**5.4.1. Cloud Architecture Diagram**](#541-cloud-architecture-diagram)
+    - [**5.4.2. Cloud Architecture Deployment (AWS, Microsoft Azure or Google Cloud)**](#542-cloud-architecture-deployment-aws-microsoft-azure-or-google-cloud)
 - [**Conclusiones**](#conclusiones)
 - [**Conclusiones y recomendaciones**](#conclusiones-y-recomendaciones)
 - [**Video About-the-Team**](#video-about-the-team)
@@ -850,7 +855,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ### Gestión de Servicios y Tarifas
 - **RF24.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
-- **RF25.** El sistema debe permitir a los dueños de mascotas seleccionar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
+- **RF25.** El sistema debe permitir a los dueños de mascotas visualizar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
 - **RF26.** El sistema debe permitir a los veterinarios publicar sus horarios disponibles para la atención para que el dueño de la mascota elija el de su preferencia y la cita sea agendada. 
 
 
@@ -911,20 +916,26 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | **RF12** |   |   |   |   |   |   |   |   |   |   |   | ✔ |   |
 | **RF13** |   |   |   |   |   |   |   |   |   |   |   |   | ✔ |
 
-| Requisito | US13 | US14 | US15 | US16 | US17 | US18 | US19 | US20 | US21 | US22 | US23 | US24 |
-|-----------|------|------|------|------|------|------|------|------|------|------|------|------|
-| **RF14**  |      |      |      |      |      |      | ✔    |      |      |      |      |      |
-| **RF15**  |      |      |      |      |      |      |      | ✔    |      |      |      |      |
-| **RF16**  |      |      |      |      |      |      |      |      | ✔    |      |      |      |
-| **RF17**  |      |      |      |      |      |      |      |      |      | ✔    |      |      |
-| **RF18**  |      | ✔    | ✔    | ✔    | ✔    | ✔    |      |      |      |      |      |      |
-| **RF19**  |      |      |      |      |      |      |      |      |      |      | ✔    |      |
-| **RF20**  |      |      |      |      |      |      |      |      |      |      |      | ✔    |
+| **Requisito** | **US14** | **US15** | **US16** | **US17** | **US18** | **US19** | **US20** | **US21** | **US22** | **US23** | **US24** | **US25** | **US26** |
+| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+| **RF14** | ✔ |   |   |   |   |   |   |   |   |   |   |   |   |
+| **RF15** |   | ✔ |   |   |   |   |   |   |   |   |   |   |   |
+| **RF16** |   |   | ✔ |   |   |   |   |   |   |   |   |   |   |
+| **RF17** |   |   |   | ✔ |   |   |   |   |   |   |   |   |   |
+| **RF18** |   |   |   |   | ✔ |   |   |   |   |   |   |   |   |
+| **RF19** |   |   |   |   |   | ✔ |   |   |   |   |   |   |   |
+| **RF20** |   |   |   |   |   |   | ✔ |   |   |   |   |   |   |
+| **RF21** |   |   |   |   |   |   |   | ✔ |   |   |   |   |   |
+| **RF22** |   |   |   |   |   |   |   |   | ✔ |   |   |   |   |
+| **RF23** |   |   |   |   |   |   |   |   |   | ✔ |   |   |   |
+| **RF24** |   |   |   |   |   |   |   |   |   |   | ✔ |   |   |
+| **RF25** |   |   |   |   |   |   |   |   |   |   |   | ✔ |   |
+| **RF26** |   |   |   |   |   |   |   |   |   |   |   |   | ✔ |
 
 
 
 ## 3.2. User Stories
-### Gestión de Usuarios
+# Gestión de Usuarios
 **EP01: Como administrador, deseo gestionar los usuarios para asegurar que solo personas autorizadas tengan acceso al sistema.**
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
@@ -3157,8 +3168,9 @@ A continuación presentamos nuestro Kanban Board Realizado en Trello, correspond
 ![Kanban Board 2](./assets/chapter05/sprint2/kanbanboard2.png)
 
 
-### 5.2.3   Sprint 3
+### 5.3.3   Sprint 3
 
+#### 5.3.3.1       Sprint Backlog 3
 | **Sprint #**   | **Sprint 3**                                                                                                                                                                                                                  |     |     |                                                                                             |           |                    |     |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|-----|---------------------------------------------------------------------------------------------|-----------|--------------------|-----|
 | **User Story**  |   |  **Work-item / Task**    |     |                                                                                             |           |                    |     |
@@ -3180,7 +3192,8 @@ A continuación presentamos nuestro Kanban Board Realizado en Trello, correspond
 | **US18**     | Recomendaciones según tipo de mascota | **T15** | Recomendaciones según tipo de mascota | Implementar la opción de las recomendaciones. |   2h   |  Renzo Silva  |  Done   |
 | **US19**     | Visualización del Historial Médico | **T16** | Visualización del Historial Médico | Implementar la opción para visualizar el historial médico. |   2h   |  José Gutierrez  |  Done   |
 | **US20**     | Actualización del Historial Médico | **T17** | Actualización del Historial Médico | Implementar la opción para editar y actualizar el historial médico. |   2h   |  Oscar Aranda  |  Done   |
-#### 5.2.3.2       Development Evidence for Sprint Review
+
+#### 5.3.3.2       Development Evidence for Sprint Review
 
 En esta sección, mostramos los commits y ramas clave en los repositorios de microservicios que reflejan el trabajo realizado durante el Sprint 3:
 
@@ -3190,7 +3203,7 @@ En esta sección, mostramos los commits y ramas clave en los repositorios de mic
 | `<repo-frontend>`                                                              | `feature/...`  | `1234567`      | feat: actualizar integración con microservicio Y     | dd/mm/25    |
 | *(Agregar más filas según corresponda)*                                                                                                                                                                                                 |
 
-#### 5.2.3.3       Testing Suite Evidence for Sprint Review
+#### 5.3.3.3       Testing Suite Evidence for Sprint Review
 
 En este sprint, se han incorporado pruebas de aceptación escritas en **Gherkin**, asegurando que los requisitos del usuario se validen de manera efectiva. A continuación, se proporciona el enlace al repositorio de las pruebas de aceptación, donde se encuentra una descripción detallada de los escenarios de prueba y su implementación:
 
@@ -3203,7 +3216,7 @@ En este sprint, se han incorporado pruebas de aceptación escritas en **Gherkin*
 
 
 
-#### 5.2.3.4       Execution Evidence for Sprint Review
+#### 5.3.3.4       Execution Evidence for Sprint Review
 
 En esta sección se muestran capturas de pantalla o logs que prueban la ejecución de los microservicios y su correcto funcionamiento:
 
@@ -3214,29 +3227,52 @@ En esta sección se muestran capturas de pantalla o logs que prueban la ejecuci�
 - **Frontend**  
   ![Evidence Front Sprint 3](./assets/chapter05/sprint3/execution_front_sprint3.jpeg)
 
-#### 5.2.3.5       Microservices Documentation Evidence for Sprint Review
+#### 5.3.3.5       Microservices Documentation Evidence for Sprint Review
 
 Aquí presentamos las capturas de los endpoints documentados (Swagger/Postman) para los nuevos servicios o actualizaciones:
 
 ![Microservices Docs Sprint 3](./assets/chapter05/sprint3/execution_back_sprint3.1.png)
 
-#### 5.2.3.6       Software Deployment Evidence for Sprint Review
+#### 5.3.3.6       Software Deployment Evidence for Sprint Review
 
 Para este sprint uan no se ha hecho deployment, esta planeado para el sprint 4
 
-#### 5.2.3.7       Team Collaboration Insights during Sprint
+#### 5.3.3.7       Team Collaboration Insights during Sprint
 
 Capturas de las contribuciones de cada integrante en los repositorios:
 
 - **Repo Backend**: ![Insights Backend](./assets/chapter05/sprint3/insights_backend_s3.png)  
 - **Repo Frontend**: ![Insights Frontend](./assets/chapter05/sprint3/insights_frontend_s3.png)
 
-#### 5.2.3.8       Kanban Board
+#### 5.3.3.8       Kanban Board
 
 A continuación presentamos nuestro Kanban Board realizado en Trello (o la herramienta que hayan usado) para el Sprint 3. En él se reflejan las distintas columnas (To-Do, In-Progress, To-Review, Done) y la asignación de cada User Story a su estado actual, facilitando la visualización del avance y la identificación de bloqueos:
 
 ![Kanban Board 3](./assets/chapter05/sprint2/kanbanboard2.png)
 
+### 5.3.4 Sprint 4
+
+#### 5.3.4.1 Sprint Backlog 4
+
+#### 5.3.4.2 Development Evidence for Sprint Review
+
+#### 5.3.4.3 Testing Suite Evidence for Sprint Review
+
+#### 5.3.4.4 Execution Evidence for Sprint Review
+
+#### 5.3.4.5 Microservices Documentation Evidence for Sprint Review
+
+#### 5.3.4.6 Software Deployment Evidence for Sprint Review
+
+#### 5.3.4.7 Team Collaboration Insights during Sprint
+
+#### 5.3.4.8 Kanban Board
+
+## 5.4  Microservices Implementation
+
+### 5.4.1   Cloud Architecture Diagram
+
+### 5.4.2 Cloud Architecture Deployment (AWS, Microsoft Azure or Google Cloud)
 
 ---
 

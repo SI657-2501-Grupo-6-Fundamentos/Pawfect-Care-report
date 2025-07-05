@@ -3,10 +3,10 @@
 ---
 
 <p align="center">
-    <strong>Universidad Peruana de Ciencias Aplicadas (UPC)</strong><br>    
+    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>    
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
     <strong>Carrera de Ingeniería de Software - Ciclo VII</strong><br><br>
-    <strong>Fundamentos de Arquitectura de Software - SI729</strong><br>
+    <strong>Fundamentos de Arquitectura de Software - SI657</strong><br>
     <br><strong>Profesor: Ernesto Ocampo Tello</strong><br>
     <br><strong><b>INFORME DEL TRABAJO FINAL</strong></b><br>
 </p>

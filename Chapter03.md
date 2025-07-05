@@ -51,7 +51,7 @@
 
 ### Gestión de Servicios y Tarifas
 - **RF24.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
-- **RF25.** El sistema debe permitir a los dueños de mascotas seleccionar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
+- **RF25.** El sistema debe permitir a los dueños de mascotas visualizar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
 - **RF26.** El sistema debe permitir a los veterinarios publicar sus horarios disponibles para la atención para que el dueño de la mascota elija el de su preferencia y la cita sea agendada. 
 
 
@@ -112,21 +112,26 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | **RF12** |   |   |   |   |   |   |   |   |   |   |   | ✔ |   |
 | **RF13** |   |   |   |   |   |   |   |   |   |   |   |   | ✔ |
 
-| Requisito | US13 | US14 | US15 | US16 | US17 | US18 | US19 | US20 | US21 | US22 | US23 | US24 |
-|-----------|------|------|------|------|------|------|------|------|------|------|------|------|
-| **RF13**  | ✔    |      |      |      |      |      |      |      |      |      |      |      |
-| **RF14**  |      |      |      |      |      |      | ✔    |      |      |      |      |      |
-| **RF15**  |      |      |      |      |      |      |      | ✔    |      |      |      |      |
-| **RF16**  |      |      |      |      |      |      |      |      | ✔    |      |      |      |
-| **RF17**  |      |      |      |      |      |      |      |      |      | ✔    |      |      |
-| **RF18**  |      | ✔    | ✔    | ✔    | ✔    | ✔    |      |      |      |      |      |      |
-| **RF19**  |      |      |      |      |      |      |      |      |      |      | ✔    |      |
-| **RF20**  |      |      |      |      |      |      |      |      |      |      |      | ✔    |
+| **Requisito** | **US14** | **US15** | **US16** | **US17** | **US18** | **US19** | **US20** | **US21** | **US22** | **US23** | **US24** | **US25** | **US26** |
+| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+| **RF14** | ✔ |   |   |   |   |   |   |   |   |   |   |   |   |
+| **RF15** |   | ✔ |   |   |   |   |   |   |   |   |   |   |   |
+| **RF16** |   |   | ✔ |   |   |   |   |   |   |   |   |   |   |
+| **RF17** |   |   |   | ✔ |   |   |   |   |   |   |   |   |   |
+| **RF18** |   |   |   |   | ✔ |   |   |   |   |   |   |   |   |
+| **RF19** |   |   |   |   |   | ✔ |   |   |   |   |   |   |   |
+| **RF20** |   |   |   |   |   |   | ✔ |   |   |   |   |   |   |
+| **RF21** |   |   |   |   |   |   |   | ✔ |   |   |   |   |   |
+| **RF22** |   |   |   |   |   |   |   |   | ✔ |   |   |   |   |
+| **RF23** |   |   |   |   |   |   |   |   |   | ✔ |   |   |   |
+| **RF24** |   |   |   |   |   |   |   |   |   |   | ✔ |   |   |
+| **RF25** |   |   |   |   |   |   |   |   |   |   |   | ✔ |   |
+| **RF26** |   |   |   |   |   |   |   |   |   |   |   |   | ✔ |
 
 
 
 ## 3.2. User Stories
-### Gestión de Usuarios
+# Gestión de Usuarios
 **EP01: Como administrador, deseo gestionar los usuarios para asegurar que solo personas autorizadas tengan acceso al sistema.**
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
