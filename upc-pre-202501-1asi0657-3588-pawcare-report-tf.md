@@ -259,7 +259,6 @@ Para desarrollar la aplicación Pawfect Care, partimos de varias suposiciones cl
 
 - Sistema de gestión de citas para facilitar la organización del tiempo en las clínicas.
 - Almacenamiento y visualización de historiales clínicos de las mascotas de forma rápida y segura.
-- Notificaciones automáticas para recordatorios de vacunas, tratamientos o revisiones.
 - Sección para la venta de productos veterinarios, integrando un catálogo accesible para los clientes.
 - Sistema de reportes de ingresos, control de inventario, y análisis de datos para mejorar la eficiencia administrativa.
 - Interfaz intuitiva y adaptable para ser utilizada tanto en dispositivos móviles como en computadoras.
@@ -296,7 +295,7 @@ Para desarrollar la aplicación Pawfect Care, partimos de varias suposiciones cl
   Los usuarios enfrentan la falta de una aplicación especializado para la gestión integral de clínicas veterinarias y la ausencia de un portal donde se pueda acceder fácilmente a la historia clínica de una mascota. Nuestra aplicación resuelve estos problemas proporcionando una plataforma única para administrar todos los aspectos de la clínica y facilitar el acceso a la información médica.<br>
 
 - **¿Dónde y cuándo es usada nuestra aplicación?**
-  La aplicación se utiliza principalmente en clínicas veterinarias. Los momentos clave para su uso son durante las consultas veterinarias y cuando los dueños deciden cambiar de veterinario y necesitan trasladar el historial clínico o el registro de vacunas a otro establecimiento.<br>
+  La aplicación se utiliza principalmente en clínicas veterinarias. Los momentos clave para su uso son durante las consultas veterinarias y cuando los dueños deciden cambiar de veterinario y necesitan trasladar el historial clínico.<br>
 
 - **¿Qué características son importantes?**
   Las características esenciales incluyen una interfaz fácil de usar en dispositivos móviles, computadoras y laptops. Además, es crucial la eliminación de campos innecesarios u obligatorios que puedan complicar el proceso de registro.<br>
@@ -344,13 +343,12 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
     <tr>
         <td>
             <strong>Business Problem</strong><br>
-            La gestión de clínicas veterinarias enfrenta desafíos significativos debido al uso de métodos manuales o sistemas desactualizados, lo que resulta en ineficiencias operativas, errores en la documentación y una experiencia insatisfactoria tanto para los veterinarios como para los propietarios de mascotas. La falta de una herramienta integral complica la administración de citas, historiales clínicos y la venta de productos veterinarios.
+            La gestión de clínicas veterinarias enfrenta desafíos significativos debido al uso de métodos manuales o sistemas desactualizados, lo que resulta en ineficiencias operativas, errores en la documentación y una experiencia insatisfactoria tanto para los veterinarios como para los propietarios de mascotas. La falta de una herramienta integral complica la administración de citas e historiales clínicos.
         </td>
         <td>
             <strong>Solutions</strong><br>
             - Gestión de citas.<br>
             - Almacenamiento y visualización de historiales clínicos.<br>
-            - Notificaciones automáticas para recordatorios de vacunas y tratamientos.<br>
             - Venta de productos veterinarios.<br>
             - Reportes de ingresos y control de inventario.
         </td>
@@ -407,7 +405,7 @@ El primer segmento objetivo incluye a las clínicas veterinarias de diversos tam
 
 **Segmento Objetivo 2 - Dueño de Mascotas:**
 
-El segundo segmento está compuesto por los dueños de mascotas, quienes son responsables del bienestar y la salud de sus animales. Este grupo de usuarios busca soluciones prácticas que les permitan manejar de manera eficiente la salud de sus mascotas, incluyendo la programación de citas, acceso a historiales médicos y recordatorios de vacunación. Pawfect Care les proporciona una plataforma que centraliza toda esta información y facilita el acceso desde cualquier dispositivo, brindándoles tranquilidad y control sobre el cuidado de sus animales. La conveniencia y facilidad de uso son elementos clave para este segmento, que espera una experiencia fluida y personalizada.
+El segundo segmento está compuesto por los dueños de mascotas, quienes son responsables del bienestar y la salud de sus animales. Este grupo de usuarios busca soluciones prácticas que les permitan manejar de manera eficiente la salud de sus mascotas, incluyendo la programación de citas y acceso a historiales médicos. Pawfect Care les proporciona una plataforma que centraliza toda esta información y facilita el acceso desde cualquier dispositivo, brindándoles tranquilidad y control sobre el cuidado de sus animales. La conveniencia y facilidad de uso son elementos clave para este segmento, que espera una experiencia fluida y personalizada.
 
 ---
 
@@ -547,7 +545,7 @@ El segundo segmento está compuesto por los dueños de mascotas, quienes son res
 <strong> Estrategias:</strong><br>
 - <strong>Interfaz Intuitiva y Fácil de Usar:</strong> Pawfect Care se diferenciará por su interfaz amigable y fácil de usar, lo que simplifica la gestión diaria para los veterinarios y dueños de mascotas. Esto contrasta con muchas soluciones existentes que pueden ser complicadas o difíciles de navegar.
 - <strong>Características Exclusivas:</strong> La aplicación ofrecerá características únicas como la personalización de historiales clínicos y recordatorios adaptados a las necesidades específicas de cada clínica y propietario de mascotas, lo cual no está comúnmente disponible en otras plataformas.
-- <strong>Valor Agregado:</strong> Se enfocará en agregar valor a través de un sistema integral que combina gestión de citas, control de inventarios, notificaciones automáticas y una sección para la venta de productos veterinarios, abordando múltiples necesidades en una sola plataforma.
+- <strong>Valor Agregado:</strong> Se enfocará en agregar valor a través de un sistema integral que combina gestión de citas, control de inventarios y una sección para la venta de productos veterinarios, abordando múltiples necesidades en una sola plataforma.
 - <strong>Adaptabilidad: </strong>Pawfect Care se adaptará a diferentes tamaños de clínicas y será accesible tanto en dispositivos móviles como en computadoras, lo que la convierte en una solución flexible para diversas necesidades.
 
 <strong>Tácticas: </strong><br>
@@ -679,7 +677,7 @@ Entrevista N°1:
 **Enlace:** [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217804_upc_edu_pe/EW0OxQboN91CuWYKpGd_4MwBlAsR0SZe-MXv2JYI9tr2sA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hOaFtS)
 
 **Resumen de la Entrevista:** <br>
- Ana nos comenta que lleva a su mascota al veterinario cada vez que nota algún comportamiento raro en su mascota o cuando lo ve enfermo. Explica que siempre lleva los documentos que le da el veterinario, como su tarjeta de vacunas o chequeos, aunque ha habido el caso donde ha perdido dichos documentos. Ella considera que una aplicación que le permita ver la historia clínica sería excelente porque toda la información lo tendría en su pc o laptop y podría ingresar a revisar desde cualquier navegador. 
+ Ana nos comenta que lleva a su mascota al veterinario cada vez que nota algún comportamiento raro en su mascota o cuando lo ve enfermo. Explica que siempre lleva los documentos que le da el veterinario, como su historial clínico, aunque ha habido el caso donde ha perdido dichos documentos. Ella considera que una aplicación que le permita ver la historia clínica sería excelente porque toda la información lo tendría en su pc o laptop y podría ingresar a revisar desde cualquier navegador. 
 
 ---
 
@@ -716,7 +714,7 @@ Entrevista N°3:
 
 **Resumen de la Entrevista:**<br>
 
-Sergio es un estudiante de 20 años que acude al veterinario con su mascota para hacerle revisiones generales y control de vacunas cada 4 meses. Además, se menciona que debe utilizar una aplicación de block de notas en su celular para anotar fechas de citas importantes y que en raras ocasiones suele perder documentos de vacunación importantes. Él considera que una aplicación sería vital para gestionar de manera eficiente todos los documentos relacionados a su mascota y no volver a perder algún registro que podría necesitar más adelante.
+Sergio es un estudiante de 20 años que acude al veterinario con su mascota para hacerle revisiones generales. Además, se menciona que debe utilizar una aplicación de block de notas en su celular para anotar fechas de citas importantes y que en raras ocasiones suele perder documentos importantes. Él considera que una aplicación sería vital para gestionar de manera eficiente todos los documentos relacionados a su mascota y no volver a perder algún registro que podría necesitar más adelante.
 
 
 ### 2.2.3. Análisis de entrevistas.
@@ -731,7 +729,7 @@ Sergio es un estudiante de 20 años que acude al veterinario con su mascota para
 ***Segmento 2: Dueños de Mascotas***
 
 - El 50% de los entrevistados lleva a sus mascotas al veterinario entre una y dos veces al año, generalmente por chequeos rutinarios o situaciones de salud menores. El otro 50% visita al veterinario con mayor regularidad, cada tres meses para una gata y una vez al mes para bañar a su perra. Esto sugiere que el uso de servicios veterinarios puede variar considerablemente según las necesidades específicas de la mascota. 
-- Todos los entrevistados tienen dificultades para mantener organizados los documentos médicos de sus mascotas. Uno de los participantes no recuerda dónde guardó la carpeta con la documentación médica, mientras que otro ha perdido documentos importantes como cartillas de vacunación y exámenes. 
+- Todos los entrevistados tienen dificultades para mantener organizados los documentos médicos de sus mascotas. Uno de los participantes no recuerda dónde guardó la carpeta con la documentación médica, mientras que otro ha perdido documentos importantes como exámenes. 
 - El 66.7% de los entrevistados ha cambiado de veterinario alguna vez, lo que ha generado confusión sobre los productos o medicamentos utilizados en sus mascotas.
 ## 2.3. Needfinding.
 
@@ -815,7 +813,7 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 
 ## 3.1.1. Requisitos Funcionales
 
-### Gestión de Usuarios y Clientes
+### Gestión de Usuarios
 - **RF01.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios registrarse en la plataforma. Para ello se requiere que ingresen su nombre completo, teléfono, correo electrónico y contraseña. Además, si el usuario es un médico veterinario se le pedirá ingresar su especialidad. Por otro lado, si es dueño de mascota, deberá añadir su dirección.
 - **RF02.** El sistema debe permitir a los usuarios iniciar sesión, ingresando su correo electrónico y contraseña.
 - **RF03.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
@@ -827,34 +825,33 @@ En este proyecto, hemos optado por interactuar con posibles usuarios a través d
 - **RF07.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
 - **RF08.** El veterinario debe poder buscar mascotas primero por el nombre del dueño y luego por nombre de mascota.
 
-### Gestión de Citas
-- **RF09.** El sistema debe permitir a los dueños de mascotras agendar citas veterinarias.
-- **RF10.** El sistema debe permitir a los dueños de mascotras cancelar sus citas.
+### Gestión de Citas Veterinarias
+- **RF09.** El sistema debe permitir a los dueños de mascotas agendar citas veterinarias.
+- **RF10.** El sistema debe permitir a los dueños de mascotas cancelar sus citas.
 - **RF11.** El sistema debe permitir al médico veterinario gestionar y editar citas.
 - **RF12.** El sistema debe permitir que, tanto médicos veterinarios como dueños de mascotas, busquen citas por su fecha.
 - **RF13.** El sistema debe permitir a los veterinarios poder buscar, por su nombre y dni, a un dueño de una mascota con los cuales se haya agendado una cita pendiente.
 
-### Historial Médico
-- **RF14.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
-- **RF15.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
-- **RF22.** El sistema debe permitir a los veterinarios registrar el historial médico de una mascota.
+### Consultas Automatizadas
+- **RF14.** El sistema debe permitir que el usuario interactúe con un chatbot ingresando información sobre su mascota, y el chatbot debe responder con una recomendación general de alimentación adecuada basada en esos datos.
+- **RF15.** El sistema debe permitir que el usuario solicite recomendaciones básicas de higiene para su mascota, y el chatbot debe responder con prácticas de cuidado e higiene específicas según el tipo de mascota.
+- **RF16.** El sistema debe permitir que el usuario seleccione o escriba una consulta relacionada con síntomas comunes, y el chatbot debe proporcionar información relevante y sugerir cuándo se debe acudir a un veterinario.
+- **RF17.** El sistema debe permitir que el usuario consulte al chatbot sobre problemas de comportamiento o entrenamiento, y este debe proporcionar técnicas básicas de corrección y adiestramiento según el tipo de mascota.
+- **RF18.** El sistema debe permitir que el chatbot brinde recomendaciones generales de cuidado adaptadas al tipo de mascota.
 
-### Reseñas
-- **RF16.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
-- **RF17.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
+### Gestión de Historial Médico de las Mascotas
+- **RF19.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
+- **RF20.** El sistema debe permitir a los veterinarios registrar el historial médico de una mascota.
+- **RF21.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
 
-### Chatbot Informativo
-- **RF18.** El sistema debe proporcionar un chatbot que brinde consejos a los dueños de mascotas sobre:
-  - Alimentación de mascotas.
-  - Higiene animal.
-  - Salud y síntomas.
-  - Entrenamiento básico.
-  - Recomendaciones personalizadas según tipo de mascota.
+### Reviews y Feedback
+- **RF22.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
+- **RF23.** El sistema debe permitir a los dueños visualizar las reseñas publicadas por otros propietarios.
 
-### Gestión de Servicios
-- **RF19.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen. Los servicios que puede realizar un veterinarios fueron seleccionados al momento de su registro y pueden ser los siguientes: Vacunación, Desparasitación interna y externa, Control antipulgas y antigarrapatas, Chequeo general de salud, Control de peso y nutrición, Evaluación geriátrica (para animales mayores), Esterilización o castración, Cirugías de tejidos blandos (tumores, hernias, etc), Cirugía ortopédica (fracturas, displasias), Cirugías oftalmológicas (cataratas, entropión), Cirugías odontológica, Suturas por heridas, Cesáreas y partos asistidos, Radiografías y Ecografías, etc.
-- **RF20.** El sistema debe permitir a los dueños de mascotas seleccionar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
-- **RF21.** El sistema debe permitir a los veterinarios publicar sus horarios disponibles para la atención para que el dueño de la mascota elija el de su preferencia y la cita sea agendada. 
+### Gestión de Servicios y Tarifas
+- **RF24.** El sistema debe permitir a los veterinarios ingresar el tarifario de cada uno de los servicios que ofrecen.
+- **RF25.** El sistema debe permitir a los dueños de mascotas seleccionar una tarifa que mejor se adapte a sus necesidades para que la cita sea agendada y recibir el servicio al precio que él desee. 
+- **RF26.** El sistema debe permitir a los veterinarios publicar sus horarios disponibles para la atención para que el dueño de la mascota elija el de su preferencia y la cita sea agendada. 
 
 
 ## 3.1.2. Requisitos No Funcionales
@@ -898,24 +895,24 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 ## 3.1.3 Matriz User Stories vs Requisitos Funcionales
 
-| Requisito | US01 | US02 | US03 | US04 | US05 | US06 | US07 | US08 | US09 | US10 | US11 | US12 |
-|-----------|------|------|------|------|------|------|------|------|------|------|------|------|
-| **RF01**  | ✔    |      |      |      |      |      |      |      |      |      |      |      |
-| **RF02**  |      | ✔    |      |      |      |      |      |      |      |      |      |      |
-| **RF03**  |      |      | ✔    |      |      |      |      |      |      |      |      |      |
-| **RF04**  |      |      |      | ✔    |      |      |      |      |      |      |      |      |
-| **RF05**  |      |      |      |      | ✔    |      |      |      |      |      |      |      |
-| **RF06**  |      |      |      |      |      | ✔    |      |      |      |      |      |      |
-| **RF07**  |      |      |      |      |      |      |      | ✔    |      |      |      |      |
-| **RF08**  |      |      |      |      |      |      | ✔    |      |      |      |      |      |
-| **RF09**  |      |      |      |      |      |      |      |      | ✔    |      |      |      |
-| **RF10**  |      |      |      |      |      |      |      |      |      | ✔    |      |      |
-| **RF11**  |      |      |      |      |      |      |      |      |      |      |      | ✔    |
-| **RF12**  |      |      |      |      |      |      |      |      |      |      | ✔    |      |
+| **Requisito** | **US01** | **US02** | **US03** | **US04** | **US05** | **US06** | **US07** | **US08** | **US09** | **US10** | **US11** | **US12** | **US13** |
+| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+| **RF01** | ✔ |   |   |   |   |   |   |   |   |   |   |   |   |
+| **RF02** |   | ✔ |   |   |   |   |   |   |   |   |   |   |   |
+| **RF03** |   |   | ✔ |   |   |   |   |   |   |   |   |   |   |
+| **RF04** |   |   |   | ✔ |   |   |   |   |   |   |   |   |   |
+| **RF05** |   |   |   |   | ✔ |   |   |   |   |   |   |   |   |
+| **RF06** |   |   |   |   |   | ✔ |   |   |   |   |   |   |   |
+| **RF07** |   |   |   |   |   |   | ✔ |   |   |   |   |   |   |
+| **RF08** |   |   |   |   |   |   |   | ✔ |   |   |   |   |   |
+| **RF09** |   |   |   |   |   |   |   |   | ✔ |   |   |   |   |
+| **RF10** |   |   |   |   |   |   |   |   |   | ✔ |   |   |   |
+| **RF11** |   |   |   |   |   |   |   |   |   |   | ✔ |   |   |
+| **RF12** |   |   |   |   |   |   |   |   |   |   |   | ✔ |   |
+| **RF13** |   |   |   |   |   |   |   |   |   |   |   |   | ✔ |
 
 | Requisito | US13 | US14 | US15 | US16 | US17 | US18 | US19 | US20 | US21 | US22 | US23 | US24 |
 |-----------|------|------|------|------|------|------|------|------|------|------|------|------|
-| **RF13**  | ✔    |      |      |      |      |      |      |      |      |      |      |      |
 | **RF14**  |      |      |      |      |      |      | ✔    |      |      |      |      |      |
 | **RF15**  |      |      |      |      |      |      |      | ✔    |      |      |      |      |
 | **RF16**  |      |      |      |      |      |      |      |      | ✔    |      |      |      |
@@ -927,7 +924,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 
 
 ## 3.2. User Stories
-## Gestión de Usuarios
+### Gestión de Usuarios
 **EP01: Como administrador, deseo gestionar los usuarios para asegurar que solo personas autorizadas tengan acceso al sistema.**
 
 | User Story ID | Título                     | Descripción                                                                                                                                                    |
@@ -945,8 +942,8 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | US04          | Creación de Perfil de Mascota | Como dueño, deseo crear un perfil de mi mascota para tener su información almacenada en la plataforma.                                                  |
 | US05          | Edición de Perfil de Mascota | Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.                                                    |
 | US06          | Visualización de Perfiles de Mascotas | Como dueño, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.                                                    |
-| US07          | Búsqueda de Mascotas por nombre del dueño y luego por el nombre de la mascota | Como médico veterinario, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema.                                                   |
-| US08          | Gestión de Perfiles de Mascotas | Como dueño de mascota, deseo gestionar y poder eliminar los perfiles de mis mascotas para asegurarme de que la información esté correctamente registrada y actualizada.      |
+| US07          | Gestión de Perfiles de Mascotas | Como dueño de mascota, deseo gestionar y poder eliminar los perfiles de mis mascotas para asegurarme de que la información esté correctamente registrada y actualizada.      |
+| US08          | Búsqueda de Mascotas por nombre del dueño y luego por el nombre de la mascota | Como médico veterinario, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema.                                                   |
 
 ---
 
@@ -957,8 +954,8 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 |---------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | US09         | Agendamiento de Citas      | Como usuario, deseo agendar citas veterinarias para asegurar que mi mascota reciba atención médica en el momento adecuado.                                     |
 | US10          | Cancelación de Citas       | Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención.                                        |
-| US11          | Búsqueda de Citas por fecha   | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita.                                                           |
-| US12          | Edición de Citas Veterinarias | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.                                                 |
+| US11          | Edición de Citas Veterinarias | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.                                                 |
+| US12          | Búsqueda de Citas por fecha   | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita.                                                           |
 | US13          | Búsqueda de dueños de mascota | Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente.    |
 
 ---
@@ -1177,7 +1174,31 @@ Como usuario, deseo visualizar los perfiles de mis mascotas para revisar la info
 
 ---
 
-## US07: Búsqueda de Mascotas por el nombre del dueño y de la mascota  
+## US07: Gestión de Perfiles de Mascotas  
+**Relacionado con (Epic ID):** EP02
+
+**Descripción:**  
+Como dueño de mascota, deseo gestionar y poder eliminar los perfiles de mis mascotas (de ser necesario) para asegurarme de que la información esté correctamente registrada y actualizada.
+
+### Criterios de Aceptación:
+- **Escenario 1:** El dueño edita un perfil de mascota  
+  - **Dado que** el dueño está gestionando perfiles de mascotas,  
+  - **Cuando** selecciona un perfil y actualiza la información,  
+  - **Entonces** el sistema debe permitir guardar los cambios y mostrar una confirmación de éxito.
+
+- **Escenario 2:** El dueño elimina un perfil de mascota  
+  - **Dado que** el dueño está en la lista de mascotas,  
+  - **Cuando** selecciona la opción de eliminar en un perfil,  
+  - **Entonces** el sistema debe solicitar confirmación y, al aceptarse, eliminar permanentemente el perfil y sus datos.
+
+- **Escenario 3:** El dueño visualiza el historial de cambios en un perfil  
+  - **Dado que** el dueño desea verificar cambios anteriores,  
+  - **Cuando** accede a un perfil de mascota,  
+  - **Entonces** el sistema debe mostrar un historial con las modificaciones realizadas al perfil.
+
+---
+
+## US08: Búsqueda de Mascotas por el nombre del dueño y de la mascota  
 **Relacionado con (Epic ID):** EP02
 
 **Descripción:**  
@@ -1199,30 +1220,6 @@ Como médico veterinario, deseo buscar mascotas por el nombre del dueño y de la
   - **Dado que** el médico veterinario se encuentra en la sección de búsqueda de mascotas  
   - **Cuando** deja el campo del nombre del dueño, el nombre de la mascota, o ambos vacíos  
   - **Entonces** el sistema debe mostrar un mensaje de validación indicando que ambos campos son obligatorios para realizar la búsqueda
-
----
-
-## US08: Gestión de Perfiles de Mascotas  
-**Relacionado con (Epic ID):** EP02
-
-**Descripción:**  
-Como dueño de mascota, deseo gestionar y poder eliminar los perfiles de mis mascotas (de ser necesario) para asegurarme de que la información esté correctamente registrada y actualizada.
-
-### Criterios de Aceptación:
-- **Escenario 1:** El dueño edita un perfil de mascota  
-  - **Dado que** el dueño está gestionando perfiles de mascotas,  
-  - **Cuando** selecciona un perfil y actualiza la información,  
-  - **Entonces** el sistema debe permitir guardar los cambios y mostrar una confirmación de éxito.
-
-- **Escenario 2:** El dueño elimina un perfil de mascota  
-  - **Dado que** el dueño está en la lista de mascotas,  
-  - **Cuando** selecciona la opción de eliminar en un perfil,  
-  - **Entonces** el sistema debe solicitar confirmación y, al aceptarse, eliminar permanentemente el perfil y sus datos.
-
-- **Escenario 3:** El dueño visualiza el historial de cambios en un perfil  
-  - **Dado que** el dueño desea verificar cambios anteriores,  
-  - **Cuando** accede a un perfil de mascota,  
-  - **Entonces** el sistema debe mostrar un historial con las modificaciones realizadas al perfil.
 
 ---
 
@@ -1250,11 +1247,25 @@ Como dueño de mascota, quiero cancelar citas agendadas en caso de que no pueda 
 - **Escenario 1:** El dueño de mascota necesita cancelar una cita previamente agendada  
   - **Dado que** el dueño de mascota ha reservado una cita,  
   - **Cuando** haga clic en "Cancelar Cita" en su historial de citas,  
-  - **Entonces** la cita será eliminada y se enviará una notificación de cancelación.
+  - **Entonces** la cita será eliminada y se enviará una alerta de cancelación.
 
 ---
 
-## US11: Búsqueda de Citas por fecha 
+## US11: Edición de Citas Veterinarias
+**Relacionado con (Epic ID):** EP03
+
+**Descripción:**  
+Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.
+
+### Criterios de Aceptación:
+- **Escenario 1:** El médico veterinario edita la fecha de una cita  
+  - **Dado que** el médico veterinario está en la página de gestión de citas,  
+  - **Cuando** selecciona una cita y cambia su fecha u hora,  
+  - **Entonces** el sistema debe actualizar la cita y enviar una alerta al usuario afectado indicando el cambio.
+
+---
+
+## US12: Búsqueda de Citas por fecha 
 **Relacionado con (Epic ID):** EP03
 
 **Descripción:**  
@@ -1276,20 +1287,6 @@ Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha
   - **Dado que** el usuario está en la sección de búsqueda de citas  
   - **Cuando** deja el campo vacío o introduce una fecha con un formato inválido  
   - **Entonces** el sistema debe mostrar un mensaje de validación indicando que debe ingresar una fecha válida
-
----
-
-## US12: Edición de Citas Veterinarias
-**Relacionado con (Epic ID):** EP03
-
-**Descripción:**  
-Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.
-
-### Criterios de Aceptación:
-- **Escenario 1:** El médico veterinario edita la fecha de una cita  
-  - **Dado que** el médico veterinario está en la página de gestión de citas,  
-  - **Cuando** selecciona una cita y cambia su fecha u hora,  
-  - **Entonces** el sistema debe actualizar la cita y enviar una notificación al usuario afectado indicando el cambio.
 
 ---
 
@@ -1513,7 +1510,7 @@ Como dueño, deseo visualizar el historial médico de mi mascota para revisar su
   - **Dado que** soy un dueño autenticado en el sistema
   - **Y** tengo registrada a mi mascota
   - **Cuando** accedo a la opción de historial médico
-  - **Entonces** el sistema debe mostrar una lista organizada con las visitas veterinarias, diagnósticos, tratamientos y vacunas aplicadas
+  - **Entonces** el sistema debe mostrar una lista organizada con las citas y diagnósticos
 
 - **Escenario 2:** Mascota sin historial registrado
   - **Dado que** soy un dueño autenticado
@@ -1569,7 +1566,7 @@ Como doctor veterinario, deseo actualizar el historial médico de las mascotas p
 - **Escenario 1:** Actualización exitosa del historial médico
   - **Dado que** soy un doctor veterinario autenticado en el sistema
   - **Y** tengo acceso al perfil de una mascota registrada
-  - **Cuando** ingreso nuevos datos médicos (como diagnóstico, tratamiento o vacuna)
+  - **Cuando** ingreso nuevos datos médicos
   - **Entonces** el sistema debe guardar correctamente la información en el historial médico de la mascota
   - **Y** debe estar disponible para ser consultada por el dueño
 
@@ -1610,7 +1607,7 @@ Como usuario dueño de una mascota, deseo dejar una reseña sobre un doctor vete
 - **Escenario 3:** Ingreso de reseña incompleta
   - **Dado que** estoy autenticado
   - **Cuando** intento publicar una reseña sin completar campos obligatorios (como texto o calificación)
-  - **Entonces** el sistema debe notificarme qué campos faltan
+  - **Entonces** el sistema debe indicarme qué campos faltan
   - **Y** no debe permitir publicar la reseña hasta que esté completa
 
 ---
@@ -1661,7 +1658,7 @@ Como médico veterinario, deseo ofrecer una tarifa personalizada para un servici
   - **Dado que** soy un veterinario autenticado y ya he ofrecido una tarifa para un servicio
   - **Cuando** decido modificar la tarifa propuesta
   - **Entonces** el sistema debe permitir la modificación
-  - **Y** debe notificar al dueño de la mascota sobre el cambio en la tarifa
+  - **Y** debe alertar al dueño de la mascota sobre el cambio en la tarifa
 
 - **Escenario 3:** Intento de ofrecer tarifa sin autenticación
   - **Dado que** no estoy autenticado como médico veterinario
@@ -1681,7 +1678,7 @@ Como dueño de una mascota, deseo ver las reseñas y tarifas ofrecidas por disti
 
 - **Escenario 1:** Visualización de reseñas y tarifas para un servicio específico
   - **Dado que** soy un dueño de mascota autenticado en el sistema
-  - **Y** he solicitado un servicio específico de veterinario (por ejemplo, consulta, vacunación)
+  - **Y** he solicitado un servicio específico de veterinario 
   - **Cuando** accedo a las opciones de veterinarios disponibles para este servicio
   - **Entonces** el sistema debe mostrar las reseñas de otros usuarios sobre cada veterinario
   - **Y** debe mostrar la tarifa personalizada ofrecida por cada veterinario para el servicio solicitado

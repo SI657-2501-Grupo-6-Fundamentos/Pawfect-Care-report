@@ -62,7 +62,6 @@ Para desarrollar la aplicación Pawfect Care, partimos de varias suposiciones cl
 
 - Sistema de gestión de citas para facilitar la organización del tiempo en las clínicas.
 - Almacenamiento y visualización de historiales clínicos de las mascotas de forma rápida y segura.
-- Notificaciones automáticas para recordatorios de vacunas, tratamientos o revisiones.
 - Sección para la venta de productos veterinarios, integrando un catálogo accesible para los clientes.
 - Sistema de reportes de ingresos, control de inventario, y análisis de datos para mejorar la eficiencia administrativa.
 - Interfaz intuitiva y adaptable para ser utilizada tanto en dispositivos móviles como en computadoras.
@@ -99,7 +98,7 @@ Para desarrollar la aplicación Pawfect Care, partimos de varias suposiciones cl
   Los usuarios enfrentan la falta de una aplicación especializado para la gestión integral de clínicas veterinarias y la ausencia de un portal donde se pueda acceder fácilmente a la historia clínica de una mascota. Nuestra aplicación resuelve estos problemas proporcionando una plataforma única para administrar todos los aspectos de la clínica y facilitar el acceso a la información médica.<br>
 
 - **¿Dónde y cuándo es usada nuestra aplicación?**
-  La aplicación se utiliza principalmente en clínicas veterinarias. Los momentos clave para su uso son durante las consultas veterinarias y cuando los dueños deciden cambiar de veterinario y necesitan trasladar el historial clínico o el registro de vacunas a otro establecimiento.<br>
+  La aplicación se utiliza principalmente en clínicas veterinarias. Los momentos clave para su uso son durante las consultas veterinarias y cuando los dueños deciden cambiar de veterinario y necesitan trasladar el historial clínico.<br>
 
 - **¿Qué características son importantes?**
   Las características esenciales incluyen una interfaz fácil de usar en dispositivos móviles, computadoras y laptops. Además, es crucial la eliminación de campos innecesarios u obligatorios que puedan complicar el proceso de registro.<br>
@@ -147,13 +146,12 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
     <tr>
         <td>
             <strong>Business Problem</strong><br>
-            La gestión de clínicas veterinarias enfrenta desafíos significativos debido al uso de métodos manuales o sistemas desactualizados, lo que resulta en ineficiencias operativas, errores en la documentación y una experiencia insatisfactoria tanto para los veterinarios como para los propietarios de mascotas. La falta de una herramienta integral complica la administración de citas, historiales clínicos y la venta de productos veterinarios.
+            La gestión de clínicas veterinarias enfrenta desafíos significativos debido al uso de métodos manuales o sistemas desactualizados, lo que resulta en ineficiencias operativas, errores en la documentación y una experiencia insatisfactoria tanto para los veterinarios como para los propietarios de mascotas. La falta de una herramienta integral complica la administración de citas e historiales clínicos.
         </td>
         <td>
             <strong>Solutions</strong><br>
             - Gestión de citas.<br>
             - Almacenamiento y visualización de historiales clínicos.<br>
-            - Notificaciones automáticas para recordatorios de vacunas y tratamientos.<br>
             - Venta de productos veterinarios.<br>
             - Reportes de ingresos y control de inventario.
         </td>
@@ -210,6 +208,6 @@ El primer segmento objetivo incluye a las clínicas veterinarias de diversos tam
 
 **Segmento Objetivo 2 - Dueño de Mascotas:**
 
-El segundo segmento está compuesto por los dueños de mascotas, quienes son responsables del bienestar y la salud de sus animales. Este grupo de usuarios busca soluciones prácticas que les permitan manejar de manera eficiente la salud de sus mascotas, incluyendo la programación de citas, acceso a historiales médicos y recordatorios de vacunación. Pawfect Care les proporciona una plataforma que centraliza toda esta información y facilita el acceso desde cualquier dispositivo, brindándoles tranquilidad y control sobre el cuidado de sus animales. La conveniencia y facilidad de uso son elementos clave para este segmento, que espera una experiencia fluida y personalizada.
+El segundo segmento está compuesto por los dueños de mascotas, quienes son responsables del bienestar y la salud de sus animales. Este grupo de usuarios busca soluciones prácticas que les permitan manejar de manera eficiente la salud de sus mascotas, incluyendo la programación de citas y acceso a historiales médicos. Pawfect Care les proporciona una plataforma que centraliza toda esta información y facilita el acceso desde cualquier dispositivo, brindándoles tranquilidad y control sobre el cuidado de sus animales. La conveniencia y facilidad de uso son elementos clave para este segmento, que espera una experiencia fluida y personalizada.
 
 ---
