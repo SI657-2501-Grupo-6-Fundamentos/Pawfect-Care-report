@@ -20,7 +20,7 @@
 - **RF03.** El sistema debe permitir a los dueños de las mascotas y a los veterinarios crear y editar su perfil.
 
 ### Gestión de Mascotas
-- **RF04.** El sistema debe permitir a los dueños crear perfiles de sus mascotas y asignarle un historial médico en blanco.
+- **RF04.** El sistema debe permitir a los dueños crear perfiles de sus mascotas.
 - **RF05.** El sistema debe permitir a los dueños editar la información de sus mascotas.
 - **RF06.** El sistema debe permitir a los dueños de mascotas visualizar los perfiles de sus mascotas.
 - **RF07.** El sistema debe permitir a los dueños de mascotas eliminar el perfil de su mascota
@@ -31,7 +31,7 @@
 - **RF10.** El sistema debe permitir a los dueños de mascotas cancelar sus citas.
 - **RF11.** El sistema debe permitir al médico veterinario gestionar y editar citas.
 - **RF12.** El sistema debe permitir que, tanto médicos veterinarios como dueños de mascotas, busquen citas por su fecha.
-- **RF13.** El sistema debe permitir a los veterinarios poder buscar, por su nombre y dni, a un dueño de una mascota con los cuales se haya agendado una cita pendiente.
+- **RF13.** El sistema debe permitir a los veterinarios poder buscar, por su nombre, a un dueño de una mascota con los cuales se haya agendado una cita pendiente.
 
 ### Consultas Automatizadas
 - **RF14.** El sistema debe permitir que el usuario interactúe con un chatbot ingresando información sobre su mascota, y el chatbot debe responder con una recomendación general de alimentación adecuada basada en esos datos.
@@ -42,8 +42,8 @@
 
 ### Gestión de Historial Médico de las Mascotas
 - **RF19.** El sistema debe permitir a los dueños visualizar el historial médico de sus mascotas.
-- **RF20.** El sistema debe permitir a los veterinarios registrar el historial médico de una mascota.
-- **RF21.** El sistema debe permitir a los veterinarios registrar actualizaciones en el historial médico de una mascota.
+- **RF20.** El sistema debe permitir a los veterinarios registrar diagnósticos y el historial médico de una mascota.
+- **RF21.** El sistema debe permitir a los veterinarios registrar actualizaciones en los diagnósticos y en el historial médico de una mascota.
 
 ### Reviews y Feedback
 - **RF22.** El sistema debe permitir a los dueños de las mascotas publicar reseñas sobre la atención veterinaria recibida.
@@ -82,17 +82,15 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | Código | Descripción                                                                                            | Métrica (con Método de Evaluación)                                                                                                           | Atributo de Calidad       |
 |--------|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | RNF01  | El sistema debe estar disponible 24/7 para todos los usuarios.                                         | Debe tener más del 99.9% de disponibilidad mensual                                                                                           | Disponibilidad            |
-| RNF02  | El sistema debe requerir contraseñas robustas para el inicio de sesión.                                | El 100% de contraseñas cumplen con política de tener más de 8 caracteres entre mayúsculas, minúsculas, números y un símbolo.                 | Seguridad                 |
-| RNF03  | La información de los dni de los usuarios deben almacenarse cifrados.                                  | El 100% de los campos  sobre los dni de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos.       | Seguridad                 |
-| RNF04  | La información de los teléfonos de los usuarios deben almacenarse cifrados.                            | El 100% de los campos  sobre los teléfonos de los veterinarios y dueños de una mascota deben estar cifrados con AES-256 en la base de datos. | Seguridad                 |
-| RNF05  | El 95% de las operaciones CRUD deben completarse en menos de 3 segundos. Esto incluye agregar, editar o eliminar un registro de historial medico, un registro de mascota, el perfil del dueño de mascota y el perfil del médico veterinario encargado             | El tiempo de respuesta de una operación CRUD debe ser, como mínimo, menor a 3 segundos en un 95% de 100 operaciones simuladas con Apache JMeter.                                                        | Desempeño                 |
-| RNF06  | La pantalla de inicio debe cargar en menos de 2 segundos en conexión de 20 Mbps.                       | El tiempo de carga de la pantalla de inicio debe ser menor a 2 segundos en al menos 3 navegadores modernos (Edge, Chrome y Opera).                                                      | Desempeño                 |
-| RNF07  | El sistema debe soportar al menos 100 usuarios simultáneos sin degradación.                            | Debe existir menos del 10% de degradación en los tiempos de carga de la pantalla principal de la aplicación durante prueba de carga con 100 usuarios concurrentes.                                                  | Desempeño                 |
-| RNF08  | El código debe estar documentado para facilitar su comprensión.                                        | El 60% del código del backend  debe estar documentado con JavaDoc y en inglés, colocando información de propósito como mínimo.                                                   | Modificabilidad           |
-| RNF09  | El sistema debe permitir añadir nuevas funcionalidades sin modificar más del 30% del código existente. | Debe haber menos del 30% de líneas modificadas, respecto al total de líneas, para agregar nueva funcionalidad. Esto se puede medir con Git diff.                                                                    | Modificabilidad           |
-| RNF10  | El sistema debe ser calificado como fácil de usar por los usuarios.                                    | El 80% de usuarios califican  la facilidad de uso de la interfaz con un 4 en escala de 1 a 5 en encuestas post-prueba                                        | Usabilidad                |
-| RNF11  | El sistema debe ser compatible con navegadores modernos.                                               | Funcionalidad completa debe poder realizarse en 3 navegadores como mínimo (Chrome, Edge, Opera).                                                                | Interoperabilidad         |
-| RNF12  | El sistema debe escalar horizontalmente si la carga supera el 80%.                                     | Latencia media de 3 segundos durante escalamiento automático con 200 usuarios simultáneos.                                                           | Escalabilidad             |                                                     | Escalabilidad             |
+| RNF02  | El sistema debe requerir contraseñas robustas para el inicio de sesión.                                | El 100% de contraseñas cumplen con política de tener más de 6 caracteres entre mayúsculas, minúsculas, números y un símbolo.                 | Seguridad                 |
+| RNF03  | El 95% de las operaciones CRUD deben completarse en menos de 3 segundos. Esto incluye agregar, editar o eliminar un registro de historial medico, un registro de mascota, el perfil del dueño de mascota y el perfil del médico veterinario encargado             | El tiempo de respuesta de una operación CRUD debe ser, como mínimo, menor a 3 segundos en un 95% de 100 operaciones simuladas con Apache JMeter.                                                        | Desempeño                 |
+| RNF04  | La pantalla de inicio debe cargar en menos de 2 segundos en conexión de 20 Mbps.                       | El tiempo de carga de la pantalla de inicio debe ser menor a 2 segundos en al menos 3 navegadores modernos (Edge, Chrome y Opera).                                                      | Desempeño                 |
+| RNF05  | El sistema debe soportar al menos 100 usuarios simultáneos sin degradación.                            | Debe existir menos del 10% de degradación en los tiempos de carga de la pantalla principal de la aplicación durante prueba de carga con 100 usuarios concurrentes.                                                  | Desempeño                 |
+| RNF06  | El código debe estar documentado para facilitar su comprensión.                                        | El 60% del código del backend  debe estar documentado con JavaDoc y en inglés, colocando información de propósito como mínimo.                                                   | Modificabilidad           |
+| RNF07  | El sistema debe permitir añadir nuevas funcionalidades sin modificar más del 30% del código existente. | Debe haber menos del 30% de líneas modificadas, respecto al total de líneas, para agregar nueva funcionalidad. Esto se puede medir con Git diff.                                                                    | Modificabilidad           |
+| RNF08  | El sistema debe ser calificado como fácil de usar por los usuarios.                                    | El 80% de usuarios califican  la facilidad de uso de la interfaz con un 4 en escala de 1 a 5 en encuestas post-prueba                                        | Usabilidad                |
+| RNF09  | El sistema debe ser compatible con navegadores modernos.                                               | Funcionalidad completa debe poder realizarse en 3 navegadores como mínimo (Chrome, Edge, Opera).                                                                | Interoperabilidad         |
+| RNF10  | El sistema debe escalar horizontalmente si la carga supera el 80%.                                     | Latencia media de 3 segundos durante escalamiento automático con 200 usuarios simultáneos.                                                           | Escalabilidad             |                                                     | Escalabilidad             |
 
 ## 3.1.3 Matriz User Stories vs Requisitos Funcionales
 
@@ -163,7 +161,7 @@ Los Requisitos No Funcionales (RNF) establecen condiciones esenciales de calidad
 | US10          | Cancelación de Citas       | Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención.                                        |
 | US11          | Edición de Citas Veterinarias | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.                                                 |
 | US12          | Búsqueda de Citas por fecha   | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita.                                                           |
-| US13          | Búsqueda de dueños de mascota | Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente.    |
+| US13          | Búsqueda de dueños de mascota | Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre para poder ubicarlos rápidamente.    |
 
 ---
 
@@ -501,23 +499,23 @@ Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha
 **Relacionado con (Epic ID):** EP03
 
 **Descripción:**  
-Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente.
+Como  médico veterinario, deseo poder buscar citas de clientes agendados por su nombre para poder ubicarlos rápidamente.
 
 ### Criterios de Aceptación:
 
-- **Escenario 1: Búsqueda por nombre y DNI válidos**  
+- **Escenario 1: Búsqueda por nombre válido**  
   - **Dado que** el médico veterinario está en la sección de búsqueda de citas  
-  - **Cuando** ingresa el nombre completo y el DNI de un cliente que tiene citas registradas  
+  - **Cuando** ingresa el nombre completo de un cliente que tiene citas registradas  
   - **Entonces** el sistema debe mostrar todas las citas asociadas a ese cliente
 
 - **Escenario 2: Búsqueda sin resultados**  
-  - **Dado que** el médico veterinario desea buscar citas por nombre y DNI  
-  - **Cuando** ingresa un nombre y/o DNI que no corresponde a ningún cliente con citas registradas  
+  - **Dado que** el médico veterinario desea buscar citas por nombre
+  - **Cuando** ingresa un nombre que no corresponde a ningún cliente con citas registradas  
   - **Entonces** el sistema debe mostrar un mensaje indicando que no se encontraron citas para ese cliente
 
 - **Escenario 3: Campos incompletos o inválidos**  
   - **Dado que** el médico veterinario intenta realizar una búsqueda  
-  - **Cuando** deja uno de los campos vacío o introduce un formato inválido en el campo del DNI  
+  - **Cuando** deja uno de los campos vacío o introduce un formato inválido
   - **Entonces** el sistema debe mostrar un mensaje de validación solicitando que complete correctamente los campos
 
 ---
@@ -951,7 +949,7 @@ Asimismo, utilizamos la herramienta “Planning Poker Online” para poder votar
 | 4      | US07           | Búsqueda de Mascotas                      | Como médico veterinario, deseo buscar mascotas por su nombre para acceder rápidamente a su información en el sistema. | 2            |
 | 5      | US05           | Edición de Perfil de Mascota              | Como dueño, deseo editar el perfil de mi mascota para actualizar su información cuando sea necesario.           | 2            |
 | 6      | US06           | Visualización de Perfiles de Mascotas     | Como dueño, deseo visualizar los perfiles de mis mascotas para revisar la información registrada.               | 2            |
-| 7      | US13           | Búsqueda de dueño de mascota                     | Como médico veterinario, deseo poder buscar citas de clientes agendados por su nombre y DNI para poder ubicarlos rápidamente. | 2            |
+| 7      | US13           | Búsqueda de dueño de mascota                     | Como médico veterinario, deseo poder buscar citas de clientes agendados por su nombre poder ubicarlos rápidamente. | 2            |
 | 8      | US11           | Búsqueda de Citas por fecha               | Como dueño de mascota o médico veterinario, deseo poder buscar citas por fecha para acceder rápidamente a la información de la cita. | 2            |
 | 9      | US12           | Edición de Citas Veterinarias             | Como médico veterinario, deseo editar las citas para hacer cambios en la fecha o estado cuando sea necesario.  | 3            |
 |10      | US10           | Cancelación de Citas                      | Como usuario, deseo cancelar una cita si no puedo asistir para evitar problemas de horario y reorganizar la atención. | 2            |

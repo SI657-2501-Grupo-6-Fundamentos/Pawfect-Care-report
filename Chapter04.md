@@ -245,12 +245,12 @@ Para el desarrollo de la aplicación "Pawfect Care", que conecta a las veterinar
 
  - **Incorporación:** permitir que Pet Owners y Veterinarians se registren e inicien sesión.
 
- - **Integración:** validar envío de correos con Gmail API y respuesta de IA simulada.
+ - **Integración:** validar registro con Gmail API y respuesta de IA simulada.
 
  - **Usabilidad:** definir límites claros de contexto para usuarios primerizos.
 
 **Meta de la Iteración:** <br>
-Definir y validar el contexto del sistema: implementar los flujos básicos de registro/login, simular el envío de recordatorios por email y el módulo de consultoría IA, y asegurar que los dueños de las mascotas y veterinarias puedan interactuar correctamente con el sistema de Pawfect Care.
+Definir y validar el contexto del sistema: implementar los flujos básicos de registro/login, simular el módulo de consultoría por IA, y asegurar que los dueños de las mascotas y veterinarias puedan interactuar correctamente con el sistema de Pawfect Care.
 
 #### 4.3.1.3       Choose One or More Elements of the System to Refine
 
@@ -301,8 +301,8 @@ Ya que es la primera iteracion, se debe escojer elementos para refinar.
     <td>Encapsular toda la lógica de creación, edición, búsqueda y eliminación de perfiles de mascota en un microservicio con repositorios JPA garantiza coherencia transaccional, facilita la implementación de pruebas unitarias y reutiliza automáticamente CRUD básicos.</td>
   </tr>
   <tr>
-    <td>Definir NotificationService que consuma Gmail API</td>
-    <td>Centralizar el envío de correos de confirmación y recordatorios en un servicio dedicado que abstraiga el cliente de Gmail API reduce la repetición de código, optimiza la trazabilidad de envíos y facilita el cambio a otro proveedor de email si fuera necesario.</td>
+    <td>Definir AuthService que consuma Gmail API</td>
+    <td>Implementar un método de autenticación utilizando un cliente de Gmail API, optimiza la velocidad de registro y acceso a los servicios de la aplicación. </td>
   </tr>
   <tr>
     <td>Crear ChatbotService con interfaz REST hacia AI externa</td>
@@ -341,7 +341,7 @@ Ya que es la primera iteracion, se debe escojer elementos para refinar.
   </tr>
   <tr>
     <td>Gmail API</td>
-    <td>Servicio externo encargado de facilitar el envío automatizado de correos electrónicos como recordatorios de citas y confirmaciones de registro.</td>
+    <td>Servicio externo encargado de facilitar el uso automatizado de correos electrónicos para registro y autenticación directa de usuarios.</td>
   </tr>
   <tr>
     <td>AI Automated Consulting Services</td>
