@@ -1897,7 +1897,7 @@ En esta sección se presentan nuestros diagramas de componentes para cada micros
 
 
 ### UML Class Diagram
-[![Class-Diagram-Pawfect-Care-TB3.png](https://i.postimg.cc/J7kx124d/Class-Diagram-Pawfect-Care-TB3.png)](https://postimg.cc/ThTg0Qbr)
+[![Class-Diagram-Pawfect-Care-1.png](https://i.postimg.cc/9Ffw8LV1/Class-Diagram-Pawfect-Care-1.png)](https://postimg.cc/23P53F1B)
 
 ## 4.1.5. Relational/Non Relational Database Diagram
 Optamos por utilizar PostgreSQL como sistema de gestión de bases de datos, gestionado mediante pg Admin 4. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
