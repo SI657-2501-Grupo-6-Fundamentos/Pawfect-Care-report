@@ -1901,7 +1901,7 @@ En esta sección se presentan nuestros diagramas de componentes para cada micros
 
 ## 4.1.5. Relational/Non Relational Database Diagram
 Optamos por utilizar PostgreSQL como sistema de gestión de bases de datos, gestionado mediante pg Admin 4. Esta elección se basa en la experiencia previa del equipo con el lenguaje SQL y en la eficacia de esta herramienta para cubrir las necesidades de nuestro proyecto.
-[![pawcare-database-diagram.png](https://i.postimg.cc/0NKMph4T/pawcare-database-diagram.png)](https://postimg.cc/3y7xhfY1)
+[![database-diagram.png](https://i.postimg.cc/cCndxYf6/database-diagram.png)](https://postimg.cc/1VskM8CZ)
 
 
 ## 4.1.6. Design Patterns
